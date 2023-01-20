@@ -1,9 +1,6 @@
 ## あらすじ
 TBC
 
-## ライセンス
-
-上位Directoryに準ずる。
 
 ## シナリオ詳細
 
@@ -140,3 +137,14 @@ todo: 発生頻度の調整
 
 ### その他
 
+開始月：1604年4月
+
+todo: [大坂冬御陣之図](https://bird.bukkyo-u.ac.jp/collections/titles/osakafuyunogojinzu/)(画像：[大坂冬御陣図 ： 1](https://dc.bukkyo-u.ac.jp/iiif/2/osakafuyunogojinzu-01-01.jp2/full/full/0/default.jpg))及び大名の領地地図を参考に大坂冬の陣まで時間を進め、1614年12月を開始月とする？
+
+#### マップファイル、一般の大名・武将情報
+
+作成者である◆玉王◆氏の了解を得て、[慶長戦史 ‐落日の日輪‐](https://wiki.sengokushi.net/%E6%85%B6%E9%95%B7%E6%88%A6%E5%8F%B2)のデータをそのまま使用、または改変して使用している。
+
+## ライセンス
+
+上位Directoryに準ずる。
