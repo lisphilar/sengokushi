@@ -23,31 +23,21 @@ TBC（大名格と配下の一覧）
 
 | 大名家ID    | 大名家名       | 種別 | プレイ可否 | 移動 | 出陣 | 役割                                   |
 |-------------|----------------|------|------------|------|------|----------------------------------------|
-| BunA        | 意思表示       | 琉球 | No         | No   | No   | 意思表示用                             |
+| D_NA        | （空白地勢力）       | 標準 | No         | No   | No   | 大坂城門の管理用                             |
+| D_Helper        | 行政       | 標準 | No         | No   | No   | 一覧表示などの要請用用                             |
 | BunB        | 農民の回       | 琉球 | No         | No   | No   | 目付派遣家  待機武将保管               |
-| BunC        | 全国浪人衆     | 琉球 | No         | No   | Yes  | プレーヤーに雇用されなかった浪人を収容 |
-| BunD        | BunD             | 琉球 | No         | No   | No   | 意思表示･封地替え                      |
-| BunE        | 地方管理       | 琉球 | No         | No   | No   |                                        |
-| BunF        | 国管理         | 琉球 | No         | No   | No   |                                        |
+| BunE        | 地方管理       | 標準 | No         | No   | No   |                                        |
+| BunF        | 国管理         | 標準 | No         | No   | No   |                                        |
 | D_Bakuhu    | 幕府勘定所     | 標準 | No         | Yes  | Yes  |                                        |
 | D_Butugaku  | 仏法・学問の会 | 標準 | No         | Yes  | No   |                                        |
 | D_CHOTEI    | 天皇家         | 標準 | No         | No   | No   |                                        |
-| D_Kari      | 仮       | 琉球 | No         | No   | No   | 大阪城門用                             |
-| D_Kyuzoku   | 旧族同盟       | 標準 | No         | No   | No   | 戦国時代以来の大名の集合体             |
-| D_Nagare    | 全国浪人衆     | 標準 | No         | Yes  | No   | 豊臣家配下の浪人                       |
 | D_Nogyo     | 農業の会       | 標準 | No         | Yes  | No   |                                        |
 | D_Oosaka    | 大坂給人衆     | 標準 | No         | Yes  | Yes  |                                        |
-| D_Syori     | 認め所         | 琉球 | No         | No   | No   | 計算城のみ所有                         |
 | D_Syounin   | 商人の会       | 標準 | No         | Yes  | No   |                                        |
 | D_Togakushi | 戸隠谷修行会   | 標準 | No         | Yes  | No   |                                        |
 | D_Tokugawa  | 徳川家         | 標準 | Yes        | Yes  | No   |                                        |
 | D_Toyotomi  | 豊臣氏宗家     | 標準 | Yes        | Yes  | Yes  |                                        |
-| Da-1        | 勅使           | 標準 | No         | Yes  | Yes  | 特別格                                 |
-| Da-2        | 豊氏長者隊     | 標準 | No         | Yes  | Yes  | 特別格                                 |
-| Da-3        | 大坂隊         | 標準 | No         | Yes  | Yes  | 特別格                                 |
-| Da-4        | 源氏長者隊     | 標準 | No         | Yes  | Yes  | 特別格                                 |
-| Da-5        | 幕府軍         | 標準 | No         | Yes  | Yes  | 特別格                                 |
-| Da-6～Da-70 | 諸侯代表       | 標準 | No         | Yes  | Yes  | 一部はプレイ可能                       |
+| Da-6～Da-70 | 代理家       | 標準 | No         | Yes  | Yes  | 従属家→主家など、武将派遣用  |
 
 ### 城タイプ
 
