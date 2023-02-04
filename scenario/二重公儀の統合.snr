@@ -563,11 +563,11 @@ EventDetail {
 	}
 }
 Daimyou {
-	D_NA				:	"空白地勢力",	NORMAL,		0,			0,				0,						0,					0,				NO,		STATIC,		"空白地勢力"
-	D_Helper			:	"行政",			NORMAL,		0,			0,				0,						0,					0,				NO,		STATIC,		""
-	D_Region			:	"地方管理",		NORMAL,		0,			0,				0,						0,					0,				NO,		STATIC,		""
-	D_Country			:	"国管理",		NORMAL,		0,			0,				0,						0,					0,				NO,		STATIC,		""
-	D_CHOTEI			:	"朝廷",			NORMAL,		100,		100,			-1,						30,					10,				NO,		NOATTACK,	"天皇家。\n不可侵であり、移動・出陣もしない。"
+	D_NA				:	"空白地勢力",	RYUUKYUU,	0,			0,				0,						0,					0,				NO,		STATIC,		"空白地勢力"
+	D_Helper			:	"行政",			RYUUKYUU,	0,			0,				0,						0,					0,				NO,		STATIC,		""
+	D_Region			:	"地方管理",		RYUUKYUU,	0,			0,				0,						0,					0,				NO,		STATIC,		""
+	D_Country			:	"国管理",		RYUUKYUU,	0,			0,				0,						0,					0,				NO,		STATIC,		""
+	D_CHOTEI			:	"朝廷",			RYUUKYUU,	100,		100,			-1,						30,					10,				NO,		NOATTACK,	"天皇家。\n不可侵であり、移動・出陣もしない。"
 	D_Furuta			:	"古田織部家",	NORMAL,		100,		100,			-1,						10,					0,				NO,		NORMAL,		"茶の湯を通じて朝廷、寺社、経済、大名と様々なつながりを持った。"
 	D_Tyosogabe			:	"長宗我部家",	NORMAL,		100,		100,			-1,						10,					0,				NO,		NORMAL,		"長宗我部盛親ら。盛親は京都に隠棲した。後、豊臣氏へ参加。"
 	D_0002				:	"宇喜多家",		NORMAL,		0,			0,				-1,						0,					0,				YES,	NORMAL,		""
@@ -578,7 +578,7 @@ Daimyou {
 	D_0008				:	"氏家家",		NORMAL,		0,			0,				-1,						10,					3,				YES,	NORMAL,		""
 	D_0009				:	"箸尾家",		NORMAL,		0,			0,				-1,						10,					3,				YES,	NORMAL,		""
 	D_Toyotomi			:	"豊臣氏宗家",	NORMAL,		100,		100,			2000000,				10,					0,				YES,	NORMAL,		""
-	D_Tokugawa			:	"徳川家",		RYUUKYUU,	100,		100,			-1,						70,					10,				YES,	NORMAL,		""
+	D_Tokugawa			:	"徳川家",		NORMAL,		100,		100,			-1,						70,					10,				YES,	NORMAL,		""
 	D_Bakuhu			:	"幕府勘定所",	NORMAL,		100,		100,			-1,						10,					0,				NO,		NORMAL,		""
 	D_MITO				:	"水戸徳川家",	NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		""
 	D_D_OWARI			:	"尾張大納言徳川家",NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		"後の尾張徳川家"
