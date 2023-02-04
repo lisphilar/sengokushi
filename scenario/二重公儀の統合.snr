@@ -577,7 +577,7 @@ Daimyou {
 	D_0007				:	"大谷家",		NORMAL,		0,			0,				-1,						10,					3,				YES,	NORMAL,		""
 	D_0008				:	"氏家家",		NORMAL,		0,			0,				-1,						10,					3,				YES,	NORMAL,		""
 	D_0009				:	"箸尾家",		NORMAL,		0,			0,				-1,						10,					3,				YES,	NORMAL,		""
-	D_Toyotomi			:	"豊臣氏宗家",	NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		""
+	D_Toyotomi			:	"豊臣氏宗家",	NORMAL,		100,		100,			2000000,				10,					0,				YES,	NORMAL,		""
 	D_Tokugawa			:	"徳川家",		RYUUKYUU,	100,		100,			-1,						70,					10,				YES,	NORMAL,		""
 	D_Bakuhu			:	"幕府勘定所",	NORMAL,		100,		100,			-1,						10,					0,				NO,		NORMAL,		""
 	D_MITO				:	"水戸徳川家",	NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		""
@@ -610,18 +610,18 @@ Daimyou {
 	D_Kyomiyadu			:	"京極宮津家",	NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		""
 	D_Kyomineyama		:	"京極峰山家",	NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		""
 	D_0018				:	"朽木家",		NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		""
-	D_0014				:	"上杉家",		NORMAL,		100,		100,			1300000,				10,					0,				YES,	NORMAL,		""
+	D_0014				:	"上杉家",		NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		""
 	D_Shinzyou			:	"新庄家",		NORMAL,		100,		100,			-1,						10,					0,				NO,		NORMAL,		""
 	D_0025				:	"蒲生家",		NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		""
-	D_0021				:	"佐竹家",		NORMAL,		100,		100,			5000000,				10,					0,				YES,	NORMAL,		""
-	D_DATE				:	"伊達家",		NORMAL,		500,		220,			5000000,				10,					0,				YES,	NORMAL,		"国主\n\n 関が原の合戦のころ、伊達家発祥の地の奪還を狙って上杉氏と激しく争ったが、回復の約束を家康に反故にされ、果たせなかった。\n\n　代々松平姓を許され、藩主の&+
+	D_0021				:	"佐竹家",		NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		""
+	D_DATE				:	"伊達家",		NORMAL,		500,		220,			-1,						10,					0,				YES,	NORMAL,		"国主\n\n 関が原の合戦のころ、伊達家発祥の地の奪還を狙って上杉氏と激しく争ったが、回復の約束を家康に反故にされ、果たせなかった。\n\n　代々松平姓を許され、藩主の&+
 ほぼ全員に陸奥守の官位が与えられている。（松平陸奥守家）"
 	D_0039				:	"最上家",		NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		""
 	D_Fukushima			:	"福島家",		NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		""
 	D_Mouri				:	"毛利長州家",	NORMAL,		100,		100,			-1,						10,					6,				YES,	NORMAL,		"毛利輝元ら、大江氏流"
 	D_Ii				:	"井伊彦根家",	NORMAL,		100,		100,			-1,						10,					6,				YES,	NORMAL,		"　井伊家は家格として譜代筆頭だが、三河以来の譜代ではなく、もともと遠江の地方豪族で、今川義元の臣であった。\n　徳川四天王一人井伊直政は、関ヶ原の勲功を持って、石&+
 田三成の居城であった近江佐和山に１８万石を得る。\n　以降も先例として徳川軍制の先鋒を仰せつかる例となり、酒井家と並んで、歴代大老を出す家系となる。\n"
-	D_0064				:	"松前家",		NORMAL,		500,		100,			50000,					10,					6,				YES,	NORMAL,		"松前家\n\n　               初期には蝦夷島主として客臣扱い（交代寄合旗本）  →   一万石格\n\n　　　　（＝蝦夷地の占有に関しては無高であるので、\n　　　　　　　　&+
+	D_0064				:	"松前家",		NORMAL,		500,		100,			-1,						10,					6,				YES,	NORMAL,		"松前家\n\n　               初期には蝦夷島主として客臣扱い（交代寄合旗本）  →   一万石格\n\n　　　　（＝蝦夷地の占有に関しては無高であるので、\n　　　　　　　　&+
 　　　　　　　　　　　　　　　　　毎月自動的に兵力が増強されます）"
 	D_0062				:	"アイヌ民族",	AINU,		100,		100,			-1,						10,					6,				YES,	NORMAL,		"アイヌ民族\n\n\n　　　　（＝寒気を除いて、蝦夷地の占有に関しては無高であるので、\n　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　毎月自動的に兵力&+
 が増強されます）"
@@ -5336,7 +5336,7 @@ Bushou {
 	B_01793	:	"山田 正次",		4,	4,	4,	4,		3,		7,	3,	30,		500,	10,		1565?,	1625,	BYOUSHI,	0,		(D_0118),			-1,		S_0156,				""
 	B_01794	:	"山田 正吉",		4,	3,	3,	3,		3,		7,	3,	20,		350,	0,		1567?,	1633,	BYOUSHI,	0,		(D_0118),			-1,		S_0156,				""
 	B_01795	:	"山田 重明",		3,	4,	3,	3,		3,		7,	3,	0,		0,		0,		1620,	1695,	BYOUSHI,	1635,	(D_0118),			-1,		S_0156,				""
-	B_00524	:	"山口 弘定",		5,	2,	3,	3,		4,		8,	3,	20,		200,	15,		1583?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_SETTSU,			""
+	B_00524	:	"山口 弘定",		5,	2,	3,	3,		4,		8,	3,	10,		100,	15,		1583?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_SETTSU,			""
 	B_02685	:	"奥野 中村右衛門",	4,	2,	3,	2,		3,		7,	3,	20,		200,	0,		1561?,	1615,	BYOUSHI,	0,		(D_0161),			-1,		S_0009,				"もともと、中村 奥右衛門"
 	B_00525	:	"溝江 長晴",		3,	4,	2,	3,		4,		5,	3,	40,		500,	10,		1583?,	1646,	BYOUSHI,	0,		(D_0005),			0,		S_TAGA,				"https://ja.wikipedia.org/wiki/%E6%BA%9D%E6%B1%9F%E9%95%B7%E6%99%B4"
 	B_01806	:	"溝江 長保",		3,	3,	2,	2,		3,		8,	3,	0,		0,		0,		1603?,	1675,	BYOUSHI,	1618,	(D_0005),			1,		S_TAGA,				""
@@ -5352,7 +5352,7 @@ Bushou {
 	B_01812	:	"織田 信久",		2,	2,	1,	2,		3,		5,	5,	0,		0,		0,		1643,	1714,	BYOUSHI,	1642,	D_0027,				8,		S_0260,				""
 	B_01804	:	"青山 忠元",		3,	4,	3,	3,		3,		7,	3,	20,		250,	20,		1562?,	1632,	BYOUSHI,	0,		(D_0118),			-1,		S_0156,				""
 	B_01805	:	"青山 長勝",		3,	3,	2,	3,		3,		7,	3,	20,		200,	10,		1567?,	1628,	BYOUSHI,	0,		(D_0118),			-1,		S_0156,				""
-	B_00530	:	"戸田 為重",		4,	5,	3,	4,		3,		7,	3,	10,		100,	0,		1558?,	1615,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_SETTSU,			""
+	B_00530	:	"戸田 為重",		4,	5,	3,	4,		3,		7,	3,	5,		50,		0,		1558?,	1615,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_SETTSU,			""
 	B_01824	:	"青木 知矩",		3,	3,	4,	4,		3,		8,	3,	50,		600,	30,		1538?,	1607,	BYOUSHI,	0,		(D_0117),			-1,		S_KURIKARA,			""
 	B_00532	:	"青木 俊矩",		3,	4,	3,	4,		3,		7,	3,	130,	1800,	80,		1564?,	1608,	BYOUSHI,	0,		(D_0117),			-1,		S_KURIKARA,			""
 	B_01825	:	"青木 宗永",		1,	5,	1,	1,		3,		7,	3,	50,		500,	10,		1573?,	1633,	BYOUSHI,	0,		(D_0117),			-1,		S_KURIKARA,			""
@@ -6224,7 +6224,7 @@ Bushou {
 	B_02510	:	"落合 重清",		5,	3,	4,	4,		3,		7,	3,	20,		200,	10,		1564?,	1630,	BYOUSHI,	0,		(D_Kyomiyadu),		-1,		S_MIYAZU,			""
 	B_01124	:	"数馬 久好",		3,	3,	3,	2,		3,		6,	3,	10,		100,	0,		1567?,	1634,	BYOUSHI,	0,		(D_Kyomiyadu),		-1,		S_MIYAZU,			""
 	B_01125	:	"遠山 景直",		3,	2,	2,	2,		3,		6,	3,	0,		50,		0,		1552?,	1616,	BYOUSHI,	0,		(D_Kyomiyadu),		-1,		S_MIYAZU,			""
-	B_01126	:	"毛利 秀秋",		2,	2,	3,	2,		3,		7,	3,	20,		300,	10,		1583?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_SETTSU,			""
+	B_01126	:	"毛利 秀秋",		2,	2,	3,	2,		3,		7,	3,	10,		150,	10,		1583?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_SETTSU,			""
 	B_01127	:	"金森 長近",		5,	6,	5,	6,		3,		4,	6,	50,		500,	50,		1524,	1608,	BYOUSHI,	0,		D_0121,				0,		S_HIDATAKAYAMA,		""
 	B_01128	:	"金森 可重",		3,	6,	4,	4,		3,		6,	3,	20,		200,	30,		1558,	1615,	BYOUSHI,	0,		D_0121,				1,		S_HIDATAKAYAMA,		""
 	B_01129	:	"金森 重近",		3,	6,	2,	4,		3,		6,	3,	10,		100,	10,		1584,	1656,	BYOUSHI,	0,		D_0121,				2,		S_HIDATAKAYAMA,		""
@@ -6242,11 +6242,11 @@ Bushou {
 	B_01135	:	"湯浅 道伴",		2,	2,	3,	2,		3,		5,	3,	10,		100,	0,		1554?,	1631,	BYOUSHI,	0,		(D_0121),			-1,		S_NATAOSAN,			""
 	B_02644	:	"小池 春寛",		4,	1,	2,	2,		3,		6,	3,	0,		100,	0,		1574?,	1644,	BYOUSHI,	0,		(D_0121),			-1,		S_0157,				""
 	B_01136	:	"川尻 氏信",		3,	4,	3,	3,		3,		5,	3,	10,		100,	0,		1562,	1619,	BYOUSHI,	0,		(D_0121),			-1,		S_0157,				""
-	B_01138	:	"川尻 鎮行",		3,	2,	3,	2,		3,		6,	3,	10,		100,	0,		1563?,	1630,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_SETTSU,			""
+	B_01138	:	"川尻 鎮行",		3,	2,	3,	2,		3,		6,	3,	5,		50,		0,		1563?,	1630,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_SETTSU,			""
 	B_02478	:	"川尻 鎮政",		2,	2,	3,	2,		3,		6,	3,	0,		0,		0,		1592?,	1658,	BYOUSHI,	1607,	(D_Toyotomi),		-1,		K_SETTSU,			""
 	B_02479	:	"川尻 鎮宗",		2,	3,	2,	2,		3,		6,	3,	0,		0,		0,		1618?,	1689,	BYOUSHI,	1633,	(D_Toyotomi),		-1,		K_SETTSU,			""
-	B_02480	:	"川尻 吉治",		4,	1,	4,	3,		3,		6,	3,	0,		50,		0,		1568?,	1627,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_SETTSU,			""
-	B_01139	:	"弓削 重蔵",		3,	3,	2,	2,		3,		7,	3,	0,		50,		0,		1553?,	1611,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_SETTSU,			""
+	B_02480	:	"川尻 吉治",		4,	1,	4,	3,		3,		6,	3,	0,		25,		0,		1568?,	1627,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_SETTSU,			""
+	B_01139	:	"弓削 重蔵",		3,	3,	2,	2,		3,		7,	3,	0,		25,		0,		1553?,	1611,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_SETTSU,			""
 	B_01140	:	"田丸 直昌",		4,	5,	4,	4,		6,		9,	3,	50,		600,	30,		1551?,	1607,	BYOUSHI,	0,		(D_0099),			-1,		S_0154,				""
 	B_01141	:	"田丸 直茂",		4,	4,	3,	4,		5,		6,	3,	20,		200,	30,		1578?,	1645,	BYOUSHI,	0,		(D_0025),			-1,		S_INAWASHIRO,		""
 	B_01142	:	"田丸 直綱",		3,	3,	2,	4,		5,		6,	3,	10,		100,	10,		1580?,	1641,	BYOUSHI,	0,		(D_0025),			-1,		S_INAWASHIRO,		""
@@ -6286,8 +6286,8 @@ Bushou {
 	B_01168	:	"平野 内膳",		4,	5,	4,	4,		3,		5,	3,	10,		100,	0,		1565,	1608,	SHOKEI,		0,		(D_0132),			-1,		S_BUNGOUSUKI,		""
 	B_03644	:	"那波 正信",		3,	3,	2,	3,		3,		3,	3,	10,		100,	0,		1558?,	1620,	BYOUSHI,	0,		(D_0132),			-1,		S_KIYOMIZU,			""
 	B_01169	:	"岡部 右兵衛",		3,	4,	3,	3,		3,		6,	3,	0,		50,		0,		1547?,	1611,	BYOUSHI,	0,		(D_0132),			-1,		S_KIYOMIZU,			""
-	B_01170	:	"佐藤 方政",		2,	2,	1,	1,		3,		2,	3,	50,		450,	30,		1570?,	1615,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_SETTSU,			""
-	B_03002	:	"佐藤 信家",		2,	3,	2,	2,		3,		6,	3,	10,		150,	10,		1578?,	1645,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_SETTSU,			""
+	B_01170	:	"佐藤 方政",		2,	2,	1,	1,		3,		2,	3,	25,		220,	30,		1570?,	1615,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_SETTSU,			""
+	B_03002	:	"佐藤 信家",		2,	3,	2,	2,		3,		6,	3,	5,		80,		10,		1578?,	1645,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_SETTSU,			""
 	B_03003	:	"佐藤 信定",		2,	3,	3,	3,		3,		6,	3,	0,		0,		0,		1599?,	1672,	BYOUSHI,	1614,	(D_Toyotomi),		-1,		K_OSAKA,			""
 	B_01171	:	"長谷川 守知",		2,	4,	3,	2,		3,		2,	6,	20,		300,	20,		1569,	1632,	BYOUSHI,	0,		D_0003,				0,		S_0164,				""
 	B_01172	:	"長谷川 正尚",		2,	3,	2,	2,		3,		7,	3,	0,		0,		0,		1592?,	1660,	BYOUSHI,	1608,	D_0003,				1,		S_0164,				""
@@ -6684,9 +6684,9 @@ Bushou {
 	B_01901	:	"佐久間 勝宗",		3,	4,	3,	3,		3,		7,	3,	0,		0,		0,		1589,	1616,	BYOUSHI,	1604,	D_0020,				1,		S_0091,				""
 	B_01902	:	"佐久間 安長",		3,	5,	2,	3,		3,		7,	3,	0,		0,		0,		1611,	1632,	BYOUSHI,	1615,	D_0020,				2,		S_0091,				""
 	B_01903	:	"佐久間 正之",		4,	3,	4,	3,		3,		8,	3,	0,		50,		0,		1558?,	1645,	BYOUSHI,	0,		(D_0020),			-1,		S_0091,				""
-	B_01441	:	"樋口 雅兼",		4,	4,	4,	5,		8,		5,	4,	40,		450,	40,		1562?,	1628,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_OSAKA,			""
-	B_01442	:	"服部 正栄",		4,	2,	2,	3,		3,		5,	3,	30,		300,	30,		1557?,	1624,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_OSAKA,			""
-	B_01820	:	"服部 太郎八",		3,	2,	1,	2,		3,		6,	3,	0,		50,		0,		1582?,	1643,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_OSAKA,			""
+	B_01441	:	"樋口 雅兼",		4,	4,	4,	5,		8,		5,	4,	20,		230,	40,		1562?,	1628,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_OSAKA,			""
+	B_01442	:	"服部 正栄",		4,	2,	2,	3,		3,		5,	3,	15,		150,	30,		1557?,	1624,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_OSAKA,			""
+	B_01820	:	"服部 太郎八",		3,	2,	1,	2,		3,		6,	3,	0,		25,		0,		1582?,	1643,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_OSAKA,			""
 	B_03345	:	"服部 出雲",		3,	1,	2,	2,		3,		6,	3,	0,		0,		0,		1587?,	1647,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_OSAKA,			""
 	B_02675	:	"長束 長吉",		3,	5,	4,	4,		3,		8,	3,	50,		500,	30,		1584,	1653,	BYOUSHI,	0,		(D_0198),			-1,		S_HIRATA,			""
 	B_02671	:	"長束 祐順",		2,	5,	2,	2,		3,		8,	3,	0,		0,		0,		1589?,	1650,	BYOUSHI,	1604,	(D_0198),			-1,		S_HIRATA,			""
@@ -6888,7 +6888,7 @@ Bushou {
 	B_03867	:	"新庄 直成",		3,	3,	2,	2,		3,		8,	3,	0,		0,		0,		1672?,	1731,	BYOUSHI,	1687,	D_Shinzyou,			8,		S_SHIMAZAKI,		""
 	B_03868	:	"新庄 直祐",		3,	4,	3,	4,		3,		7,	3,	0,		0,		0,		1692,	1746,	BYOUSHI,	1707,	D_Shinzyou,			6,		S_SHIMAZAKI,		""
 	B_01534	:	"牧野 治右衛門",	3,	1,	1,	2,		3,		5,	3,	0,		50,		0,		1583?,	1615,	BYOUSHI,	0,		(D_Shinzyou),		-1,		S_SHIMAZAKI,		""
-	B_01535	:	"豊臣 秀頼",		1,	7,	3,	5,		3,		7,	7,	2000,	5000,	500,	1593,	1615,	SHOKEI,		0,		D_Toyotomi,			0,		S_18,				""
+	B_01535	:	"豊臣 秀頼",		1,	7,	3,	5,		3,		7,	7,	1000,	2500,	500,	1593,	1615,	SHOKEI,		0,		D_Toyotomi,			0,		S_18,				""
 	B_02212	:	"豊家国松",			1,	3,	2,	4,		3,		7,	3,	0,		0,		0,		1608,	1615,	SHOKEI,		1623,	D_Toyotomi,			1,		S_18,				""
 	B_02232	:	"北政所",			0,	7,	0,	0,		0,		8,	9,	0,		0,		0,		1549,	1624,	BYOUSHI,	0,		(D_Toyotomi),		-1,		S_18,				""
 	B_02320	:	"孝蔵主",			0,	6,	0,	0,		0,		10,	3,	0,		0,		0,		1572,	1626,	BYOUSHI,	0,		(D_Toyotomi),		-1,		S_18,				""
@@ -6902,65 +6902,57 @@ Bushou {
 	B_01970	:	"片桐 為元",		2,	4,	3,	3,		3,		7,	3,	0,		0,		0,		1611,	1654,	BYOUSHI,	1626,	D_0155,				2,		S_0065,				""
 	B_01971	:	"片桐 貞昌",		4,	2,	2,	2,		3,		7,	3,	0,		0,		0,		1605,	1673,	BYOUSHI,	1620,	D_0155,				4,		S_0065,				""
 	B_01969	:	"片桐 孝利",		4,	5,	3,	4,		3,		7,	3,	0,		0,		0,		1601,	1638,	BYOUSHI,	1616,	D_0155,				1,		S_0065,				""
-	B_01536	:	"大野 治長",		3,	7,	3,	5,		3,		10,	0,	100,	1200,	100,	1568,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		S_18,				""
-	B_01537	:	"大野 治房",		6,	3,	5,	5,		3,		6,	0,	30,		200,	70,		1571?,	1615,	SHOKEI,		0,		(D_Toyotomi),		-1,		S_18,				""
-	B_01538	:	"大野 治胤",		4,	3,	4,	4,		3,		6,	0,	30,		200,	70,		1573?,	1615,	SHOKEI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_01536	:	"大野 治長",		3,	7,	3,	5,		3,		10,	0,	10,		600,	100,	1568,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		S_18,				""
+	B_01537	:	"大野 治房",		6,	3,	5,	5,		3,		6,	0,	15,		100,	70,		1571?,	1615,	SHOKEI,		0,		(D_Toyotomi),		-1,		S_18,				""
+	B_01538	:	"大野 治胤",		4,	3,	4,	4,		3,		6,	0,	15,		100,	70,		1573?,	1615,	SHOKEI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
 	B_02219	:	"大野 治徳",		2,	3,	2,	3,		3,		7,	3,	0,		0,		0,		1590?,	1615,	BYOUSHI,	1605,	(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02199	:	"木村 重成",		7,	3,	3,	7,		3,		10,	0,	300,	3000,	80,		1593,	1615,	SENSHI,		1608,	(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02187	:	"速水 守久",		6,	6,	6,	6,		3,		10,	0,	100,	1500,	70,		1561?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02199	:	"木村 重成",		7,	3,	3,	7,		3,		10,	0,	150,	1500,	80,		1593,	1615,	SENSHI,		1608,	(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02187	:	"速水 守久",		6,	6,	6,	6,		3,		10,	0,	50,		750,	70,		1561?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
 	B_02188	:	"速水 伝吉",		4,	3,	3,	3,		3,		9,	3,	0,		0,		0,		1587?,	1639,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02536	:	"黄母衣衆七手組",	4,	1,	2,	2,		3,		10,	3,	50,		500,	50,		1583*,	1652,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02186	:	"伊東 長次",		5,	4,	5,	5,		3,		10,	3,	80,		1200,	50,		1560,	1629,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02186	:	"伊東 長次",		5,	4,	5,	5,		3,		10,	3,	40,		600,	50,		1560,	1629,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
 	B_02189	:	"伊東 長直",		4,	3,	3,	4,		3,		9,	3,	0,		0,		0,		1590,	1615,	SENSHI,		1605,	(D_Toyotomi),		-1,		K_IZUMI,			""
 	B_02190	:	"伊東 長昌",		4,	4,	3,	4,		3,		8,	3,	0,		0,		0,		1593,	1640,	BYOUSHI,	1608,	(D_Toyotomi),		-1,		K_IZUMI,			""
 	B_02191	:	"伊東 長治",		2,	4,	3,	3,		3,		7,	3,	0,		0,		0,		1628,	1658,	BYOUSHI,	1643,	(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02194	:	"仙石 定盛",		5,	5,	4,	3,		3,		9,	3,	10,		200,	20,		1564?,	1642,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02540	:	"黄母衣衆七手組",	4,	1,	2,	2,		3,		3,	3,	50,		500,	30,		1584,	1658,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02185	:	"青木 重直",		3,	5,	3,	5,		3,		8,	3,	0,		50,		0,		1537,	1613,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02182	:	"青木 一重",		6,	4,	5,	6,		3,		8,	3,	80,		1200,	50,		1551,	1628,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02183	:	"青木 可直",		5,	4,	3,	4,		3,		8,	3,	20,		250,	10,		1561,	1622,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02194	:	"仙石 定盛",		5,	5,	4,	3,		3,		9,	3,	5,		100,	20,		1564?,	1642,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02185	:	"青木 重直",		3,	5,	3,	5,		3,		8,	3,	0,		25,		0,		1537,	1613,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02182	:	"青木 一重",		6,	4,	5,	6,		3,		8,	3,	40,		600,	50,		1551,	1628,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02183	:	"青木 可直",		5,	4,	3,	4,		3,		8,	3,	10,		125,	10,		1561,	1622,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
 	B_02184	:	"青木 重兼",		5,	6,	5,	5,		3,		7,	3,	0,		0,		0,		1607,	1682,	BYOUSHI,	1622,	(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02539	:	"黄母衣衆七手組",	4,	1,	2,	2,		3,		10,	3,	50,		500,	30,		1588*,	1658,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02195	:	"真野 助宗",		4,	5,	4,	5,		3,		9,	3,	80,		1200,	50,		1536,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02196	:	"真野 頼包",		4,	4,	3,	4,		3,		9,	3,	10,		200,	10,		1566?,	1633,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02197	:	"佐々 長穐",		3,	4,	5,	3,		3,		8,	3,	10,		100,	0,		1536,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02538	:	"黄母衣衆七手組",	4,	1,	2,	2,		3,		10,	3,	50,		500,	30,		1575*,	1658,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02193	:	"野々村 吉安",		6,	4,	4,	5,		3,		9,	3,	70,		1000,	50,		1560?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02205	:	"堀田 盛高",		5,	4,	3,	5,		3,		9,	3,	60,		1000,	50,		1571?,	1615,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02537	:	"黄母衣衆七手組",	4,	1,	2,	2,		3,		10,	3,	50,		500,	30,		1577*,	1658,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02192	:	"杉 善右衛門",		5,	3,	4,	4,		3,		9,	3,	60,		1000,	40,		1564?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02204	:	"中島 氏種",		6,	3,	5,	5,		3,		8,	3,	60,		1000,	40,		1556,	1615,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02822	:	"渡辺 糺",			5,	2,	3,	4,		3,		9,	3,	60,		1000,	40,		1583?,	1615,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02541	:	"金切裂指物使番",	3,	2,	3,	1,		3,		10,	3,	50,		500,	20,		1585*,	1660,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02542	:	"金切裂指物使番",	3,	2,	3,	1,		3,		10,	3,	50,		500,	20,		1585*,	1660,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02543	:	"金切裂指物使番",	3,	2,	3,	1,		3,		10,	3,	50,		500,	20,		1575*,	1660,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02200	:	"浅井 政高",		2,	3,	2,	2,		3,		8,	3,	50,		500,	30,		1547,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02195	:	"真野 助宗",		4,	5,	4,	5,		3,		9,	3,	40,		600,	50,		1536,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02196	:	"真野 頼包",		4,	4,	3,	4,		3,		9,	3,	5,		100,	10,		1566?,	1633,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02197	:	"佐々 長穐",		3,	4,	5,	3,		3,		8,	3,	5,		150,	0,		1536,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02193	:	"野々村 吉安",		6,	4,	4,	5,		3,		9,	3,	35,		500,	50,		1560?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02205	:	"堀田 盛高",		5,	4,	3,	5,		3,		9,	3,	30,		500,	50,		1571?,	1615,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02192	:	"杉 善右衛門",		5,	3,	4,	4,		3,		9,	3,	30,		500,	40,		1564?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02204	:	"中島 氏種",		6,	3,	5,	5,		3,		8,	3,	30,		500,	40,		1556,	1615,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02822	:	"渡辺 糺",			5,	2,	3,	4,		3,		9,	3,	30,		500,	40,		1583?,	1615,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02200	:	"浅井 政高",		2,	3,	2,	2,		3,		8,	3,	25,		250,	30,		1547,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
 	B_03620	:	"石川 貞政",		5,	4,	3,	4,		3,		7,	3,	50,		500,	30,		1575,	1675,	BYOUSHI,	0,		D_0036,				0,		S_0253,				""
 	B_03623	:	"石川 貞利",		3,	3,	3,	3,		3,		7,	3,	0,		0,		0,		1595?,	1682,	BYOUSHI,	1610,	D_0036,				1,		S_0253,				""
 	B_03624	:	"石川 勝政",		2,	4,	2,	3,		3,		7,	3,	0,		0,		0,		1619?,	1700,	BYOUSHI,	1634,	D_0036,				2,		S_0253,				""
 	B_03625	:	"石川 利政",		2,	3,	2,	2,		3,		7,	3,	0,		0,		0,		1641?,	1723,	BYOUSHI,	1656,	D_0036,				3,		S_0253,				""
-	B_02206	:	"赤座 直規",		3,	4,	3,	4,		3,		8,	3,	50,		500,	30,		1564?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		S_0079,				""
-	B_02677	:	"松原 直元",		5,	2,	5,	5,		3,		8,	3,	50,		500,	30,		1554?,	1613,	BYOUSHI,	0,		(D_Toyotomi),		-1,		S_0079,				""
+	B_02206	:	"赤座 直規",		3,	4,	3,	4,		3,		8,	3,	25,		250,	30,		1564?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		S_0079,				""
+	B_02677	:	"松原 直元",		5,	2,	5,	5,		3,		8,	3,	25,		250,	30,		1554?,	1613,	BYOUSHI,	0,		(D_Toyotomi),		-1,		S_0079,				""
 	B_02213	:	"山中 長俊",		2,	7,	3,	4,		3,		8,	3,	50,		500,	30,		1547,	1607,	BYOUSHI,	0,		(D_CHOTEI),			-1,		S_UJI,				""
 	B_02214	:	"山中 幸俊",		2,	3,	2,	3,		3,		7,	3,	0,		0,		0,		1586?,	1633,	BYOUSHI,	0,		(D_Toyotomi),		-1,		S_0079,				""
 	B_02215	:	"山中 宗俊",		2,	5,	2,	2,		3,		7,	3,	0,		0,		0,		1588?,	1645,	BYOUSHI,	0,		(D_Toyotomi),		-1,		S_0079,				""
 	B_02216	:	"山中 本俊",		2,	4,	2,	2,		3,		7,	3,	0,		0,		0,		1613?,	1702,	BYOUSHI,	1628,	(D_Toyotomi),		-1,		S_0079,				""
-	B_02198	:	"郡　宗保",			2,	6,	2,	3,		3,		7,	3,	30,		300,	30,		1558?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		S_0079,				""
+	B_02198	:	"郡　宗保",			2,	6,	2,	3,		3,		7,	3,	15,		150,	30,		1558?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		S_0079,				""
 	B_02217	:	"宮城 豊盛",		1,	6,	2,	2,		3,		7,	3,	30,		300,	30,		1564?,	1611,	BYOUSHI,	0,		(D_Bakuhu),			-1,		K_TANBA,			""
 	B_02575	:	"和久 宗是",		2,	6,	2,	2,		3,		9,	3,	30,		300,	30,		1535,	1615,	SENSHI,		0,		(D_DATE),			-1,		S_0126,				""
-	B_02218	:	"六角 義治",		3,	2,	1,	2,		3,		5,	3,	30,		300,	20,		1545,	1612,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02201	:	"伊木 遠雄",		5,	4,	5,	5,		3,		8,	3,	30,		300,	20,		1562?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02218	:	"六角 義治",		3,	2,	1,	2,		3,		5,	3,	15,		150,	20,		1545,	1612,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02201	:	"伊木 遠雄",		5,	4,	5,	5,		3,		8,	3,	15,		150,	20,		1562?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
 	B_02207	:	"伊木 尚重",		4,	3,	4,	4,		3,		8,	3,	0,		0,		0,		1586?,	1643,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02203	:	"薄田 兼相",		7,	1,	3,	3,		3,		8,	3,	50,		300,	20,		1580?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02208	:	"友松 盛保",		4,	5,	3,	3,		3,		8,	3,	30,		300,	20,		1578?,	1621,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02209	:	"西川 方盛",		2,	5,	2,	3,		3,		7,	3,	30,		300,	20,		1564?,	1623,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02210	:	"三好 政康",		5,	4,	3,	4,		3,		6,	3,	30,		300,	20,		1528,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02203	:	"薄田 兼相",		7,	1,	3,	3,		3,		8,	3,	25,		150,	20,		1580?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02208	:	"友松 盛保",		4,	5,	3,	3,		3,		8,	3,	15,		150,	20,		1578?,	1621,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02209	:	"西川 方盛",		2,	5,	2,	3,		3,		7,	3,	15,		150,	20,		1564?,	1623,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02210	:	"三好 政康",		5,	4,	3,	4,		3,		6,	3,	15,		150,	20,		1528,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
 	B_02290	:	"毛利 重次",		2,	3,	2,	2,		3,		7,	3,	0,		0,		0,		1594,	1640,	BYOUSHI,	1609,	(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02234	:	"竹田 永翁",		2,	3,	2,	2,		3,		7,	3,	30,		300,	20,		1581,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_02433	:	"山岡 道阿弥",		1,	5,	2,	2,		3,		5,	5,	10,		100,	0,		1540,	1603,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02234	:	"竹田 永翁",		2,	3,	2,	2,		3,		7,	3,	15,		150,	20,		1581,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_02433	:	"山岡 道阿弥",		1,	5,	2,	2,		3,		5,	5,	5,		50,		0,		1540,	1603,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
 	B_03612	:	"建部 高光",		2,	6,	3,	3,		3,		7,	3,	40,		400,	30,		1534,	1607,	BYOUSHI,	0,		(D_0164),			-1,		S_MIKI1,			""
-	B_03617	:	"建部 吉政",		3,	3,	2,	2,		3,		7,	3,	10,		100,	10,		1568?,	1630,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
-	B_03613	:	"建部 光重",		2,	4,	3,	2,		3,		7,	3,	20,		200,	20,		1578,	1610,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_03617	:	"建部 吉政",		3,	3,	2,	2,		3,		7,	3,	5,		50,		10,		1568?,	1630,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
+	B_03613	:	"建部 光重",		2,	4,	3,	2,		3,		7,	3,	10,		100,	20,		1578,	1610,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_IZUMI,			""
 	B_03618	:	"建部 光延",		3,	4,	2,	2,		3,		7,	3,	0,		0,		0,		1586?,	1648,	BYOUSHI,	0,		(D_0164),			-1,		S_MIKI1,			""
 	B_03614	:	"建部 政長",		3,	4,	3,	3,		3,		7,	3,	0,		0,		0,		1603,	1672,	BYOUSHI,	1609,	(D_0164),			-1,		S_MIKI1,			""
 	B_03615	:	"建部 政明",		2,	5,	2,	2,		3,		7,	3,	0,		0,		0,		1638,	1670,	BYOUSHI,	1653,	(D_0164),			-1,		S_MIKI1,			""
@@ -7005,7 +6997,7 @@ Bushou {
 	B_02007	:	"鈴木 重次",		5,	3,	4,	4,		3,		7,	3,	0,		0,		0,		1598,	1664,	BYOUSHI,	1613,	(D_Tokugawa),		-1,		K_TANBA,			""
 	B_02008	:	"鈴木 重義",		4,	3,	4,	3,		3,		7,	3,	0,		0,		0,		1622?,	1690,	BYOUSHI,	1637,	(D_Tokugawa),		-1,		K_TANBA,			""
 	B_02009	:	"鈴木 重信",		4,	2,	4,	3,		3,		7,	3,	0,		0,		0,		1625?,	1685,	BYOUSHI,	1640,	(D_Tokugawa),		-1,		K_TANBA,			""
-	B_01550	:	"土橋 右近",		4,	2,	1,	3,		3,		6,	3,	10,		100,	80,		1575?,	1643,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_KAWACHI,			""
+	B_01550	:	"土橋 右近",		4,	2,	1,	3,		3,		6,	3,	5,		50,		80,		1575?,	1643,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_KAWACHI,			""
 	B_01551	:	"堀内 氏善",		4,	1,	4,	2,		7,		4,	4,	0,		450,	30,		1549,	1615,	BYOUSHI,	0,		(D_0000),			-1,		S_HIGOMINAMISEKI,	""
 	B_02010	:	"堀内 氏弘",		4,	1,	5,	2,		6,		7,	3,	0,		0,		0,		1595,	1645,	BYOUSHI,	1610,	(D_0000),			-1,		S_HIGOMINAMISEKI,	""
 	B_02011	:	"堀内 氏久",		3,	4,	3,	3,		6,		7,	3,	0,		0,		0,		1596,	1657,	BYOUSHI,	1611,	(D_0000),			-1,		S_HIGOMINAMISEKI,	""
@@ -7151,15 +7143,13 @@ Bushou {
 	B_03559	:	"間島 氏勝",		3,	3,	2,	3,		6,		7,	3,	0,		300,	0,		1559?,	1621,	BYOUSHI,	0,		(D_0203),			-1,		S_HOUMAN,			""
 	B_01579	:	"糟屋 武則",		6,	2,	2,	3,		3,		6,	4,	10,		200,	10,		1562,	1607,	BYOUSHI,	0,		(D_Bakuhu),			-1,		S_YOUKAITHI,		""
 	B_01580	:	"糟屋 武成",		4,	1,	1,	3,		3,		5,	3,	0,		50,		0,		1575?,	1635,	BYOUSHI,	0,		(D_Bakuhu),			-1,		S_YOUKAITHI,		""
-	B_01581	:	"横浜 茂勝",		3,	5,	2,	4,		3,		7,	5,	20,		300,	20,		1573?,	1633,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_KAWACHI,			""
+	B_01581	:	"横浜 茂勝",		3,	5,	2,	4,		3,		7,	5,	10,		150,	20,		1573?,	1633,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_KAWACHI,			""
 	B_02012	:	"横浜 正幸",		2,	4,	2,	3,		3,		7,	3,	0,		0,		0,		1597?,	1666,	BYOUSHI,	1612,	(D_Toyotomi),		-1,		K_KAWACHI,			""
-	B_01956	:	"木下 家定",		2,	3,	1,	2,		3,		7,	3,	60,		400,	50,		1543,	1608,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_KAWACHI,			""
-	B_01582	:	"長崎 元家",		4,	2,	2,	3,		3,		5,	3,	10,		100,	0,		1539,	1610,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_KAWACHI,			""
-	B_02489	:	"黄母衣衆",			3,	1,	2,	2,		3,		9,	3,	30,		350,	40,		1578*,	1654,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_KAWACHI,			""
-	B_02490	:	"黄母衣衆",			3,	1,	2,	2,		3,		9,	3,	30,		350,	40,		1581*,	1666,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_KAWACHI,			""
-	B_02039	:	"石川 光忠",		3,	3,	2,	3,		5,		7,	3,	10,		100,	0,		1583?,	1642,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_KAWACHI,			""
+	B_01956	:	"木下 家定",		2,	3,	1,	2,		3,		7,	3,	30,		200,	50,		1543,	1608,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_KAWACHI,			""
+	B_01582	:	"長崎 元家",		4,	2,	2,	3,		3,		5,	3,	5,		50,		0,		1539,	1610,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_KAWACHI,			""
+	B_02039	:	"石川 光忠",		3,	3,	2,	3,		5,		7,	3,	5,		50,		0,		1583?,	1642,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_KAWACHI,			""
 	B_02040	:	"石川 正光",		2,	3,	2,	2,		5,		7,	3,	0,		0,		0,		1608?,	1674,	BYOUSHI,	1623,	(D_Toyotomi),		-1,		K_KAWACHI,			""
-	B_02820	:	"赤井 忠家",		4,	2,	3,	2,		3,		5,	3,	0,		50,		0,		1549,	1605,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_KAWACHI,			""
+	B_02820	:	"赤井 忠家",		4,	2,	3,	2,		3,		5,	3,	0,		25,		0,		1549,	1605,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_KAWACHI,			""
 	B_01584	:	"新免 宗貴",		3,	3,	2,	3,		3,		5,	5,	0,		200,	0,		1555?,	1619,	BYOUSHI,	0,		(D_0203),			-1,		K_TANBA,			"宇喜多家改易後、黒田家に迎えられた。"
 	B_01585	:	"新免 長春",		2,	3,	2,	2,		3,		6,	3,	0,		30,		0,		1583?,	1663,	BYOUSHI,	0,		(D_0203),			-1,		K_TANBA,			""
 	B_01586	:	"宮本 武蔵",		7,	1,	6,	1,		1,		2,	10,	0,		5,		0,		1584,	1645,	BYOUSHI,	0,		(D_0198),			-1,		S_BUZENKOKURA,		""
@@ -7663,7 +7653,7 @@ Bushou {
 	B_03601	:	"並河 信吉",		4,	4,	4,	4,		3,		8,	3,	10,		100,	0,		1579?,	1647,	BYOUSHI,	0,		(D_0202),			-1,		S_TOGAMURE,			""
 	B_01693	:	"木村 清久",		3,	5,	1,	3,		3,		7,	1,	40,		450,	20,		1575?,	1615,	SENSHI,		0,		(D_0202),			-1,		S_TOGAMURE,			""
 	B_02854	:	"小早川 隆友",		3,	3,	3,	3,		3,		8,	3,	0,		0,		0,		1600,	1673,	BYOUSHI,	1615,	(D_Toyotomi),		-1,		K_KAWACHI,			""
-	B_02855	:	"木下 俊定",		2,	3,	2,	2,		3,		9,	3,	50,		800,	100,	1583,	1602,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_KAWACHI,			""
+	B_02855	:	"木下 俊定",		2,	3,	2,	2,		3,		9,	3,	25,		400,	100,	1583,	1602,	BYOUSHI,	0,		(D_Toyotomi),		-1,		K_KAWACHI,			""
 	B_01695	:	"稲葉 正成",		5,	7,	7,	7,		5,		4,	5,	50,		800,	70,		1571,	1628,	BYOUSHI,	0,		(D_Bakuhu),			-1,		K_TANBA,			""
 	B_01696	:	"稲葉 正勝",		4,	4,	3,	4,		5,		7,	3,	0,		0,		0,		1597,	1634,	BYOUSHI,	1612,	(D_Bakuhu),			-1,		K_TANBA,			""
 	B_01697	:	"稲葉 正吉",		3,	2,	1,	2,		5,		5,	3,	0,		0,		0,		1602?,	1656,	SENSHI,		1617,	(D_Bakuhu),			-1,		K_TANBA,			""
@@ -8168,7 +8158,7 @@ ConditionalEvent {
 		LoopVariable	: "LD"
 		Condition {
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NA", "#大名番号(D_NA)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Tokukawa", "#大名番号(D_Tokugawa)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Tokugawa", "#大名番号(D_Tokugawa)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Toyotomi", "#大名番号(D_Toyotomi)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NAB", "#武将番号(B_01506)"
 		}
@@ -9730,6 +9720,105 @@ ConditionalEvent {
 		}
 		Happening {
 			HAPPENING_CHANGE_TITLE, NONE, NONE, NONE, NONE, NONE, NONE, "豊徳二重公儀の統合（四公儀時代）", ""
+		}
+	}
+	CE_0074 {
+		Title		: "■豊臣の浪人集合"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: ONCE
+		SubRoutine	: NO
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+		}
+	}
+	CE_0075 {
+		Title		: "　豊臣兵数追加"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: ONCE
+		SubRoutine	: NO
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_TEKITAI, D_Toyotomi, D_Tokugawa, NONE, NONE, "", ""
+			CONDITION_DOKURITSU, D_Tokugawa, NONE, NONE, NONE, "", ""
+			CONDITION_DAIMYOU_EXIST, D_Tokugawa, NONE, NONE, NONE, "", ""
+			CONDITION_DOKURITSU, D_Toyotomi, NONE, NONE, NONE, "", ""
+			CONDITION_DAIMYOU_EXIST, D_Toyotomi, NONE, NONE, NONE, "", ""
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CurrentK", "#直轄騎馬兵数(Toyotomi)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CurrentA", "#直轄足軽兵数(Toyotomi)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "TargetTotal", "100000"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Total", "(TargetTotal-CurrentK-CurrentA)*(0.75+#Random)"
+			CONDITION_LARGE_EQUAL, NONE, NONE, NONE, NONE, "Total", "0"
+		}
+		Message {
+			"%大名Toyotomi%-%大名Tokugawa%間の不戦同盟が解消され全面戦争不可避となりました。"
+			"各地から兵が%大名Toyotomi%に集まっています！"
+			""
+			"・%大名Toyotomi%直属の武将の騎馬兵数が増加：合計で約%DUK%名"
+			"・%大名Toyotomi%直属の武将の足軽兵数が増加：合計で約%DUA%名"
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Total", "(100000-CurrentK-CurrentA)*(0.75+#Random/2)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "BushouN", "#大名家直属武将数(Toyotomi)"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0078", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0079", ""
+		}
+	}
+	CE_0078 {
+		Title		: "　　豊臣騎馬追加"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: ONCE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "UpdatedK", "#Round(Total/11/BushouN)"
+			CONDITION_LARGE_EQUAL, NONE, NONE, NONE, NONE, "UpdatedK", "0"
+		}
+		Message {
+			"%大名Toyotomi%-%大名Tokugawa%間の不戦同盟が解消され全面戦争不可避となりました。"
+			"各地から兵が%大名Toyotomi%に集まっています！"
+			""
+			"・%大名Toyotomi%直属の武将の$color=0xFF0000$騎馬兵数$color=0x000000$が増加：合計で約%DUK%名"
+		}
+		Happening {
+			HAPPENING_DAIMYOU_KIBA_PLUS, D_Toyotomi, NONE, NONE, NONE, NONE, NONE, "UpdatedK", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DUK", "#Round((#直轄騎馬兵数(Toyotomi)-CurrentK)/1000)*1000"
+		}
+	}
+	CE_0079 {
+		Title		: "　　豊臣足軽追加"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: ONCE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "UpdatedA", "#Round(Total/1.1/BushouN)"
+			CONDITION_LARGE_EQUAL, NONE, NONE, NONE, NONE, "UpdatedA", "0"
+		}
+		Message {
+			"%大名Toyotomi%-%大名Tokugawa%間の不戦同盟が解消され全面戦争不可避となりました。"
+			"各地から兵が%大名Toyotomi%に集まっています！"
+			""
+			"・%大名Toyotomi%直属の武将の$color=0xFF0000$足軽兵数$color=0x000000$が増加：合計で約%DUA%名"
+		}
+		Happening {
+			HAPPENING_DAIMYOU_ASHIGARU_PLUS, D_Toyotomi, NONE, NONE, NONE, NONE, NONE, "UpdatedA", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DUA", "#Round((#直轄足軽兵数(Toyotomi)-CurrentA)/1000)*1000"
 		}
 	}
 	CE_0042 {
