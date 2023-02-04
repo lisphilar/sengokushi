@@ -1655,19 +1655,20 @@ Shiro {
 	S_0359					:	"常陸",			K_ISHI,			2,		2,		325568,	342464,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_HIRAGATA				:	"五浦平潟",		K_HITACHI,		2,		2,		245324,	149938,	17000,	8000,	700,	200,	0,		0,		YES,	0,		0,		YES,	40,		ST_港,		D_0042,					""
 	S_YAMAO					:	"常陸松岡城",	K_HITACHI,		2,		2,		243968,	152677,	40000,	32000,	150,	100,	0,		0,		NO,		0,		0,		YES,	40,		ST_岬山城,	D_0042,					""
-	S_HITACHIOBA			:	"小場",			K_HITACHI,		2,		2,		239358,	153908,	40000,	30000,	200,	150,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_Takeda,				""
 	S_KUJIKINZAN			:	"栃原金山口",	K_HITACHI,		3,		3,		238080,	151858,	0,		0,		0,		0,		3500,	1500,	NO,		0,		0,		NO,		10,		ST_山,		D_Takeda,				"【産業】 金山"
-	S_ISHIGAMI				:	"石神",			K_HITACHI,		2,		2,		242330,	155620,	40000,	30000,	250,	160,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_Takeda,				""
-	S_MITO					:	"水戸城",		K_HITACHI,		7,		2,		240436,	157108,	85000,	70000,	2800,	1300,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城大,	D_Takeda,				""
+	S_HITACHIOBA			:	"小場",			K_HITACHI,		2,		2,		239358,	153908,	60000,	30000,	200,	150,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_Takeda,				""
+	S_ISHIGAMI				:	"石神",			K_HITACHI,		2,		2,		242330,	155620,	50000,	30000,	250,	160,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_Takeda,				""
+	S_MITO					:	"水戸城",		K_HITACHI,		7,		2,		240436,	157108,	110000,	70000,	2800,	1300,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城大,	D_Takeda,				""
+	S_HITACHIOOARAI			:	"大洗湊",		K_HITACHI,		2,		2,		242341,	157748,	30000,	20000,	800,	600,	0,		0,		NO,		0,		0,		NO,		10,		ST_港,		D_Takeda,				""
+	S_KASHIMAWANOKI1		:	"鹿島灘",		K_HITACHI,		3,		3,		245247,	159078,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_Takeda,				""
 	S_KASAMA				:	"笠間城",		K_HITACHI,		5,		4,		238179,	157619,	36000,	30000,	400,	300,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_Matui,				""
 	S_SHIMAZAKI				:	"麻生陣屋",		K_HITACHI,		2,		2,		241497,	162815,	60000,	8500,	150,	100,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_Shinzyou,				""
 	S_0094					:	"江戸崎",		K_HITACHI,		2,		2,		237824,	162841,	40000,	10000,	300,	200,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0249,					""
 	S_0156					:	"古渡陣屋",		K_HITACHI,		2,		2,		239359,	163480,	12000,	10000,	100,	40,		0,		0,		NO,		0,		0,		NO,		50,		ST_陣屋,	D_0118,					""
 	S_0144					:	"志筑陣屋",		K_HITACHI,		2,		2,		238515,	161280,	10110,	8500,	150,	120,	0,		0,		NO,		0,		0,		NO,		50,		ST_陣屋,	D_0066,					""
 	S_KASHIMA				:	"鹿島神宮",		K_HITACHI,		5,		4,		243264,	162777,	32000,	3000,	900,	500,	0,		0,		YES,	2,		5,		NO,		30,		ST_神社,	D_CHOTEI,				"【産業】 鹿島大社 "
-	S_0057					:	"宍戸",			K_HITACHI,		2,		2,		239642,	158668,	55000,	50000,	200,	120,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0232,					""
 	S_HITACHIFCHU			:	"常陸府中城",	K_HITACHI,		4,		4,		237913,	159862,	20000,	10000,	400,	370,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0233,					""
-	S_HITACHIOOARAI			:	"大洗湊",		K_HITACHI,		2,		2,		242341,	157748,	25000,	20000,	800,	600,	0,		0,		NO,		0,		0,		NO,		10,		ST_港,		D_Takeda,				""
+	S_0057					:	"宍戸",			K_HITACHI,		2,		2,		239642,	158668,	55000,	50000,	200,	120,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0232,					""
 	S_SHIMOTATE				:	"下館城",		K_HITACHI,		4,		4,		233377,	157839,	60000,	47000,	300,	200,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0063,					""
 	S_0417					:	"下妻城",		K_HITACHI,		5,		3,		233651,	159385,	120000,	95000,	1000,	500,	0,		0,		NO,		0,		0,		NO,		50,		ST_平城小,	D_Bakuhu,				""
 	S_0100					:	"片野",			K_HITACHI,		2,		2,		236364,	159513,	23000,	20000,	300,	200,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0255,					""
@@ -1675,7 +1676,6 @@ Shiro {
 	S_TSUCHIURA				:	"土浦城",		K_HITACHI,		5,		3,		236250,	161578,	45000,	35000,	500,	400,	0,		0,		NO,		0,		0,		NO,		30,		ST_簡易堀城,D_Fuzii,				""
 	S_0145					:	"小張",			K_HITACHI,		4,		2,		234496,	161433,	20000,	16000,	200,	120,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0069,					""
 	S_USHIKU				:	"牛久",			K_HITACHI,		5,		4,		235214,	162638,	20000,	15000,	1300,	900,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_0240,					""
-	S_KASHIMAWANOKI1		:	"鹿島灘",		K_HITACHI,		3,		3,		245247,	159078,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_Takeda,				""
 	S_0360					:	"武蔵",			K_ISHI,			2,		2,		329408,	342336,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0102					:	"江戸城",		K_MUSASHI,		10,		4,		229836,	167603,	170000,	70000,	12000,	2200,	0,		0,		NO,		0,		0,		NO,		50,		ST_平城大,	D_Tokugawa,				""
 	S_MUSASHIFKAYA			:	"岡部",			K_MUSASHI,		5,		2,		223015,	159658,	57000,	8500,	700,	500,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般外町,D_Tokugawa,				""
@@ -3119,13 +3119,17 @@ ShiroConnect {
 	S_SHIKI,		S_HIGASHIGNE,	BROAD,			LINE
 	S_HIRAGATA,		S_YAMAO,		NARROW,			LINE
 	S_YAMAO,		S_ISHIGAMI,		NARROW,			LINE
+	S_KUJIKINZAN,	S_HITACHIOBA,	MOUNTAIN,		LINE
 	S_HITACHIOBA,	S_ISHIGAMI,		NARROW,			LINE
 	S_HITACHIOBA,	S_MITO,			NARROW,			LINE
-	S_KUJIKINZAN,	S_HITACHIOBA,	MOUNTAIN,		LINE
 	S_ISHIGAMI,		S_MITO,			NARROW,			LINE
 	S_ISHIGAMI,		S_HITACHIOOARAI,NARROW,			LINE
 	S_MITO,			S_KASAMA,		NARROW,			LINE
 	S_MITO,			S_0057,			NARROW,			ARC,			240179,	158003	
+	S_HITACHIOOARAI,S_KASHIMAWANOKI1,HVLOOP,	SEA,			LINE
+	S_HITACHIOOARAI,S_MITO,			NARROW,			LINE
+	S_HITACHIOOARAI,S_SHIMAZAKI,	NARROW,			ARC,			241945,	158284,	241817,	158848,	241920,	159616,	242304,	160768,	242841,	162150,	243737,	163328,	243737,	163660,	243379,	163942,	243123,	164172,	242636,	163942,	242227,	163635,	241689,	163225	
+	S_KASHIMAWANOKI1,S_HIRAGATA,		SEA,			ARC,			246732,	153728	
 	S_KASAMA,		S_HITACHIFCHU,	NARROW,			LINE
 	S_SHIMAZAKI,	S_0144,			SEA,			ARC,			240256,	162291,	239539,	161932	
 	S_SHIMAZAKI,	S_0156,			SEA,			ARC,			240281,	163173	
@@ -3135,14 +3139,11 @@ ShiroConnect {
 	S_0156,			S_0144,			SEA,			ARC,			238694,	162124	
 	S_0144,			S_TSUCHIURA,	BROAD,			ARC,			236774,	161280	
 	S_KASHIMA,		S_0082,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
-	S_0057,			S_HITACHIFCHU,	NARROW,			ARC,			238924,	159436	
-	S_0057,			S_KASAMA,		NARROW,			ARC,			238771,	158233	
 	S_HITACHIFCHU,	S_0144,			SEA,			LINE
 	S_HITACHIFCHU,	S_TSUCHIURA,	NARROW,			LINE
 	S_HITACHIFCHU,	S_0100,			NARROW,			ARC,			236928,	159923	
-	S_HITACHIOOARAI,S_KASHIMAWANOKI1,HVLOOP,	SEA,			LINE
-	S_HITACHIOOARAI,S_MITO,			NARROW,			LINE
-	S_HITACHIOOARAI,S_SHIMAZAKI,	NARROW,			ARC,			241945,	158284,	241817,	158848,	241920,	159616,	242304,	160768,	242841,	162150,	243737,	163328,	243737,	163660,	243379,	163942,	243123,	164172,	242636,	163942,	242227,	163635,	241689,	163225	
+	S_0057,			S_HITACHIFCHU,	NARROW,			ARC,			238924,	159436	
+	S_0057,			S_KASAMA,		NARROW,			ARC,			238771,	158233	
 	S_SHIMOTATE,	S_MAKABE,		NARROW,			LINE
 	S_SHIMOTATE,	S_KAWAMIKAMI,	VLOOP,	NARROW,			LINE
 	S_SHIMOTATE,	S_0417,			NARROW,			ARC,			233574,	158617	
@@ -3155,7 +3156,6 @@ ShiroConnect {
 	S_USHIKU,		S_TSUCHIURA,	BROAD,			LINE
 	S_USHIKU,		S_0145,			NARROW,			LINE
 	S_USHIKU,		S_0094,			NARROW,			ARC,			236595,	162892	
-	S_KASHIMAWANOKI1,S_HIRAGATA,		SEA,			ARC,			246732,	153728	
 	S_0102,			S_EDOWAN,		SEA,			LINE,			230246,	168192	
 	S_0102,			S_KOUNODI,		HLOOP,	BROAD,			LINE
 	S_MUSASHIFKAYA,	S_OSHI,			BROAD,			LINE
@@ -5927,7 +5927,6 @@ Bushou {
 	B_00942	:	"徳川 家康",		8,	10,	9,	10,		6,		6,	10,	1000,	5000,	450,	1541,	1616,	BYOUSHI,	0,		D_Tokugawa,			0,		S_FUSHIMI,			""
 	B_00943	:	"徳川 秀忠",		3,	8,	2,	5,		4,		10,	5,	500,	4000,	450,	1579,	1632,	BYOUSHI,	0,		D_Tokugawa,			1,		S_0102,				""
 	B_00944	:	"徳川 義直",		5,	7,	6,	7,		3,		8,	6,	0,		0,		0,		1600,	1650,	BYOUSHI,	0,		D_D_OWARI,			0,		S_KOUFU,			""
-	B_00945	:	"徳川 頼宣",		6,	5,	7,	7,		3,		7,	9,	0,		0,		0,		1602,	1671,	BYOUSHI,	1603,	D_Tokugawa,			7,		S_0102,				""
 	B_00946	:	"徳川 頼房",		6,	5,	5,	7,		3,		5,	10,	0,		0,		0,		1603,	1661,	BYOUSHI,	1604,	D_Tokugawa,			8,		S_0102,				""
 	B_00947	:	"徳川 家光",		6,	8,	5,	8,		3,		6,	9,	0,		0,		0,		1604,	1651,	BYOUSHI,	1615,	D_Tokugawa,			2,		S_0102,				""
 	B_00948	:	"徳川 忠長",		3,	2,	2,	2,		3,		4,	9,	0,		0,		0,		1606,	1634,	SHOKEI,		1621,	D_Tokugawa,			9,		S_0102,				""
@@ -5935,8 +5934,12 @@ Bushou {
 	B_00950	:	"徳川 綱重",		3,	5,	3,	5,		3,		7,	3,	0,		0,		0,		1644,	1678,	BYOUSHI,	1659,	D_Tokugawa,			4,		S_0102,				""
 	B_00951	:	"徳川 綱吉",		1,	7,	3,	5,		3,		6,	10,	0,		0,		0,		1646,	1709,	BYOUSHI,	1661,	D_Tokugawa,			5,		S_0102,				""
 	B_00952	:	"徳川 光友",		2,	3,	2,	4,		3,		6,	3,	0,		0,		0,		1625,	1700,	BYOUSHI,	1640,	D_Tokugawa,			10,		S_0102,				""
-	B_00953	:	"徳川 光貞",		2,	5,	2,	5,		3,		7,	3,	0,		0,		0,		1627,	1705,	BYOUSHI,	1642,	D_Tokugawa,			11,		S_0102,				""
 	B_00954	:	"徳川 光圀",		3,	8,	4,	4,		3,		7,	7,	0,		0,		0,		1628,	1701,	BYOUSHI,	1643,	D_Tokugawa,			12,		S_0102,				""
+	B_00945	:	"徳川 頼宣",		6,	5,	7,	7,		3,		7,	9,	0,		0,		0,		1602,	1671,	BYOUSHI,	1603,	D_Tokugawa,			7,		S_SUNBU,			"紀州徳川家"
+	B_00953	:	"徳川 光貞",		2,	5,	2,	5,		3,		7,	3,	0,		0,		0,		1627,	1705,	BYOUSHI,	1642,	D_Tokugawa,			11,		S_0102,				"紀州徳川家"
+	B_00015	:	"徳川 綱教",		2,	5,	2,	3,		1,		10,	1,	0,		0,		0,		1665,	1705,	BYOUSHI,	1680,	D_Tokugawa,			-1,		S_0102,				"紀州徳川家"
+	B_00018	:	"徳川 綱職",		2,	2,	2,	3,		1,		10,	1,	0,		0,		0,		1680,	1705,	BYOUSHI,	1695,	D_Tokugawa,			-1,		S_0102,				"紀州徳川家"
+	B_00017	:	"徳川 吉宗",		2,	8,	7,	5,		1,		10,	2,	0,		0,		0,		1684,	1751,	BYOUSHI,	1699,	D_Tokugawa,			-1,		S_0102,				"紀州徳川家"
 	B_00955	:	"土井 利勝",		4,	9,	7,	6,		4,		9,	3,	60,		800,	75,		1573,	1644,	BYOUSHI,	0,		(D_Tokugawa),		-1,		S_0102,				""
 	B_00956	:	"金地院 崇伝",		0,	7,	2,	0,		0,		6,	8,	0,		0,		0,		1569,	1633,	BYOUSHI,	0,		(D_Tokugawa),		-1,		S_AMIDAGAMINE,		""
 	B_00957	:	"南光坊 天海",		2,	9,	5,	2,		1,		7,	5,	0,		500,	40,		1543,	1643,	BYOUSHI,	0,		(D_Tokugawa),		-1,		S_FUSHIMI,			""
@@ -9925,6 +9928,51 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
+		}
+	}
+	CE_0076 {
+		Title		: "　徳川頼宣が水戸を継承"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: ONCE
+		SubRoutine	: NO
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_JUUZOKU_SHINJUU_SPECIFIC, D_Takeda, D_Tokugawa, NONE, NONE, "", ""
+			CONDITION_SHIRO_OWNER1, D_Takeda, NONE, S_MITO, NONE, "", ""
+			CONDITION_BUSHOU_DEAD, NONE, NONE, NONE, B_00843, "", ""
+			CONDITION_BUSHOU_EXIST, NONE, NONE, NONE, B_00945, "", ""
+			CONTITION_BUSHOU_SHOZOKU, D_Tokugawa, NONE, NONE, B_00945, "", ""
+		}
+		Message {
+			"【史実：武田信吉の死去、徳川頼宣の立藩】"
+			""
+			"穴山信君（梅雪）を介して名籍である武田家を継いでいた水戸城主 武田信吉（徳川家康の5男）が死去した。子女がなく武田松平家は滅亡し、わずか数え年2歳の徳川頼宣が水戸及び竹田松平家の家臣を引き継ぐこととなった。"
+			""
+			""
+			"・大名家改名：武田松平家→徳川頼宣家"
+			"・徳川頼宣の所属が徳川家から徳川頼宣家に変更となり、当主へ"
+		}
+		Happening {
+			HAPPENING_DAIMYOU_KAIMEI, D_Takeda, NONE, NONE, NONE, NONE, NONE, "徳川頼宣家", ""
+			HAPPENING_BUSHOU_SHOZOKU_CHANGE, D_Takeda, NONE, NONE, NONE, B_00945, NONE, "", ""
+			HAPPENING_BUSHOU_SOUZOKU_DAIMYO, D_Takeda, NONE, NONE, NONE, B_00945, NONE, "", ""
+			HAPPENING_BUSHOU_KEISHOU, NONE, NONE, NONE, NONE, B_00945, NONE, "1", ""
+			HAPPENING_TOUSHU_CHANGE, NONE, NONE, NONE, NONE, B_00945, NONE, "", ""
+			HAPPENING_BUSHOU_SHOZOKU_CHANGE, D_Takeda, NONE, NONE, NONE, B_00953, NONE, "", ""
+			HAPPENING_BUSHOU_SHOZOKU_CHANGE, D_Takeda, NONE, NONE, NONE, B_00015, NONE, "", ""
+			HAPPENING_BUSHOU_SHOZOKU_CHANGE, D_Takeda, NONE, NONE, NONE, B_00018, NONE, "", ""
+			HAPPENING_BUSHOU_SHOZOKU_CHANGE, D_Takeda, NONE, NONE, NONE, B_00017, NONE, "", ""
+			HAPPENING_BUSHOU_SOUZOKU_DAIMYO, D_Takeda, NONE, NONE, NONE, B_00953, NONE, "", ""
+			HAPPENING_BUSHOU_SOUZOKU_DAIMYO, D_Takeda, NONE, NONE, NONE, B_00015, NONE, "", ""
+			HAPPENING_BUSHOU_SOUZOKU_DAIMYO, D_Takeda, NONE, NONE, NONE, B_00018, NONE, "", ""
+			HAPPENING_BUSHOU_SOUZOKU_DAIMYO, D_Takeda, NONE, NONE, NONE, B_00017, NONE, "", ""
+			HAPPENING_BUSHOU_KEISHOU, NONE, NONE, NONE, NONE, B_00953, NONE, "2", ""
+			HAPPENING_BUSHOU_KEISHOU, NONE, NONE, NONE, NONE, B_00015, NONE, "3", ""
+			HAPPENING_BUSHOU_KEISHOU, NONE, NONE, NONE, NONE, B_00018, NONE, "4", ""
+			HAPPENING_BUSHOU_KEISHOU, NONE, NONE, NONE, NONE, B_00017, NONE, "5", ""
 		}
 	}
 	CE_0060 {
