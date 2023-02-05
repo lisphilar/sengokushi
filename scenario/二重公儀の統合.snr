@@ -1905,16 +1905,17 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_0375					:	"摂津",			K_ISHI,			2,		2,		329664,	347520,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_TAKATSUKI				:	"高槻城",		K_SETTSU,		5,		3,		166193,	180339,	32000,	30000,	400,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_Toyotomi,				""
 	S_IBARAKI				:	"茨城城",		K_SETTSU,		6,		5,		165403,	181275,	18000,	13000,	500,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_Toyotomi,				""
+	S_OOSAKAWANOKI			:	"大坂湾",		K_SETTSU,		9,		5,		160603,	184716,	0,		0,		5000,	3000,	0,		0,		YES,	20,		15,		YES,	80,		ST_海岸,	D_Toyotomi,				""
+	S_i						:	"大坂城",		K_SETTSU,		10,		10,		163903,	182724,	200000,	195000,	32000,	25000,	0,		0,		YES,	5,		10,		NO,		90,		ST_大坂城,	D_Toyotomi,				"大坂マップの「天守閣」が占領されると、摂津マップ「大坂城」の城主も交代します。"
+	S_h						:	"中島",			K_SETTSU,		5,		3,		163878,	182028,	10000,	5000,	1000,	500,	0,		0,		NO,		0,		0,		NO,		80,		ST_一般外町,D_Toyotomi,				"不可視ですが、大坂マップの「至 中島」と経路で接続しています。"
 	S_a						:	"味舌",			K_SETTSU,		8,		8,		164657,	181876,	12000,	11000,	400,	300,	0,		0,		NO,		0,		0,		NO,		80,		ST_関所,	D_Toyotomi,				""
 	S_b						:	"野田",			K_SETTSU,		5,		3,		164710,	182476,	10000,	5000,	1000,	500,	0,		0,		NO,		0,		0,		NO,		80,		ST_一般外町,D_Toyotomi,				""
-	S_h						:	"中島",			K_SETTSU,		5,		3,		163878,	182028,	10000,	5000,	1000,	500,	0,		0,		NO,		0,		0,		NO,		80,		ST_一般外町,D_Toyotomi,				""
-	S_i						:	"豊臣大坂城天守閣",K_SETTSU,		10,		10,		164011,	182673,	200000,	195000,	32000,	25000,	0,		0,		YES,	5,		10,		NO,		90,		ST_大坂城,	D_Toyotomi,				""
-	S_f						:	"大坂湾口",		K_SETTSU,		6,		2,		163559,	183205,	0,		0,		300,	300,	0,		0,		NO,		0,		10,		NO,		80,		ST_海岸,	D_Toyotomi,				""
-	S_OOSAKAWANOKI			:	"大坂湾",		K_SETTSU,		9,		5,		160603,	184716,	0,		0,		5000,	3000,	0,		0,		YES,	20,		15,		YES,	80,		ST_海岸,	D_Toyotomi,				""
-	S_e						:	"長居",			K_SETTSU,		8,		8,		164142,	183744,	17000,	11500,	1000,	700,	0,		0,		NO,		0,		0,		NO,		70,		ST_寺,		D_Toyotomi,				""
-	S_d						:	"平野",			K_SETTSU,		8,		8,		164561,	183308,	10000,	10000,	500,	300,	0,		0,		NO,		0,		0,		NO,		80,		ST_関所,	D_Toyotomi,				""
-	S_c						:	"渋川",			K_SETTSU,		5,		3,		164684,	182835,	10000,	5000,	1000,	500,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Toyotomi,				""
-	S_g						:	"北伝達村",		K_SETTSU,		8,		8,		163316,	182668,	10000,	10000,	500,	300,	0,		0,		NO,		0,		0,		NO,		80,		ST_堺,		D_Toyotomi,				""
+	S_c						:	"渋川",			K_SETTSU,		5,		3,		164684,	182835,	10000,	5000,	1000,	500,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Toyotomi,				"不可視ですが、大坂マップの「至 渋川」と経路で接続しています。"
+	S_d						:	"平野",			K_SETTSU,		8,		8,		164561,	183308,	10000,	10000,	500,	300,	0,		0,		NO,		0,		0,		NO,		80,		ST_関所,	D_Toyotomi,				"不可視ですが、大坂マップの「至 平野」と経路で接続しています。"
+	S_e						:	"長居",			K_SETTSU,		8,		8,		164142,	183744,	17000,	11500,	1000,	700,	0,		0,		NO,		0,		0,		NO,		70,		ST_寺,		D_Toyotomi,				"不可視ですが、大坂マップの「至 長居」と経路で接続しています。"
+	S_f						:	"大坂湾口",		K_SETTSU,		6,		2,		163559,	183205,	0,		0,		300,	300,	0,		0,		NO,		0,		10,		NO,		80,		ST_海岸,	D_Toyotomi,				"不可視ですが、大坂マップの「至 大阪湾口」と経路で接続しています。"
+	S_g						:	"北伝達村",		K_SETTSU,		8,		8,		163316,	182668,	10000,	10000,	500,	300,	0,		0,		NO,		0,		0,		NO,		80,		ST_堺,		D_Toyotomi,				"不可視ですが、大坂マップの「至 北伝達村」と経路で接続しています。"
+	S_0014					:	"摂津-大坂",	K_ISHI,			2,		2,		332992,	347264,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0075					:	"天守閣",		K_OSAKA,		7,		6,		196973,	268916,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_大坂城,	D_Toyotomi,				""
 	S_18					:	"本丸御殿",		K_OSAKA,		5,		4,		196968,	269229,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中屋敷,D_Toyotomi,				""
 	S_0201					:	"本番所",		K_OSAKA,		5,		4,		196979,	269728,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
@@ -1989,107 +1990,107 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_0236					:	"水手埋門外",	K_OSAKA,		3,		2,		196965,	266624,	0,		0,		0,		0,		0,		0,		NO,		0,		4,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
 	S_0237					:	"北内堀",		K_OSAKA,		3,		2,		198029,	267360,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
 	S_0238					:	"城北東",		K_OSAKA,		3,		2,		198579,	266778,	0,		0,		0,		0,		0,		0,		NO,		0,		4,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
-	S_0239					:	"猫間川流域",	K_NANTOU,		2,		2,		201024,	268006,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0240					:	"平野川流域",	K_NANTOU,		2,		2,		203161,	268019,	150,	100,	100,	80,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0315					:	"中浜村北",		K_HIGASHI,		2,		2,		206771,	272076,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0327					:	"中浜村南",		K_HIGASHI,		2,		2,		206912,	276288,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0316					:	"岡山",			K_NANTOU,		2,		2,		202176,	286272,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_布陣山,	D_Toyotomi,				""
-	S_0317					:	"猪飼野村",		K_OKAYAMA,		2,		2,		206528,	286208,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0318					:	"木野村",		K_NANTOU,		2,		2,		201856,	282112,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0319					:	"毘沙門池",		K_TYUUOU,		2,		2,		198272,	281152,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_布陣池,	D_Toyotomi,				""
-	S_0320					:	"天王寺",		K_NANTOU,		2,		2,		195712,	283200,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_町内寺,	D_Toyotomi,				""
-	S_0321					:	"安居天神",		K_TYUUOU,		2,		2,		192448,	281856,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_神社,	D_Toyotomi,				""
-	S_0322					:	"下寺町",		K_TYUUOU,		2,		2,		192576,	279744,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0323					:	"庚申堂",		K_NANTOU,		2,		2,		195648,	285504,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_町内寺,	D_Toyotomi,				""
-	S_0324					:	"一心寺",		K_NANTOU,		2,		2,		191872,	283840,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_町内寺,	D_Toyotomi,				""
-	S_0325					:	"今宮村",		K_NANTOU,		2,		2,		189120,	283456,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0326					:	"茶臼山",		K_NANTOU,		2,		2,		190080,	287104,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_布陣山,	D_Toyotomi,				""
-	S_0328					:	"木津村",		K_TYUUOU,		2,		2,		186112,	281344,	150,	100,	100,	80,		0,		0,		NO,		0,		10,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0329					:	"舎利寺村",		K_NANTOU,		2,		2,		203776,	289088,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_13					:	"桑津村",		K_NANTOU,		2,		2,		200448,	290944,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_4						:	"至 平野",		K_OKAYAMA,		2,		2,		208960,	290880,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
-	S_0337					:	"生野",			K_OKAYAMA,		2,		2,		207104,	281152,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_5						:	"至 長居",		K_NANTOU,		2,		2,		195264,	294848,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
-	S_14					:	"阿部野村",		K_NANTOU,		2,		2,		194944,	291136,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0333					:	"天下茶屋",		K_NANTOU,		2,		2,		189888,	290944,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0334					:	"勝間村",		K_NANTOU,		2,		2,		186368,	289728,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0331					:	"林寺村",		K_NANTOU,		2,		2,		198592,	287552,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0241					:	"島野村西",		K_NANTOU,		2,		2,		206016,	268108,	150,	100,	100,	80,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0242					:	"島野村東",		K_NANTOU,		2,		2,		208460,	268083,	150,	100,	100,	80,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_12					:	"鴫野村",		K_NANTOU,		2,		2,		212377,	268416,	150,	100,	100,	80,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_3						:	"至 渋川",		K_NANTOU,		2,		2,		215129,	269056,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
-	S_0245					:	"備前島",		K_OSAKA,		2,		2,		197248,	265190,	150,	100,	100,	80,		0,		0,		NO,		0,		10,		NO,		50,		ST_港,		D_Toyotomi,				""
-	S_0246					:	"片原町",		K_IMAFUKU,		2,		2,		200346,	263270,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0247					:	"蒲生町",		K_IMAFUKU,		2,		2,		208231,	265318,	150,	100,	100,	80,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0248					:	"今福村",		K_IMAFUKU,		2,		2,		213401,	263321,	150,	100,	100,	80,		0,		0,		NO,		0,		10,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_11					:	"野江村",		K_IMAFUKU,		2,		2,		208384,	259302,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_2						:	"至 野田",		K_IMAFUKU,		2,		2,		214003,	255897,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
-	S_10					:	"毛馬村",		K_IMAFUKU,		2,		2,		203494,	257726,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0252					:	"沢上江村",		K_IMAFUKU,		2,		2,		201728,	260147,	150,	100,	100,	80,		0,		0,		NO,		0,		6,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0253					:	"川崎",			K_HOKUBU,		2,		2,		195634,	263782,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_0036,					""
-	S_0254					:	"天満橋外",		K_HOKUBU,		2,		2,		193522,	264704,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0255					:	"天満橋",		K_OSAKA,		2,		2,		193958,	266726,	150,	100,	100,	80,		0,		0,		NO,		0,		4,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0256					:	"天神橋",		K_OSAKA,		2,		2,		192447,	266713,	150,	100,	100,	80,		0,		0,		NO,		0,		4,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0257					:	"浜筋",			K_HOKUBU,		2,		2,		191513,	265088,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_17					:	"長柄村",		K_HOKUBU,		2,		2,		195584,	259404,	150,	100,	100,	80,		0,		0,		NO,		0,		6,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_8						:	"至 中島",		K_HOKUBU,		2,		2,		195750,	256000,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
-	S_0260					:	"天満",			K_HOKUBU,		2,		2,		192435,	261248,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_0027,					""
-	S_0261					:	"大仁村",		K_NODA,			2,		2,		185779,	258304,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0262					:	"上福島村",		K_NODA,			2,		2,		184217,	262425,	150,	100,	100,	80,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0263					:	"浦江村",		K_NODA,			2,		2,		180198,	258176,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0264					:	"下福島村",		K_NODA,			2,		2,		179046,	265984,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_16					:	"野田村",		K_NODA,			2,		2,		176179,	261708,	150,	100,	100,	80,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_7						:	"至 北伝達村",	K_NODA,			2,		2,		172902,	256563,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
-	S_0267					:	"中之島北",		K_OSAKA,		2,		2,		185600,	265446,	150,	100,	100,	80,		0,		0,		NO,		0,		5,		YES,	50,		ST_海岸,	D_Toyotomi,				""
-	S_0268					:	"中之島南",		K_OSAKA,		2,		2,		184729,	267264,	150,	100,	100,	80,		0,		0,		NO,		0,		10,		NO,		50,		ST_海岸,	D_Toyotomi,				""
-	S_1						:	"至 味舌",		K_IMAFUKU,		2,		2,		204800,	255360,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
-	S_0270					:	"九条村",		K_KIDU,			2,		2,		173696,	271744,	150,	100,	100,	80,		0,		0,		NO,		0,		15,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0295					:	"萩島",			K_KIDU,			2,		2,		180300,	283340,	150,	100,	100,	80,		0,		0,		NO,		0,		10,		YES,	50,		ST_海岸,	D_Toyotomi,				""
-	S_15					:	"三軒家",		K_KIDU,			2,		2,		175206,	281113,	150,	100,	100,	80,		0,		0,		NO,		0,		10,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0271					:	"杓子島",		K_KIDU,			2,		2,		179840,	271552,	150,	100,	100,	80,		0,		0,		NO,		0,		10,		YES,	50,		ST_海岸,	D_Toyotomi,				""
-	S_0272					:	"蓑島",			K_KIDU,			2,		2,		179520,	275648,	150,	100,	100,	80,		0,		0,		NO,		0,		10,		YES,	50,		ST_海岸,	D_Toyotomi,				""
-	S_0273					:	"木津川口砦",	K_KIDU,			2,		2,		184320,	276224,	150,	100,	100,	80,		0,		0,		NO,		0,		10,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
-	S_0274					:	"下博労",		K_KIDU,			2,		2,		184512,	273664,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0275					:	"上博労",		K_KIDU,			2,		2,		184832,	270016,	150,	100,	100,	80,		0,		0,		NO,		0,		10,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0276					:	"阿波座",		K_KIDU,			2,		2,		186944,	272640,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0277					:	"土佐座",		K_KIDU,			2,		2,		187264,	269440,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0278					:	"船場",			K_KIDU,			2,		2,		189108,	268864,	150,	100,	100,	80,		0,		0,		NO,		0,		5,		NO,		50,		ST_堺,		D_Toyotomi,				""
-	S_0279					:	"南御堂",		K_KIDU,			2,		2,		189056,	271104,	150,	100,	100,	80,		0,		0,		NO,		0,		5,		NO,		50,		ST_町内寺,	D_Toyotomi,				""
-	S_0280					:	"瓦町",			K_KIDU,			2,		2,		188864,	274368,	150,	100,	100,	80,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0281					:	"高麗",			K_KIDU,			2,		2,		190796,	268005,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0282					:	"本町",			K_KIDU,			2,		2,		190847,	270297,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0283					:	"安堂寺",		K_KIDU,			2,		2,		190784,	272831,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_町内寺,	D_Toyotomi,				""
-	S_0284					:	"瓦町南",		K_KIDU,			2,		2,		190515,	276044,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0285					:	"今橋",			K_OSAKA,		5,		4,		192295,	267302,	0,		0,		100,	80,		0,		0,		NO,		0,		8,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0286					:	"高麗橋",		K_OSAKA,		5,		4,		192306,	268057,	0,		0,		100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0287					:	"平野橋",		K_OSAKA,		5,		4,		192318,	268824,	0,		0,		100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0288					:	"思案橋",		K_OSAKA,		5,		4,		192306,	269567,	0,		0,		100,	80,		0,		0,		NO,		0,		8,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0289					:	"本町橋",		K_OSAKA,		5,		4,		192319,	270374,	0,		0,		100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0290					:	"農人橋",		K_OSAKA,		5,		4,		192331,	271218,	0,		0,		100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0291					:	"久宝寺橋",		K_OSAKA,		5,		4,		192333,	272076,	0,		0,		100,	80,		0,		0,		NO,		0,		8,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0292					:	"安堂寺橋",		K_OSAKA,		5,		4,		192358,	272882,	0,		0,		100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0293					:	"愃谷橋",		K_OSAKA,		5,		4,		192359,	273664,	0,		0,		100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0294					:	"城南西",		K_OSAKA,		5,		4,		194432,	272128,	0,		0,		100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中屋敷,D_Toyotomi,				""
-	S_0297					:	"松屋町口",		K_OSAKA,		5,		4,		193254,	274559,	0,		0,		100,	80,		0,		0,		NO,		0,		2,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0298					:	"谷町口",		K_OSAKA,		5,		4,		194892,	274560,	0,		0,		100,	80,		0,		0,		NO,		0,		2,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0299					:	"八丁目口",		K_OSAKA,		5,		4,		195955,	274560,	0,		0,		100,	80,		0,		0,		NO,		0,		2,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0300					:	"平野口",		K_OSAKA,		5,		4,		198028,	274548,	0,		0,		100,	80,		0,		0,		NO,		0,		2,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0301					:	"黒門口",		K_OSAKA,		5,		4,		199731,	273894,	0,		0,		100,	80,		0,		0,		NO,		0,		8,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0302					:	"黒門口外",		K_NANTOU,		5,		4,		200974,	273919,	0,		0,		100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0303					:	"松屋町口外",	K_NANTOU,		5,		4,		192678,	275610,	0,		0,		100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0304					:	"谷町口外",		K_NANTOU,		5,		4,		194918,	275635,	0,		0,		100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0305					:	"八丁目口外",	K_NANTOU,		5,		4,		196044,	275635,	0,		0,		100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0306					:	"平野口外",		K_NANTOU,		5,		4,		198053,	275635,	0,		0,		100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0307					:	"外堀",			K_OSAKA,		2,		2,		199602,	266607,	0,		0,		100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
-	S_0308					:	"外堀",			K_OSAKA,		2,		2,		192274,	274425,	0,		0,		100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
-	S_0309					:	"小橋村",		K_NANTOU,		2,		2,		197132,	276236,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0310					:	"篠山",			K_NANTOU,		2,		2,		197107,	277760,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_布陣山,	D_Toyotomi,				""
-	S_0311					:	"青屋",			K_NANTOU,		2,		2,		201971,	269210,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0312					:	"大和橋",		K_NANTOU,		2,		2,		200972,	271448,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_6						:	"至 大阪湾口",	K_KIDU,			2,		2,		171968,	282240,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
-	S_0313					:	"森林口",		K_NANTOU,		2,		2,		200961,	270068,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0338					:	"玉造",			K_TYUUOU,		2,		2,		195353,	278758,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_0314					:	"生玉",			K_NANTOU,		2,		2,		193856,	276812,	150,	100,	100,	80,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0239					:	"猫間川流域",	K_NANTOU,		2,		2,		201024,	268006,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0240					:	"平野川流域",	K_NANTOU,		2,		2,		203161,	268019,	0,		0,		0,		0,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0315					:	"中浜村北",		K_HIGASHI,		2,		2,		206771,	272076,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0327					:	"中浜村南",		K_HIGASHI,		2,		2,		206912,	276288,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0316					:	"岡山",			K_NANTOU,		2,		2,		202176,	286272,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_布陣山,	D_Toyotomi,				""
+	S_0317					:	"猪飼野村",		K_OKAYAMA,		2,		2,		206528,	286208,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0318					:	"木野村",		K_NANTOU,		2,		2,		201856,	282112,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0319					:	"毘沙門池",		K_TYUUOU,		2,		2,		198272,	281152,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_布陣池,	D_Toyotomi,				""
+	S_0320					:	"天王寺",		K_NANTOU,		2,		2,		195712,	283200,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_町内寺,	D_Toyotomi,				""
+	S_0321					:	"安居天神",		K_TYUUOU,		2,		2,		192448,	281856,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_神社,	D_Toyotomi,				""
+	S_0322					:	"下寺町",		K_TYUUOU,		2,		2,		192576,	279744,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0323					:	"庚申堂",		K_NANTOU,		2,		2,		195648,	285504,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_町内寺,	D_Toyotomi,				""
+	S_0324					:	"一心寺",		K_NANTOU,		2,		2,		191872,	283840,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_町内寺,	D_Toyotomi,				""
+	S_0325					:	"今宮村",		K_NANTOU,		2,		2,		189120,	283456,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0326					:	"茶臼山",		K_NANTOU,		2,		2,		190080,	287104,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_布陣山,	D_Toyotomi,				""
+	S_0328					:	"木津村",		K_TYUUOU,		2,		2,		186112,	281344,	0,		0,		0,		0,		0,		0,		NO,		0,		10,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0329					:	"舎利寺村",		K_NANTOU,		2,		2,		203776,	289088,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_13					:	"桑津村",		K_NANTOU,		2,		2,		200448,	290944,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_4						:	"至 平野",		K_OKAYAMA,		2,		2,		208960,	290880,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
+	S_0337					:	"生野",			K_OKAYAMA,		2,		2,		207104,	281152,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_5						:	"至 長居",		K_NANTOU,		2,		2,		195264,	294848,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
+	S_14					:	"阿部野村",		K_NANTOU,		2,		2,		194944,	291136,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0333					:	"天下茶屋",		K_NANTOU,		2,		2,		189888,	290944,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0334					:	"勝間村",		K_NANTOU,		2,		2,		186368,	289728,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0331					:	"林寺村",		K_NANTOU,		2,		2,		198592,	287552,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0241					:	"島野村西",		K_NANTOU,		2,		2,		206016,	268108,	0,		0,		0,		0,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0242					:	"島野村東",		K_NANTOU,		2,		2,		208460,	268083,	0,		0,		0,		0,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_12					:	"鴫野村",		K_NANTOU,		2,		2,		212377,	268416,	0,		0,		0,		0,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_3						:	"至 渋川",		K_NANTOU,		2,		2,		215129,	269056,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
+	S_0245					:	"備前島",		K_OSAKA,		2,		2,		197248,	265190,	0,		0,		0,		0,		0,		0,		NO,		0,		10,		NO,		50,		ST_港,		D_Toyotomi,				""
+	S_0246					:	"片原町",		K_IMAFUKU,		2,		2,		200346,	263270,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0247					:	"蒲生町",		K_IMAFUKU,		2,		2,		208231,	265318,	0,		0,		0,		0,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0248					:	"今福村",		K_IMAFUKU,		2,		2,		213401,	263321,	0,		0,		0,		0,		0,		0,		NO,		0,		10,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_11					:	"野江村",		K_IMAFUKU,		2,		2,		208384,	259302,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_2						:	"至 野田",		K_IMAFUKU,		2,		2,		214003,	255897,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
+	S_10					:	"毛馬村",		K_IMAFUKU,		2,		2,		203494,	257726,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0252					:	"沢上江村",		K_IMAFUKU,		2,		2,		201728,	260147,	0,		0,		0,		0,		0,		0,		NO,		0,		6,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0253					:	"川崎",			K_HOKUBU,		2,		2,		195634,	263782,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_0036,					""
+	S_0254					:	"天満橋外",		K_HOKUBU,		2,		2,		193522,	264704,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0255					:	"天満橋",		K_OSAKA,		2,		2,		193958,	266726,	0,		0,		0,		0,		0,		0,		NO,		0,		4,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0256					:	"天神橋",		K_OSAKA,		2,		2,		192447,	266713,	0,		0,		0,		0,		0,		0,		NO,		0,		4,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0257					:	"浜筋",			K_HOKUBU,		2,		2,		191513,	265088,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_17					:	"長柄村",		K_HOKUBU,		2,		2,		195584,	259404,	0,		0,		0,		0,		0,		0,		NO,		0,		6,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_8						:	"至 中島",		K_HOKUBU,		2,		2,		195750,	256000,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
+	S_0260					:	"天満",			K_HOKUBU,		2,		2,		192435,	261248,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_0027,					""
+	S_0261					:	"大仁村",		K_NODA,			2,		2,		185779,	258304,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0262					:	"上福島村",		K_NODA,			2,		2,		184217,	262425,	0,		0,		0,		0,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0263					:	"浦江村",		K_NODA,			2,		2,		180198,	258176,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0264					:	"下福島村",		K_NODA,			2,		2,		179046,	265984,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_16					:	"野田村",		K_NODA,			2,		2,		176179,	261708,	0,		0,		0,		0,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_7						:	"至 北伝達村",	K_NODA,			2,		2,		172902,	256563,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
+	S_0267					:	"中之島北",		K_OSAKA,		2,		2,		185600,	265446,	0,		0,		0,		0,		0,		0,		NO,		0,		5,		YES,	50,		ST_海岸,	D_Toyotomi,				""
+	S_0268					:	"中之島南",		K_OSAKA,		2,		2,		184729,	267264,	0,		0,		0,		0,		0,		0,		NO,		0,		10,		NO,		50,		ST_海岸,	D_Toyotomi,				""
+	S_1						:	"至 味舌",		K_IMAFUKU,		2,		2,		204800,	255360,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
+	S_0270					:	"九条村",		K_KIDU,			2,		2,		173696,	271744,	0,		0,		0,		0,		0,		0,		NO,		0,		15,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0295					:	"萩島",			K_KIDU,			2,		2,		180300,	283340,	0,		0,		0,		0,		0,		0,		NO,		0,		10,		YES,	50,		ST_海岸,	D_Toyotomi,				""
+	S_15					:	"三軒家",		K_KIDU,			2,		2,		175206,	281113,	0,		0,		0,		0,		0,		0,		NO,		0,		10,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0271					:	"杓子島",		K_KIDU,			2,		2,		179840,	271552,	0,		0,		0,		0,		0,		0,		NO,		0,		10,		YES,	50,		ST_海岸,	D_Toyotomi,				""
+	S_0272					:	"蓑島",			K_KIDU,			2,		2,		179520,	275648,	0,		0,		0,		0,		0,		0,		NO,		0,		10,		YES,	50,		ST_海岸,	D_Toyotomi,				""
+	S_0273					:	"木津川口砦",	K_KIDU,			2,		2,		184320,	276224,	0,		0,		0,		0,		0,		0,		NO,		0,		10,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
+	S_0274					:	"下博労",		K_KIDU,			2,		2,		184512,	273664,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0275					:	"上博労",		K_KIDU,			2,		2,		184832,	270016,	0,		0,		0,		0,		0,		0,		NO,		0,		10,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0276					:	"阿波座",		K_KIDU,			2,		2,		186944,	272640,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0277					:	"土佐座",		K_KIDU,			2,		2,		187264,	269440,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0278					:	"船場",			K_KIDU,			2,		2,		189108,	268864,	0,		0,		0,		0,		0,		0,		NO,		0,		5,		NO,		50,		ST_堺,		D_Toyotomi,				""
+	S_0279					:	"南御堂",		K_KIDU,			2,		2,		189056,	271104,	0,		0,		0,		0,		0,		0,		NO,		0,		5,		NO,		50,		ST_町内寺,	D_Toyotomi,				""
+	S_0280					:	"瓦町",			K_KIDU,			2,		2,		188864,	274368,	0,		0,		0,		0,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0281					:	"高麗",			K_KIDU,			2,		2,		190796,	268005,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0282					:	"本町",			K_KIDU,			2,		2,		190847,	270297,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0283					:	"安堂寺",		K_KIDU,			2,		2,		190784,	272831,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_町内寺,	D_Toyotomi,				""
+	S_0284					:	"瓦町南",		K_KIDU,			2,		2,		190515,	276044,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0285					:	"今橋",			K_OSAKA,		5,		4,		192295,	267302,	0,		0,		0,		0,		0,		0,		NO,		0,		8,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0286					:	"高麗橋",		K_OSAKA,		5,		4,		192306,	268057,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0287					:	"平野橋",		K_OSAKA,		5,		4,		192318,	268824,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0288					:	"思案橋",		K_OSAKA,		5,		4,		192306,	269567,	0,		0,		0,		0,		0,		0,		NO,		0,		8,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0289					:	"本町橋",		K_OSAKA,		5,		4,		192319,	270374,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0290					:	"農人橋",		K_OSAKA,		5,		4,		192331,	271218,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0291					:	"久宝寺橋",		K_OSAKA,		5,		4,		192333,	272076,	0,		0,		0,		0,		0,		0,		NO,		0,		8,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0292					:	"安堂寺橋",		K_OSAKA,		5,		4,		192358,	272882,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0293					:	"愃谷橋",		K_OSAKA,		5,		4,		192359,	273664,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0294					:	"城南西",		K_OSAKA,		5,		4,		194432,	272128,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中屋敷,D_Toyotomi,				""
+	S_0297					:	"松屋町口",		K_OSAKA,		5,		4,		193254,	274559,	0,		0,		0,		0,		0,		0,		NO,		0,		2,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0298					:	"谷町口",		K_OSAKA,		5,		4,		194892,	274560,	0,		0,		0,		0,		0,		0,		NO,		0,		2,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0299					:	"八丁目口",		K_OSAKA,		5,		4,		195955,	274560,	0,		0,		0,		0,		0,		0,		NO,		0,		2,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0300					:	"平野口",		K_OSAKA,		5,		4,		198028,	274548,	0,		0,		0,		0,		0,		0,		NO,		0,		2,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0301					:	"黒門口",		K_OSAKA,		5,		4,		199731,	273894,	0,		0,		0,		0,		0,		0,		NO,		0,		8,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0302					:	"黒門口外",		K_NANTOU,		5,		4,		200974,	273919,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0303					:	"松屋町口外",	K_NANTOU,		5,		4,		192678,	275610,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0304					:	"谷町口外",		K_NANTOU,		5,		4,		194918,	275635,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0305					:	"八丁目口外",	K_NANTOU,		5,		4,		196044,	275635,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0306					:	"平野口外",		K_NANTOU,		5,		4,		198053,	275635,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0307					:	"外堀",			K_OSAKA,		2,		2,		199602,	266607,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
+	S_0308					:	"外堀",			K_OSAKA,		2,		2,		192274,	274425,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
+	S_0309					:	"小橋村",		K_NANTOU,		2,		2,		197132,	276236,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0310					:	"篠山",			K_NANTOU,		2,		2,		197107,	277760,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_布陣山,	D_Toyotomi,				""
+	S_0311					:	"青屋",			K_NANTOU,		2,		2,		201971,	269210,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0312					:	"大和橋",		K_NANTOU,		2,		2,		200972,	271448,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_6						:	"至 大阪湾口",	K_KIDU,			2,		2,		171968,	282240,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
+	S_0313					:	"森林口",		K_NANTOU,		2,		2,		200961,	270068,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0338					:	"玉造",			K_TYUUOU,		2,		2,		195353,	278758,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0314					:	"生玉",			K_NANTOU,		2,		2,		193856,	276812,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
 	S_AMAGASAKI				:	"尼崎城",		K_SETTSU,		5,		5,		162695,	182451,	45000,	35000,	800,	500,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_Toyotomi,				""
 	S_ITAMI					:	"伊丹城",		K_SETTSU,		6,		3,		162831,	181504,	20000,	12000,	700,	450,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_Toyotomi,				""
 	S_IKEDA					:	"池田城",		K_SETTSU,		4,		3,		163279,	180657,	20000,	15000,	400,	300,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_Toyotomi,				""
@@ -3484,28 +3485,17 @@ ShiroConnect {
 	S_TAKATSUKI,	S_IBARAKI,		BROAD,			ARC,			165964,	180614,	165670,	181017	
 	S_IBARAKI,		S_a,			BROAD,			ARC,			165017,	181555	
 	S_IBARAKI,		S_0157,			NARROW,			ARC,			165836,	181273	
-	S_a,			S_i,			BROAD,			ARC
-	S_a,			S_b,			BROAD,			LINE
-	S_b,			S_i,			BROAD,			ARC
-	S_b,			S_c,			BROAD,			LINE
-	S_b,			S_2,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
+	S_OOSAKAWANOKI,	S_HYOUGO,		SEA,			ARC,			159372,	184000	
 	S_h,			S_a,			BROAD,			LINE
-	S_h,			S_8,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
-	S_i,			S_h,			BROAD,			ARC
-	S_i,			S_g,			BROAD,			ARC
-	S_i,			S_f,			BROAD,			ARC
+	S_a,			S_b,			BROAD,			LINE
+	S_b,			S_c,			BROAD,			LINE
+	S_c,			S_d,			BROAD,			LINE
+	S_c,			S_3,			NARROW,			TOP_INVISIBLE, LINE,			216473,	269465	
+	S_d,			S_e,			BROAD,			LINE
+	S_e,			S_f,			BROAD,			LINE
+	S_e,			S_5,			NARROW,			TOP_INVISIBLE, LINE,			195712,	298419	
 	S_f,			S_g,			BROAD,			ARC,			163379,	182873	
 	S_f,			S_OOSAKAWANOKI,	SEA,			ARC,			162240,	183923	
-	S_f,			S_6,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
-	S_OOSAKAWANOKI,	S_HYOUGO,		SEA,			ARC,			159372,	184000	
-	S_OOSAKAWANOKI,	S_15,			SEA,			TOP_BOTTOM_INVISIBLE, LINE
-	S_e,			S_i,			BROAD,			ARC
-	S_e,			S_f,			BROAD,			LINE
-	S_d,			S_i,			BROAD,			ARC
-	S_d,			S_e,			BROAD,			LINE
-	S_d,			S_4,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
-	S_c,			S_i,			BROAD,			ARC
-	S_c,			S_d,			BROAD,			LINE
 	S_g,			S_h,			BROAD,			ARC,			163558,	182227	
 	S_g,			S_OOSAKAWANOKI,	SEA,			ARC,			162227,	183360	
 	S_g,			S_AMAGASAKI,	BROAD,			ARC,			163033,	182540	
@@ -3519,7 +3509,6 @@ ShiroConnect {
 	S_0216,			S_0172,			NARROW,			LINE
 	S_0216,			S_0174,			NARROW,			LINE,			197676,	270125	
 	S_9,			S_0075,			NARROW,			LINE
-	S_9,			S_i,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_0078,			S_0168,			BROAD,			LINE,			196466,	268390,	196773,	268191,	196965,	268198,	197186,	268197,	197510,	268421	
 	S_0174,			S_0080,			NARROW,			LINE
 	S_0174,			S_0170,			NARROW,			LINE,			197669,	268332,	197292,	268076	
@@ -3638,19 +3627,9 @@ ShiroConnect {
 	S_0329,			S_0316,			BROAD,			LINE
 	S_13,			S_4,			BROAD,			LINE,			204480,	291072	
 	S_13,			S_14,			NARROW,			LINE
-	S_4,			S_3,			BROAD,			BOTTOM_INVISIBLE, LINE,			216512,	290880	
-	S_4,			S_2,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE,			228288,	278784	
-	S_4,			S_1,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE,			236352,	257984	
-	S_4,			S_7,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE,			154048,	301056	
-	S_4,			S_0328,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE,			150272,	307072	
-	S_4,			S_0272,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE,			154688,	302272	
+	S_4,			S_d,			BROAD,			BOTTOM_INVISIBLE, LINE,			216524,	290611	
 	S_0337,			S_0317,			NARROW,			LINE
 	S_5,			S_14,			NARROW,			LINE
-	S_5,			S_1,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE,			224320,	300800	
-	S_5,			S_2,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE,			232832,	255872	
-	S_5,			S_15,			SEA,			TOP_BOTTOM_INVISIBLE, LINE,			149312,	295872	
-	S_5,			S_7,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE,			142976,	286080	
-	S_5,			S_e,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_14,			S_0323,			NARROW,			LINE
 	S_14,			S_0333,			NARROW,			LINE
 	S_0333,			S_0334,			NARROW,			LINE
@@ -3662,9 +3641,6 @@ ShiroConnect {
 	S_0242,			S_12,			SEA,			LINE,			210176,	268057,	212262,	268326	
 	S_12,			S_3,			NARROW,			LINE
 	S_12,			S_0248,			SEA,			LINE
-	S_3,			S_2,			NARROW,			BOTTOM_INVISIBLE, LINE,			216652,	269260	
-	S_3,			S_5,			NARROW,			TOP_INVISIBLE, LINE,			195353,	298458	
-	S_3,			S_c,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_0245,			S_0246,			SEA,			LINE
 	S_0245,			S_0253,			SEA,			LINE
 	S_0246,			S_0252,			NARROW,			LINE
@@ -3675,7 +3651,7 @@ ShiroConnect {
 	S_11,			S_2,			BROAD,			LINE
 	S_11,			S_0246,			BROAD,			LINE
 	S_11,			S_10,			NARROW,			ARC,			206694,	258226,	205336,	257638	
-	S_2,			S_3,			BROAD,			BOTTOM_INVISIBLE, LINE,			216371,	254310	
+	S_2,			S_b,			BROAD,			BOTTOM_INVISIBLE, LINE,			216473,	254592	
 	S_10,			S_0252,			NARROW,			LINE
 	S_10,			S_1,			NARROW,			LINE
 	S_0253,			S_17,			NARROW,			LINE
@@ -3690,9 +3666,7 @@ ShiroConnect {
 	S_0257,			S_0262,			NARROW,			ARC,			188800,	263526,	187110,	263014	
 	S_17,			S_0252,			SEA,			LINE
 	S_17,			S_8,			BROAD,			LINE
-	S_8,			S_2,			BROAD,			BOTTOM_INVISIBLE, LINE,			195891,	253900	
-	S_8,			S_3,			MOUNTAIN,		TOP_BOTTOM_INVISIBLE, LINE,			217983,	251699	
-	S_8,			S_4,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE,			244800,	250432	
+	S_8,			S_h,			BROAD,			BOTTOM_INVISIBLE, LINE,			195878,	254054	
 	S_0260,			S_17,			BROAD,			ARC,			193689,	260044	
 	S_0260,			S_0261,			NARROW,			ARC,			189260,	259225	
 	S_0261,			S_0263,			NARROW,			ARC,			182630,	258176	
@@ -3703,17 +3677,14 @@ ShiroConnect {
 	S_0264,			S_16,			NARROW,			LINE
 	S_16,			S_7,			NARROW,			LINE
 	S_16,			S_0270,			SEA,			ARC,			174208,	266432	
-	S_7,			S_3,			NARROW,			BOTTOM_INVISIBLE, LINE,			171212,	254131	
-	S_7,			S_g,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
+	S_7,			S_g,			BROAD,			BOTTOM_INVISIBLE, LINE,			170957,	253978	
 	S_0267,			S_0262,			SEA,			LINE
 	S_0267,			S_0268,			SEA,			LINE
 	S_0267,			S_0257,			SEA,			LINE
 	S_0268,			S_0264,			SEA,			ARC,			181324,	266982	
-	S_1,			S_7,			NARROW,			BOTTOM_INVISIBLE, LINE,			204979,	253926	
-	S_1,			S_a,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
+	S_1,			S_a,			NARROW,			BOTTOM_INVISIBLE, LINE,			205644,	254003	
 	S_0270,			S_0271,			SEA,			ARC
 	S_0295,			S_0273,			SEA,			ARC,			182425,	278886	
-	S_0295,			S_OOSAKAWANOKI,	SEA,			TOP_BOTTOM_INVISIBLE, LINE
 	S_15,			S_0270,			SEA,			ARC,			174208,	278297	
 	S_15,			S_0295,			SEA,			ARC,			178099,	282880	
 	S_15,			S_0272,			SEA,			ARC,			178176,	277555	
@@ -3799,7 +3770,7 @@ ShiroConnect {
 	S_0312,			S_0313,			NARROW,			LINE
 	S_0312,			S_0190,			SEA,			LINE
 	S_0312,			S_0199,			SEA,			LINE
-	S_6,			S_8,			SEA,			BOTTOM_INVISIBLE, LINE,			167744,	283456	
+	S_6,			S_f,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
 	S_0313,			S_0311,			NARROW,			LINE
 	S_0313,			S_0190,			SEA,			LINE
 	S_0338,			S_0319,			NARROW,			LINE
@@ -8252,6 +8223,28 @@ ConditionalEvent {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Country", "SCountryList[ShiroA]"
 		}
 	}
+	CE_0077 {
+		Title		: "　大坂城城主"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: NO
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "OsakaJyosyu", "#城支配大名(S_0075)"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "OsakaJyosyu", "#城支配大名(S_i)"
+		}
+		Message {
+			"大坂城の天守閣が%大名Daimyou1%に占領されました。"
+			"摂津マップの「大坂城」城主が%大名Daimyou1%に変更となります。"
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "OsakaJyoshu"
+			HAPPENING_SHIRO_SHOZOKU_CHANGE, VARIABLE, NONE, S_i, NONE, NONE, NONE, "", ""
+		}
+	}
 	CE_0014 {
 		Title		: "■公儀の認定・解除"
 		PeriodStart	: NONE
@@ -10262,7 +10255,7 @@ Label {
 	"黒部川",			193689,	148352,	K_ECCHUU,		PART,		6,			20,				NO,		NO
 	"相模川",			223501,	173810,	K_SAGAMI,		PART,		6,			20,				NO,		NO
 	"諏訪大社",			205670,	161330,	K_MINAMISHINANO,PART,		8,			20,				NO,		NO
-	"大 坂 ",			163923,	181262,	K_SETTSU,		PART,		0,			30,				YES,	NO
+	"大 坂 ",			163986,	181646,	K_SETTSU,		PART,		0,			30,				YES,	NO
 	"関",				178758,	171448,	K_MINO,			PART,		5,			20,				NO,		NO
 	"ヶ",				178764,	171691,	K_MINO,			PART,		5,			20,				NO,		NO
 	"原",				178758,	171956,	K_MINO,			PART,		5,			20,				NO,		NO
@@ -10369,11 +10362,11 @@ Label {
 	"大和川",			213759,	266483,	NONE,			PART,		0,			14,				NO,		NO
 	"島野川",			210086,	267162,	NONE,			PART,		0,			14,				NO,		NO
 	"野田方面",			214809,	256742,	NONE,			PART,		0,			14,				NO,		NO
-	"中津川流域",		193587,	254182,	NONE,			PART,		0,			14,				NO,		NO
-	"味舌方面",			205222,	255756,	NONE,			PART,		0,			14,				NO,		NO
+	"中津川流域",		194509,	254923,	NONE,			PART,		0,			14,				NO,		NO
+	"味舌方面",			205913,	256063,	NONE,			PART,		0,			14,				NO,		NO
 	"北伝達村方面",		172800,	258112,	NONE,			PART,		0,			14,				NO,		NO
 	"平野方面",			210022,	291737,	K_OKAYAMA,		PART,		0,			16,				NO,		NO
-	"長居方面",			197094,	294860,	K_OKAYAMA,		PART,		0,			16,				NO,		NO
+	"長居方面",			196787,	296242,	K_OKAYAMA,		PART,		0,			16,				NO,		NO
 	"実施しない",		311712,	294309,	K_ISHI,			PART,		0,			30,				NO,		NO
 }
       
