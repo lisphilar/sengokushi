@@ -918,9 +918,8 @@ Doumei {
 	D_NA,					FUSEN,		D_ALL
 	D_Helper,				FUSEN,		D_ALL
 	D_CHOTEI,				FUSEN,		D_ALL
-	D_Toyotomi,				FUSEN,		D_Tokugawa
-	D_Toyotomi,				FUSEN,		D_0099
-	D_Tokugawa,				FUSEN,		D_0099
+	D_Toyotomi,				FUSEN,		D_ALL
+	D_Tokugawa,				FUSEN,		D_ALL
 	D_0196,					FUSEN,		D_ALL
 	D_CHOTEI,				SHINJUU,	D_Tyosogabe
 	D_CHOTEI,				SHINJUU,	D_0007
@@ -1085,32 +1084,17 @@ Doumei {
 	D_0221,					SHINJUU,	D_0227
 	D_0221,					SHINJUU,	D_0229
 	D_0078,					FUSEN,		D_0077
-	D_0231,					FUSEN,		D_ALL
 	D_0062,					FUSEN,		D_ALL
+	D_0231,					FUSEN,		D_ALL
 	D_0166,					FUSEN,		D_ALL
 	D_0196,					NOTHING,	D_Fukushima
-	D_0233,					FUSEN,		D_Tokugawa
-	D_0232,					FUSEN,		D_Tokugawa
-	D_0042,					FUSEN,		D_Tokugawa
-	D_0068,					FUSEN,		D_Tokugawa
-	D_0071,					FUSEN,		D_Tokugawa
-	D_0100,					FUSEN,		D_Tokugawa
-	D_0078,					FUSEN,		D_Tokugawa
 	D_0078,					FUSEN,		D_0091
-	D_0078,					FUSEN,		D_Toyotomi
 	D_0078,					FUSEN,		D_0014
-	D_0159,					FUSEN,		D_Toyotomi
-	D_0159,					FUSEN,		D_Tokugawa
-	D_Furuta,				FUSEN,		D_Toyotomi
-	D_Furuta,				FUSEN,		D_Tokugawa
 	D_0001,					FUSEN,		D_Uraku
 	D_0001,					FUSEN,		D_Kashiwara
 	D_0001,					FUSEN,		D_Fizikake
 	D_0001,					FUSEN,		D_Shibamura
 	D_0001,					FUSEN,		D_0027
-	D_0152,					FUSEN,		D_Tokugawa
-	D_0091,					FUSEN,		D_Tokugawa
-	D_0041,					FUSEN,		D_Tokugawa
 	D_0041,					FUSEN,		D_DATE
 	D_DATE,					FUSEN,		D_0039
 	D_DATE,					FUSEN,		D_0035
@@ -1127,15 +1111,6 @@ Doumei {
 	D_0206,					FUSEN,		D_0210
 	D_0206,					FUSEN,		D_0197
 	D_0210,					FUSEN,		D_0197
-	D_Toyotomi,				FUSEN,		D_0197
-	D_Toyotomi,				FUSEN,		D_0210
-	D_Toyotomi,				FUSEN,		D_0040
-	D_Toyotomi,				FUSEN,		D_0202
-	D_Toyotomi,				FUSEN,		D_0200
-	D_Toyotomi,				FUSEN,		D_0217
-	D_Toyotomi,				FUSEN,		D_0221
-	D_Tokugawa,				FUSEN,		D_0200
-	D_Tokugawa,				FUSEN,		D_0221
 }
 ShiroType {
 	ST_NORMAL		:	NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			2,	3,	0,	2,	0,	0,	0,	0,	0,	0,	0,	0,	-18,-18,17,	19,	0,	0,	&+

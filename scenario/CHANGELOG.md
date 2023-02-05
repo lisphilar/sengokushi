@@ -19,6 +19,7 @@
 - [史実：武田松平家の滅亡と徳川頼宣による引き継ぎ #16](https://github.com/lisphilar/sengokushi/issues/16)
 - [大坂の経路、石高修正 #17](https://github.com/lisphilar/sengokushi/issues/17)
 - [茨木城の城名、城主、石高の修正 #18](https://github.com/lisphilar/sengokushi/issues/18)
+- [初期外交：豊臣氏宗家及び徳川家が全大名家と不戦同盟締結 #22](https://github.com/lisphilar/sengokushi/issues/22)
 
 
 ## Version 1.0.0.post0 (2023/1/23)
