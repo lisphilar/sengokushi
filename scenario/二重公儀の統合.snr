@@ -8216,7 +8216,7 @@ ConditionalEvent {
 			"摂津マップの「大坂城」城主が%大名Daimyou1%に変更となります。"
 		}
 		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "OsakaJyoshu"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "OsakaJyosyu"
 			HAPPENING_SHIRO_SHOZOKU_CHANGE, VARIABLE, NONE, S_i, NONE, NONE, NONE, "", ""
 		}
 	}
