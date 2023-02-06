@@ -772,7 +772,7 @@ Daimyou {
 	D_0157				:	"桑山家",		NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		""
 	D_0158				:	"平野家",		NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		"　　旗本"
 	D_0159				:	"松倉家",		NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		""
-	D_0161				:	"浅野本家",		NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		""
+	D_0161				:	"浅野家",		NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		""
 	D_0011				:	"小出家",		NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		""
 	D_0162				:	"北条家",		NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		""
 	D_0164				:	"池田家",		NORMAL,		100,		100,			-1,						10,					0,				YES,	NORMAL,		""
