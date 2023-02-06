@@ -9731,11 +9731,6 @@ ConditionalEvent {
 			CONDITION_LARGE_EQUAL, NONE, NONE, NONE, NONE, "Total", "0"
 		}
 		Message {
-			"%大名Toyotomi%-%大名Tokugawa%間の不戦同盟が解消され全面戦争不可避となりました。"
-			"各地から兵が%大名Toyotomi%に集まっています！"
-			""
-			"・%大名Toyotomi%直属の武将の騎馬兵数が増加：合計で約%DUK%名"
-			"・%大名Toyotomi%直属の武将の足軽兵数が増加：合計で約%DUA%名"
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Total", "(100000-CurrentK-CurrentA)*(0.75+#Random/2)"
@@ -9755,7 +9750,7 @@ ConditionalEvent {
 		LoopVariable	: ""
 		Condition {
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "UpdatedK", "#Round(Total/11/BushouN)"
-			CONDITION_LARGE_EQUAL, NONE, NONE, NONE, NONE, "UpdatedK", "0"
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "UpdatedK", "0"
 		}
 		Message {
 			"%大名Toyotomi%-%大名Tokugawa%間の不戦同盟が解消され全面戦争不可避となりました。"
@@ -9779,7 +9774,7 @@ ConditionalEvent {
 		LoopVariable	: ""
 		Condition {
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "UpdatedA", "#Round(Total/1.1/BushouN)"
-			CONDITION_LARGE_EQUAL, NONE, NONE, NONE, NONE, "UpdatedA", "0"
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "UpdatedA", "0"
 		}
 		Message {
 			"%大名Toyotomi%-%大名Tokugawa%間の不戦同盟が解消され全面戦争不可避となりました。"
