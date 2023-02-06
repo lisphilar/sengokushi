@@ -8198,6 +8198,22 @@ ConditionalEvent {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Country", "SCountryList[ShiroA]"
 		}
 	}
+	CE_0081 {
+		Title		: "■大坂"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: ONCE
+		SubRoutine	: NO
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+		}
+	}
 	CE_0077 {
 		Title		: "　大坂城城主"
 		PeriodStart	: NONE
@@ -8218,6 +8234,44 @@ ConditionalEvent {
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "OsakaJyosyu"
 			HAPPENING_SHIRO_SHOZOKU_CHANGE, VARIABLE, NONE, S_i, NONE, NONE, NONE, "", ""
+		}
+	}
+	CE_0080 {
+		Title		: "　大坂城から本丸へ"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: NO
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "#城武将数(S_i)", "0"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0082", ""
+		}
+	}
+	CE_0082 {
+		Title		: "　　移動"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: BUSHOU
+		LoopVariable	: "LB"
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "BushouA", "LB"
+			CONTITION_BUSHOU_AT_SHIRO, NONE, NONE, S_i, VARIABLE, "", ""
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Bushou1", "LB"
+			HAPPENING_BUSHOU_MOVE, NONE, NONE, S_18, NONE, VARIABLE, NONE, "", ""
 		}
 	}
 	CE_0014 {
