@@ -21,6 +21,7 @@
 - [茨木城の城名、城主、石高の修正 #18](https://github.com/lisphilar/sengokushi/issues/18)
 - [初期外交：豊臣氏宗家及び徳川家が全大名家と不戦同盟締結 #22](https://github.com/lisphilar/sengokushi/issues/22)
 -  [大名家名の短縮化 #23](https://github.com/lisphilar/sengokushi/issues/23)
+- [大坂城マップの拡大率修正、表示範囲修正 #24](https://github.com/lisphilar/sengokushi/issues/24)
 
 ## Version 1.0.0.post0 (2023/1/23)
 
