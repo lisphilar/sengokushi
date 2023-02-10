@@ -3,7 +3,7 @@
 安定版及び開発版の最新Versionは以下のとおりです。
 
 - [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.1.0
-- [開発版](https://github.com/lisphilar/sengokushi/tree/main/scenario)：1.2.0.dev0
+- [開発版](https://github.com/lisphilar/sengokushi/tree/main/scenario)：1.2.0.dev1
 
 ## Change log
 
@@ -12,7 +12,7 @@
 ## Un-released
 
 - [version.txtをCHANGELOG.md (.html)に統合する #26](https://github.com/lisphilar/sengokushi/issues/26)
-
+- [毛利旧臣の扱いの修正 #28](https://github.com/lisphilar/sengokushi/issues/28)
 
 ## Version 1.1.0 (2023/2/10)
 
