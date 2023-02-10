@@ -5,6 +5,10 @@
 
 ## Un-released
 
+NA
+
+## Version 1.1.0 (2023/2/10)
+
 - [条件イベント整理のため一斉削除 #1](https://github.com/lisphilar/sengokushi/issues/1)
 - [Change logを作成し、配布ファイルに含める #3](https://github.com/lisphilar/sengokushi/issues/3)
 - [シナリオ進行用「家」の削減、名称変更（意思表示→行政）#4](https://github.com/lisphilar/sengokushi/issues/4) 
@@ -30,6 +34,6 @@
 - [ライセンス及びシナリオ詳細を配布ファイル内で明記する #2](https://github.com/lisphilar/sengokushi/issues/2)
 
 
-## Version 1.0.0 (2010/12/13, 2-23/1/21)
+## Version 1.0.0 (2010/12/13, 2023/1/21)
 
 - 2010/12/13作成のVersion 4-Dを、内容同一のままVersion 1.0.0としてGitHubにて公開
