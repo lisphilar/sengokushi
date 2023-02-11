@@ -221,7 +221,6 @@ WordAssign {
 	NOUHANKI			:	"農繁期"
 }
 KuniArea {
-	K_ISHI				:	6,			2386,	2253,	2522,	2346
 	K_OKAYAMA			:	6,			1543,	2181,	1679,	2311
 	K_TYUUOU			:	8,			1468,	2137,	1600,	2256
 	K_HOKUBU			:	6,			1435,	1990,	1585,	2097
@@ -339,30 +338,29 @@ TeppouKounyuu {
 	TS_SAKATA		:	"酒田三十六人衆",1599,		300,		0.30,			100,		100,		10,				300
 }
 TeppouKounyuuMonth {
-	TS_SAKAITENNOUJI:	-1,	K_ISHI, K_OKAYAMA, K_TYUUOU, K_HOKUBU, K_HIGASHI, K_OSAKA, K_NODA, K_NANTOU, K_KIDU, K_IMAFUKU, K_OOSAKAKAWA, K_NISHIMUTU, K_HIGASHIMUTU, K_RIKUTYU, K_RIKUZEN, K_UGO, K_KITAETIGO, K_MINAMIETIGO, K_ECCHUU, K_KAGA, K_KOUZUKE, K_SHIMOTSUKE, K_SHIMOUSA, K_KAZUSA, K_AWA, K_MUSASHI&+
-, K_SAGAMI, K_KAI, K_KITASHINANO, K_MINAMISHINANO, K_HIDA, K_IZU, K_SURUGA, K_TOOTOUMI, K_MIKAWA, K_OWARI, K_TAJIMA, K_AHA, K_AMAKUSA
+	TS_SAKAITENNOUJI:	-1,	K_OKAYAMA, K_TYUUOU, K_HOKUBU, K_HIGASHI, K_OSAKA, K_NODA, K_NANTOU, K_KIDU, K_IMAFUKU, K_OOSAKAKAWA, K_NISHIMUTU, K_HIGASHIMUTU, K_RIKUTYU, K_RIKUZEN, K_UGO, K_KITAETIGO, K_MINAMIETIGO, K_ECCHUU, K_KAGA, K_KOUZUKE, K_SHIMOTSUKE, K_SHIMOUSA, K_KAZUSA, K_AWA, K_MUSASHI, K_SAGAMI&+
+, K_KAI, K_KITASHINANO, K_MINAMISHINANO, K_HIDA, K_IZU, K_SURUGA, K_TOOTOUMI, K_MIKAWA, K_OWARI, K_TAJIMA, K_AHA, K_AMAKUSA
 	TS_SAKAITENNOUJI:	1,	K_IWAKI, K_IWASHIRO, K_SHOUNAI, K_UZEN, K_NOTO, K_ECHIZEN, K_HITACHI, K_MINO, K_MINO2, K_ISE, K_SHIMA, K_WAKASA, K_OUMI, K_IGA, K_YAMASHIRO, K_YAMATO, K_TANBA, K_SETTSU, K_KAWACHI, K_IZUMI, K_KII, K_MINAMIKII, K_INABA, K_IWAMI, K_HARIMA, K_MIMASAKA, K_BIZEN, K_BICCHUU, K_BINGO&+
 , K_AKI, K_SUOU, K_NAGATO, K_AWAJI, K_SETOUCHI, K_SANUKI, K_IYO, K_TOSA
 	TS_SAKAITENNOUJI:	2,	K_TANGO, K_OKI, K_HOUKI, K_IZUMO, K_BUZEN, K_BUNGO, K_CHIKUZEN, K_CHIKUGO, K_TSUSHIMA, K_HIRADO, K_GOTOU, K_HIZEN, K_HIGO, K_HYUUGA, K_OOSUMI, K_SATSUMA, K_AMAMI
 	TS_SAKAITENNOUJI:	4,	K_EZO, K_SADO, K_IKI, K_RYUUKYUU
-	TS_IMAI			:	-1,	K_ISHI, K_OKAYAMA, K_TYUUOU, K_HOKUBU, K_HIGASHI, K_OSAKA, K_NODA, K_NANTOU, K_KIDU, K_IMAFUKU, K_OOSAKAKAWA, K_EZO, K_IWAKI, K_IWASHIRO, K_SHOUNAI, K_NOTO, K_ECHIZEN, K_HITACHI, K_MINO, K_MINO2, K_SHIMA, K_WAKASA, K_OUMI, K_YAMATO, K_TANBA, K_KII, K_MINAMIKII, K_TANGO, K_INABA&+
-, K_OKI, K_HOUKI, K_IZUMO, K_IWAMI, K_HARIMA, K_MIMASAKA, K_BIZEN, K_BICCHUU, K_BINGO, K_AKI, K_SUOU, K_NAGATO, K_AWAJI, K_SETOUCHI, K_SANUKI, K_IYO, K_TOSA, K_BUZEN, K_BUNGO, K_CHIKUZEN, K_CHIKUGO, K_TSUSHIMA, K_IKI, K_HIRADO, K_GOTOU, K_HIZEN, K_HIGO, K_AMAKUSA, K_HYUUGA, K_OOSUMI, K_SATSUMA, K_AMAMI&+
-, K_RYUUKYUU
+	TS_IMAI			:	-1,	K_OKAYAMA, K_TYUUOU, K_HOKUBU, K_HIGASHI, K_OSAKA, K_NODA, K_NANTOU, K_KIDU, K_IMAFUKU, K_OOSAKAKAWA, K_EZO, K_IWAKI, K_IWASHIRO, K_SHOUNAI, K_NOTO, K_ECHIZEN, K_HITACHI, K_MINO, K_MINO2, K_SHIMA, K_WAKASA, K_OUMI, K_YAMATO, K_TANBA, K_KII, K_MINAMIKII, K_TANGO, K_INABA, K_OKI&+
+, K_HOUKI, K_IZUMO, K_IWAMI, K_HARIMA, K_MIMASAKA, K_BIZEN, K_BICCHUU, K_BINGO, K_AKI, K_SUOU, K_NAGATO, K_AWAJI, K_SETOUCHI, K_SANUKI, K_IYO, K_TOSA, K_BUZEN, K_BUNGO, K_CHIKUZEN, K_CHIKUGO, K_TSUSHIMA, K_IKI, K_HIRADO, K_GOTOU, K_HIZEN, K_HIGO, K_AMAKUSA, K_HYUUGA, K_OOSUMI, K_SATSUMA, K_AMAMI, K_RYUUKYUU
 	TS_IMAI			:	1,	K_ECCHUU, K_KAGA, K_KOUZUKE, K_SHIMOTSUKE, K_SHIMOUSA, K_KAZUSA, K_AWA, K_MUSASHI, K_SAGAMI, K_KAI, K_KITASHINANO, K_MINAMISHINANO, K_HIDA, K_IZU, K_SURUGA, K_TOOTOUMI, K_MIKAWA, K_OWARI, K_ISE, K_IGA, K_YAMASHIRO, K_SETTSU, K_KAWACHI, K_IZUMI, K_TAJIMA, K_AHA
 	TS_IMAI			:	2,	K_NISHIMUTU, K_HIGASHIMUTU, K_RIKUTYU, K_RIKUZEN, K_UGO, K_UZEN, K_KITAETIGO, K_MINAMIETIGO, K_SADO
-	TS_CYAYA		:	-1,	K_ISHI, K_OKAYAMA, K_TYUUOU, K_HOKUBU, K_HIGASHI, K_OSAKA, K_NODA, K_NANTOU, K_KIDU, K_IMAFUKU, K_OOSAKAKAWA, K_EZO, K_IWAKI, K_IWASHIRO, K_SHOUNAI, K_SADO, K_ECHIZEN, K_MINO, K_MINO2, K_SHIMA, K_WAKASA, K_OUMI, K_YAMATO, K_TANBA, K_KII, K_MINAMIKII, K_TAJIMA, K_INABA, K_OKI, K_HOUKI&+
+	TS_CYAYA		:	-1,	K_OKAYAMA, K_TYUUOU, K_HOKUBU, K_HIGASHI, K_OSAKA, K_NODA, K_NANTOU, K_KIDU, K_IMAFUKU, K_OOSAKAKAWA, K_EZO, K_IWAKI, K_IWASHIRO, K_SHOUNAI, K_SADO, K_ECHIZEN, K_MINO, K_MINO2, K_SHIMA, K_WAKASA, K_OUMI, K_YAMATO, K_TANBA, K_KII, K_MINAMIKII, K_TAJIMA, K_INABA, K_OKI, K_HOUKI&+
 , K_IZUMO, K_IWAMI, K_HARIMA, K_MIMASAKA, K_BIZEN, K_BICCHUU, K_BINGO, K_AKI, K_SUOU, K_NAGATO, K_SETOUCHI, K_SANUKI, K_IYO, K_TOSA, K_BUNGO, K_CHIKUZEN, K_CHIKUGO, K_TSUSHIMA, K_IKI, K_HIRADO, K_GOTOU, K_HIZEN, K_HIGO, K_AMAKUSA, K_HYUUGA, K_OOSUMI, K_SATSUMA, K_AMAMI, K_RYUUKYUU
 	TS_CYAYA		:	1,	K_NISHIMUTU, K_HIGASHIMUTU, K_RIKUTYU, K_RIKUZEN, K_UGO, K_UZEN, K_KITAETIGO, K_MINAMIETIGO, K_ECCHUU, K_NOTO, K_KAGA, K_KOUZUKE, K_SHIMOTSUKE, K_HITACHI, K_SHIMOUSA, K_KAZUSA, K_AWA, K_MUSASHI, K_SAGAMI, K_KAI, K_KITASHINANO, K_MINAMISHINANO, K_HIDA, K_IZU, K_SURUGA, K_TOOTOUMI&+
 , K_MIKAWA, K_OWARI, K_ISE, K_IGA, K_YAMASHIRO, K_SETTSU, K_KAWACHI, K_IZUMI, K_TANGO, K_AWAJI, K_AHA, K_BUZEN
-	TS_KAMIYA		:	-1,	K_ISHI, K_OKAYAMA, K_TYUUOU, K_HOKUBU, K_HIGASHI, K_OSAKA, K_NODA, K_NANTOU, K_KIDU, K_IMAFUKU, K_OOSAKAKAWA, K_NISHIMUTU, K_HIGASHIMUTU, K_RIKUTYU, K_RIKUZEN, K_UGO, K_KITAETIGO, K_MINAMIETIGO, K_ECCHUU, K_KAGA, K_KOUZUKE, K_SHIMOTSUKE, K_SHIMOUSA, K_KAZUSA, K_AWA, K_MUSASHI&+
-, K_SAGAMI, K_KAI, K_KITASHINANO, K_MINAMISHINANO, K_HIDA, K_IZU, K_SURUGA, K_TOOTOUMI, K_MIKAWA, K_OWARI, K_IGA, K_AHA, K_AMAKUSA
+	TS_KAMIYA		:	-1,	K_OKAYAMA, K_TYUUOU, K_HOKUBU, K_HIGASHI, K_OSAKA, K_NODA, K_NANTOU, K_KIDU, K_IMAFUKU, K_OOSAKAKAWA, K_NISHIMUTU, K_HIGASHIMUTU, K_RIKUTYU, K_RIKUZEN, K_UGO, K_KITAETIGO, K_MINAMIETIGO, K_ECCHUU, K_KAGA, K_KOUZUKE, K_SHIMOTSUKE, K_SHIMOUSA, K_KAZUSA, K_AWA, K_MUSASHI, K_SAGAMI&+
+, K_KAI, K_KITASHINANO, K_MINAMISHINANO, K_HIDA, K_IZU, K_SURUGA, K_TOOTOUMI, K_MIKAWA, K_OWARI, K_IGA, K_AHA, K_AMAKUSA
 	TS_KAMIYA		:	1,	K_YAMASHIRO, K_SETTSU, K_KAWACHI, K_IZUMI, K_SETOUCHI, K_BUZEN, K_BUNGO, K_CHIKUZEN, K_CHIKUGO, K_TSUSHIMA, K_IKI, K_HIRADO, K_GOTOU, K_HIZEN, K_HIGO, K_HYUUGA, K_OOSUMI, K_SATSUMA, K_AMAMI
 	TS_KAMIYA		:	2,	K_IWAKI, K_IWASHIRO, K_SHOUNAI, K_UZEN, K_NOTO, K_ECHIZEN, K_HITACHI, K_MINO, K_MINO2, K_ISE, K_SHIMA, K_WAKASA, K_OUMI, K_YAMATO, K_TANBA, K_TANGO, K_TAJIMA, K_INABA, K_HOUKI, K_IZUMO, K_IWAMI, K_HARIMA, K_MIMASAKA, K_BIZEN, K_BICCHUU, K_BINGO, K_AKI, K_SUOU, K_NAGATO, K_AWAJI&+
 , K_SANUKI, K_IYO, K_TOSA
 	TS_KAMIYA		:	3,	K_EZO, K_SADO, K_KII, K_MINAMIKII, K_OKI, K_RYUUKYUU
-	TS_SAKATA		:	-1,	K_ISHI, K_OKAYAMA, K_TYUUOU, K_HOKUBU, K_HIGASHI, K_OSAKA, K_NODA, K_NANTOU, K_KIDU, K_IMAFUKU, K_OOSAKAKAWA, K_EZO, K_NISHIMUTU, K_HIGASHIMUTU, K_RIKUTYU, K_RIKUZEN, K_UGO, K_KITAETIGO, K_MINAMIETIGO, K_SADO, K_ECCHUU, K_NOTO, K_KAGA, K_ECHIZEN, K_KOUZUKE, K_SHIMOTSUKE, K_HITACHI&+
-, K_SHIMOUSA, K_KAZUSA, K_AWA, K_MUSASHI, K_SAGAMI, K_KAI, K_KITASHINANO, K_MINAMISHINANO, K_HIDA, K_MINO, K_MINO2, K_IZU, K_SURUGA, K_TOOTOUMI, K_MIKAWA, K_OWARI, K_ISE, K_SHIMA, K_WAKASA, K_OUMI, K_IGA, K_YAMASHIRO, K_YAMATO, K_TANBA, K_SETTSU, K_KAWACHI, K_IZUMI, K_KII, K_MINAMIKII, K_TANGO, K_TAJIMA&+
-, K_INABA, K_OKI, K_HOUKI, K_IZUMO, K_IWAMI, K_HARIMA, K_MIMASAKA, K_BIZEN, K_BICCHUU, K_BINGO, K_AKI, K_SUOU, K_NAGATO, K_AWAJI, K_SETOUCHI, K_SANUKI, K_AHA, K_IYO, K_TOSA, K_BUZEN, K_BUNGO, K_CHIKUZEN, K_CHIKUGO, K_TSUSHIMA, K_IKI, K_HIRADO, K_GOTOU, K_HIZEN, K_HIGO, K_AMAKUSA, K_HYUUGA, K_OOSUMI, K_SATSUMA&+
+	TS_SAKATA		:	-1,	K_OKAYAMA, K_TYUUOU, K_HOKUBU, K_HIGASHI, K_OSAKA, K_NODA, K_NANTOU, K_KIDU, K_IMAFUKU, K_OOSAKAKAWA, K_EZO, K_NISHIMUTU, K_HIGASHIMUTU, K_RIKUTYU, K_RIKUZEN, K_UGO, K_KITAETIGO, K_MINAMIETIGO, K_SADO, K_ECCHUU, K_NOTO, K_KAGA, K_ECHIZEN, K_KOUZUKE, K_SHIMOTSUKE, K_HITACHI, K_SHIMOUSA&+
+, K_KAZUSA, K_AWA, K_MUSASHI, K_SAGAMI, K_KAI, K_KITASHINANO, K_MINAMISHINANO, K_HIDA, K_MINO, K_MINO2, K_IZU, K_SURUGA, K_TOOTOUMI, K_MIKAWA, K_OWARI, K_ISE, K_SHIMA, K_WAKASA, K_OUMI, K_IGA, K_YAMASHIRO, K_YAMATO, K_TANBA, K_SETTSU, K_KAWACHI, K_IZUMI, K_KII, K_MINAMIKII, K_TANGO, K_TAJIMA, K_INABA&+
+, K_OKI, K_HOUKI, K_IZUMO, K_IWAMI, K_HARIMA, K_MIMASAKA, K_BIZEN, K_BICCHUU, K_BINGO, K_AKI, K_SUOU, K_NAGATO, K_AWAJI, K_SETOUCHI, K_SANUKI, K_AHA, K_IYO, K_TOSA, K_BUZEN, K_BUNGO, K_CHIKUZEN, K_CHIKUGO, K_TSUSHIMA, K_IKI, K_HIRADO, K_GOTOU, K_HIZEN, K_HIGO, K_AMAKUSA, K_HYUUGA, K_OOSUMI, K_SATSUMA&+
 , K_AMAMI, K_RYUUKYUU
 	TS_SAKATA		:	1,	K_IWAKI, K_IWASHIRO, K_SHOUNAI, K_UZEN
 }
@@ -556,7 +554,6 @@ EventDetail {
 }
 Daimyou {
 	D_NA				:	"空白地勢力",	RYUUKYUU,	0,			0,				0,						0,					0,				NO,		STATIC,		"空白地勢力"
-	D_Helper			:	"行政",			RYUUKYUU,	0,			0,				0,						0,					0,				NO,		STATIC,		""
 	D_Region			:	"地方管理",		RYUUKYUU,	0,			0,				0,						0,					0,				NO,		STATIC,		""
 	D_Country			:	"国管理",		RYUUKYUU,	0,			0,				0,						0,					0,				NO,		STATIC,		""
 	D_CHOTEI			:	"朝廷",			RYUUKYUU,	100,		100,			-1,						30,					10,				NO,		NOATTACK,	"天皇家。\n不可侵であり、移動・出陣もしない。"
@@ -907,7 +904,6 @@ Daimyou {
 }
 Doumei {
 	D_NA,					FUSEN,		D_ALL
-	D_Helper,				FUSEN,		D_ALL
 	D_CHOTEI,				FUSEN,		D_ALL
 	D_Toyotomi,				FUSEN,		D_ALL
 	D_Tokugawa,				FUSEN,		D_ALL
@@ -1198,23 +1194,20 @@ ShiroType {
 20,30
 }
 Shiro {
-	S_0198					:	"五畿七道外",	K_ISHI,			2,		2,		306752,	331072,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
-	S_0243					:	"裏方",			K_ISHI,			2,		2,		312768,	330944,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
-	S_0418					:	"処理用",		K_ISHI,			5,		3,		355072,	325312,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_選択不可,D_NA,					""
-	S_G1					:	"実施する",		K_ISHI,			0,		0,		306049,	292148,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_選択用,	D_Helper,				""
-	S_G2					:	"実施しない",	K_ISHI,			0,		0,		311667,	292184,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_選択用,	D_Helper,				""
-	S_G3					:	"実施不可",		K_ISHI,			0,		0,		317455,	292208,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_選択不可,D_Helper,				""
-	S_0249					:	"海外",			K_ISHI,			2,		2,		317504,	330880,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
-	S_0250					:	"蝦夷地",		K_ISHI,			2,		2,		321984,	330880,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0198					:	"五畿七道外",	K_EZO,			2,		2,		306752,	331072,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
+	S_0243					:	"裏方",			K_EZO,			2,		2,		312768,	330944,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0418					:	"処理用",		K_EZO,			5,		3,		355072,	325312,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_選択不可,D_NA,					""
+	S_0249					:	"海外",			K_EZO,			2,		2,		317504,	330880,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0250					:	"蝦夷地",		K_EZO,			2,		2,		321984,	330880,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_EFY					:	"福山館",		K_EZO,			7,		5,		235904,	79168,	0,		0,		500,	400,	0,		0,		YES,	20,		15,		YES,	50,		ST_陣屋,	D_0064,					""
 	S_0108					:	"瀬戸内チャシ",	K_EZO,			5,		3,		238464,	70016,	0,		0,		1000,	400,	0,		0,		NO,		0,		0,		NO,		50,		ST_山砦,	D_0062,					""
-	S_0251					:	"琉球",			K_ISHI,			2,		2,		326080,	330880,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0251					:	"琉球",			K_EZO,			2,		2,		326080,	330880,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_SYURI					:	"首里城",		K_RYUUKYUU,		6,		5,		40384,	253632,	62000,	50000,	2300,	1500,	1500,	800,	YES,	0,		5,		NO,		30,		ST_RYUUKYUU,D_0231,					"【産業】 特殊食材 "
 	S_YORON					:	"与論城",		K_RYUUKYUU,		3,		3,		52416,	237888,	27000,	22000,	100,	70,		0,		0,		NO,		0,		0,		NO,		20,		ST_RYUUKYUU,D_0231,					""
 	S_NAGO					:	"名護城",		K_RYUUKYUU,		4,		3,		46656,	248512,	28000,	25000,	300,	250,	0,		0,		NO,		0,		0,		NO,		20,		ST_RYUUKYUU,D_0231,					""
 	S_NAKIJIN				:	"今帰仁城",		K_RYUUKYUU,		3,		3,		41920,	248320,	26000,	23000,	120,	70,		0,		0,		NO,		0,		0,		NO,		20,		ST_RYUUKYUU,D_0231,					""
-	S_0244					:	"東山道-奥羽",	K_ISHI,			2,		2,		306624,	333184,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
-	S_0258					:	"陸奥-津軽",	K_ISHI,			2,		2,		312576,	333184,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0244					:	"東山道-奥羽",	K_EZO,			2,		2,		306624,	333184,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
+	S_0258					:	"陸奥-津軽",	K_EZO,			2,		2,		312576,	333184,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_Hirosaki				:	"弘前",			K_NISHIMUTU,	7,		1,		239423,	91251,	60000,	10000,	1000,	500,	0,		0,		NO,		0,		0,		NO,		50,		ST_平地,	D_0032,					"津軽藩\n\n\n　大光寺城の建材も、築城に使われた。"
 	S_0115					:	"石川城",		K_NISHIMUTU,	5,		3,		240205,	92467,	40000,	37000,	1000,	400,	0,		0,		NO,		0,		0,		NO,		50,		ST_平城小,	D_0032,					"　　 別名、大仏ヶ鼻城。\n\n　周辺の館とあわせて石川十三楯（大仏ヶ鼻城、岡館、猿楽館、月館、坊館、八幡館&+
 、寺館、高田館、茂兵衛殿館、寺山館、孫兵衛館、小山館、新館）と呼ばれ、この13の城館の総称として石川城といわれた。\n\n"
@@ -1222,14 +1215,14 @@ Shiro {
 	S_0116					:	"大浦城",		K_NISHIMUTU,	3,		3,		238790,	90177,	20,		20,		20,		20,		0,		0,		NO,		0,		0,		NO,		50,		ST_山砦,	D_0032,					" 元和の一国一城令により廃城となったが、弘前城の詰城として西の丸には火薬庫などが建てられた。\n"
 	S_0117					:	"種里城",		K_NISHIMUTU,	3,		3,		237209,	89600,	500,	2000,	200,	100,	0,		0,		NO,		0,		0,		NO,		50,		ST_岬山城,	D_0032,					"津軽家の発祥の地"
 	S_0107					:	"十三湊居館",	K_NISHIMUTU,	3,		3,		238540,	85119,	0,		0,		1000,	600,	0,		0,		YES,	8,		2,		YES,	50,		ST_港,		D_0032,					""
-	S_0259					:	"陸奥-南部",	K_ISHI,			2,		2,		317376,	333440,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0259					:	"陸奥-南部",	K_EZO,			2,		2,		317376,	333440,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0119					:	"三戸城",		K_HIGASHIMUTU,	3,		3,		253568,	95206,	12000,	6000,	1000,	400,	0,		0,		NO,		0,		0,		NO,		50,		ST_平城小,	D_0035,					""
 	S_0110					:	"七戸給知",		K_HIGASHIMUTU,	3,		2,		252019,	91097,	4000,	2000,	200,	150,	0,		0,		NO,		0,		0,		NO,		50,		ST_陣屋,	D_0035,					""
 	S_0111					:	"八戸給知",		K_HIGASHIMUTU,	3,		2,		255820,	93339,	4000,	2000,	200,	150,	0,		0,		NO,		0,		0,		NO,		50,		ST_簡易堀城,D_0035,					""
 	S_0118					:	"田名部",		K_HIGASHIMUTU,	5,		3,		250905,	80460,	9000,	4000,	300,	280,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_0035,					"代官支配地"
 	S_0121					:	"毛馬内館",		K_HIGASHIMUTU,	3,		3,		246861,	96076,	5000,	2000,	400,	200,	0,		0,		NO,		0,		0,		NO,		50,		ST_陣屋,	D_0035,					""
 	S_0113					:	"根城",			K_HIGASHIMUTU,	2,		2,		254694,	92262,	12000,	8000,	30,		20,		0,		0,		YES,	15,		5,		YES,	50,		ST_平城小,	D_0035,					""
-	S_0265					:	"陸奥-北上",	K_ISHI,			2,		2,		321792,	333184,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0265					:	"陸奥-北上",	K_EZO,			2,		2,		321792,	333184,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_HANAMAKI				:	"花巻城",		K_RIKUTYU,		6,		3,		250368,	110438,	16000,	8000,	600,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0035,					" 南部藩支城"
 	S_Huraikata				:	"旧不来方城",	K_RIKUTYU,		8,		4,		250278,	105434,	120000,	60000,	1600,	300,	0,		0,		NO,		0,		0,		NO,		60,		ST_平城大,	D_0035,					"　南部家は関ヶ原の戦いで利直は東軍に属したため徳川家康より所領を安堵された。利直は地名を「不来方」から「&+
 盛岡」に改めた。\n\n　築城と平行して城下町建設も行い、中津川以北の湿地帯を埋め立てて市街地とした。近江商人が多く在住。\n"
@@ -1249,7 +1242,7 @@ Shiro {
 	S_FUTAGO				:	"金ヶ崎城",		K_RIKUTYU,		5,		3,		250511,	111934,	23000,	22000,	450,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_DATE,					""
 	S_MIZUSAWA				:	"水沢城",		K_RIKUTYU,		4,		3,		250443,	114506,	33000,	27000,	350,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0056,					""
 	S_HIRAIZUMI				:	"中尊寺",		K_RIKUTYU,		2,		2,		250137,	116070,	16000,	3000,	1500,	1000,	0,		0,		NO,		0,		0,		NO,		10,		ST_寺,		D_CHOTEI,				""
-	S_0266					:	"陸奥-大崎",	K_ISHI,			2,		2,		326016,	333568,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0266					:	"陸奥-大崎",	K_EZO,			2,		2,		326016,	333568,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_Sendai				:	"仙台城",		K_RIKUZEN,		10,		10,		248244,	128128,	1000000,200000,	1000,	400,	0,		0,		YES,	0,		0,		YES,	50,		ST_平城大,	D_DATE,					"表石六十二万石　実高は百万といわれる\n\n経済\n \n北上川流域の湿地帯の開拓などの新田開発によって実高100万&+
 石とも言われるほどに多くの米を収穫できるようになった。また、買米制と呼ばれる事実上の専売制度が導入されていた。その米を東回り航路で石巻を通して江戸に運んで大きな利益を得た。\n\n　三陸沖に漁場を持ち、良港に恵まれたことなどから、三陸海岸で採れるアワビやサメを、干し鮑やフカヒレに加工して「長崎俵物」として中国に輸出していた。&+
 \n\n　米の生産高は、およそ100万石強であるが、鉱山資源が日本国内としては豊富であり、鉄鋼業と、馬産を奨励して、成功したことや、三陸沖に漁場を持ち、良港に恵まれたことなどがあげられる。　\n　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Ｗｉｋｉｐｅｄｉａより\n\n"
@@ -1274,7 +1267,7 @@ Shiro {
 	S_SASAYA				:	"笹谷峠",		K_RIKUZEN,		5,		0,		240694,	129379,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_DATE,					""
 	S_0106					:	"川崎要害",		K_RIKUZEN,		10,		10,		244454,	127105,	500,	500,	3200,	320,	0,		0,		NO,		0,		0,		NO,		50,		ST_平城小,	D_DATE,					""
 	S_0129					:	"平澤要害",		K_RIKUZEN,		3,		1,		244915,	129369,	500,	500,	3200,	320,	0,		0,		NO,		0,		0,		NO,		50,		ST_陣屋,	D_DATE,					""
-	S_0269					:	"陸奥-白河",	K_ISHI,			2,		2,		329728,	333312,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0269					:	"陸奥-白河",	K_EZO,			2,		2,		329728,	333312,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_IWASHIROCHOTEIVAMA	:	"守山城",		K_IWAKI,		2,		2,		238797,	141490,	120000,	80000,	600,	500,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_0025,					""
 	S_FUNAOKA				:	"舟岡要害",		K_IWAKI,		3,		2,		244877,	130840,	18000,	5000,	500,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_DATE,					""
 	S_0127					:	"岩沼要害",		K_IWAKI,		4,		3,		246784,	129984,	5000,	2000,	400,	320,	0,		0,		NO,		0,		0,		NO,		50,		ST_平城小,	D_DATE,					""
@@ -1300,7 +1293,7 @@ Shiro {
 	S_NARAHA				:	"楢葉",			K_IWAKI,		3,		2,		248780,	142977,	60000,	50000,	150,	100,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般山城,D_0065,					""
 	S_IWKIDIRA				:	"磐城平",		K_IWAKI,		4,		4,		247194,	145818,	80000,	70000,	600,	500,	0,		0,		NO,		0,		0,		NO,		40,		ST_関所,	D_0065,					""
 	S_0140					:	"高玉金山口",	K_IWAKI,		2,		2,		240973,	140109,	0,		0,		0,		0,		4000,	3000,	NO,		0,		0,		NO,		50,		ST_一般外町,D_0025,					""
-	S_0296					:	"陸奥-会津",	K_ISHI,			2,		2,		333056,	333376,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0296					:	"陸奥-会津",	K_EZO,			2,		2,		333056,	333376,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_AIZUWAKAMATSU			:	"会津若松城",	K_IWASHIRO,		9,		9,		231846,	139630,	150000,	100000,	4500,	2800,	0,		0,		NO,		0,		0,		NO,		30,		ST_若松城,	D_0025,					""
 	S_HIBARATOUGE			:	"檜原峠",		K_IWASHIRO,		5,		0,		234329,	135913,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_0025,					""
 	S_TSUTIYUTOUGE			:	"土湯峠",		K_IWASHIRO,		5,		0,		236723,	137036,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_0025,					""
@@ -1311,7 +1304,7 @@ Shiro {
 	S_INAMI					:	"久川城",		K_IWASHIRO,		3,		3,		226714,	143375,	30000,	20000,	150,	120,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般山城,D_0025,					""
 	S_SHIGIYAMA				:	"鴫山城",		K_IWASHIRO,		7,		6,		230142,	144383,	60000,	40000,	200,	170,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般山城,D_0025,					""
 	S_SEISHIDOU				:	"勢至堂峠",		K_IWASHIRO,		5,		0,		235034,	142052,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_0025,					""
-	S_0330					:	"出羽-北部",	K_ISHI,			2,		2,		336512,	333248,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0330					:	"出羽-北部",	K_EZO,			2,		2,		336512,	333248,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0134					:	"久保田",		K_UGO,			6,		5,		234700,	105753,	80000,	40000,	3200,	2000,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0021,					""
 	S_TSUGARUOOTATE			:	"陸奥大館城",	K_UGO,			4,		3,		242023,	96536,	60000,	30000,	250,	200,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般山城,D_0021,					""
 	S_Zyunisyo				:	"十二所館",		K_UGO,			4,		3,		243122,	97369,	40000,	20000,	150,	80,		0,		0,		NO,		0,		0,		NO,		20,		ST_一般山城,D_0021,					""
@@ -1323,20 +1316,20 @@ Shiro {
 	S_0135					:	"院内館",		K_UGO,			4,		3,		240640,	115712,	10000,	5000,	200,	40,		0,		0,		NO,		0,		0,		NO,		50,		ST_陣屋,	D_0055,					""
 	S_YUZAWA				:	"湯沢館",		K_UGO,			4,		4,		241202,	114020,	20000,	10000,	450,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0021,					""
 	S_ONIKOUBE				:	"鬼首峠",		K_UGO,			3,		1,		244107,	116850,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山砦,	D_0021,					""
-	S_0332					:	"出羽-庄内",	K_ISHI,			2,		2,		340160,	333568,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0332					:	"出羽-庄内",	K_EZO,			2,		2,		340160,	333568,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_TSURUGAOKA			:	"鶴岡城",		K_SHOUNAI,		8,		3,		230709,	121010,	282000,	141000,	350,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城大,	D_0039,					""
 	S_ARATAME				:	"酒田浜",		K_SHOUNAI,		2,		2,		231258,	117222,	84000,	44000,	200,	150,	0,		0,		YES,	5,		1,		NO,		20,		ST_一般山城,D_0039,					""
 	S_TOZENGI				:	"亀ヶ崎城",		K_SHOUNAI,		5,		5,		231258,	118232,	66000,	33000,	500,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0039,					""
 	S_UZENOURA				:	"大山城",		K_SHOUNAI,		4,		3,		230266,	119921,	84000,	42000,	500,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0039,					""
 	S_ROKUJURIGOE			:	"六十里越",		K_SHOUNAI,		3,		0,		231603,	124058,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_0039,					""
-	S_0335					:	"出羽-最上",	K_ISHI,			2,		2,		343296,	333632,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0335					:	"出羽-最上",	K_EZO,			2,		2,		343296,	333632,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_SAKENOBE				:	"鮭延城",		K_SHOUNAI,		3,		2,		237314,	119270,	64000,	32000,	400,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般山城,D_0050,					""
 	S_0114					:	"大蔵清水城",	K_SHOUNAI,		5,		2,		237516,	121548,	60000,	30000,	150,	130,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0060,					""
 	S_0109					:	"庄内金山城",	K_SHOUNAI,		2,		2,		239155,	118016,	2000,	1000,	30,		20,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0050,					""
 	S_OBANAZAWA				:	"尾花沢",		K_SHOUNAI,		1,		1,		239476,	122611,	24000,	12000,	800,	450,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_0039,					""
 	S_NOBEZAWA				:	"延沢城",		K_SHOUNAI,		4,		3,		240589,	123592,	62000,	31000,	300,	230,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0039,					""
 	S_MOGAMIOGUNI			:	"最上小国城",	K_SHOUNAI,		2,		2,		241378,	120220,	26000,	13000,	250,	170,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般山城,D_0059,					""
-	S_0336					:	"出羽-置賜",	K_ISHI,			2,		2,		346688,	333760,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0336					:	"出羽-置賜",	K_EZO,			2,		2,		346688,	333760,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_YONEZAWA				:	"米沢城",		K_UZEN,			7,		5,		235020,	133300,	108000,	60000,	2200,	1500,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城大,	D_0014,					""
 	S_YACHI					:	"楯岡城",		K_UZEN,			4,		4,		238387,	125312,	72000,	36000,	150,	120,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0057,					""
 	S_YAMAGATA				:	"山形城",		K_UZEN,			4,		2,		238306,	127860,	200000,	100000,	2000,	1400,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城大,	D_0039,					""
@@ -1347,8 +1340,8 @@ Shiro {
 	S_NAKAYAMA				:	"中山",			K_UZEN,			3,		3,		236314,	130494,	36000,	20000,	150,	140,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般山城,D_0014,					""
 	S_TAKABATA				:	"高畑城",		K_UZEN,			4,		2,		236083,	132020,	72000,	40000,	500,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0014,					""
 	S_OGUNI					:	"置賜小国城",	K_UZEN,			2,		2,		230142,	131379,	18000,	10000,	250,	200,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般山城,D_0014,					""
-	S_0339					:	"東山道-中山",	K_ISHI,			2,		2,		306496,	335744,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
-	S_0343					:	"信濃",			K_ISHI,			2,		2,		312704,	335616,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0339					:	"東山道-中山",	K_EZO,			2,		2,		306496,	335744,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
+	S_0343					:	"信濃",			K_EZO,			2,		2,		312704,	335616,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_SHINSYUUEDA			:	"上田城",		K_KITASHINANO,	9,		9,		207181,	156699,	25000,	90000,	1200,	600,	0,		0,		NO,		0,		0,		NO,		60,		ST_一般山城,D_0078,					""
 	S_IIYAMA				:	"飯山城",		K_KITASHINANO,	3,		3,		208356,	149325,	65000,	60000,	200,	150,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_0088,					""
 	S_0151					:	"須坂",			K_KITASHINANO,	2,		2,		208051,	150809,	20000,	15000,	30,		18,		0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_0088,					""
@@ -1375,7 +1368,7 @@ Shiro {
 	S_ARAYA					:	"新野峠",		K_MINAMISHINANO,5,		0,		198335,	174278,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_0094,					""
 	S_KISOFUKUSHIMA			:	"木曽福島城跡",	K_MINAMISHINANO,6,		6,		198501,	164902,	12000,	10000,	900,	500,	800,	500,	NO,		0,		0,		NO,		20,		ST_岬山城,	D_0090,					"【産業】 林業  馬産地\n"
 	S_TSUMAGO				:	"妻籠南木曾",	K_MINAMISHINANO,1,		1,		196250,	169037,	14000,	10000,	1400,	800,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_0090,					""
-	S_0344					:	"飛騨",			K_ISHI,			2,		2,		317504,	335744,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0344					:	"飛騨",			K_EZO,			2,		2,		317504,	335744,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_HIDATAKAYAMA			:	"飛騨高山城",	K_HIDA,			6,		5,		191770,	160651,	25000,	15000,	800,	600,	1500,	500,	NO,		0,		0,		NO,		20,		ST_岬山城,	D_0121,					"【産業】 林業 "
 	S_NOMUGI				:	"野麦峠",		K_HIDA,			5,		0,		194944,	162123,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_0121,					""
 	S_KAMIOKA				:	"神岡鉱山口",	K_HIDA,			5,		5,		193087,	157913,	0,		0,		0,		0,		2000,	1100,	NO,		0,		0,		NO,		10,		ST_山,		D_0121,					""
@@ -1383,7 +1376,7 @@ Shiro {
 	S_0155					:	"白川郷",		K_HIDA,			2,		2,		185280,	160729,	2000,	1000,	120,	70,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0121,					""
 	S_AMOU					:	"天生峠",		K_HIDA,			5,		0,		185675,	159539,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_0121,					""
 	S_HAGIWARASUWA			:	"萩原諏訪城",	K_HIDA,			4,		4,		190949,	164121,	15000,	8000,	150,	130,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_0121,					""
-	S_0345					:	"美濃",			K_ISHI,			2,		2,		321792,	335872,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0345					:	"美濃",			K_EZO,			2,		2,		321792,	335872,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_NAEKI					:	"苗木城",		K_MINO,			5,		5,		194473,	170035,	15000,	10500,	700,	520,	0,		0,		NO,		0,		0,		NO,		60,		ST_岬山城,	D_0125,					""
 	S_IWAMURA				:	"岩村城",		K_MINO,			7,		7,		194162,	172032,	25000,	20000,	600,	530,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般山城,D_Daikyu,				""
 	S_TSUMAGI				:	"妻木城",		K_MINO,			3,		2,		189338,	173143,	9500,	7500,	200,	130,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_0134,					""
@@ -1412,7 +1405,7 @@ Shiro {
 	S_TAKASU				:	"高須城",		K_MINO,			6,		5,		182140,	175511,	60000,	50673,	400,	300,	0,		0,		NO,		0,		0,		NO,		30,		ST_簡易堀城,D_0128,					""
 	S_IMAO					:	"今尾城",		K_MINO,			4,		3,		181557,	174553,	17000,	10000,	250,	200,	0,		0,		NO,		0,		0,		NO,		30,		ST_簡易堀城,D_0135,					""
 	S_MINOTARA				:	"多良城陣屋",	K_MINO,			4,		4,		178892,	174039,	6000,	4300,	300,	200,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_0137,					""
-	S_0346					:	"近江",			K_ISHI,			2,		2,		325760,	336000,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0346					:	"近江",			K_EZO,			2,		2,		325760,	336000,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_MINOURA				:	"柏原城",		K_OUMI,			3,		3,		177275,	172726,	25000,	9500,	400,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_Bakuhu,				""
 	S_NAGAHAMA				:	"長浜城",		K_OUMI,			7,		4,		175890,	172042,	80000,	9500,	2500,	1500,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_Bakuhu,				""
 	S_KUNITOMO				:	"小室",			K_OUMI,			2,		2,		175552,	171264,	25000,	9500,	900,	600,	3200,	1200,	NO,		0,		0,		NO,		40,		ST_一般外町,D_Bakuhu,				"【産業】 鉄砲鍛冶"
@@ -1440,8 +1433,8 @@ Shiro {
 	S_ZEZE					:	"膳所城",		K_OUMI,			7,		3,		170291,	178780,	32000,	20000,	1500,	500,	0,		0,		NO,		0,		0,		NO,		10,		ST_平城小,	D_0019,					""
 	S_OOTSU					:	"大津",			K_OUMI,			5,		4,		169780,	177998,	15000,	10000,	4800,	4500,	0,		0,		NO,		0,		0,		YES,	40,		ST_一般外町,D_0019,					""
 	S_BIWAKO				:	"湖上",			K_OUMI,			3,		3,		174322,	173478,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_Bakuhu,				""
-	S_0347					:	"北陸道",		K_ISHI,			2,		2,		306368,	338944,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
-	S_0348					:	"越後",			K_ISHI,			2,		2,		312320,	338944,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0347					:	"北陸道",		K_EZO,			2,		2,		306368,	338944,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
+	S_0348					:	"越後",			K_EZO,			2,		2,		312320,	338944,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_ECHIGOTAKANE			:	"鳴海金山口",	K_KITAETIGO,	3,		3,		228147,	126208,	0,		0,		0,		0,		5000,	4000,	NO,		0,		0,		NO,		10,		ST_山,		D_0030,					"【産業】 金山"
 	S_ECHIGOMURAKAMI		:	"村上城",		K_KITAETIGO,	6,		5,		225202,	128998,	70000,	50000,	1100,	600,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0033,					""
 	S_KAMINOSEKI			:	"上関番所",		K_KITAETIGO,	5,		5,		226560,	130004,	50000,	40000,	150,	80,		0,		0,		NO,		0,		0,		NO,		30,		ST_関所,	D_0033,					""
@@ -1466,14 +1459,14 @@ Shiro {
 	S_FUDOUSAN				:	"不動山",		K_MINAMIETIGO,	3,		3,		201855,	146816,	12000,	10000,	150,	100,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_0030,					""
 	S_SADOKIKYOUOKI			:	"佐渡海峡",		K_MINAMIETIGO,	3,		3,		209332,	137958,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_Bakuhu,				""
 	S_OYASHIRAZU			:	"親不知子不知",	K_MINAMIETIGO,	7,		0,		197454,	147649,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_0030,					""
-	S_0349					:	"佐渡",			K_ISHI,			2,		2,		317376,	339136,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0349					:	"佐渡",			K_EZO,			2,		2,		317376,	339136,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_YOSHIOKA				:	"吉岡城",		K_SADO,			5,		5,		208614,	132274,	10000,	8500,	300,	200,	0,		0,		NO,		0,		5,		NO,		40,		ST_平城小,	D_Bakuhu,				""
 	S_RYOUTSU				:	"両津",			K_SADO,			2,		2,		209484,	130995,	10000,	8500,	1000,	700,	0,		0,		NO,		0,		3,		NO,		10,		ST_港,		D_Bakuhu,				""
 	S_AIKAWA				:	"相川金山口",	K_SADO,			5,		5,		208486,	129613,	0,		0,		0,		0,		8000,	4500,	NO,		0,		0,		NO,		10,		ST_山,		D_Bakuhu,				"【産業】 金山"
 	S_NISHIMIKAWA			:	"西三川砂金口",	K_SADO,			5,		5,		208513,	134066,	0,		0,		0,		0,		8000,	4000,	NO,		0,		0,		NO,		10,		ST_山,		D_Bakuhu,				"【産業】 金山"
 	S_KAWARADA				:	"河原田城",		K_SADO,			3,		2,		206668,	131354,	10000,	8500,	250,	200,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_Bakuhu,				""
 	S_0044					:	"日本海東方",	K_SADO,			0,		0,		196992,	134016,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_海岸,	D_Bakuhu,				""
-	S_0350					:	"越中",			K_ISHI,			2,		2,		321472,	339392,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0350					:	"越中",			K_EZO,			2,		2,		321472,	339392,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_ECCHYUMIYAZKI			:	"宮崎関",		K_ECCHUU,		3,		2,		195584,	148326,	38000,	30000,	250,	200,	0,		0,		NO,		0,		0,		NO,		20,		ST_関所,	D_0099,					""
 	S_UOZU					:	"魚津城",		K_ECCHUU,		7,		5,		193997,	149338,	45000,	30000,	500,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城大,	D_0099,					""
 	S_ECCHYUMATSUKURA		:	"松倉",			K_ECCHUU,		3,		3,		194532,	150770,	135000,	90000,	350,	300,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_0099,					""
@@ -1494,7 +1487,7 @@ Shiro {
 	S_0154					:	"五箇山",		K_ECCHUU,		2,		2,		185946,	158220,	22000,	20000,	200,	100,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0099,					""
 	S_ECCHYUHIROSE			:	"広瀬城跡",		K_ECCHUU,		5,		4,		185421,	153704,	22000,	20000,	200,	150,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_0099,					""
 	S_TOYAMAWANOKI			:	"富山湾",		K_ECCHUU,		3,		3,		192768,	146893,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_0099,					""
-	S_0351					:	"能登",			K_ISHI,			2,		2,		325952,	339328,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0351					:	"能登",			K_EZO,			2,		2,		325952,	339328,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_ISURUGIYAMA			:	"石動山寺",		K_NOTO,			3,		3,		186993,	147468,	20000,	15000,	300,	200,	0,		0,		NO,		0,		0,		NO,		20,		ST_寺,		D_0116,					""
 	S_KOMATUMARU			:	"七尾港",		K_NOTO,			4,		3,		186114,	146101,	30000,	15000,	1100,	800,	0,		0,		YES,	12,		1,		YES,	40,		ST_港,		D_0099,					""
 	S_ANAMIZU				:	"穴水城跡",		K_NOTO,			3,		3,		186393,	143592,	30000,	23000,	350,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_0102,					""
@@ -1505,7 +1498,7 @@ Shiro {
 	S_NOTOTENDO				:	"天堂",			K_NOTO,			2,		2,		184755,	142873,	17000,	15000,	150,	110,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_0099,					""
 	S_TOKUMARU				:	"徳丸城",		K_NOTO,			2,		2,		185192,	148300,	40000,	35000,	500,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_0099,					""
 	S_SUEMORI				:	"末森城",		K_NOTO,			6,		6,		184166,	149633,	25000,	17000,	300,	200,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_0105,					""
-	S_0352					:	"加賀",			K_ISHI,			2,		2,		329344,	339392,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0352					:	"加賀",			K_EZO,			2,		2,		329344,	339392,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_KURIKARA				:	"倶利伽羅峠",	K_KAGA,			7,		0,		184219,	152368,	100,	100,	100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_0117,					""
 	S_KAGATAKAMATSU			:	"高松",			K_KAGA,			2,		2,		182745,	151157,	50000,	30000,	1800,	1300,	1000,	300,	NO,		2,		5,		NO,		10,		ST_港,		D_0101,					"【産業】 船道前 "
 	S_KANAZAWA				:	"金沢城",		K_KAGA,			8,		6,		182028,	153524,	150000,	101500,	7000,	2900,	0,		0,		YES,	0,		0,		NO,		40,		ST_平城大,	D_0099,					""
@@ -1517,7 +1510,7 @@ Shiro {
 	S_ASAINAWATE			:	"浅井畷",		K_KAGA,			7,		6,		180452,	157401,	2000,	1000,	0,		0,		0,		0,		NO,		0,		0,		NO,		10,		ST_平地,	D_0120,					""
 	S_DISYOUJI				:	"大聖寺城",		K_KAGA,			7,		4,		176820,	158195,	80000,	70000,	900,	700,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城大,	D_0099,					""
 	S_NIHONKAIMIKUNIOKI		:	"日本海三国沖",	K_KAGA,			3,		3,		176000,	155134,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_0099,					""
-	S_0353					:	"越前",			K_ISHI,			2,		2,		332992,	339328,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0353					:	"越前",			K_EZO,			2,		2,		332992,	339328,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_KANETSU				:	"金津",			K_ECHIZEN,		4,		3,		175912,	159334,	72000,	60000,	450,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_Yuki,					""
 	S_ECHIZENAGO			:	"松陰",			K_ECHIZEN,		3,		3,		173519,	160743,	52000,	40000,	200,	200,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_Yuki,					""
 	S_ECHIZENMIKUNI			:	"三国湊",		K_ECHIZEN,		3,		3,		174079,	159673,	67000,	60000,	4000,	2700,	1500,	400,	YES,	0,		2,		NO,		10,		ST_堺,		D_Yuki,					"【産業】 船道前 "
@@ -1539,15 +1532,15 @@ Shiro {
 	S_TSURUGA				:	"敦賀城",		K_ECHIZEN,		7,		6,		172812,	168089,	65000,	60000,	4500,	2800,	1500,	500,	YES,	2,		5,		NO,		40,		ST_平城大,	D_Yuki,					"【産業】 船道前 "
 	S_ECHIZENHIKIDA			:	"疋壇城址",		K_ECHIZEN,		5,		5,		173388,	168729,	13000,	10000,	400,	300,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_Yuki,					""
 	S_TSURUGAWANOKI			:	"敦賀湾",		K_ECHIZEN,		3,		3,		170164,	164659,	0,		0,		300,	300,	0,		0,		NO,		2,		3,		YES,	10,		ST_海岸,	D_Yuki,					""
-	S_0354					:	"若狭",			K_ISHI,			2,		2,		336128,	339328,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0354					:	"若狭",			K_EZO,			2,		2,		336128,	339328,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_KUNIYOSHI				:	"国吉城",		K_WAKASA,		3,		3,		170764,	169049,	15000,	20000,	150,	100,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_Kyougoku,				""
 	S_KUMAGAWA				:	"熊川",			K_WAKASA,		3,		2,		169779,	170828,	14000,	20000,	150,	120,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般外町,D_Kyougoku,				""
 	S_KOHAMA				:	"小浜城",		K_WAKASA,		8,		2,		168064,	170482,	39000,	34500,	3000,	1800,	500,	100,	YES,	3,		3,		NO,		10,		ST_平城小,	D_Kyougoku,				"【産業】 船道前 "
 	S_TAKAHAMA				:	"高浜城",		K_WAKASA,		4,		2,		165261,	170612,	24000,	20000,	250,	200,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_Kyougoku,				""
 	S_HORIKOSHI				:	"堀越峠",		K_WAKASA,		5,		0,		165875,	172186,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_Bakuhu,				""
 	S_WAKAAWANOKI			:	"若狭湾",		K_WAKASA,		3,		3,		166375,	167474,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_Kyougoku,				""
-	S_KANHASYUU				:	"関八州",		K_ISHI,			2,		2,		306432,	341632,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
-	S_0341					:	"下野",			K_ISHI,			2,		2,		340288,	342336,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_KANHASYUU				:	"関八州",		K_EZO,			2,		2,		306432,	341632,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
+	S_0341					:	"下野",			K_EZO,			2,		2,		340288,	342336,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_KAWAKAGOHARAI			:	"革籠原",		K_SHIMOTSUKE,	3,		2,		236248,	146290,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		10,		ST_平地,	D_0072,					""
 	S_KUROHA				:	"黒羽城",		K_SHIMOTSUKE,	5,		3,		235214,	149017,	17000,	13000,	150,	130,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_0072,					""
 	S_OOTAWARA				:	"大田原城",		K_SHIMOTSUKE,	4,		2,		233894,	149965,	14000,	12000,	150,	110,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0070,					""
@@ -1562,7 +1555,7 @@ Shiro {
 	S_TOCHIGI				:	"栃木",			K_SHIMOTSUKE,	4,		3,		229042,	157642,	38000,	8500,	350,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_Tokugawa,				""
 	S_0073					:	"佐野",			K_SHIMOTSUKE,	2,		2,		227481,	158208,	40000,	39000,	300,	200,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0234,					""
 	S_KARASAWAYAMA			:	"足利",			K_SHIMOTSUKE,	5,		3,		225847,	157181,	11000,	8500,	200,	180,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_Tokugawa,				""
-	S_0342					:	"上野",			K_ISHI,			2,		2,		333312,	342400,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0342					:	"上野",			K_EZO,			2,		2,		333312,	342400,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_MIKUNI				:	"三国峠",		K_KOUZUKE,		7,		0,		214692,	151281,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_0030,					""
 	S_NUMATA				:	"沼田城",		K_KOUZUKE,		6,		6,		218574,	153102,	27000,	20000,	800,	600,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_0078,					""
 	S_IWAHITSU				:	"岩櫃城",		K_KOUZUKE,		4,		2,		214745,	154060,	12000,	7000,	150,	110,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_0078,					""
@@ -1580,10 +1573,10 @@ Shiro {
 	S_NAGAISAKA				:	"長井坂",		K_KOUZUKE,		2,		1,		221569,	154571,	8000,	6000,	150,	110,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_0074,					""
 	S_OOTAKANAYAMA			:	"太田金山",		K_KOUZUKE,		6,		5,		223795,	158184,	45000,	40000,	450,	300,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_0076,					""
 	S_TATEBAYASHI			:	"館林城",		K_KOUZUKE,		7,		6,		226163,	159282,	70000,	60000,	1200,	700,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0076,					""
-	S_0355					:	"安房",			K_ISHI,			2,		2,		312064,	341696,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0355					:	"安房",			K_EZO,			2,		2,		312064,	341696,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_AWAKATAKITA			:	"滝田",			K_AWA,			4,		2,		232271,	177075,	80000,	60000,	300,	200,	0,		0,		YES,	0,		0,		NO,		20,		ST_一般外町,D_0176,					""
 	S_TATEYAMA				:	"館山",			K_AWA,			3,		2,		231398,	178201,	80000,	60000,	990,	800,	0,		0,		NO,		3,		5,		NO,		30,		ST_一般外町,D_0176,					""
-	S_0357					:	"上総",			K_ISHI,			2,		2,		317248,	341696,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0357					:	"上総",			K_EZO,			2,		2,		317248,	341696,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_OYUMI					:	"生実",			K_KAZUSA,		4,		2,		235799,	169111,	40000,	8500,	500,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般外町,D_0242,					""
 	S_HIGASHIGNE			:	"東金",			K_KAZUSA,		4,		3,		238782,	170148,	55000,	8500,	1500,	800,	0,		0,		NO,		0,		0,		NO,		10,		ST_堺,		D_Tokugawa,				""
 	S_KURURI				:	"久留里城",		K_KAZUSA,		7,		5,		234879,	174001,	24000,	20000,	900,	600,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般山城,D_0082,					""
@@ -1595,7 +1588,7 @@ Shiro {
 	S_MANGI					:	"万喜",			K_KAZUSA,		2,		2,		238132,	172365,	55000,	8500,	300,	200,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般外町,D_Tokugawa,				""
 	S_KATSUURA				:	"勝浦",			K_KAZUSA,		3,		3,		237978,	175897,	55000,	8500,	400,	200,	0,		0,		YES,	0,		0,		NO,		30,		ST_一般外町,D_0244,					""
 	S_TOMITSU				:	"飯野",			K_KAZUSA,		1,		1,		231245,	174848,	55000,	8500,	1500,	600,	0,		0,		YES,	0,		0,		NO,		10,		ST_関所,	D_Tokugawa,				""
-	S_0358					:	"下総",			K_ISHI,			2,		2,		321152,	342080,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0358					:	"下総",			K_EZO,			2,		2,		321152,	342080,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_YUKI					:	"結城城跡",		K_SHIMOUSA,		4,		2,		231434,	158682,	40000,	8500,	2200,	1200,	0,		0,		NO,		0,		0,		NO,		40,		ST_布陣町村,D_Tokugawa,				""
 	S_KOGA					:	"古河城",		K_SHIMOUSA,		6,		4,		229129,	159374,	50000,	20000,	1300,	600,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_Toda,					""
 	S_KURIHASHI				:	"栗橋",			K_SHIMOUSA,		4,		3,		228922,	160780,	15000,	12000,	700,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_Hisamatsu,			""
@@ -1616,7 +1609,7 @@ Shiro {
 	S_CHOUSHI				:	"銚子湊",		K_SHIMOUSA,		3,		2,		246106,	167025,	40000,	8500,	1800,	600,	800,	400,	YES,	0,		3,		NO,		10,		ST_港,		D_Tokugawa,				"【産業】 船道前 "
 	S_SHIKI					:	"士気",			K_SHIMOUSA,		2,		2,		237249,	169557,	40000,	8500,	150,	110,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_Tokugawa,				""
 	S_0088					:	"山崎",			K_SHIMOUSA,		2,		2,		233779,	164198,	15000,	12000,	300,	250,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0236,					""
-	S_0359					:	"常陸",			K_ISHI,			2,		2,		325568,	342464,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0359					:	"常陸",			K_EZO,			2,		2,		325568,	342464,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_HIRAGATA				:	"五浦平潟",		K_HITACHI,		2,		2,		245324,	149938,	17000,	8000,	700,	200,	0,		0,		YES,	0,		0,		YES,	40,		ST_港,		D_0042,					""
 	S_YAMAO					:	"常陸松岡城",	K_HITACHI,		2,		2,		243968,	152677,	40000,	32000,	150,	100,	0,		0,		NO,		0,		0,		YES,	40,		ST_岬山城,	D_0042,					""
 	S_KUJIKINZAN			:	"栃原金山口",	K_HITACHI,		3,		3,		238080,	151858,	0,		0,		0,		0,		3500,	1500,	NO,		0,		0,		NO,		10,		ST_山,		D_Takeda,				"【産業】 金山"
@@ -1640,7 +1633,7 @@ Shiro {
 	S_TSUCHIURA				:	"土浦城",		K_HITACHI,		5,		3,		236250,	161578,	45000,	35000,	500,	400,	0,		0,		NO,		0,		0,		NO,		30,		ST_簡易堀城,D_Fuzii,				""
 	S_0145					:	"小張",			K_HITACHI,		4,		2,		234496,	161433,	20000,	16000,	200,	120,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0069,					""
 	S_USHIKU				:	"牛久",			K_HITACHI,		5,		4,		235214,	162638,	20000,	15000,	1300,	900,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_0240,					""
-	S_0360					:	"武蔵",			K_ISHI,			2,		2,		329408,	342336,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0360					:	"武蔵",			K_EZO,			2,		2,		329408,	342336,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0102					:	"江戸城",		K_MUSASHI,		10,		4,		229836,	167603,	170000,	70000,	12000,	2200,	0,		0,		NO,		0,		0,		NO,		50,		ST_平城大,	D_Tokugawa,				""
 	S_MUSASHIFKAYA			:	"岡部",			K_MUSASHI,		5,		2,		223015,	159658,	57000,	8500,	700,	500,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般外町,D_Tokugawa,				""
 	S_HANAZONO				:	"花園",			K_MUSASHI,		5,		2,		220776,	160410,	26000,	8500,	250,	200,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般外町,D_Tokugawa,				""
@@ -1666,7 +1659,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_SETAGAYA				:	"世田谷",		K_MUSASHI,		2,		1,		227866,	168394,	57000,	8500,	500,	300,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_Tokugawa,				""
 	S_SHINAGAWA				:	"品川",			K_MUSASHI,		2,		1,		229248,	169099,	57000,	8500,	4500,	300,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_Tokugawa,				""
 	S_EDOWAN				:	"江戸湾",		K_MUSASHI,		3,		3,		231296,	170418,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_Tokugawa,				""
-	S_0361					:	"相模",			K_ISHI,			2,		2,		336256,	342272,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0361					:	"相模",			K_EZO,			2,		2,		336256,	342272,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0148					:	"小仏",			K_SAGAMI,		2,		2,		220467,	168371,	18000,	8500,	100,	20,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Tokugawa,				""
 	S_TAMANAWA				:	"玉縄城",		K_SAGAMI,		6,		4,		226140,	172173,	25000,	10000,	900,	700,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0253,					""
 	S_KAMAKURA				:	"鎌倉",			K_SAGAMI,		6,		1,		226636,	173373,	23000,	8500,	3800,	500,	1500,	1100,	NO,		0,		0,		NO,		10,		ST_神社,	D_Tokugawa,				"【産業】 鶴岡八幡宮    刀鍛冶、相州流 "
@@ -1681,8 +1674,8 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_HAKONE				:	"箱根",			K_SAGAMI,		7,		7,		218815,	174925,	8000,	5000,	2500,	400,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_0085,					""
 	S_0147					:	"江戸湾口",		K_SAGAMI,		7,		1,		228531,	177356,	0,		0,		300,	250,	0,		0,		YES,	11,		10,		YES,	50,		ST_海岸,	D_Tokugawa,				""
 	S_SAGAMIWANOKI			:	"相模湾",		K_SAGAMI,		3,		3,		225483,	175795,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_Tokugawa,				""
-	S_0356					:	"東海道",		K_ISHI,			2,		2,		306432,	344832,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
-	S_0362					:	"伊豆",			K_ISHI,			2,		2,		316800,	345216,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0356					:	"東海道",		K_EZO,			2,		2,		306432,	344832,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
+	S_0362					:	"伊豆",			K_EZO,			2,		2,		316800,	345216,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_NIRAYAMA				:	"韮山",			K_IZU,			4,		4,		217190,	178048,	30000,	8500,	600,	500,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_Tokugawa,				""
 	S_MISHIMA				:	"三島",			K_IZU,			3,		3,		217445,	176126,	18000,	13000,	500,	350,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_0085,					""
 	S_SHIMODA				:	"下田港",		K_IZU,			4,		3,		217702,	183168,	21000,	8500,	1300,	950,	800,	400,	YES,	0,		5,		NO,		30,		ST_港,		D_Tokugawa,				"【産業】 船道前 "
@@ -1690,7 +1683,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_AMAGI					:	"天城峠",		K_IZU,			5,		0,		216729,	180710,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_Bakuhu,				""
 	S_ATAMI					:	"熱海",			K_IZU,			1,		1,		219110,	177075,	24000,	8500,	1500,	500,	800,	200,	NO,		0,		0,		NO,		10,		ST_関所,	D_Tokugawa,				"【産業】 湯治場"
 	S_OOSHIMA				:	"伊豆大島",		K_IZU,			3,		3,		223897,	181606,	10000,	8500,	500,	300,	0,		0,		NO,		0,		2,		NO,		10,		ST_港,		D_Tokugawa,				""
-	S_0363					:	"駿河",			K_ISHI,			2,		2,		321216,	345152,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0363					:	"駿河",			K_EZO,			2,		2,		321216,	345152,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_ASHIGARATOUGE			:	"足柄峠",		K_SURUGA,		5,		0,		217881,	173260,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_0085,					""
 	S_MIMAKIHASHI			:	"沼津湊",		K_SURUGA,		4,		3,		215973,	176792,	19000,	8500,	1500,	1200,	800,	400,	YES,	0,		0,		NO,		40,		ST_港,		D_Bakuhu,				"\n"
 	S_KOKOKUJI				:	"興国寺城",		K_SURUGA,		6,		5,		215168,	176126,	15000,	13000,	700,	600,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0086,					""
@@ -1701,7 +1694,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_TANAKA				:	"田中城",		K_SURUGA,		4,		3,		206912,	179953,	13000,	10000,	300,	250,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0074,					""
 	S_IGAWA					:	"井川金山口",	K_SURUGA,		0,		0,		206260,	175856,	0,		0,		0,		0,		600,	500,	NO,		0,		0,		NO,		10,		ST_山,		D_Bakuhu,				"【産業】 金山 "
 	S_SURUGAWAN				:	"駿河湾",		K_SURUGA,		3,		3,		211867,	180120,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_Bakuhu,				""
-	S_0364					:	"遠江",			K_ISHI,			2,		2,		325696,	345024,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0364					:	"遠江",			K_EZO,			2,		2,		325696,	345024,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_SUWAHARA				:	"金谷宿",		K_TOOTOUMI,		3,		2,		205749,	181106,	100,	8500,	1000,	600,	0,		0,		NO,		0,		0,		YES,	40,		ST_一般外町,D_Bakuhu,				"川越し\n\n\n　金谷宿⇔島田宿の移動には、必ず一月かかります。\n\n　いずれかの宿にいる武将は、月初めに自動&+
 でもう一方の城へ移動します。\n\n　　　　　　　　　（河止めは”おそらく”ありません)\n\n　もちろん、宿の支配家が互いに、　従属ｏｒ敵対だと移動できませんが。\n"
 	S_0195					:	"島田宿",		K_TOOTOUMI,		2,		2,		206284,	180506,	100,	8500,	1000,	600,	0,		0,		NO,		0,		0,		YES,	50,		ST_一般外町,D_Bakuhu,				"川越し\n\n\n　金谷宿⇔島田宿の移動には、必ず一月かかります。\n\n　いずれかの宿にいる武将は、月初めに自動&+
@@ -1720,7 +1713,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_IITANI				:	"井伊谷城",		K_TOOTOUMI,		2,		2,		196223,	180839,	18000,	8500,	200,	170,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_Bakuhu,				""
 	S_SHIRASUGA				:	"白須賀宿",		K_TOOTOUMI,		2,		2,		195175,	182820,	17000,	8500,	450,	300,	0,		0,		NO,		0,		0,		NO,		10,		ST_一般外町,D_Bakuhu,				""
 	S_ENSHYUNADAOKI			:	"遠州灘",		K_TOOTOUMI,		3,		3,		196993,	184909,	0,		0,		300,	300,	0,		0,		NO,		0,		4,		YES,	10,		ST_海岸,	D_Sakurai,				""
-	S_0365					:	"甲斐",			K_ISHI,			2,		2,		311680,	344896,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0365					:	"甲斐",			K_EZO,			2,		2,		311680,	344896,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_IWADONOYAMA			:	"谷村",			K_KAI,			8,		7,		217345,	168907,	40000,	35000,	250,	200,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_D_OWARI,				""
 	S_KARISAKA				:	"雁坂峠",		K_KAI,			5,		0,		214246,	164633,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_D_OWARI,				""
 	S_0160					:	"甲斐給知",		K_KAI,			1,		1,		211480,	166041,	22000,	20000,	20,		12,		0,		0,		NO,		0,		0,		NO,		50,		ST_平地,	D_0123,					""
@@ -1733,7 +1726,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_HIRASAWATOUGE			:	"平沢峠",		K_KAI,			5,		0,		209317,	163892,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_D_OWARI,				""
 	S_SHIMOYAMA				:	"下山",			K_KAI,			5,		4,		209374,	170961,	43000,	40000,	450,	400,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_D_OWARI,				""
 	S_YUNOOKU				:	"湯ノ奥金山口",	K_KAI,			5,		5,		210304,	171813,	0,		0,		0,		0,		3000,	1300,	NO,		0,		0,		NO,		10,		ST_山,		D_D_OWARI,				"【産業】 金山"
-	S_0366					:	"三河",			K_ISHI,			2,		2,		330496,	345088,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0366					:	"三河",			K_EZO,			2,		2,		330496,	345088,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_YOSHIDA				:	"吉田城",		K_MIKAWA,		7,		6,		193345,	181861,	45000,	30000,	2800,	2000,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城大,	D_Takeya,				""
 	S_MIKAWAOOSAKI			:	"大崎",			K_MIKAWA,		3,		3,		192346,	182475,	20000,	8500,	250,	200,	0,		0,		NO,		0,		3,		NO,		40,		ST_陣屋,	D_Bakuhu,				""
 	S_TAHARA				:	"田原城",		K_MIKAWA,		3,		3,		191221,	183296,	17000,	10000,	700,	600,	0,		0,		NO,		0,		2,		NO,		40,		ST_平城小,	D_0144,					""
@@ -1751,7 +1744,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_KARIYA				:	"刈屋城",		K_MIKAWA,		5,		5,		187087,	178318,	38000,	30000,	550,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0140,					""
 	S_IKEKOIBUCHI			:	"大給奥殿",		K_MIKAWA,		4,		2,		188518,	177932,	11000,	6000,	500,	300,	0,		0,		NO,		0,		0,		NO,		10,		ST_陣屋,	D_Daikyu,				""
 	S_MIKAWAWAN				:	"三河湾",		K_MIKAWA,		3,		3,		188492,	182822,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_Bakuhu,				""
-	S_0367					:	"尾張",			K_ISHI,			2,		2,		333248,	344896,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0367					:	"尾張",			K_EZO,			2,		2,		333248,	344896,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_NARUMI				:	"鳴海",			K_OWARI,		5,		3,		186354,	177001,	62000,	56360,	800,	600,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般外町,D_Tozyo,				""
 	S_OWARIOGAWA			:	"緒川城",		K_OWARI,		4,		4,		186178,	178410,	12000,	10000,	450,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0140,					""
 	S_OWARIHIRAJIMA			:	"阿久比",		K_OWARI,		2,		2,		185982,	179480,	63000,	46360,	200,	130,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般外町,D_Tozyo,				""
@@ -1768,12 +1761,12 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_KURODA				:	"黒田城",		K_OWARI,		3,		2,		183810,	172812,	60000,	46360,	200,	130,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_Tozyo,				""
 	S_OWARIICHINOMIYA		:	"一宮",			K_OWARI,		4,		3,		183782,	173983,	65000,	46360,	500,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般外町,D_Tozyo,				""
 	S_TSUSHIMA				:	"津島",			K_OWARI,		2,		2,		183334,	175371,	71000,	46360,	2400,	1500,	800,	600,	NO,		0,		0,		NO,		10,		ST_堺,		D_Tozyo,				"【産業】 津料 "
-	S_0368					:	"伊賀",			K_ISHI,			2,		2,		336384,	344640,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0368					:	"伊賀",			K_EZO,			2,		2,		336384,	344640,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_KASHIWA				:	"柏野",			K_IGA,			3,		3,		175398,	180544,	32000,	30000,	150,	130,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_0153,					""
 	S_UENO					:	"伊賀上野城",	K_IGA,			6,		5,		174449,	181298,	120000,	110000,	2500,	1400,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_0153,					""
 	S_ICHINOMIYA			:	"一宮",			K_IGA,			2,		2,		174420,	183160,	32000,	30000,	850,	700,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_0153,					""
 	S_NAWARI				:	"名張城",		K_IGA,			5,		4,		173630,	183884,	31000,	30000,	600,	500,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_0153,					""
-	S_0369					:	"伊勢",			K_ISHI,			2,		2,		339648,	344768,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0369					:	"伊勢",			K_EZO,			2,		2,		339648,	344768,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_ISETANABE				:	"田辺",			K_ISE,			3,		3,		179981,	175066,	24000,	8500,	150,	100,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_Bakuhu,				""
 	S_ISAKA					:	"伊坂",			K_ISE,			3,		3,		181504,	177510,	30000,	20000,	250,	200,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_0015,					""
 	S_KOMONO				:	"菰野城",		K_ISE,			3,		3,		179635,	177825,	14000,	12000,	200,	150,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_0100,					""
@@ -1797,11 +1790,11 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_AOYAMA				:	"青山峠",		K_ISE,			5,		0,		176071,	182974,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_0153,					""
 	S_0072					:	"伊勢湾内",		K_ISE,			2,		2,		183820,	178777,	0,		0,		400,	200,	0,		0,		NO,		0,		0,		NO,		50,		ST_海岸,	D_Bakuhu,				""
 	S_ISEWANOKI				:	"伊勢湾外",		K_ISE,			3,		3,		182654,	182374,	0,		0,		300,	300,	0,		0,		NO,		0,		4,		YES,	10,		ST_海岸,	D_Bakuhu,				""
-	S_0370					:	"志摩",			K_ISHI,			2,		2,		342336,	345088,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0370					:	"志摩",			K_EZO,			2,		2,		342336,	345088,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_TOBA					:	"鳥羽城",		K_SHIMA,		5,		5,		185011,	186214,	23000,	20000,	2200,	1500,	0,		0,		YES,	7,		10,		NO,		30,		ST_簡易堀城,D_0152,					""
 	S_0085					:	"答志浦",		K_SHIMA,		2,		2,		186803,	185024,	0,		0,		300,	200,	0,		0,		NO,		0,		0,		NO,		50,		ST_海岸,	D_0152,					""
-	S_0407					:	"畿内",			K_ISHI,			2,		2,		306624,	347328,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
-	S_0371					:	"山城",			K_ISHI,			2,		2,		311808,	347392,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0407					:	"畿内",			K_EZO,			2,		2,		306624,	347328,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
+	S_0371					:	"山城",			K_EZO,			2,		2,		311808,	347392,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0082					:	"京都御所",		K_YAMASHIRO,	10,		10,		167866,	177684,	160000,	130000,	3200,	3000,	0,		0,		NO,		0,		0,		NO,		50,		ST_京都,	D_CHOTEI,				""
 	S_Nijou					:	"徳川二条城",	K_YAMASHIRO,	10,		10,		167589,	178028,	200000,	60000,	3200,	2400,	0,		0,		NO,		0,		0,		NO,		50,		ST_平城大,	D_Tokugawa,				"京都所司代の役所は本来、二条城内にはありません。"
 	S_KITANO				:	"北野天満宮",	K_YAMASHIRO,	2,		2,		167293,	177491,	25000,	12000,	2000,	1300,	0,		0,		NO,		0,		0,		NO,		10,		ST_神社,	D_CHOTEI,				"【産業】 北野天満宮"
@@ -1821,7 +1814,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_ENRYAKUJI				:	"延暦寺",		K_YAMASHIRO,	7,		6,		169138,	176974,	15000,	12000,	600,	400,	0,		0,		NO,		0,		0,		NO,		10,		ST_寺,		D_CHOTEI,				""
 	S_AMIDAGAMINE			:	"円山",			K_YAMASHIRO,	1,		1,		168600,	178308,	40000,	8500,	1000,	700,	1200,	900,	NO,		0,		0,		NO,		10,		ST_神社,	D_Tokugawa,				"金地院、知恩院"
 	S_MIMAKI				:	"御牧城",		K_YAMASHIRO,	5,		5,		167896,	180570,	19000,	13000,	550,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0154,					""
-	S_0372					:	"大和",			K_ISHI,			2,		2,		316544,	347584,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0372					:	"大和",			K_EZO,			2,		2,		316544,	347584,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_KURAGARI				:	"暗峠",			K_YAMATO,		5,		0,		167289,	182074,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_Bakuhu,				""
 	S_NARA					:	"奈良",			K_YAMATO,		3,		3,		169049,	182463,	32000,	8500,	5000,	3500,	0,		0,		NO,		0,		0,		NO,		10,		ST_堺,		D_Bakuhu,				""
 	S_0064					:	"宇陀松山陣屋",	K_YAMATO,		2,		2,		171384,	185951,	34000,	31717,	120,	90,		0,		0,		NO,		0,		0,		NO,		50,		ST_陣屋,	D_Fukushima,			""
@@ -1846,7 +1839,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_0065					:	"小泉陣屋",		K_YAMATO,		5,		3,		167921,	183451,	20000,	10000,	200,	120,	0,		0,		NO,		0,		0,		NO,		50,		ST_陣屋,	D_0155,					""
 	S_0067					:	"柳本陣屋",		K_YAMATO,		5,		3,		169036,	183782,	22000,	20000,	200,	320,	0,		0,		NO,		0,		0,		NO,		50,		ST_陣屋,	D_Uraku,				""
 	S_0068					:	"芝村陣屋",		K_YAMATO,		5,		3,		169343,	184576,	12000,	10000,	200,	120,	0,		0,		NO,		0,		0,		NO,		50,		ST_陣屋,	D_Uraku,				""
-	S_0373					:	"河内",			K_ISHI,			2,		2,		321152,	347648,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0373					:	"河内",			K_EZO,			2,		2,		321152,	347648,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0157					:	"金田",			K_KAWACHI,		2,		2,		166156,	181421,	4500,	3000,	200,	100,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0121,					"飛騨高山藩飛び地"
 	S_HIRAKATA				:	"枚方",			K_KAWACHI,		2,		2,		167054,	181146,	19000,	15000,	500,	350,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_Toyotomi,				""
 	S_SHIJYOUNAWATE			:	"私部",			K_KAWACHI,		5,		5,		166464,	182029,	31000,	29000,	400,	300,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_Toyotomi,				""
@@ -1858,7 +1851,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_TONDABAYASHI			:	"弘川",			K_KAWACHI,		5,		5,		166285,	186664,	12000,	3000,	200,	130,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_0162,					""
 	S_0087					:	"狭山",			K_KAWACHI,		3,		2,		164940,	186636,	12000,	3000,	400,	320,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0162,					""
 	S_SAYAMA				:	"紀伊見峠",		K_KAWACHI,		2,		2,		165257,	187507,	13000,	4000,	450,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_山,		D_0162,					""
-	S_0374					:	"和泉",			K_ISHI,			2,		2,		325440,	347584,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0374					:	"和泉",			K_EZO,			2,		2,		325440,	347584,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_SAKAI					:	"堺",			K_IZUMI,		8,		6,		163604,	184703,	18000,	15000,	28000,	15000,	3500,	1800,	YES,	0,		0,		NO,		10,		ST_堺,		D_Toyotomi,				"【産業】 鉄砲鍛冶 "
 	S_TANGE					:	"丹下城",		K_IZUMI,		2,		2,		164250,	185160,	23000,	15000,	400,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_Toyotomi,				""
 	S_KISHIWADA				:	"岸和田城",		K_IZUMI,		7,		6,		162444,	186444,	42000,	30000,	2000,	1600,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城大,	D_0011,					""
@@ -1866,7 +1859,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_KASHII				:	"樫井",			K_IZUMI,		2,		2,		160743,	187864,	22000,	13000,	450,	300,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_Toyotomi,				""
 	S_TSUCHIMARU			:	"土丸城",		K_IZUMI,		2,		2,		162344,	187698,	18000,	17000,	300,	200,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_Toyotomi,				""
 	S_0012					:	"谷川",			K_IZUMI,		2,		2,		158727,	188761,	2000,	1000,	30,		15,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0157,					""
-	S_0375					:	"摂津",			K_ISHI,			2,		2,		329664,	347520,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0375					:	"摂津",			K_EZO,			2,		2,		329664,	347520,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_TAKATSUKI				:	"高槻城",		K_SETTSU,		5,		3,		166193,	180339,	32000,	30000,	400,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_Toyotomi,				""
 	S_IBARAKI				:	"茨木城",		K_SETTSU,		6,		5,		165403,	181275,	18000,	15000,	500,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0155,					""
 	S_OOSAKAWANOKI			:	"大坂湾",		K_SETTSU,		9,		5,		160603,	184716,	0,		0,		5000,	3000,	0,		0,		YES,	20,		15,		YES,	80,		ST_海岸,	D_Toyotomi,				""
@@ -1879,7 +1872,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_e						:	"長居",			K_SETTSU,		8,		8,		164142,	183744,	17000,	11500,	1000,	700,	0,		0,		NO,		0,		0,		NO,		70,		ST_寺,		D_Toyotomi,				"不可視ですが、大坂マップの「至 長居」と経路で接続しています。"
 	S_f						:	"大坂湾口",		K_SETTSU,		6,		2,		163559,	183205,	0,		0,		300,	300,	0,		0,		NO,		0,		10,		NO,		80,		ST_海岸,	D_Toyotomi,				"不可視ですが、大坂マップの「至 大阪湾口」と経路で接続しています。"
 	S_g						:	"北伝達村",		K_SETTSU,		8,		8,		163316,	182668,	10000,	10000,	500,	300,	0,		0,		NO,		0,		0,		NO,		80,		ST_堺,		D_Toyotomi,				"不可視ですが、大坂マップの「至 北伝達村」と経路で接続しています。"
-	S_0014					:	"摂津-大坂",	K_ISHI,			2,		2,		332992,	347264,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0014					:	"摂津-大坂",	K_EZO,			2,		2,		332992,	347264,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0075					:	"天守閣",		K_OSAKA,		7,		6,		197114,	269216,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_大坂城,	D_Toyotomi,				""
 	S_18					:	"本丸御殿",		K_OSAKA,		5,		4,		197108,	269708,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中屋敷,D_Toyotomi,				""
 	S_0201					:	"本番所",		K_OSAKA,		5,		4,		197118,	270157,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
@@ -2040,8 +2033,8 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_SANDA					:	"三田",			K_SETTSU,		3,		2,		159781,	179838,	23000,	20000,	400,	350,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_Arimahouin,			""
 	S_NISHINOMIYA			:	"西宮",			K_SETTSU,		1,		1,		161802,	182220,	12000,	10000,	1200,	800,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_Toyotomi,				""
 	S_HYOUGO				:	"兵庫城",		K_SETTSU,		4,		4,		159296,	183103,	22000,	20000,	2000,	1400,	800,	400,	YES,	3,		5,		NO,		40,		ST_平城小,	D_Toyotomi,				"【産業】 船道前 "
-	S_0408					:	"南海道",		K_ISHI,			2,		2,		355008,	331392,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
-	S_0376					:	"紀伊",			K_ISHI,			2,		2,		359488,	331200,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0408					:	"南海道",		K_EZO,			2,		2,		355008,	331392,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
+	S_0376					:	"紀伊",			K_EZO,			2,		2,		359488,	331200,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_KIINAKANO				:	"中野",			K_KII,			5,		4,		158252,	189280,	28000,	20000,	400,	170,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般外町,D_0161,					""
 	S_WAKAYAMA				:	"和歌山城",		K_KII,			8,		6,		159270,	189977,	42000,	30000,	3300,	1400,	0,		0,		NO,		0,		0,		NO,		60,		ST_平城大,	D_0161,					""
 	S_NAGAYABU				:	"伊都郡",		K_KII,			2,		1,		165733,	188430,	14000,	10000,	150,	130,	0,		0,		NO,		0,		0,		NO,		10,		ST_一般外町,D_0161,					""
@@ -2069,14 +2062,14 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_OWSHI					:	"尾鷲",			K_MINAMIKII,	3,		2,		175488,	192192,	21000,	15000,	1700,	1000,	800,	400,	YES,	0,		4,		NO,		10,		ST_港,		D_0161,					"【産業】 船道前 "
 	S_KUMANONADAOKI			:	"熊野灘",		K_MINAMIKII,	3,		3,		162150,	201215,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_0161,					""
 	S_0060					:	"紀伊田辺",		K_MINAMIKII,	3,		2,		162316,	197465,	36000,	28000,	500,	320,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0161,					""
-	S_0377					:	"淡路",			K_ISHI,			2,		2,		362880,	331136,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0377					:	"淡路",			K_EZO,			2,		2,		362880,	331136,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_IWAYA					:	"岩屋",			K_AWAJI,		5,		3,		156647,	184575,	9000,	7000,	1200,	800,	0,		0,		YES,	3,		5,		NO,		30,		ST_港,		D_0133,					""
 	S_SUMOTO				:	"洲本城",		K_AWAJI,		3,		2,		155059,	188236,	12000,	9000,	1300,	1000,	1500,	620,	YES,	3,		5,		NO,		30,		ST_簡易堀城,D_0133,					"【産業】 船頭前 "
 	S_FUKURA				:	"福良",			K_AWAJI,		3,		2,		152167,	189900,	8000,	7000,	1000,	600,	0,		0,		NO,		0,		5,		NO,		10,		ST_港,		D_0133,					""
 	S_YURA					:	"由良",			K_AWAJI,		2,		2,		155724,	189184,	8500,	7000,	1000,	600,	0,		0,		NO,		0,		5,		NO,		10,		ST_港,		D_0133,					""
 	S_HOSHIGA				:	"小豆島",		K_AWAJI,		2,		2,		145997,	186240,	8000,	8500,	350,	250,	0,		0,		NO,		0,		0,		NO,		30,		ST_港,		D_Bakuhu,				""
 	S_NAOSHIMA				:	"直島城",		K_AWAJI,		3,		3,		142412,	186137,	900,	8500,	400,	300,	0,		0,		NO,		0,		0,		NO,		30,		ST_簡易堀城,D_Bakuhu,				""
-	S_0378					:	"阿波",			K_ISHI,			2,		2,		366016,	331072,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0378					:	"阿波",			K_EZO,			2,		2,		366016,	331072,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_TOSATOMARI			:	"土佐泊",		K_AHA,			2,		2,		150707,	189708,	12000,	10000,	2000,	1200,	800,	400,	YES,	3,		5,		NO,		10,		ST_港,		D_0167,					"【産業】 船道前 "
 	S_MUYA					:	"撫養城",		K_AHA,			3,		3,		150603,	190898,	23000,	20000,	500,	400,	0,		0,		NO,		0,		0,		NO,		30,		ST_簡易堀城,D_0167,					""
 	S_TOKUSHIMA				:	"徳島城",		K_AHA,			7,		6,		150027,	192691,	51000,	45000,	2500,	1300,	800,	250,	NO,		0,		0,		NO,		40,		ST_平城大,	D_0167,					"【産業】 藍(染料) "
@@ -2089,14 +2082,14 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_TSUBAKIDOMARI			:	"椿泊湊",		K_AHA,			2,		2,		152102,	196086,	11000,	10000,	1400,	700,	0,		0,		NO,		0,		0,		NO,		10,		ST_港,		D_0167,					""
 	S_AHAKASHIMA			:	"海部城",		K_AHA,			2,		1,		146737,	199372,	23000,	20000,	250,	200,	0,		0,		NO,		0,		0,		NO,		30,		ST_簡易堀城,D_0167,					""
 	S_YOTSUASHI				:	"四足峠",		K_AHA,			5,		0,		143436,	196927,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_0167,					""
-	S_0379					:	"讃岐",			K_ISHI,			2,		2,		369920,	331136,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0379					:	"讃岐",			K_EZO,			2,		2,		369920,	331136,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_HIKIDA				:	"引田城",		K_SANUKI,		3,		2,		146713,	190054,	23000,	20000,	150,	100,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_0165,					""
 	S_SANUKITAKAMATSU		:	"高松城",		K_SANUKI,		7,		7,		142207,	188441,	110000,	90000,	2200,	1300,	0,		0,		YES,	0,		0,		NO,		40,		ST_平城大,	D_0165,					""
 	S_UTATSU				:	"宇多津",		K_SANUKI,		2,		2,		138613,	188213,	16000,	13000,	1300,	700,	800,	400,	YES,	2,		3,		NO,		10,		ST_港,		D_0165,					"【産業】 船道前 "
 	S_SANUKIMARUKAME		:	"丸亀城",		K_SANUKI,		6,		5,		138011,	189274,	25000,	20000,	900,	700,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0165,					""
 	S_TADOTHU				:	"多度津",		K_SANUKI,		3,		2,		136884,	189670,	18000,	10000,	1800,	1300,	800,	400,	YES,	2,		3,		NO,		10,		ST_港,		D_0165,					"【産業】 船道前 "
 	S_SANUKITAKAMARU		:	"高丸",			K_SANUKI,		3,		3,		136064,	191820,	21000,	20000,	250,	200,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般外町,D_0165,					""
-	S_0380					:	"伊予",			K_ISHI,			2,		2,		373376,	331328,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0380					:	"伊予",			K_EZO,			2,		2,		373376,	331328,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_KAWANOE				:	"川之江",		K_IYO,			3,		3,		134822,	193459,	19000,	10000,	400,	200,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_0023,					""
 	S_IYOSAIJYOU			:	"伊予西条",		K_IYO,			2,		2,		128332,	195071,	17000,	16000,	400,	250,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_0169,					""
 	S_KOKUBUNYAMA			:	"国分山城",		K_IYO,			5,		4,		126283,	192804,	33000,	30000,	350,	320,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_0169,					""
@@ -2115,7 +2108,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_TOKIWA				:	"伊予常磐",		K_IYO,			3,		3,		118809,	209023,	23000,	20000,	200,	170,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_0169,					""
 	S_IYONADA				:	"伊予灘",		K_IYO,			3,		3,		115199,	198988,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_0170,					""
 	S_UWAJIMAOKI			:	"宇和島湾",		K_IYO,			3,		3,		115609,	206105,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_Bakuhu,				""
-	S_0381					:	"土佐",			K_ISHI,			2,		2,		376576,	331456,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0381					:	"土佐",			K_EZO,			2,		2,		376576,	331456,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_SAKIHAMA				:	"崎浜",			K_TOSA,			2,		2,		144460,	202752,	8000,	5000,	200,	150,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_0168,					""
 	S_MUROTO				:	"室戸津呂湊",	K_TOSA,			2,		2,		143386,	204288,	6000,	5000,	2000,	1400,	800,	400,	YES,	0,		2,		NO,		10,		ST_港,		D_0168,					"【産業】 船道前 "
 	S_DOIAKI				:	"土居安芸城",	K_TOSA,			3,		2,		139418,	201087,	23000,	20000,	400,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_0168,					""
@@ -2127,8 +2120,8 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_TOSANAKAMURA			:	"中村城",		K_TOSA,			6,		3,		125594,	209100,	16000,	15000,	1000,	800,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0168,					""
 	S_TOSAWANOKI			:	"土佐湾",		K_TOSA,			3,		3,		136165,	204723,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_0168,					""
 	S_SUKUMO				:	"宿毛城",		K_TOSA,			2,		2,		121087,	209791,	17000,	15000,	150,	90,		0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_0168,					""
-	S_0409					:	"山陰道",		K_ISHI,			2,		2,		355264,	333504,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
-	S_0382					:	"但馬",			K_ISHI,			2,		2,		359104,	333824,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0409					:	"山陰道",		K_EZO,			2,		2,		355264,	333504,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
+	S_0382					:	"但馬",			K_EZO,			2,		2,		359104,	333824,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0022					:	"福岡",			K_TAJIMA,		2,		2,		150451,	170803,	7200,	6700,	200,	120,	0,		0,		NO,		0,		0,		NO,		50,		ST_布陣町村,D_0172,					""
 	S_SHIROSAKI				:	"城崎",			K_TAJIMA,		2,		2,		153958,	168038,	14000,	10000,	1300,	1000,	0,		0,		NO,		0,		0,		NO,		10,		ST_港,		D_0171,					""
 	S_TOYOOKA				:	"豊岡城",		K_TAJIMA,		4,		3,		153601,	169754,	14000,	10000,	1500,	1000,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0171,					""
@@ -2137,7 +2130,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_IZUSHI				:	"出石城",		K_TAJIMA,		5,		4,		154574,	170982,	36000,	30000,	500,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0011,					""
 	S_IKUNOGINZAN			:	"生野銀山口",	K_TAJIMA,		5,		5,		153461,	174466,	10000,	8500,	0,		0,		7000,	6000,	NO,		0,		0,		NO,		10,		ST_山,		D_Bakuhu,				"【産業】 銀山"
 	S_NAKASHE				:	"中瀬金山口",	K_TAJIMA,		3,		3,		151832,	172658,	10000,	8500,	0,		0,		3400,	2800,	NO,		0,		0,		NO,		10,		ST_山,		D_Bakuhu,				"【産業】 金山"
-	S_0383					:	"丹波",			K_ISHI,			2,		2,		361984,	333760,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0383					:	"丹波",			K_EZO,			2,		2,		361984,	333760,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_A						:	"福知山城",		K_TANBA,		10,		10,		157957,	173208,	62000,	60000,	800,	380,	0,		0,		NO,		0,		0,		NO,		100,	ST_一般外町,D_Arimahouin,			"【1600年以降の主要城主】\n外様･有馬氏、譜代･岡部氏、外様・稲葉氏、譜代・深溝松平氏、朽木氏(１３代）\n【&+
 経歴】\n天正年間に、丹波攻略を命ぜられた明智光秀が築城、女婿・秀満が城主へ。\n山崎の戦後、秀吉の養子である秀勝が城主へ、来た政所の叔父である杉原家次が城代へ。\n関が原の戦い後、有馬豊氏が入城、大改修を行う。\n\n由良川と土師川の合流点に位置する平山城である。\n"
 	S_0024					:	"園部",			K_TANBA,		3,		2,		163763,	176217,	30000,	8500,	400,	300,	0,		0,		YES,	0,		0,		NO,		50,		ST_布陣町村,D_Bakuhu,				""
@@ -2152,14 +2145,14 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_JYOUBAYASHI			:	"上林",			K_TANBA,		2,		2,		162077,	173105,	7000,	4000,	200,	130,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_Fizikake,				""
 	S_YAMAUCHI				:	"山内城跡",		K_TANBA,		1,		1,		162970,	172428,	10000,	8500,	150,	100,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_Bakuhu,				""
 	S_UTSU					:	"宇津城跡",		K_TANBA,		4,		3,		162400,	175348,	25000,	8500,	400,	250,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_Bakuhu,				""
-	S_0384					:	"丹後",			K_ISHI,			2,		2,		365440,	333760,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0384					:	"丹後",			K_EZO,			2,		2,		365440,	333760,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_TANGOTANABE			:	"丹後田辺城",	K_TANGO,		6,		5,		161510,	171161,	34000,	30000,	1600,	900,	0,		0,		NO,		0,		0,		NO,		30,		ST_簡易堀城,D_Kyomiyadu,			""
 	S_MIYAZU				:	"宮津城",		K_TANGO,		5,		4,		159845,	169946,	42000,	40000,	2500,	1300,	0,		0,		NO,		0,		2,		NO,		40,		ST_平城小,	D_Kyomiyadu,			""
 	S_TANGOYAMADA			:	"丹後山田城",	K_TANGO,		3,		2,		158346,	170123,	32000,	30000,	150,	110,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_Kyomiyadu,			""
 	S_TANGOMINEYAMA			:	"峰山",			K_TANGO,		2,		2,		157579,	168821,	14000,	13000,	850,	600,	0,		0,		NO,		0,		0,		NO,		10,		ST_陣屋,	D_Kyomineyama,			""
 	S_KUMIAMA				:	"久美浜",		K_TANGO,		3,		2,		155662,	168154,	24000,	23000,	800,	500,	0,		0,		NO,		0,		2,		NO,		40,		ST_陣屋,	D_Kyomiyadu,			""
 	S_NIHONKAIKUMIAMA		:	"日本海久美浜沖",K_TANGO,		3,		3,		155569,	165837,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		NO,		10,		ST_海岸,	D_Kyomiyadu,			""
-	S_0385					:	"因幡",			K_ISHI,			2,		2,		368064,	333760,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0385					:	"因幡",			K_EZO,			2,		2,		368064,	333760,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_INABAIWAMI			:	"岩美銀山口",	K_INABA,		5,		5,		146688,	170470,	11000,	10000,	0,		0,		3000,	1200,	NO,		0,		0,		NO,		10,		ST_山,		D_0178,					""
 	S_TOTTORI				:	"鳥取城",		K_INABA,		8,		4,		145562,	170470,	39000,	30000,	1800,	900,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城大,	D_0178,					""
 	S_KARO					:	"賀露湊",		K_INABA,		2,		2,		144013,	170023,	8000,	10000,	1500,	800,	800,	400,	NO,		0,		3,		NO,		10,		ST_港,		D_0178,					"【産業】 船道前 "
@@ -2168,7 +2161,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_INABASHIKANO			:	"鹿野城",		K_INABA,		3,		2,		142070,	170946,	43000,	38000,	400,	350,	600,	400,	NO,		0,		0,		NO,		40,		ST_平城小,	D_0174,					""
 	S_KIRIYAMA				:	"浦富",			K_INABA,		5,		2,		146214,	169190,	16000,	10000,	1200,	800,	800,	400,	NO,		0,		0,		NO,		40,		ST_簡易堀城,D_0178,					"【産業】 船道前 "
 	S_NIHONKAITOTTRIOKI		:	"日本海鳥取沖",	K_INABA,		3,		3,		145229,	166886,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_0178,					""
-	S_0386					:	"伯耆",			K_ISHI,			2,		2,		370304,	333760,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0386					:	"伯耆",			K_EZO,			2,		2,		370304,	333760,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0027					:	"倉吉",			K_HOUKI,		2,		2,		137100,	170624,	0,		0,		200,	120,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0177,					""
 	S_UESHI					:	"羽衣石城跡",	K_HOUKI,		2,		1,		139789,	171213,	23000,	21000,	1200,	800,	0,		0,		NO,		0,		0,		NO,		20,		ST_陣屋,	D_0177,					""
 	S_UTIBUKI				:	"打吹城",		K_HOUKI,		4,		3,		138651,	171647,	12000,	11000,	350,	300,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_0177,					""
@@ -2178,7 +2171,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_SHIJYUMAGARI			:	"四十曲り峠",	K_HOUKI,		5,		0,		133683,	174899,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_0177,					""
 	S_HOUKIEMI				:	"江尾城",		K_HOUKI,		2,		2,		132480,	174233,	13000,	10000,	150,	130,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_0177,					""
 	S_YONAGO				:	"米子城",		K_HOUKI,		5,		3,		131099,	171315,	21000,	16000,	800,	700,	0,		0,		NO,		0,		0,		NO,		30,		ST_簡易堀城,D_0177,					""
-	S_0387					:	"出雲",			K_ISHI,			2,		2,		372672,	333504,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0387					:	"出雲",			K_EZO,			2,		2,		372672,	333504,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_IZUMOKATSUYAMA		:	"勝山",			K_IZUMO,		3,		3,		128909,	171585,	22000,	20000,	450,	300,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_0179,					""
 	S_GASSANTODA			:	"月山富田城",	K_IZUMO,		8,		7,		128652,	172393,	45000,	42000,	1400,	800,	400,	300,	NO,		0,		0,		NO,		20,		ST_一般山城,D_0179,					"【産業】 鉄"
 	S_MITOYA				:	"三刀屋城",		K_IZUMO,		7,		2,		124031,	173836,	62000,	50000,	250,	200,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_0179,					""
@@ -2191,7 +2184,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_MIHONOSWKI			:	"美保関",		K_IZUMO,		3,		3,		129279,	169369,	12000,	10000,	2500,	1400,	800,	400,	YES,	2,		5,		NO,		10,		ST_港,		D_0179,					"【産業】 船道前 "
 	S_NIHONKAIMIHONOSHEKI	:	"日本海美保湾",	K_IZUMO,		3,		3,		131942,	167578,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_0179,					""
 	S_NIHONKAIIZUMO			:	"日本海出雲沖",	K_IZUMO,		3,		3,		118067,	171188,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_0179,					""
-	S_0388					:	"石見",			K_ISHI,			2,		2,		374848,	333824,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0388					:	"石見",			K_EZO,			2,		2,		374848,	333824,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_YAMABUKI				:	"大森代官所",	K_IWAMI,		6,		5,		117146,	175975,	38000,	8500,	400,	300,	0,		0,		NO,		0,		0,		NO,		20,		ST_陣屋,	D_Bakuhu,				""
 	S_OOMORIGINZAN			:	"石見大森銀山口",K_IWAMI,		8,		8,		117861,	177459,	8000,	8500,	0,		0,		12000,	9000,	NO,		0,		0,		NO,		10,		ST_山,		D_Bakuhu,				"【産業】 銀山 "
 	S_IWAMIMATSUYAMA		:	"松山",			K_IWAMI,		3,		3,		114624,	178866,	18000,	8500,	200,	150,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般外町,D_Bakuhu,				""
@@ -2199,8 +2192,8 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_TSUWANO				:	"津和野城",		K_IWAMI,		5,		3,		108108,	185495,	45000,	30000,	500,	400,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_0180,					""
 	S_NIHONKAIIWAMI			:	"日本海石見沖",	K_IWAMI,		3,		3,		112203,	175103,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_Bakuhu,				""
 	S_OKIKOUNO				:	"八尾代官所",	K_OKI,			2,		2,		130151,	158247,	11000,	8000,	400,	350,	0,		0,		NO,		0,		0,		NO,		30,		ST_陣屋,	D_0179,					""
-	S_0410					:	"山陽道",		K_ISHI,			2,		2,		355328,	335680,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
-	S_0390					:	"播磨",			K_ISHI,			2,		2,		358976,	336064,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0410					:	"山陽道",		K_EZO,			2,		2,		355328,	335680,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
+	S_0390					:	"播磨",			K_EZO,			2,		2,		358976,	336064,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0026					:	"利神城",		K_HARIMA,		6,		1,		147648,	178099,	28000,	22000,	300,	120,	0,		0,		NO,		0,		0,		NO,		50,		ST_平城小,	D_0164,					""
 	S_AKASHI				:	"明石",			K_HARIMA,		2,		2,		156992,	183600,	63000,	60000,	2000,	1200,	800,	400,	YES,	0,		0,		NO,		10,		ST_港,		D_0164,					"【産業】 船道前 "
 	S_UOZUMI				:	"魚住",			K_HARIMA,		3,		3,		155750,	183065,	64000,	60000,	500,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般外町,D_0164,					""
@@ -2216,7 +2209,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_HARIMAYAMAZAKI		:	"山崎",			K_HARIMA,		4,		3,		149522,	177994,	24000,	20000,	300,	200,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_0164,					""
 	S_TOKURA				:	"戸倉峠",		K_HARIMA,		0,		3,		149120,	173516,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_0164,					""
 	S_HARIMANADA			:	"播磨灘",		K_HARIMA,		3,		3,		152191,	183219,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_0164,					""
-	S_0391					:	"美作",			K_ISHI,			2,		2,		361728,	336000,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0391					:	"美作",			K_EZO,			2,		2,		361728,	336000,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_MIMASAKATAKEYAMA		:	"三星山",		K_MIMASAKA,		2,		2,		144283,	178394,	16000,	15000,	100,	90,		0,		0,		NO,		0,		0,		NO,		20,		ST_山,		D_0181,					""
 	S_TSUYAMA				:	"津山",			K_MIMASAKA,		3,		3,		141668,	177101,	42000,	40000,	1600,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_0181,					""
 	S_MIMASAKAIOU			:	"医王山",		K_MIMASAKA,		3,		1,		142145,	175860,	31000,	30000,	300,	200,	0,		0,		NO,		0,		0,		NO,		20,		ST_山,		D_0181,					""
@@ -2224,7 +2217,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_HIKAMIYAMA			:	"日上山城",		K_MIMASAKA,		2,		2,		139416,	175950,	21000,	20000,	500,	400,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_0181,					""
 	S_MIMASAKATAKADA		:	"高田城",		K_MIMASAKA,		3,		2,		136552,	176637,	32000,	30000,	600,	500,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_0181,					""
 	S_MIMASAKAICHINOSE		:	"一之瀬",		K_MIMASAKA,		2,		2,		139748,	178815,	16000,	15000,	300,	200,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_0181,					""
-	S_0392					:	"備前",			K_ISHI,			2,		2,		364288,	335872,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0392					:	"備前",			K_EZO,			2,		2,		364288,	335872,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_TODAMATSUYAMA			:	"片上蔵屋敷",	K_BIZEN,		3,		2,		144717,	182055,	39000,	33000,	500,	400,	0,		0,		NO,		0,		0,		NO,		30,		ST_陣屋,	D_0182,					""
 	S_USHIMADO				:	"牛窓湊",		K_BIZEN,		2,		2,		143897,	183770,	9000,	5000,	1200,	800,	800,	500,	NO,		0,		5,		NO,		10,		ST_港,		D_0182,					"【産業】 船道前 "
 	S_BIZENKUMAYAMA			:	"熊山城",		K_BIZEN,		4,		2,		143384,	181393,	27000,	22000,	450,	300,	800,	400,	NO,		0,		0,		NO,		40,		ST_平城小,	D_0182,					"【産業】 刀鍛冶"
@@ -2235,7 +2228,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_BIZENOKAYAMA			:	"岡山城",		K_BIZEN,		8,		6,		140619,	183644,	11000,	98000,	5000,	2800,	0,		0,		NO,		0,		0,		NO,		40,		ST_岡山城,	D_0182,					""
 	S_HACHIHAMA				:	"八浜",			K_BIZEN,		0,		0,		140385,	185163,	26000,	20000,	0,		0,		0,		0,		NO,		0,		3,		NO,		10,		ST_平地,	D_0182,					""
 	S_BIZENSIMOTSUI			:	"下津井城",		K_BIZEN,		4,		2,		138202,	186778,	40000,	32000,	700,	550,	0,		0,		YES,	0,		2,		NO,		30,		ST_平城小,	D_0182,					""
-	S_0393					:	"備中",			K_ISHI,			2,		2,		366912,	336064,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0393					:	"備中",			K_EZO,			2,		2,		366912,	336064,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0055					:	"松山城",		K_BICCHUU,		6,		5,		135411,	181414,	60000,	8500,	500,	320,	0,		0,		NO,		0,		0,		NO,		50,		ST_平城大,	D_Bakuhu,				""
 	S_NADEGAWA				:	"庭瀬城",		K_BICCHUU,		3,		3,		138918,	183833,	29200,	29000,	600,	500,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0185,					""
 	S_BITTYUTAKAMATSU		:	"備中阿曽",		K_BICCHUU,		2,		2,		138213,	182556,	6000,	5000,	800,	550,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_0184,					""
@@ -2246,7 +2239,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_BICCHUSARUKAKE		:	"猿掛",			K_BICCHUU,		2,		2,		135295,	183744,	26000,	8500,	350,	270,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_Bakuhu,				""
 	S_0028					:	"倉敷代官所",	K_BICCHUU,		4,		3,		136780,	184985,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_陣屋,	D_Bakuhu,				""
 	S_BICCHUKASAOKA			:	"笠岡代官所",	K_BICCHUU,		5,		2,		133644,	185700,	27000,	8500,	600,	500,	0,		0,		NO,		0,		0,		NO,		30,		ST_簡易堀城,D_Bakuhu,				""
-	S_0394					:	"備後",			K_ISHI,			2,		2,		369088,	335872,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0394					:	"備後",			K_EZO,			2,		2,		369088,	335872,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_KANNABE				:	"神辺城",		K_BINGO,		6,		3,		131609,	184615,	42000,	40000,	400,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_Fukushima,			""
 	S_IMAKOYASAN			:	"今高野山",		K_BINGO,		2,		2,		126374,	184281,	12000,	10000,	150,	130,	0,		0,		NO,		0,		0,		NO,		20,		ST_山,		D_Fukushima,			""
 	S_AOKAKEYAMA			:	"青掛山",		K_BINGO,		3,		2,		126402,	181210,	19000,	15000,	150,	110,	0,		0,		NO,		0,		0,		NO,		20,		ST_山,		D_Fukushima,			""
@@ -2259,7 +2252,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 て立腹し、これを恐れた福島正則は築城を中止して完成していた施設も取り壊して家康に謝罪することになった。地元では元和元年（1615年）に発布された一国一城令によって取り壊されたとされている。\n\n　　　　　　　　　　　　　　　　　　　　　　　Ｗｉｋｉｐｅｄｉａより"
 	S_ONOMITI				:	"尾道",			K_BINGO,		3,		2,		129408,	186943,	42000,	40000,	650,	500,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般外町,D_Fukushima,			"　尾道城…昭和50年築城の観光スポット？？"
 	S_MIHARA				:	"三原城",		K_BINGO,		6,		4,		127462,	187391,	42000,	40000,	900,	700,	0,		0,		NO,		0,		0,		NO,		30,		ST_簡易堀城,D_Fukushima,			""
-	S_0395					:	"安芸",			K_ISHI,			2,		2,		371456,	336064,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0395					:	"安芸",			K_EZO,			2,		2,		371456,	336064,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_AKITAKEHARA			:	"竹原",			K_AKI,			1,		1,		124569,	188160,	32000,	30000,	800,	500,	0,		0,		NO,		0,		0,		NO,		10,		ST_港,		D_Fukushima,			""
 	S_KURE					:	"呉浦",			K_AKI,			1,		1,		119091,	189542,	36000,	30000,	800,	500,	0,		0,		NO,		0,		0,		NO,		10,		ST_港,		D_Fukushima,			""
 	S_KASHIRAZAKI			:	"髙屋",			K_AKI,			6,		4,		122902,	186432,	33000,	30000,	300,	230,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_Fukushima,			""
@@ -2274,7 +2267,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_AKITAKAMATSU			:	"三入高松",		K_AKI,			6,		5,		118014,	185769,	34000,	30000,	500,	400,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_Fukushima,			""
 	S_YOSHIDAKORIYAMA		:	"吉田郡山城",	K_AKI,			8,		4,		120678,	183182,	35000,	30000,	750,	600,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般山城,D_Fukushima,			""
 	S_ITSUKUSHIMAMIYAO		:	"厳島神社",		K_AKI,			10,		10,		115123,	189516,	6000,	4000,	1400,	700,	1300,	600,	NO,		0,		2,		NO,		10,		ST_神社,	D_CHOTEI,				"【産業】 厳島神社 "
-	S_0396					:	"周防",			K_ISHI,			2,		2,		373504,	336064,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0396					:	"周防",			K_EZO,			2,		2,		373504,	336064,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_IWAKUNI				:	"岩国城",		K_SUOU,			7,		6,		114149,	190924,	18000,	60000,	1100,	900,	0,		0,		NO,		0,		0,		NO,		30,		ST_平城小,	D_0195,					""
 	S_JYOUKUNJIZAN			:	"山代",			K_SUOU,			3,		3,		110361,	189443,	45000,	15000,	150,	130,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_Mouri,				""
 	S_KURAKAKEYAMA			:	"三丘",			K_SUOU,			5,		3,		111244,	191948,	33000,	11000,	250,	200,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_0189,					""
@@ -2284,7 +2277,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_TOKUYAMA				:	"野上",			K_SUOU,			4,		3,		108121,	193053,	48000,	16000,	1100,	500,	0,		0,		NO,		0,		0,		NO,		10,		ST_港,		D_Mouri,				""
 	S_SUOUNAGAYAMA			:	"山口",			K_SUOU,			4,		2,		102069,	190446,	156000,	52000,	4100,	2800,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_Mouri,				""
 	S_SUOUNADA				:	"周防灘",		K_SUOU,			3,		3,		103294,	196274,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_Mouri,				""
-	S_0397					:	"長門",			K_ISHI,			2,		2,		375552,	336064,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0397					:	"長門",			K_EZO,			2,		2,		375552,	336064,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_NOSAKATOUGE			:	"野坂峠",		K_NAGATO,		5,		0,		106215,	186803,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_Mouri,				""
 	S_OGOORI				:	"吉敷",			K_NAGATO,		2,		2,		100288,	191424,	21000,	7000,	600,	500,	0,		0,		NO,		0,		0,		NO,		10,		ST_一般外町,D_0192,					""
 	S_WATARIGAWA			:	"須佐",			K_NAGATO,		3,		2,		104128,	184307,	36000,	12000,	200,	140,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_0193,					""
@@ -2298,8 +2291,8 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_SHIMNOSEKI			:	"赤間関",		K_NAGATO,		5,		5,		93848,	194342,	30000,	10000,	3500,	2300,	3200,	900,	YES,	5,		0,		NO,		10,		ST_堺,		D_0188,					"【産業】 船道前 "
 	S_HIBIKINADA			:	"響灘",			K_NAGATO,		3,		3,		91008,	192486,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_Mouri,				""
 	S_NAGATOOKI				:	"日本海長戸沖",	K_NAGATO,		3,		2,		100531,	183603,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		NO,		10,		ST_海岸,	D_Mouri,				""
-	S_0411					:	"西街道-三前",	K_ISHI,			2,		2,		355392,	338176,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
-	S_0398					:	"筑前",			K_ISHI,			2,		2,		358976,	338368,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0411					:	"西街道-三前",	K_EZO,			2,		2,		355392,	338176,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
+	S_0398					:	"筑前",			K_EZO,			2,		2,		358976,	338368,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_CHIKUZENHANAO			:	"花尾",			K_CHIKUZEN,		2,		2,		91400,	195539,	46000,	40000,	300,	200,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_0203,					""
 	S_AKAMA					:	"赤間",			K_CHIKUZEN,		2,		2,		88396,	196760,	46000,	40000,	1200,	800,	1000,	400,	NO,		0,		0,		NO,		10,		ST_関所,	D_0203,					"【産業】 宗像大社"
 	S_TAKATORIYAMA			:	"鷹取山城",		K_CHIKUZEN,		6,		3,		91480,	197016,	54000,	50000,	150,	110,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_0203,					""
@@ -2314,7 +2307,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_IMAJYUKU				:	"今宿",			K_CHIKUZEN,		2,		2,		83725,	199858,	46000,	40000,	600,	500,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_0203,					""
 	S_HAKATAWAN				:	"博多湾",		K_CHIKUZEN,		3,		3,		83596,	197645,	0,		0,		300,	300,	0,		0,		NO,		0,		5,		YES,	10,		ST_海岸,	D_0203,					""
 	S_0103					:	"秋月",			K_BUNGO,		2,		2,		91367,	201741,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_山,		D_0012,					""
-	S_0400					:	"豊前",			K_ISHI,			2,		2,		364160,	338240,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0400					:	"豊前",			K_EZO,			2,		2,		364160,	338240,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_MOJI					:	"門司",			K_BUZEN,		5,		5,		95460,	194445,	24000,	20000,	3600,	3000,	1500,	900,	YES,	0,		5,		NO,		10,		ST_堺,		D_0198,					"【産業】 船道前 "
 	S_BUZENKOKURA			:	"小倉城",		K_BUZEN,		7,		7,		93390,	195622,	78000,	69000,	2400,	1500,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城大,	D_0198,					""
 	S_KAWARATAKE			:	"香春岳城",		K_BUZEN,		3,		3,		92381,	198081,	24000,	20000,	300,	200,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_0198,					""
@@ -2323,7 +2316,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_NAKATSU				:	"中津城",		K_BUZEN,		8,		8,		98212,	199935,	57000,	50000,	3000,	2000,	800,	400,	YES,	0,		3,		NO,		40,		ST_平城大,	D_0198,					"【産業】 船道前 "
 	S_HIRATA				:	"平田城",		K_BUZEN,		5,		5,		96717,	202112,	12000,	10000,	150,	110,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_0198,					""
 	S_RYUOU					:	"龍王城",		K_BUZEN,		3,		2,		100530,	201728,	32000,	30000,	300,	250,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_0198,					""
-	S_0402					:	"肥前",			K_ISHI,			2,		2,		368384,	338176,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0402					:	"肥前",			K_EZO,			2,		2,		368384,	338176,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0030					:	"田代",			K_HIZEN,		2,		2,		87450,	202675,	25000,	23200,	200,	120,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0197,					""
 	S_SEIFUKUJI				:	"勢福寺城",		K_HIZEN,		3,		2,		85621,	203737,	28000,	25000,	700,	600,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_0210,					""
 	S_HIZENMISE				:	"三瀬城",		K_HIZEN,		5,		4,		83740,	203237,	23000,	20000,	150,	110,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_0211,					""
@@ -2364,8 +2357,8 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_KUTAMA				:	"久玉",			K_AMAKUSA,		2,		2,		80205,	220978,	12000,	10000,	150,	110,	0,		0,		NO,		0,		0,		NO,		10,		ST_一般外町,D_0205,					""
 	S_IKIKATSUMOT			:	"亀尾城",		K_IKI,			5,		3,		75352,	197503,	80000,	20000,	300,	200,	0,		0,		YES,	0,		5,		NO,		20,		ST_岬山城,	D_0206,					""
 	S_KANAISHIYAKATA		:	"金石館",		K_TSUSHIMA,		6,		3,		67354,	191411,	3000,	2000,	8000,	3000,	600,	500,	YES,	20,		5,		YES,	90,		ST_陣屋,	D_0197,					""
-	S_0412					:	"西街道-三後",	K_ISHI,			2,		2,		355328,	340672,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
-	S_0399					:	"筑後",			K_ISHI,			2,		2,		361472,	338240,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0412					:	"西街道-三後",	K_EZO,			2,		2,		355328,	340672,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
+	S_0399					:	"筑後",			K_EZO,			2,		2,		361472,	338240,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_YAMAGUMA				:	"山隈",			K_CHIKUGO,		3,		2,		88552,	202292,	45000,	40000,	400,	300,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_0204,					""
 	S_CHIKUGOMYOUKENZAN		:	"妙見山",		K_CHIKUGO,		2,		2,		91661,	203712,	24000,	20000,	200,	150,	0,		0,		NO,		0,		0,		NO,		20,		ST_山,		D_0204,					""
 	S_KURUME				:	"久留米城",		K_CHIKUGO,		8,		6,		88142,	203633,	75000,	60000,	2800,	1800,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城大,	D_0204,					""
@@ -2374,7 +2367,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_YANAGAWA				:	"柳川城",		K_CHIKUGO,		8,		8,		86081,	205889,	80000,	60000,	2500,	1500,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城大,	D_0204,					""
 	S_CHIKUGOMATSUNOBE		:	"松延城 ",		K_CHIKUGO,		3,		2,		87501,	206375,	45000,	40000,	400,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_0204,					""
 	S_ENOURA				:	"江浦城",		K_CHIKUGO,		3,		3,		86720,	207315,	43000,	40000,	800,	500,	0,		0,		YES,	5,		0,		NO,		40,		ST_陣屋,	D_0204,					""
-	S_0401					:	"豊後",			K_ISHI,			2,		2,		366208,	338240,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0401					:	"豊後",			K_EZO,			2,		2,		366208,	338240,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0031					:	"国東郡",		K_BUNGO,		4,		4,		104345,	200012,	72000,	68000,	200,	200,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0198,					""
 	S_BUNGOTAKADA			:	"高田城",		K_BUNGO,		4,		4,		101978,	200091,	40000,	37000,	250,	220,	0,		0,		NO,		0,		0,		NO,		30,		ST_平城小,	D_0198,					""
 	S_TOMAKU				:	"富来城跡",		K_BUNGO,		3,		3,		106507,	200369,	13000,	10000,	300,	200,	0,		0,		NO,		0,		0,		NO,		30,		ST_陣屋,	D_0199,					""
@@ -2399,7 +2392,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_BUNGOYAMANO			:	"山ノ城",		K_BUNGO,		4,		3,		99850,	208575,	12000,	10000,	200,	130,	0,		0,		NO,		0,		0,		NO,		10,		ST_岬山城,	D_0040,					""
 	S_BHEPPUWANOKI			:	"別府湾",		K_BUNGO,		3,		3,		109005,	202957,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_0132,					""
 	S_SAEKIWAN				:	"佐伯湾",		K_BUNGO,		3,		3,		112128,	208691,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		NO,		10,		ST_海岸,	D_0202,					""
-	S_0403					:	"肥後",			K_ISHI,			2,		2,		358912,	340608,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0403					:	"肥後",			K_EZO,			2,		2,		358912,	340608,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_HIGOMINAMISEKI		:	"鷹ノ原城",		K_HIGO,			5,		3,		87870,	208539,	25000,	25000,	800,	600,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0000,					""
 	S_HIGOYAMAGA			:	"山鹿",			K_HIGO,			2,		2,		90306,	208320,	26000,	25000,	700,	600,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_0000,					""
 	S_WAIFU					:	"隈府",			K_HIGO,			6,		3,		92670,	208716,	22000,	30000,	150,	110,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般外町,D_0000,					""
@@ -2419,8 +2412,8 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_HITOYOSHI				:	"人吉城",		K_HIGO,			5,		4,		91697,	220366,	14000,	12000,	700,	600,	0,		0,		NO,		0,		0,		NO,		90,		ST_簡易堀城,D_0217,					""
 	S_YATSUSHIRO			:	"八代海",		K_HIGO,			3,		3,		84812,	220339,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		NO,		10,		ST_海岸,	D_0000,					""
 	S_SHIMABARAWAN			:	"島原湾",		K_HIGO,			3,		3,		87142,	212454,	0,		0,		300,	300,	0,		0,		NO,		0,		5,		YES,	10,		ST_海岸,	D_0208,					""
-	S_0413					:	"西街道-三奥",	K_ISHI,			2,		2,		355328,	342976,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
-	S_0404					:	"日向",			K_ISHI,			2,		2,		361024,	340672,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0413					:	"西街道-三奥",	K_EZO,			2,		2,		355328,	342976,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
+	S_0404					:	"日向",			K_EZO,			2,		2,		361024,	340672,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_HYUGANOBEOKA			:	"縣城",			K_HYUUGA,		6,		3,		105368,	215578,	28000,	20000,	600,	500,	0,		0,		NO,		0,		3,		NO,		40,		ST_平城小,	D_0218,					"のちの延岡城"
 	S_MIMIGAWA				:	"耳川",			K_HYUUGA,		0,		0,		104268,	219084,	24000,	20000,	0,		0,		0,		0,		NO,		0,		0,		NO,		10,		ST_川岸,	D_0218,					""
 	S_TAKANABE				:	"財部城",		K_HYUUGA,		4,		4,		103272,	222334,	24000,	20000,	500,	450,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0219,					"　たからべ"
@@ -2442,7 +2435,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_MIYAKONOJYOU			:	"都城城",		K_HYUUGA,		7,		7,		95385,	228556,	28000,	26000,	2500,	2000,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城大,	D_0224,					""
 	S_SHIWATHI				:	"志和池城",		K_HYUUGA,		5,		5,		96640,	226585,	16000,	14300,	400,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0224,					""
 	S_0034					:	"高千穂峰",		K_HYUUGA,		8,		6,		93925,	225409,	7000,	6500,	0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_山,		D_CHOTEI,				""
-	S_0405					:	"大隅",			K_ISHI,			2,		2,		363520,	340800,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0405					:	"大隅",			K_EZO,			2,		2,		363520,	340800,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_ZAIBU					:	"財部城",		K_OOSUMI,		6,		6,		92919,	228312,	14000,	13000,	400,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0221,					""
 	S_SUEYOSHI				:	"末吉城",		K_OOSUMI,		6,		6,		94873,	229937,	15000,	13000,	250,	200,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0221,					""
 	S_SHIBUSHI				:	"志布志城",		K_OOSUMI,		4,		2,		96053,	232421,	22000,	19500,	600,	500,	0,		0,		YES,	0,		0,		NO,		40,		ST_平城小,	D_0221,					""
@@ -2455,7 +2448,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_GAMOU					:	"蒲生館",		K_OOSUMI,		4,		2,		88397,	227584,	6000,	3900,	250,	180,	0,		0,		NO,		0,		0,		NO,		20,		ST_陣屋,	D_0221,					""
 	S_IWATSURUGI			:	"平松館",		K_OOSUMI,		3,		2,		89293,	228774,	5000,	3900,	300,	220,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_0221,					""
 	S_OOSUMIKAIKYOU			:	"大隅海峡",		K_OOSUMI,		3,		3,		92467,	240127,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_0221,					""
-	S_0406					:	"薩摩",			K_ISHI,			2,		2,		365888,	340608,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
+	S_0406					:	"薩摩",			K_EZO,			2,		2,		365888,	340608,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0038					:	"建昌城",		K_SATSUMA,		3,		2,		88716,	229939,	6000,	5200,	50,		30,		0,		0,		NO,		0,		0,		NO,		50,		ST_陣屋,	D_0221,					""
 	S_SATHUMAIZUMI			:	"出水城",		K_SATSUMA,		6,		4,		85197,	222309,	8000,	6500,	700,	600,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_0221,					""
 	S_AKUNE					:	"阿久根桑原城",	K_SATSUMA,		2,		2,		82918,	223948,	8000,	6500,	150,	110,	0,		0,		NO,		0,		0,		NO,		40,		ST_陣屋,	D_0221,					""
@@ -2473,7 +2466,6 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_AKAOGI				:	"赤尾木城",		K_AMAMI,		2,		2,		95616,	243865,	15000,	13000,	280,	220,	1800,	1400,	NO,		0,		0,		NO,		40,		ST_陣屋,	D_0229,					"【産業】 鉄砲鍛冶 "
 }
 ShiroConnect {
-	S_G1,			S_G2,			BROAD,			LINE
 	S_EFY,			S_0107,			SEA,			ARC,			236710,	84313	
 	S_EFY,			S_0113,			SEA,			LINE,			235649,	80281,	236722,	80819,	242329,	78668,	247859,	76825,	249958,	76723,	253388,	76953,	256435,	77900,	257254,	79078,	258380,	81203,	258944,	84633,	258944,	86246,	258201,	89164,	256281,	91392	
 	S_0108,			S_EFY,			NARROW,			LINE,			237644,	70784,	237209,	71193,	236697,	71680,	235648,	71782,	235494,	72217,	235391,	72703,	235314,	73497,	234752,	73676,	234496,	74188,	233676,	75314,	233139,	76544,	233216,	77568,	233957,	78695,	234598,	79463	
@@ -4432,7 +4424,6 @@ Bushou {
 	B_01429	:	"藤氏長者）",		0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_NA,				-1,		S_0418,				""
 	B_01430	:	"橘氏長者）",		0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_NA,				-1,		S_0418,				""
 	B_00014	:	"豊氏長者）",		0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_NA,				-1,		S_0418,				""
-	B_00011	:	"当家情報の表示",	0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_Helper,			-1,		S_G2,				""
 	B_00000	:	"後陽成天皇",		5,	9,	6,	5,		5,		10,	5,	200,	2000,	100,	1543,	1616,	BYOUSHI,	0,		D_CHOTEI,			0,		S_0082,				""
 	B_2		:	"シャクシャイン",	5,	3,	5,	5,		3,		4,	4,	0,		400,	0,		1609?,	1669,	BYOUSHI,	1624,	D_0062,				1,		S_0108,				""
 	B_4		:	"オニビシ",			3,	4,	3,	3,		3,		4,	3,	0,		200,	0,		1590,	1668,	BYOUSHI,	0,		D_0062,				0,		S_0108,				""
@@ -7995,7 +7986,6 @@ ConditionalEvent {
 		}
 		Happening {
 			HAPPENING_DAIMYOU_KAIMEI, D_NA, NONE, NONE, NONE, NONE, NONE, "", ""
-			HAPPENING_DAIMYOU_KAIMEI, D_Helper, NONE, NONE, NONE, NONE, NONE, "", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "StartYear", "#Year"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "StartMonth", "#Month"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Observer", "#生存大名数+1"
@@ -8827,7 +8817,6 @@ ConditionalEvent {
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "LD"
 			CONDITION_DAIMYOU_METSUBOU, VARIABLE, NONE, NONE, NONE, "", ""
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DaimyouA", "#大名番号(D_NA)"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DaimyouA", "#大名番号(D_Helper)"
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DaimyouA", "#大名番号(D_CHOTEI)"
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DaimyouA", "#大名番号(D_Region)"
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DaimyouA", "#大名番号(D_Country)"
@@ -8839,119 +8828,8 @@ ConditionalEvent {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Status", "LD*Others"
 		}
 	}
-	CE_0056 {
-		Title		: "　当家の情報"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONTITION_BUSHOU_AT_SHIRO, NONE, NONE, S_G1, B_00011, "", ""
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Target", "Player"
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0057", ""
-			HAPPENING_BUSHOU_MOVE, NONE, NONE, S_G2, NONE, B_00011, NONE, "", ""
-		}
-	}
-	CE_0057 {
-		Title		: "　　当家情報表示"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Kokudaka", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Economy", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Capital", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "ShiroN", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "BushouN", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "KibaN", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "AshigaruN", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "GunN", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "HaikaN", "-2"
-		}
-		Message {
-			"【%大名Target%の情報】"
-			""
-			"・当主：%武将Toushu%（所在地： %城Region%-%城Country%-%城ToushuShiro%）"
-			""
-			"・石高：%KokudakaMU%万石（直轄・臣従： %KokudakaDirect%万石）"
-			"・経済：%Economy%"
-			"・資産：%Capital%"
-			"・城数：%ShiroN%"
-			""
-			"・武将：%BushouN%名"
-			"・騎馬：%KibaN%名"
-			"・足軽：%AshigaruN%名"
-			"・鉄砲：%GunN%丁"
-			""
-			"※家臣及び従属・臣従家をである%HaikaN%家を含む"
-			"※当該画面を再度表示したい場合は、武将移動のコマンドで「行政（全国マップ右下）」内からお申し付けください。武将「当家情報の表示」を「実施しない」から「実施する」に陸路移動すると、翌月の開始時に表示されます。"
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Toushu", "#当主(Target)"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ToushuShiro", "#当主城(Target)"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Region", "SRegionList[ToushuShiro]"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Country", "SCountryList[ToushuShiro]"
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0058", ""
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaMU", "#Round(Kokudaka/10000)"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaDirect", "#Round(#石高(Target)/10000)"
-		}
-	}
-	CE_0058 {
-		Title		: "　　計算"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: OR
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: DAIMYOU
-		LoopVariable	: "LD"
-		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Target", "#主家大名(LD)"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Target", "DStatusList[LD]/Kashin"
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "Kokudaka", "#直轄石高(LD)"
-			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "Economy", "#直轄経済(LD)"
-			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "Capital", "#資金(LD)"
-			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroN", "#直轄城数(LD)"
-			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "BushouN", "#大名家直属武将数(LD)"
-			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "KibaN", "#直轄騎馬兵数(LD)"
-			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "AshigaruN", "#直轄足軽兵数(LD)"
-			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "GunN", "#直轄鉄砲数(LD)"
-			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "HaikaN", "1"
-		}
-	}
-	CE_0068 {
-		Title		: "　他家の情報"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: ONCE
-		SubRoutine	: NO
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-		}
-		Message {
-		}
-		Happening {
-		}
-	}
 	CE_0067 {
-		Title		: "　　他家情報表示"
+		Title		: "　家情報の表示"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -8997,6 +8875,33 @@ ConditionalEvent {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaDirect", "#Round(#石高(Target)/10000)"
 		}
 	}
+	CE_0058 {
+		Title		: "　　計算"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: OR
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: DAIMYOU
+		LoopVariable	: "LD"
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Target", "#主家大名(LD)"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Target", "DStatusList[LD]/Kashin"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "Kokudaka", "#直轄石高(LD)"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "Economy", "#直轄経済(LD)"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "Capital", "#資金(LD)"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroN", "#直轄城数(LD)"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "BushouN", "#大名家直属武将数(LD)"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "KibaN", "#直轄騎馬兵数(LD)"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "AshigaruN", "#直轄足軽兵数(LD)"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "GunN", "#直轄鉄砲数(LD)"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "HaikaN", "1"
+		}
+	}
 	CE_0033 {
 		Title		: "■外交制御"
 		PeriodStart	: NONE
@@ -9014,7 +8919,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0034 {
-		Title		: "　　空白地勢力"
+		Title		: "　空白地勢力"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -9031,31 +8936,12 @@ ConditionalEvent {
 			HAPPENING_HEIDON2, D_NA, D_NA, NONE, NONE, NONE, NONE, "", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "#城支配大名(S_0075)"
 			HAPPENING_SHINJUU, VARIABLE, D_NA, NONE, NONE, NONE, NONE, "", ""
-		}
-	}
-	CE_0001 {
-		Title		: "　　行政"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: NO
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Player", "Observer"
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "Player"
-			HAPPENING_SHINJUU, VARIABLE, D_Helper, NONE, NONE, NONE, NONE, "", ""
-			HAPPENING_HEIDON2, D_Helper, D_Region, NONE, NONE, NONE, NONE, "", ""
-			HAPPENING_HEIDON2, D_Helper, D_Country, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_HEIDON, D_Region, D_Region, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_HEIDON, D_Country, D_Country, NONE, NONE, NONE, NONE, "", ""
 		}
 	}
 	CE_0002 {
-		Title		: "　　朝廷"
+		Title		: "　朝廷"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: OR
@@ -9802,7 +9688,6 @@ ConditionalEvent {
 			HAPPENING_DAIMYOU_SHUBIHEI_PLUS, VARIABLE, NONE, NONE, NONE, NONE, NONE, "200", ""
 			HAPPENING_DAIMYOU_HYOUROU_PLUS, VARIABLE, NONE, NONE, NONE, NONE, NONE, "2000", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Target", "Player"
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0057", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0052", ""
 		}
 	}
@@ -9991,10 +9876,11 @@ ConditionalEvent {
 			"【評定とは】"
 			"領内の政治や外交（調略）などを指定した月に行うことができます。"
 			""
-			"・評定とは：本画面を表示する$color=0x0000FF$"
+			"・項目一覧：本画面を表示する$color=0x0000FF$"
 			"・情報表示："
 			"　　・公儀一覧：各氏長者の一覧"
-			"$color=0xFF0000$・評定終了：次回評定を何ヶ月後に行うかを指定し、評定を終了する"
+			"　　・当家情報：石高や武将数など、当家に関する情報の一覧"
+			"・評定終了：次回評定を何ヶ月後に行うかを指定し、評定を終了する"
 		}
 		Happening {
 		}
@@ -10014,9 +9900,11 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
-			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoSelected", "表示する情報をご選択ください。/公儀一覧"
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoSelected", "表示する情報をご選択ください。/公儀一覧/当家情報"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoKougi", "0"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoPlayer", "1"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0093", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0094", ""
 		}
 	}
 	CE_0093 {
@@ -10035,6 +9923,25 @@ ConditionalEvent {
 		}
 		Happening {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0049", ""
+		}
+	}
+	CE_0094 {
+		Title		: "　　当家情報"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "MTGInfoSelected", "MTGInfoPlayer"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Target", "Player"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0067", ""
 		}
 	}
 	CE_0087 {
@@ -10474,10 +10381,7 @@ Label {
 	"▲堂島金山",		182746,	162727,	K_ECHIZEN,		PART,		0,			20,				NO,		NO
 	"四万十川",			126951,	210278,	K_TOSA,			PART,		6,			14,				NO,		NO
 	"▲日野銀山",		141082,	172210,	K_HOUKI,		PART,		0,			18,				NO,		NO
-	"行政",				310592,	281664,	K_ISHI,			WHOLE,		1,			14,				NO,		NO
 	"越すに越されぬ",	206656,	181792,	NONE,			PART,		0,			13,				NO,		NO
-	"実施する",			306225,	294347,	K_ISHI,			PART,		0,			30,				NO,		NO
-	"実施不可",			317502,	294318,	K_ISHI,			PART,		0,			30,				NO,		NO
 	"渋川方面",			214630,	270042,	NONE,			PART,		0,			14,				NO,		NO
 	"京街道",			210764,	258201,	NONE,			PART,		0,			14,				NO,		NO
 	"高槻街道",			196274,	257152,	NONE,			PART,		0,			14,				NO,		NO
@@ -10493,6 +10397,5 @@ Label {
 	"北伝達村方面",		172800,	258112,	NONE,			PART,		0,			14,				NO,		NO
 	"平野方面",			210022,	291737,	K_OKAYAMA,		PART,		0,			16,				NO,		NO
 	"長居方面",			196787,	296242,	K_OKAYAMA,		PART,		0,			16,				NO,		NO
-	"実施しない",		311712,	294309,	K_ISHI,			PART,		0,			30,				NO,		NO
 }
       
