@@ -9918,6 +9918,148 @@ ConditionalEvent {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Mouri", "#大名番号(D_Mouri)"
 		}
 	}
+	CE_0085 {
+		Title		: "■評定"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: ONCE
+		SubRoutine	: NO
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#Year", "StartYear"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#Month", "StartMonth"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "MTGMonth", "StartMonth"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Player", "Observer"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGMonth", "0"
+		}
+	}
+	CE_0086 {
+		Title		: "　評定開始"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: NO
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0091", ""
+		}
+	}
+	CE_0091 {
+		Title		: "　　大項目選択"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#Month", "MTGMonth"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGSelected", "評定実施月になりました。大項目をご選択ください。/各項目の説明/終了"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGWhat", "0"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGCompleted", "1"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0090", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0087", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0091", ""
+		}
+	}
+	CE_0090 {
+		Title		: "　評定とは"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "MTGSelected", "MTGWhat"
+		}
+		Message {
+			"【評定とは】"
+			"領内の政治や外交（調略）などを指定した月に行うことができます。"
+			""
+			"・評定とは：本画面を表示する$color=0x0000FF$"
+			"$color=0xFF0000$・評定終了：次回評定を何ヶ月後に行うかを指定し、評定を終了する"
+		}
+		Happening {
+		}
+	}
+	CE_0087 {
+		Title		: "　評定終了"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "MTGSelected", "MTGCompleted"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGMonth", "何ヶ月後に実施致しますか？/1/2/3/4/5/6/その他（数値指定）"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "MTGMonth", "1"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0088", ""
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "MTGMonth", "#Month"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0089", ""
+		}
+	}
+	CE_0088 {
+		Title		: "　　月数数値指定"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "MTGMonth", "7"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_INPUT_NUMBER, NONE, NONE, NONE, NONE, NONE, NONE, "MTGMonth", "何ヶ月後に実施致しますか？（数値入力, 0: 戻る）"
+		}
+	}
+	CE_0089 {
+		Title		: "　　年始補正"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "MTGMonth", "12"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "MTGMonth", "-12"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0089", ""
+		}
+	}
 	CE_0060 {
 		Title		: "■後処理"
 		PeriodStart	: NONE
