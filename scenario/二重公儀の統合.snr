@@ -4432,7 +4432,6 @@ Bushou {
 	B_01429	:	"藤氏長者）",		0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_NA,				-1,		S_0418,				""
 	B_01430	:	"橘氏長者）",		0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_NA,				-1,		S_0418,				""
 	B_00014	:	"豊氏長者）",		0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_NA,				-1,		S_0418,				""
-	B_00224	:	"公儀一覧の表示",	0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_Helper,			0,		S_G2,				""
 	B_00011	:	"当家情報の表示",	0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_Helper,			-1,		S_G2,				""
 	B_00000	:	"後陽成天皇",		5,	9,	6,	5,		5,		10,	5,	200,	2000,	100,	1543,	1616,	BYOUSHI,	0,		D_CHOTEI,			0,		S_0082,				""
 	B_2		:	"シャクシャイン",	5,	3,	5,	5,		3,		4,	4,	0,		400,	0,		1609?,	1669,	BYOUSHI,	1624,	D_0062,				1,		S_0108,				""
@@ -8456,18 +8455,15 @@ ConditionalEvent {
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
-		RepeatType	: REPEATABLE
+		RepeatType	: ONCE
 		SubRoutine	: NO
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONTITION_BUSHOU_AT_SHIRO, NONE, NONE, S_G1, B_00224, "", ""
 		}
 		Message {
 		}
 		Happening {
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0049", ""
-			HAPPENING_BUSHOU_MOVE, NONE, NONE, S_G2, NONE, B_00224, NONE, "", ""
 		}
 	}
 	CE_0049 {
@@ -8508,7 +8504,6 @@ ConditionalEvent {
 			"$color=0x000000$"
 			"※臣従込石高1位かつ京都伏見・京都二条を占領するといずれかの氏長者となります。"
 			"※滅亡または従属・臣従すると公儀から外されます。"
-			"※当該画面を再度表示したい場合は、武将移動のコマンドで「行政（全国マップ右下）」内からお申し付けください。武将「公儀一覧の表示」を「実施しない」から「実施する」に陸路移動すると、翌月の開始時に表示されます。"
 			""
 			"※氏（本姓）：源平藤橘など天皇家から与えられた氏族名"
 			"※豊臣氏：大名統制のため羽柴秀吉が起草して天皇家により認められた氏"
@@ -9530,7 +9525,6 @@ ConditionalEvent {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0045", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0047", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0048", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0049", ""
 		}
 	}
 	CE_0046 {
@@ -9971,16 +9965,18 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
-			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGSelected", "評定実施月になりました。大項目をご選択ください。/各項目の説明/終了"
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGSelected", "評定実施月になりました。大項目をご選択ください。/各項目の説明/情報表示/終了"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGWhat", "0"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGCompleted", "1"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfo", "1"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGCompleted", "2"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0090", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0092", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0087", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0091", ""
 		}
 	}
 	CE_0090 {
-		Title		: "　評定とは"
+		Title		: "　評定項目の説明"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -9996,9 +9992,49 @@ ConditionalEvent {
 			"領内の政治や外交（調略）などを指定した月に行うことができます。"
 			""
 			"・評定とは：本画面を表示する$color=0x0000FF$"
+			"・情報表示："
+			"　　・公儀一覧：各氏長者の一覧"
 			"$color=0xFF0000$・評定終了：次回評定を何ヶ月後に行うかを指定し、評定を終了する"
 		}
 		Happening {
+		}
+	}
+	CE_0092 {
+		Title		: "　情報表示"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "MTGSelected", "MTGInfo"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoSelected", "表示する情報をご選択ください。/公儀一覧"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoKougi", "0"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0093", ""
+		}
+	}
+	CE_0093 {
+		Title		: "　　公儀一覧"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "MTGInfoSelected", "MTGInfoKougi"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0049", ""
 		}
 	}
 	CE_0087 {
