@@ -7,15 +7,16 @@
 
 ## Change log
 
-戦国史シナリオ「豊徳二重公儀の統合」の変更履歴をまとめた資料です。GitHub IssueのタイトルとリンクをVersionごとに一覧化しておりますので、詳細はそれぞれリンクよりご確認
-## Un-released
+戦国史シナリオ「豊徳二重公儀の統合」の変更履歴をまとめた資料です。GitHub IssueのタイトルとリンクをVersionごとに一覧化しておりますので、詳細はそれぞれリンクよりご確認ください。
+
+### Un-released
 
 - [version.txtをCHANGELOG.md (.html)に統合する #26](https://github.com/lisphilar/sengokushi/issues/26)
 - [毛利旧臣の扱いの修正 #28](https://github.com/lisphilar/sengokushi/issues/28)
 - [武将移動による「行政」指示から多肢選択による「評定」システムへの移行 #29](https://github.com/lisphilar/sengokushi/issues/29)
 - [公儀一覧表示を評定システムに移行する #30](https://github.com/lisphilar/sengokushi/issues/30)
 
-## Version 1.1.0 (2023/2/10)
+### Version 1.1.0 (2023/2/10)
 
 - [条件イベント整理のため一斉削除 #1](https://github.com/lisphilar/sengokushi/issues/1)
 - [Change logを作成し、配布ファイルに含める #3](https://github.com/lisphilar/sengokushi/issues/3)
@@ -37,11 +38,11 @@
 - [大坂城マップの拡大率修正、表示範囲修正 #24](https://github.com/lisphilar/sengokushi/issues/24)
 - [大坂マップ：城郭表現の修正 #25](https://github.com/lisphilar/sengokushi/issues/25)
 
-## Version 1.0.0.post0 (2023/1/23)
+### Version 1.0.0.post0 (2023/1/23)
 
 - [ライセンス及びシナリオ詳細を配布ファイル内で明記する #2](https://github.com/lisphilar/sengokushi/issues/2)
 
 
-## Version 1.0.0 (2010/12/13, 2023/1/21)
+### Version 1.0.0 (2010/12/13, 2023/1/21)
 
 - 2010/12/13作成のVersion 4-Dを、内容同一のままVersion 1.0.0としてGitHubにて公開
