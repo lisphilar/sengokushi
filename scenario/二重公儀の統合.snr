@@ -8437,8 +8437,8 @@ ConditionalEvent {
 			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "CountrySelN", "国名をご選択ください。/肥後/日向/大隅/薩摩/奄美"
 		}
 	}
-	CE_0105 {
-		Title		: "  国内の家選択"
+	CE_0110 {
+		Title		: "　地方・国名一覧"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -8449,30 +8449,6 @@ ConditionalEvent {
 		Condition {
 		}
 		Message {
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "HowSelectExplainF", "1"
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0106", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0001", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0108", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0107", ""
-		}
-	}
-	CE_0106 {
-		Title		: "　　説明"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "HowSelectExplainF", "1"
-		}
-		Message {
-			"次の画面にて、対象の家が拠点を有している地方名、国名を順にご選択ください。"
-			"<地方名、国名の一覧>"
 			"【五畿七道外】蝦夷地、琉球"
 			""
 			"【東山道奥羽】陸奥-津軽、-南部、-北上、-大崎、-白河、-会津、"
@@ -8491,13 +8467,34 @@ ConditionalEvent {
 			"【南海道】紀伊、淡路、阿波、讃岐、伊予、土佐"
 			""
 			"【山陰道】但馬、丹波、丹後、因幡、伯耆、出雲、石見"
+			""
 			"【山陽道】播磨、美作、備前、備中、備後、安芸、周防、長門"
 			""
 			"【西海道北部】筑前。筑後、豊前、肥前、平戸・五島、天草、壱岐・対馬"
+			""
 			"【西海道南部】肥後、日向、大隅、薩摩、奄美"
 		}
 		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "HowSelectExplainF", "0"
+		}
+	}
+	CE_0105 {
+		Title		: "  国内の家選択"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "HowSelectExplainF", "1"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0001", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0108", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0107", ""
 		}
 	}
 	CE_0108 {
@@ -10349,7 +10346,8 @@ ConditionalEvent {
 			"・情報表示："
 			"    ・公儀一覧：各氏長者の一覧"
 			"    ・家情報（当家）：石高や武将数など、当家に関する情報の一覧"
-			"    ・家情報（地方>国名から選択）：地方>国名から選択した大名家に関する情報の一覧"
+			"    ・家情報（地方>国名から選択）：特定の国内に拠点を持つ家の情報を順に表示する"
+			"    ・地方・国名一覧：地方ごとの国名一覧"
 			"$color=0x000000$・評定終了：次回評定を何ヶ月後に行うかを指定し、評定を終了する"
 		}
 		Happening {
@@ -10370,13 +10368,15 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
-			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoSelected", "表示する情報をご選択ください。/公儀一覧/家情報（当家）/家情報（地方>国名から選択）"
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoSelected", "表示する情報をご選択ください。/公儀一覧/家情報（当家）/家情報（地方>国名から選択）/地方・国名一覧"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoKougi", "0"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoPlayer", "1"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoAll", "2"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoCountry", "3"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0093", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0094", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0104", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0106", ""
 		}
 	}
 	CE_0093 {
@@ -10452,6 +10452,24 @@ ConditionalEvent {
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Target", "LD"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0067", ""
+		}
+	}
+	CE_0106 {
+		Title		: "　　地方・国名一覧"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "MTGInfoSelected", "MTGInfoCountry"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0110", ""
 		}
 	}
 	CE_0087 {

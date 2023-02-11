@@ -3,7 +3,7 @@
 安定版及び開発版の最新Versionは以下のとおりです。
 
 - [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.1.0
-- [開発版](https://github.com/lisphilar/sengokushi/tree/main/scenario)：1.2.0.dev5
+- [開発版](https://github.com/lisphilar/sengokushi/tree/main/scenario)：1.2.0.dev6
 
 ## Change log
 
@@ -16,7 +16,8 @@
 - [武将移動による「行政」指示から多肢選択による「評定」システムへの移行 #29](https://github.com/lisphilar/sengokushi/issues/29)
 - [公儀一覧表示を評定システムに移行する #30](https://github.com/lisphilar/sengokushi/issues/30)
 - [プレーヤー大名の情報一覧を評定システムに移行する #31](https://github.com/lisphilar/sengokushi/issues/31)
-- [評定：家情報一覧の追加 #32](https://github.com/lisphilar/sengokushi/issues/32)
+- [評定：家情報一覧 #32](https://github.com/lisphilar/sengokushi/issues/32)
+- [評定：地方名と国名の一覧 #33](https://github.com/lisphilar/sengokushi/issues/33)
 
 ### Version 1.1.0 (2023/2/10)
 
