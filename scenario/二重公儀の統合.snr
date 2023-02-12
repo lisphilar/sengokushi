@@ -7991,7 +7991,7 @@ ConditionalEvent {
 			HAPPENING_DAIMYOU_KAIMEI, D_NA, NONE, NONE, NONE, NONE, NONE, "", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "StartYear", "#Year"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "StartMonth", "#Month"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Observer", "#生存大名数+1"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Observer", "#大名番号(Da-70)+1"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Player", "#プレイヤー大名"
 		}
 	}
@@ -10347,6 +10347,7 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Player", "Observer"
 		}
 		Message {
 		}
@@ -10603,7 +10604,7 @@ ConditionalEvent {
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "KashinN", "0"
 		}
 		Message {
-			"%大名Meisyu%の外交方針に従う家臣は残念ながらおりません。"
+			"%大名Meisyu%の外交方針に従う家臣は現在おりません。"
 		}
 		Happening {
 		}
@@ -10702,7 +10703,7 @@ ConditionalEvent {
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Meisyu", "0"
 		}
 		Message {
-			"%城CountrySelected%には非家臣の大名家がおりませんでした。"
+			"%城CountrySelected%には選択可能な非家臣の家がおりませんでした。"
 			"情報表示を終了します。"
 		}
 		Happening {

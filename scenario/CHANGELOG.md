@@ -3,7 +3,7 @@
 安定版及び開発版の最新Versionは以下のとおりです。
 
 - [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.1.0
-- [開発版](https://github.com/lisphilar/sengokushi/tree/main/scenario)：1.2.0.dev8
+- [開発版](https://github.com/lisphilar/sengokushi/tree/main/scenario)：1.2.0.dev9
 
 ## Change log
 
@@ -20,6 +20,7 @@
 - [評定：地方名と国名の一覧 #33](https://github.com/lisphilar/sengokushi/issues/33)
 - [伊達家、藤堂家の初期従属先を徳川家に修正 #34](https://github.com/lisphilar/sengokushi/issues/34)
 - [評定：家臣家の情報表示 #35](https://github.com/lisphilar/sengokushi/issues/35)
+- [観戦モード時に評定システムが立ち上がる問題の修正 #36](https://github.com/lisphilar/sengokushi/issues/36)
 
 ### Version 1.1.0 (2023/2/10)
 
