@@ -8491,7 +8491,6 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "HowSelectExplainF", "1"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0001", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0108", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0107", ""
@@ -9317,21 +9316,6 @@ ConditionalEvent {
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "HaikaN", "-1"
 		}
 		Message {
-			"【%大名Target%の情報】"
-			""
-			"・当主：%武将Toushu%（所在地： %城Region%-%城Country%-%城ToushuShiro%）"
-			""
-			"・石高：%KokudakaMU%万石（直轄・臣従のみ： %KokudakaDirect%万石）"
-			"・経済：%Economy%"
-			"・資産：%Capital%"
-			"・城数：%ShiroN%"
-			""
-			"・武将：%BushouN%名"
-			"・騎馬：%KibaN%名"
-			"・足軽：%AshigaruN%名"
-			"・鉄砲：%GunN%丁"
-			""
-			"※家臣及び従属・臣従家である%HaikaN%家を含む"
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Toushu", "#当主(Target)"
@@ -9341,6 +9325,8 @@ ConditionalEvent {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0058", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaMU", "#Round(Kokudaka/10000)"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaDirect", "#Round(#石高(Target)/10000)"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0111", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0112", ""
 		}
 	}
 	CE_0058 {
@@ -9369,6 +9355,71 @@ ConditionalEvent {
 			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "AshigaruN", "#直轄足軽兵数(LD)"
 			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "GunN", "#直轄鉄砲数(LD)"
 			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "HaikaN", "1"
+		}
+	}
+	CE_0111 {
+		Title		: "    大名情報"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_LARGE_EQUAL, NONE, NONE, NONE, NONE, "DStatusList[Target]", "0"
+		}
+		Message {
+			"【%大名Target%の情報】"
+			""
+			"・当主：%武将Toushu%（所在地： %城Region%-%城Country%-%城ToushuShiro%）"
+			""
+			"・石高：%KokudakaMU%万石（直轄・臣従のみ： %KokudakaDirect%万石）"
+			"・経済：%Economy%"
+			"・資産：%Capital%"
+			"・城数：%ShiroN%"
+			""
+			"・武将：%BushouN%名"
+			"・騎馬：%KibaN%名"
+			"・足軽：%AshigaruN%名"
+			"・鉄砲：%GunN%丁"
+			""
+			"※家臣及び従属・臣従家である%HaikaN%家を含む"
+		}
+		Happening {
+		}
+	}
+	CE_0112 {
+		Title		: "    家臣情報"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_SMALL, NONE, NONE, NONE, NONE, "DStatusList[Target]", "0"
+		}
+		Message {
+			"【%大名Target%の情報】"
+			""
+			"・当主：%武将Toushu%（所在地： %城Region%-%城Country%-%城ToushuShiro%）"
+			""
+			"・石高：%KokudakaMU%万石"
+			"・経済：%Economy%"
+			"・資産：%Capital%"
+			"・城数：%ShiroN%"
+			""
+			"・武将：%BushouN%名"
+			"・騎馬：%KibaN%名"
+			"・足軽：%AshigaruN%名"
+			"・鉄砲：%GunN%丁"
+			""
+			"※%大名Meisyu%の家臣（外交方針変更に従う）"
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Meisyu", "DStatusList[Target]/Kashin"
 		}
 	}
 	CE_0033 {
@@ -10349,6 +10400,8 @@ ConditionalEvent {
 			"    ・家情報（当家）：石高や武将数など、当家に関する情報の一覧"
 			"    ・家情報（地方>国名から選択）：特定の国内に拠点を持つ家の情報を順に表示する"
 			"    ・地方・国名一覧：地方ごとの国名一覧"
+			"    ・家臣情報（当家）：当家の外交方針に従う家臣の情報を順に表示する"
+			"    ・家臣情報（地方>国名から選択）：家の外交方針に従う家臣の情報を順に表示する"
 			"$color=0x000000$・評定終了：次回評定を何ヶ月後に行うかを指定し、評定を終了する"
 		}
 		Happening {
@@ -10369,15 +10422,19 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
-			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoSelected", "表示する情報をご選択ください。/公儀一覧/家情報（当家）/家情報（地方>国名から選択）/地方・国名一覧"
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoSelected", "表示する情報をご選択ください。/公儀一覧/家情報（当家）/家情報（地方>国名から選択）/地方・国名一覧/家臣の情報（当家）/家臣の情報（地方>国名から選択）"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoKougi", "0"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoPlayer", "1"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoAll", "2"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoCountry", "3"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoKashinPlayer", "4"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfoKashinAll", "5"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0093", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0094", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0104", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0106", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0113", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0118", ""
 		}
 	}
 	CE_0093 {
@@ -10471,6 +10528,206 @@ ConditionalEvent {
 		}
 		Happening {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0110", ""
+		}
+	}
+	CE_0113 {
+		Title		: "　　家臣（当家）"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "MTGInfoSelected", "MTGInfoKashinPlayer"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Meisyu", "Player"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KashinN", "0"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0114", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0115", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0116", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0117", ""
+		}
+	}
+	CE_0114 {
+		Title		: "　　　家臣数取得"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: DAIMYOU
+		LoopVariable	: "LD"
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DStatusList[LD]/Kashin", "Meisyu"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "KashinN", "1"
+		}
+	}
+	CE_0115 {
+		Title		: "　　　家臣数表示"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "KashinN", "0"
+		}
+		Message {
+			"%大名Meisyu%の外交方針に従う家臣は%KashinN%家います。"
+			"以降の画面にて各家臣の情報を順にご報告致します。"
+		}
+		Happening {
+		}
+	}
+	CE_0116 {
+		Title		: "　　　家臣なし"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "KashinN", "0"
+		}
+		Message {
+			"%大名Meisyu%の外交方針に従う家臣は残念ながらおりません。"
+		}
+		Happening {
+		}
+	}
+	CE_0117 {
+		Title		: "　　　家臣表示"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: DAIMYOU
+		LoopVariable	: "LD"
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DStatusList[LD]/Kashin", "Meisyu"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Target", "LD"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0067", ""
+		}
+	}
+	CE_0118 {
+		Title		: "　　家臣（All）"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "MTGInfoSelected", "MTGInfoKashinAll"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0105", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Meisyu", "0"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0119", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0121", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0122", ""
+		}
+	}
+	CE_0119 {
+		Title		: "　　　1家に絞る"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: DAIMYOU
+		LoopVariable	: "LD"
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Meisyu", "0"
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "DShiroNCountryList[LD]", "0"
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "DStatusList[LD]", "0"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Target", "LD"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0067", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0120", ""
+		}
+	}
+	CE_0120 {
+		Title		: "　　　　選択確認"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "当該大名家の家臣の情報を表示しますか？"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Meisyu", "Target"
+		}
+	}
+	CE_0121 {
+		Title		: "　　　非家臣家なし"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Meisyu", "0"
+		}
+		Message {
+			"%城CountrySelected%には非家臣の大名家がおりませんでした。"
+			"情報表示を終了します。"
+		}
+		Happening {
+		}
+	}
+	CE_0122 {
+		Title		: "　　　家臣家表示へ"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "Meisyu", "0"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KashinN", "0"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0114", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0115", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0116", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0117", ""
 		}
 	}
 	CE_0087 {
