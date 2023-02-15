@@ -907,17 +907,17 @@ Doumei {
 	D_CHOTEI,				FUSEN,		D_ALL
 	D_Toyotomi,				FUSEN,		D_ALL
 	D_Tokugawa,				FUSEN,		D_ALL
-	D_CHOTEI,				SHINJUU,	D_Tyosogabe
-	D_CHOTEI,				SHINJUU,	D_0007
-	D_CHOTEI,				SHINJUU,	D_0002
-	D_CHOTEI,				SHINJUU,	D_0004
-	D_CHOTEI,				SHINJUU,	D_0005
-	D_CHOTEI,				SHINJUU,	D_0006
-	D_CHOTEI,				SHINJUU,	D_0008
-	D_CHOTEI,				SHINJUU,	D_0009
-	D_CHOTEI,				SHINJUU,	D_0077
-	D_CHOTEI,				SHINJUU,	D_0010
-	D_CHOTEI,				SHINJUU,	D_0012
+	D_CHOTEI,				JUUZOKU,	D_Tyosogabe
+	D_CHOTEI,				JUUZOKU,	D_0007
+	D_CHOTEI,				JUUZOKU,	D_0002
+	D_CHOTEI,				JUUZOKU,	D_0004
+	D_CHOTEI,				JUUZOKU,	D_0005
+	D_CHOTEI,				JUUZOKU,	D_0006
+	D_CHOTEI,				JUUZOKU,	D_0008
+	D_CHOTEI,				JUUZOKU,	D_0009
+	D_CHOTEI,				JUUZOKU,	D_0077
+	D_CHOTEI,				JUUZOKU,	D_0010
+	D_CHOTEI,				JUUZOKU,	D_0012
 	D_0002,					FUSEN,		D_0012
 	D_Toyotomi,				SHINJUU,	D_0155
 	D_Toyotomi,				SHINJUU,	D_Uraku
@@ -1241,7 +1241,6 @@ Shiro {
 	S_IWAYADOU				:	"ä‚íJì∞óväQ",	K_RIKUTYU,		4,		3,		251864,	113841,	12000,	8000,	400,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_DATE,					""
 	S_FUTAGO				:	"ã‡ÉñçËèÈ",		K_RIKUTYU,		5,		3,		250511,	111934,	23000,	22000,	450,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_DATE,					""
 	S_MIZUSAWA				:	"êÖëÚèÈ",		K_RIKUTYU,		4,		3,		250443,	114506,	33000,	27000,	350,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_0056,					""
-	S_HIRAIZUMI				:	"íÜë∏éõ",		K_RIKUTYU,		2,		2,		250137,	116070,	16000,	3000,	1500,	1000,	0,		0,		NO,		0,		0,		NO,		10,		ST_éõ,		D_CHOTEI,				""
 	SK08					:	"ó§âú-ëÂçË",	K_RIKUZEN,		2,		2,		326016,	333568,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_àÍî äOí¨,D_Country,				""
 	S_Sendai				:	"êÂë‰èÈ",		K_RIKUZEN,		10,		10,		248244,	128128,	1000000,200000,	1000,	400,	0,		0,		YES,	0,		0,		YES,	50,		ST_ïΩèÈëÂ,	D_DATE,					"ï\êŒòZè\ìÒñúêŒÅ@é¿çÇÇÕïSñúÇ∆Ç¢ÇÌÇÍÇÈ\n\nåoçœ\n \nñkè„êÏó¨àÊÇÃéºínë—ÇÃäJëÒÇ»Ç«ÇÃêVìcäJî≠Ç…ÇÊÇ¡Çƒé¿çÇ100ñú&+
 êŒÇ∆Ç‡åæÇÌÇÍÇÈÇŸÇ«Ç…ëΩÇ≠ÇÃïƒÇé˚änÇ≈Ç´ÇÈÇÊÇ§Ç…Ç»Ç¡ÇΩÅBÇ‹ÇΩÅAîÉïƒêßÇ∆åƒÇŒÇÍÇÈéñé¿è„ÇÃêÍîÑêßìxÇ™ì±ì¸Ç≥ÇÍÇƒÇ¢ÇΩÅBÇªÇÃïƒÇìåâÒÇËçqòHÇ≈êŒä™Çí ÇµÇƒç]åÀÇ…â^ÇÒÇ≈ëÂÇ´Ç»óòâvÇìæÇΩÅB\n\nÅ@éOó§â´Ç…ãôèÍÇéùÇøÅAó«ç`Ç…åbÇ‹ÇÍÇΩÇ±Ç∆Ç»Ç«Ç©ÇÁÅAéOó§äCä›Ç≈çÃÇÍÇÈÉAÉèÉrÇ‚ÉTÉÅÇÅAä±ÇµÈ∏Ç‚ÉtÉJÉqÉåÇ…â¡çHÇµÇƒÅuí∑çËïUï®ÅvÇ∆ÇµÇƒíÜçëÇ…óAèoÇµÇƒÇ¢ÇΩÅB&+
@@ -1346,7 +1345,6 @@ Shiro {
 	S_IIYAMA				:	"î—éRèÈ",		K_KITASHINANO,	3,		3,		208356,	149325,	65000,	60000,	200,	150,	0,		0,		NO,		0,		0,		NO,		20,		ST_éRç‘,	D_0088,					""
 	S_0151					:	"ê{ç‚",			K_KITASHINANO,	2,		2,		208051,	150809,	20000,	15000,	30,		18,		0,		0,		NO,		0,		0,		NO,		20,		ST_àÍî äOí¨,D_0088,					""
 	S_SHINANONAGANUMA		:	"í∑è¿",			K_KITASHINANO,	4,		3,		206745,	151681,	22000,	18000,	150,	120,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_Nagasawa,				""
-	S_ZENKOUJI				:	"ëPåıéõ",		K_KITASHINANO,	3,		3,		206055,	152434,	5000,	2999,	900,	500,	0,		0,		NO,		0,		0,		NO,		10,		ST_éõ,		D_CHOTEI,				""
 	S_KAWANAKAZIMA			:	"êÏíÜìáå√êÌèÍê’	",K_KITASHINANO,	3,		3,		205425,	153152,	0,		0,		600,	300,	1500,	400,	NO,		0,		0,		NO,		10,		ST_êÏä›,	D_Nagasawa,				"ÅyéYã∆Åz ó—ã∆"
 	S_MATSUSIRO				:	"èºèÈ",			K_KITASHINANO,	7,		5,		205275,	154483,	50000,	13000,	1100,	450,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈëÂ,	D_Nagasawa,				"å„ÇÃèºë„èÈ"
 	S_TOISHI				:	"ê^ìcñ{èÈö¨",	K_KITASHINANO,	5,		4,		207450,	155803,	8000,	5000,	250,	200,	0,		0,		NO,		0,		0,		NO,		20,		ST_ñ¶éRèÈ,	D_0078,					""
@@ -1354,7 +1352,6 @@ Shiro {
 	S_KOMORO				:	"è¨èîèÈ",		K_KITASHINANO,	6,		5,		209356,	157697,	50000,	45000,	1300,	700,	0,		0,		NO,		0,		0,		NO,		20,		ST_ñ¶éRèÈ,	D_0093,					""
 	S_0150					:	"ç≤ãv",			K_KITASHINANO,	2,		2,		210405,	158194,	5000,	3000,	0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_àÍî äOí¨,D_0093,					""
 	S_KARUIZAWA				:	"åyà‰ëÚ",		K_KITASHINANO,	1,		1,		211927,	157390,	4000,	2000,	1400,	800,	0,		0,		NO,		0,		0,		NO,		10,		ST_ä÷èä,	D_0093,					""
-	S_TOGAKUSHI				:	"åÀâBíJê_óÃ",	K_KITASHINANO,	4,		4,		202393,	150963,	1200,	1000,	70,		50,		0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_CHOTEI,				"åÀâBê_é–"
 	S_MAKINOSHIMA			:	"ñqîVìáèÈ",		K_KITASHINANO,	4,		3,		200600,	156977,	28000,	24000,	200,	160,	0,		0,		NO,		0,		0,		NO,		20,		ST_ñ¶éRèÈ,	D_Nagasawa,				""
 	S_SHINANOMATSUMOTO		:	"èºñ{èÈ",		K_KITASHINANO,	7,		4,		202292,	158950,	66000,	50000,	1200,	700,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈëÂ,	D_0090,					""
 	S_SEBA					:	"êÙîn",			K_KITASHINANO,	2,		2,		201368,	160870,	14000,	10000,	600,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_ä÷èä,	D_0090,					""
@@ -1392,7 +1389,6 @@ Shiro {
 	S_KIYOMIZU				:	"ê¥êÖèÈ",		K_MINO,			3,		2,		181235,	170816,	15000,	12000,	150,	100,	0,		0,		NO,		0,		0,		NO,		20,		ST_ñ¶éRèÈ,	D_0132,					""
 	S_BODAIYAMA				:	"ïÏíÒéRèÈ",		K_MINO,			2,		3,		179520,	171635,	2000,	1000,	150,	90,		0,		0,		NO,		0,		0,		NO,		20,		ST_éRç‘,	D_0136,					""
 	S_SONE					:	"óKî„êwâÆ",		K_MINO,			2,		2,		179476,	169330,	45000,	30000,	250,	200,	0,		0,		NO,		0,		0,		NO,		40,		ST_êwâÆ,	D_0129,					""
-	S_SUNOMATA				:	"ñnñìîíÈ¢ê_é–",	K_MINO,			4,		0,		182685,	172177,	21000,	17000,	1300,	800,	0,		0,		NO,		0,		0,		NO,		10,		ST_êÏä›,	D_CHOTEI,				""
 	S_0162					:	"ë]ç™",			K_MINO,			2,		2,		181721,	171622,	22000,	8500,	120,	100,	0,		0,		NO,		0,		0,		NO,		30,		ST_àÍî äOí¨,D_Bakuhu,				""
 	S_OOGAKI				:	"ëÂä_èÈ",		K_MINO,			8,		8,		181618,	172633,	60000,	50000,	3700,	2200,	0,		0,		NO,		0,		0,		NO,		30,		ST_ëÂä_èÈ,	D_0126,					""
 	S_0164					:	"î¸îZóÃ",		K_MINO,			2,		2,		182412,	168550,	11000,	10000,	50,		30,		0,		0,		NO,		0,		0,		NO,		50,		ST_ïΩín,	D_0003,					""
@@ -1426,7 +1422,6 @@ Shiro {
 	S_MINAGUCHI				:	"êÖå˚èÈ",		K_OUMI,			6,		5,		174181,	178316,	60000,	8500,	3500,	2200,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_Bakuhu,				""
 	S_OUMIOGAWA				:	"çbâÍ",			K_OUMI,			3,		3,		172648,	180093,	14000,	8500,	100,	80,		0,		0,		NO,		0,		0,		NO,		40,		ST_àÍî äOí¨,D_Bakuhu,				""
 	S_SUZUKA				:	"óÈé≠ìª",		K_OUMI,			5,		2,		177139,	179583,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_éR,		D_Bakuhu,				""
-	S_0092					:	"çπçπãMê_é–",	K_OUMI,			8,		2,		173517,	175937,	4000,	2000,	100,	100,	0,		0,		NO,		0,		0,		NO,		50,		ST_ê_é–,	D_CHOTEI,				"Å@âFëΩåπéÅÇÃéÅê_ê_é–"
 	S_NAGAHARA				:	"âiå¥èÈ",		K_OUMI,			3,		3,		172097,	176603,	20000,	8500,	450,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_êwâÆ,	D_Bakuhu,				""
 	S_YOUKAITHI				:	"î™ì˙ésëÂêX",	K_OUMI,			2,		2,		174875,	176188,	13000,	8500,	2000,	800,	0,		0,		NO,		0,		0,		NO,		10,		ST_àÍî äOí¨,D_Bakuhu,				""
 	S_KUSATSU				:	"ëêí√",			K_OUMI,			2,		2,		171087,	177997,	35000,	8500,	1700,	1200,	800,	400,	NO,		0,		0,		NO,		10,		ST_ä÷èä,	D_Bakuhu,				"ÅyéYã∆Åz ìíé°èÍ"
@@ -1623,7 +1618,6 @@ Shiro {
 	S_0094					:	"ç]åÀçË",		K_HITACHI,		2,		2,		237824,	162841,	40000,	10000,	300,	200,	0,		0,		NO,		0,		0,		NO,		50,		ST_àÍî äOí¨,D_0249,					""
 	S_0156					:	"å√ìnêwâÆ",		K_HITACHI,		2,		2,		239359,	163480,	12000,	10000,	100,	40,		0,		0,		NO,		0,		0,		NO,		50,		ST_êwâÆ,	D_0118,					""
 	S_0144					:	"éuí}êwâÆ",		K_HITACHI,		2,		2,		238515,	161280,	10110,	8500,	150,	120,	0,		0,		NO,		0,		0,		NO,		50,		ST_êwâÆ,	D_0066,					""
-	S_KASHIMA				:	"é≠ìáê_ã{",		K_HITACHI,		5,		4,		243264,	162777,	32000,	3000,	900,	500,	0,		0,		YES,	2,		5,		NO,		30,		ST_ê_é–,	D_CHOTEI,				"ÅyéYã∆Åz é≠ìáëÂé– "
 	S_HITACHIFCHU			:	"èÌó§ï{íÜèÈ",	K_HITACHI,		4,		4,		237913,	159862,	20000,	10000,	400,	370,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_0233,					""
 	S_0057					:	"é≥åÀ",			K_HITACHI,		2,		2,		239642,	158668,	55000,	50000,	200,	120,	0,		0,		NO,		0,		0,		NO,		50,		ST_àÍî äOí¨,D_0232,					""
 	S_SHIMOTATE				:	"â∫äŸèÈ",		K_HITACHI,		4,		4,		233377,	157839,	60000,	47000,	300,	200,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_0063,					""
@@ -1637,7 +1631,6 @@ Shiro {
 	S_0102					:	"ç]åÀèÈ",		K_MUSASHI,		10,		4,		229836,	167603,	170000,	70000,	12000,	2200,	0,		0,		NO,		0,		0,		NO,		50,		ST_ïΩèÈëÂ,	D_Tokugawa,				""
 	S_MUSASHIFKAYA			:	"â™ïî",			K_MUSASHI,		5,		2,		223015,	159658,	57000,	8500,	700,	500,	0,		0,		NO,		0,		0,		NO,		40,		ST_àÍî äOí¨,D_Tokugawa,				""
 	S_HANAZONO				:	"â‘âÄ",			K_MUSASHI,		5,		2,		220776,	160410,	26000,	8500,	250,	200,	0,		0,		NO,		0,		0,		NO,		40,		ST_àÍî äOí¨,D_Tokugawa,				""
-	S_0056					:	"ëÈëÉéR",		K_MUSASHI,		2,		2,		218368,	164531,	2000,	1000,	32,		32,		0,		0,		NO,		0,		0,		NO,		50,		ST_éR,		D_CHOTEI,				""
 	S_HACHIATA				:	"î´å`",			K_MUSASHI,		5,		1,		222520,	161533,	42000,	8500,	400,	300,	0,		0,		NO,		0,		0,		NO,		30,		ST_àÍî äOí¨,D_Tokugawa,				""
 	S_MUSASHITENJINYAMA		:	"í∑ì“",			K_MUSASHI,		5,		2,		218648,	162497,	17000,	8500,	150,	130,	0,		0,		NO,		0,		0,		NO,		20,		ST_àÍî äOí¨,D_Tokugawa,				""
 	S_OSHI					:	"îEèÈ",			K_MUSASHI,		8,		8,		225455,	161010,	90000,	8500,	1600,	700,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈëÂ,	D_Tokugawa,				""
@@ -1687,7 +1680,6 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_ASHIGARATOUGE			:	"ë´ïøìª",		K_SURUGA,		5,		0,		217881,	173260,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_éR,		D_0085,					""
 	S_MIMAKIHASHI			:	"è¿í√ñ©",		K_SURUGA,		4,		3,		215973,	176792,	19000,	8500,	1500,	1200,	800,	400,	YES,	0,		0,		NO,		40,		ST_ç`,		D_Bakuhu,				"\n"
 	S_KOKOKUJI				:	"ãªçëéõèÈ",		K_SURUGA,		6,		5,		215168,	176126,	15000,	13000,	700,	600,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_0086,					""
-	S_FJI					:	"ïxémêÛä‘ëÂé–",	K_SURUGA,		2,		2,		212243,	174848,	11000,	7000,	1200,	800,	1000,	500,	NO,		0,		0,		NO,		10,		ST_ê_é–,	D_CHOTEI,				"ÅyéYã∆Åz êÛä‘ëÂé–"
 	S_0416					:	"ãvî\éR",		K_SURUGA,		2,		2,		209036,	176678,	0,		0,		100,	20,		0,		0,		NO,		0,		0,		NO,		50,		ST_éR,		D_0002,					""
 	S_OKITSU				:	"ãªí√",			K_SURUGA,		3,		3,		210244,	177611,	16000,	10000,	800,	600,	0,		0,		NO,		0,		0,		NO,		10,		ST_ä÷èä,	D_0087,					""
 	S_SUNBU					:	"èxï{èÈ",		K_SURUGA,		7,		4,		208703,	178533,	46000,	31000,	6000,	2400,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈëÂ,	D_0087,					""
@@ -1700,7 +1692,6 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_0195					:	"ìáìcèh",		K_TOOTOUMI,		2,		2,		206284,	180506,	100,	8500,	1000,	600,	0,		0,		NO,		0,		0,		YES,	50,		ST_àÍî äOí¨,D_Bakuhu,				"êÏâzÇµ\n\n\nÅ@ã‡íJèhÅÃìáìcèhÇÃà⁄ìÆÇ…ÇÕÅAïKÇ∏àÍåéÇ©Ç©ÇËÇ‹Ç∑ÅB\n\nÅ@Ç¢Ç∏ÇÍÇ©ÇÃèhÇ…Ç¢ÇÈïêè´ÇÕÅAåéèâÇﬂÇ…é©ìÆ&+
 Ç≈Ç‡Ç§àÍï˚ÇÃèÈÇ÷à⁄ìÆÇµÇ‹Ç∑ÅB\n\nÅ@Å@Å@Å@Å@Å@Å@Å@Å@ÅiâÕé~ÇﬂÇÕÅhÇ®ÇªÇÁÇ≠ÅhÇ†ÇËÇ‹ÇπÇÒ)\n\nÅ@Ç‡ÇøÇÎÇÒÅAèhÇÃéxîzâ∆Ç™å›Ç¢Ç…ÅAÅ@è]ëÆÇèÇíìGëŒÇæÇ∆à⁄ìÆÇ≈Ç´Ç‹ÇπÇÒÇ™ÅB\n"
 	S_KAKEGAWA				:	"ä|êÏèÈ",		K_TOOTOUMI,		6,		6,		203240,	181147,	25000,	10000,	700,	500,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈëÂ,	D_Hisamatsu,			""
-	S_TAKATENJIN			:	"çÇìVê_é–",		K_TOOTOUMI,		7,		3,		203044,	182182,	20000,	14000,	400,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_ê_é–,	D_CHOTEI,				""
 	S_GOZENSHAKI			:	"å‰ëOçË",		K_TOOTOUMI,		2,		1,		205977,	183987,	4000,	8500,	800,	300,	400,	150,	NO,		0,		2,		NO,		10,		ST_ç`,		D_Bakuhu,				"ÅyéYã∆Åz ëDìπëO "
 	S_0152					:	"ñxç]",			K_TOOTOUMI,		2,		2,		197452,	182195,	2800,	2500,	140,	200,	0,		0,		NO,		0,		0,		NO,		50,		ST_àÍî äOí¨,D_0098,					""
 	S_YOKOSUKA				:	"â°ê{âÍèÈ",		K_TOOTOUMI,		4,		3,		201716,	183078,	60000,	55000,	500,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_0097,					""
@@ -1756,7 +1747,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_INUYAMA				:	"å¢éRèÈ",		K_OWARI,		6,		4,		186367,	172453,	68000,	56360,	700,	500,	0,		0,		NO,		0,		0,		NO,		20,		ST_ñ¶éRèÈ,	D_Tozyo,				""
 	S_OWARIOBATA			:	"è¨î¶",			K_OWARI,		4,		4,		186226,	175652,	71000,	56360,	300,	250,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_Tozyo,				""
 	S_KOMAKIYAMA			:	"è¨ñqéRèÈ",		K_OWARI,		5,		5,		185870,	173711,	34000,	28180,	500,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_Tozyo,				""
-	S_ATSUTA				:	"îMìcê_ã{",		K_OWARI,		10,		10,		185121,	175884,	6000,	5000,	5000,	4000,	1600,	700,	NO,		0,		3,		NO,		80,		ST_ê_é–,	D_CHOTEI,				"ÅyéYã∆Åz îMìcê_ã{ "
+	S_ATSUTA				:	"îMìcê_ã{",		K_OWARI,		10,		10,		185415,	176121,	18000,	0,		5000,	4000,	1600,	700,	NO,		0,		3,		NO,		80,		ST_ê_é–,	D_Tozyo,				"ÅyéYã∆Åz îMìcê_ã{ "
 	S_KIYOSU				:	"ê¥èFèÈ",		K_OWARI,		8,		7,		185120,	175103,	98000,	74540,	4500,	2800,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈëÂ,	D_Tozyo,				""
 	S_KURODA				:	"çïìcèÈ",		K_OWARI,		3,		2,		183810,	172812,	60000,	46360,	200,	130,	0,		0,		NO,		0,		0,		NO,		40,		ST_êwâÆ,	D_Tozyo,				""
 	S_OWARIICHINOMIYA		:	"àÍã{",			K_OWARI,		4,		3,		183782,	173983,	65000,	46360,	500,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_àÍî äOí¨,D_Tozyo,				""
@@ -1784,7 +1775,6 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_ISEYTAKEHARA			:	"à…ê®í|å¥",		K_ISE,			2,		2,		178098,	184372,	15000,	8500,	150,	100,	0,		0,		NO,		0,		0,		NO,		20,		ST_ä÷èä,	D_Bakuhu,				""
 	S_TAMARU				:	"ìcä€èÈ",		K_ISE,			3,		2,		181659,	185656,	50000,	47000,	400,	340,	0,		0,		NO,		0,		0,		NO,		20,		ST_ïΩèÈè¨,	D_0151,					""
 	S_GOKASHINOYAMA			:	"å‹â”é¬éRèÈê’",	K_ISE,			3,		2,		179827,	186432,	24000,	8500,	100,	80,		0,		0,		NO,		0,		0,		NO,		20,		ST_éRç‘,	D_Bakuhu,				""
-	S_ISE					:	"ê_ã{",			K_ISE,			10,		10,		182877,	186663,	6000,	5000,	4000,	2500,	2600,	1800,	NO,		0,		0,		NO,		10,		ST_ê_é–,	D_CHOTEI,				"ÅyéYã∆Åz à…ê®ê_ã{ "
 	S_ISEOOMINATO			:	"à…ê®ëÂñ©",		K_ISE,			3,		2,		183604,	185651,	28000,	8500,	3500,	3200,	2500,	1800,	YES,	0,		0,		NO,		10,		ST_ç`,		D_Bakuhu,				"ÅyéYã∆Åz ëDìπëO "
 	S_TAKMI					:	"çÇå©ìª",		K_ISE,			5,		0,		173835,	187479,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_éR,		D_Bakuhu,				""
 	S_AOYAMA				:	"ê¬éRìª",		K_ISE,			5,		0,		176071,	182974,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_éR,		D_0153,					""
@@ -1795,9 +1785,8 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_0085					:	"ìöéuâY",		K_SHIMA,		2,		2,		186803,	185024,	0,		0,		300,	200,	0,		0,		NO,		0,		0,		NO,		50,		ST_äCä›,	D_0152,					""
 	SC06					:	"ãEì‡",			K_EZO,			2,		2,		306624,	347328,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_àÍî äOí¨,D_Region,				""
 	SK43					:	"éRèÈ",			K_EZO,			2,		2,		311808,	347392,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_àÍî äOí¨,D_Country,				""
-	S_0082					:	"ãûìså‰èä",		K_YAMASHIRO,	10,		10,		167866,	177684,	160000,	130000,	3200,	3000,	0,		0,		NO,		0,		0,		NO,		50,		ST_ãûìs,	D_CHOTEI,				""
+	S_0082					:	"ãûìså‰èä",		K_YAMASHIRO,	10,		10,		167942,	177709,	330000,	330000,	3200,	3000,	0,		0,		NO,		0,		0,		NO,		50,		ST_ãûìs,	D_CHOTEI,				""
 	S_Nijou					:	"ìøêÏìÒèèÈ",	K_YAMASHIRO,	10,		10,		167589,	178028,	200000,	60000,	3200,	2400,	0,		0,		NO,		0,		0,		NO,		50,		ST_ïΩèÈëÂ,	D_Tokugawa,				"ãûìsèäéië„ÇÃñèäÇÕñ{óàÅAìÒèèÈì‡Ç…ÇÕÇ†ÇËÇ‹ÇπÇÒÅB"
-	S_KITANO				:	"ñkñÏìVñûã{",	K_YAMASHIRO,	2,		2,		167293,	177491,	25000,	12000,	2000,	1300,	0,		0,		NO,		0,		0,		NO,		10,		ST_ê_é–,	D_CHOTEI,				"ÅyéYã∆Åz ñkñÏìVñûã{"
 	S_OINOSAKA				:	"òVÉmç‚",		K_YAMASHIRO,	5,		0,		166303,	178059,	15000,	13000,	100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_éR,		D_Furuta,				""
 	S_NISHIOKA				:	"êºâ™",			K_YAMASHIRO,	3,		3,		166892,	178483,	25000,	22000,	500,	400,	0,		0,		NO,		0,		0,		NO,		10,		ST_ä÷èä,	D_Furuta,				""
 	S_0196					:	"éRâ»",			K_YAMASHIRO,	5,		3,		169081,	178790,	10000,	8500,	1000,	500,	0,		0,		NO,		0,		0,		NO,		50,		ST_àÍî äOí¨,D_Tokugawa,				""
@@ -1805,21 +1794,17 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_MUKOUJIMA				:	"å¸ìá",			K_YAMASHIRO,	5,		5,		168780,	179712,	20000,	8500,	2000,	1500,	0,		0,		NO,		0,		0,		NO,		10,		ST_ä÷èä,	D_Tokugawa,				""
 	S_YODO					:	"ìøêÏóÑèÈ",		K_YAMASHIRO,	5,		5,		167721,	179382,	35000,	8500,	2800,	2000,	0,		0,		NO,		0,		0,		NO,		30,		ST_ä»à’ñxèÈ,D_Tokugawa,				""
 	S_YAMASHIROYAMAZAKI		:	"éRçË",			K_YAMASHIRO,	0,		0,		166989,	179699,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		10,		ST_ïΩín,	D_Tokugawa,				""
-	S_0099					:	"âÔãcèä",		K_YAMASHIRO,	2,		2,		168428,	181190,	500,	200,	600,	400,	0,		0,		NO,		0,		0,		NO,		50,		ST_êwâÆ,	D_0007,					""
-	S_0112					:	"âBê±èä",		K_YAMASHIRO,	2,		2,		169562,	181004,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_êwâÆ,	D_Tyosogabe,			""
-	S_0419					:	"è¨êÏâÆï~",		K_YAMASHIRO,	5,		3,		170566,	180364,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_êwâÆ,	D_0006,					""
-	S_UJI					:	"âFé°ïΩìôâ@/ç≈èüâ@",K_YAMASHIRO,	3,		3,		169080,	180308,	11000,	5000,	1000,	700,	0,		0,		NO,		0,		0,		NO,		10,		ST_ê_é–,	D_CHOTEI,				"åπ óäê≠ÅAé©ênÇÃín(êÓÇÃé≈)Å@Å@Å@ÅuñÑÇ‡ÇÍñÿÇÃâ‘çÁÇ≠Ç±Ç∆Ç‡Ç»Ç©ÇËÇµÇ…Å@ÇÌÇ™êgÇÃâ ÇƒÇºà£ÇµÇ©ÇËÇØÇÈÅv"
+	S_0099					:	"ëääy",			K_YAMASHIRO,	2,		2,		168428,	181190,	500,	200,	600,	400,	0,		0,		NO,		0,		0,		NO,		50,		ST_êwâÆ,	D_0007,					""
+	S_0112					:	"à‰éË",			K_YAMASHIRO,	2,		2,		169562,	181004,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_êwâÆ,	D_Tyosogabe,			""
+	S_0419					:	"âFé°ìcå¥",		K_YAMASHIRO,	5,		3,		170566,	180364,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_êwâÆ,	D_0006,					""
 	S_KASAGI				:	"ä}íu",			K_YAMASHIRO,	4,		2,		170251,	181543,	13000,	8500,	250,	200,	0,		0,		NO,		0,		0,		NO,		20,		ST_àÍî äOí¨,D_Bakuhu,				""
-	S_0018					:	"ñLçëê_é–",		K_YAMASHIRO,	7,		6,		168372,	177868,	23000,	10000,	9000,	5000,	0,		0,		NO,		0,		0,		NO,		90,		ST_ê_é–,	D_Toyotomi,				""
-	S_ENRYAKUJI				:	"âÑóÔéõ",		K_YAMASHIRO,	7,		6,		169138,	176974,	15000,	12000,	600,	400,	0,		0,		NO,		0,		0,		NO,		10,		ST_éõ,		D_CHOTEI,				""
+	S_0018					:	"ñLçëê_é–",		K_YAMASHIRO,	7,		6,		168334,	177843,	23000,	10000,	9000,	5000,	0,		0,		NO,		0,		0,		NO,		90,		ST_ê_é–,	D_Toyotomi,				""
 	S_AMIDAGAMINE			:	"â~éR",			K_YAMASHIRO,	1,		1,		168600,	178308,	40000,	8500,	1000,	700,	1200,	900,	NO,		0,		0,		NO,		10,		ST_ê_é–,	D_Tokugawa,				"ã‡ínâ@ÅAímâ∂â@"
 	S_MIMAKI				:	"å‰ñqèÈ",		K_YAMASHIRO,	5,		5,		167896,	180570,	19000,	13000,	550,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_0154,					""
 	SK44					:	"ëÂòa",			K_EZO,			2,		2,		316544,	347584,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_àÍî äOí¨,D_Country,				""
 	S_KURAGARI				:	"à√ìª",			K_YAMATO,		5,		0,		167289,	182074,	0,		0,		100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_éR,		D_Bakuhu,				""
 	S_NARA					:	"ìﬁó«",			K_YAMATO,		3,		3,		169049,	182463,	32000,	8500,	5000,	3500,	0,		0,		NO,		0,		0,		NO,		10,		ST_ç‰,		D_Bakuhu,				""
 	S_0064					:	"âFë…èºéRêwâÆ",	K_YAMATO,		2,		2,		171384,	185951,	34000,	31717,	120,	90,		0,		0,		NO,		0,		0,		NO,		50,		ST_êwâÆ,	D_Fukushima,			""
-	S_KOUFUKUJIJI			:	"ãªïüéõ",		K_YAMATO,		5,		5,		169627,	182995,	30000,	30000,	900,	500,	0,		0,		NO,		0,		0,		NO,		10,		ST_éõ,		D_CHOTEI,				""
-	S_TODAIJI				:	"ìåëÂéõ",		K_YAMATO,		5,		5,		169767,	182424,	16000,	15000,	1100,	600,	0,		0,		NO,		0,		0,		NO,		10,		ST_éõ,		D_CHOTEI,				""
 	S_YAGYU					:	"ñˆê∂",			K_YAMATO,		3,		2,		170755,	182323,	22000,	8500,	150,	100,	0,		0,		NO,		0,		0,		NO,		40,		ST_êwâÆ,	D_Bakuhu,				""
 	S_HATA					:	"î®èÈ",			K_YAMATO,		2,		2,		172160,	182878,	3000,	8500,	150,	90,		0,		0,		NO,		0,		0,		NO,		20,		ST_éRç‘,	D_Bakuhu,				""
 	S_YAMATOKORIYAMA		:	"ëÂòaåSéRèÈ",	K_YAMATO,		8,		8,		168238,	183125,	120000,	8500,	4000,	2500,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈëÂ,	D_Bakuhu,				""
@@ -2042,8 +2027,8 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_0009					:	"ìﬂâÍåS",		K_KII,			2,		1,		161651,	189312,	21000,	15000,	130,	100,	0,		0,		NO,		0,		0,		NO,		5,		ST_àÍî äOí¨,D_0161,					""
 	S_0166					:	"ã„ìxéR",		K_KII,			2,		2,		165708,	189491,	2000,	1000,	32,		29,		0,		0,		NO,		0,		0,		NO,		100,	ST_éR,		D_0077,					""
 	S_0095					:	"çrê_äx",		K_KII,			2,		2,		165696,	190784,	2000,	1000,	30,		20,		0,		0,		NO,		0,		0,		NO,		50,		ST_éR,		D_0008,					""
-	S_KOYASAN				:	"çÇñÏéR",		K_KII,			2,		2,		164941,	190412,	2000,	1000,	1000,	700,	0,		0,		NO,		0,		0,		NO,		100,	ST_éõ,		D_CHOTEI,				""
-	S_0010					:	"âBíréR",		K_KII,			2,		2,		163737,	190989,	3000,	1000,	80,		30,		0,		0,		NO,		0,		0,		NO,		10,		ST_éR,		D_CHOTEI,				""
+	S_KOYASAN				:	"çÇñÏéR",		K_KII,			2,		2,		164941,	190412,	0,		0,		1000,	700,	0,		0,		NO,		0,		0,		NO,		100,	ST_éõ,		D_CHOTEI,				""
+	S_0010					:	"âBíréR",		K_KII,			2,		2,		163737,	190989,	0,		0,		80,		30,		0,		0,		NO,		0,		0,		NO,		10,		ST_éR,		D_CHOTEI,				""
 	S_0011					:	"óLìcåS",		K_KII,			2,		2,		159743,	191066,	14000,	10000,	200,	120,	0,		0,		NO,		0,		0,		NO,		10,		ST_àÍî äOí¨,D_0161,					""
 	S_0023					:	"ì˙çÇåS",		K_KII,			2,		2,		158630,	194342,	21000,	15000,	120,	30,		0,		0,		NO,		0,		0,		NO,		10,		ST_àÍî äOí¨,D_0161,					""
 	S_ARITAIWAMURO			:	"ä‚é∫",			K_KII,			5,		4,		158925,	192166,	21000,	15000,	200,	180,	0,		0,		NO,		0,		0,		NO,		10,		ST_àÍî äOí¨,D_0161,					""
@@ -2054,7 +2039,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_0096					:	"ñ¥òKåSìÏ",		K_MINAMIKII,	2,		2,		169446,	196646,	4200,	3000,	200,	120,	0,		0,		NO,		0,		0,		NO,		50,		ST_àÍî äOí¨,D_0161,					"ñ¥òKåSÅiÇﬁÇÎÇÆÇÒÅj"
 	S_0097					:	"ñ¥òKåSñk",		K_MINAMIKII,	2,		2,		172057,	193920,	4200,	3000,	200,	120,	0,		0,		NO,		0,		0,		NO,		50,		ST_àÍî äOí¨,D_0161,					"ñ¥òKåSÅiÇﬁÇÎÇÆÇÒÅj"
 	S_0098					:	"ñkéRãΩ",		K_MINAMIKII,	2,		2,		170790,	194624,	4200,	3000,	200,	120,	0,		0,		NO,		0,		0,		NO,		50,		ST_àÍî äOí¨,D_0161,					""
-	S_0059					:	"åFñÏñ{ã{ëÂé–",	K_MINAMIKII,	4,		3,		167040,	197260,	5000,	5000,	200,	120,	0,		0,		NO,		0,		0,		NO,		40,		ST_ê_é–,	D_CHOTEI,				""
+	S_0059					:	"åFñÏñ{ã{ëÂé–",	K_MINAMIKII,	4,		3,		167040,	197260,	14000,	0,		200,	120,	0,		0,		NO,		0,		0,		NO,		40,		ST_ê_é–,	D_0161,					""
 	S_NATHIKATSUURA			:	"èüâY",			K_MINAMIKII,	2,		2,		171135,	199373,	28000,	20000,	900,	500,	0,		0,		YES,	0,		0,		NO,		10,		ST_ç`,		D_0161,					""
 	S_AKAGI					:	"ê‘ñÿèÈ",		K_MINAMIKII,	2,		2,		170009,	195507,	21000,	15000,	150,	110,	0,		0,		NO,		0,		0,		NO,		20,		ST_éRç‘,	D_0161,					""
 	S_SHINGU				:	"êVã{èÈ",		K_MINAMIKII,	2,		2,		172057,	197938,	28000,	20000,	600,	300,	0,		0,		NO,		0,		0,		NO,		10,		ST_ñ¶éRèÈ,	D_0161,					""
@@ -2178,7 +2163,6 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_AKAANA				:	"ê‘åäèÈ",		K_IZUMO,		4,		2,		121830,	177100,	22000,	19000,	200,	150,	0,		0,		NO,		0,		0,		NO,		20,		ST_ñ¶éRèÈ,	D_0179,					""
 	S_IZUMOOONISHI			:	"ëÂêº",			K_IZUMO,		3,		2,		124697,	172635,	49000,	40000,	150,	130,	0,		0,		NO,		0,		0,		NO,		20,		ST_àÍî äOí¨,D_0179,					""
 	S_TOBIGASU				:	"ìŒÉñëÉèÈê’",	K_IZUMO,		5,		5,		122713,	171660,	23000,	20000,	200,	150,	0,		0,		NO,		0,		0,		NO,		20,		ST_êwâÆ,	D_0179,					""
-	S_IZUMOTAISYA			:	"èoâ_ëÂé–",		K_IZUMO,		10,		10,		121408,	172173,	6000,	5000,	2500,	1800,	1800,	800,	NO,		0,		0,		NO,		10,		ST_ê_é–,	D_CHOTEI,				"ÅyéYã∆Åz èoâ_ëÂé–"
 	S_JINZAI				:	"ê_êºèÈê’",		K_IZUMO,		2,		2,		120784,	173555,	37000,	30000,	500,	400,	0,		0,		NO,		0,		0,		NO,		20,		ST_êwâÆ,	D_0179,					""
 	S_SUETUGU				:	"èºç]ññéüèÈê’",	K_IZUMO,		2,		1,		127411,	170408,	28000,	20000,	1200,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_êwâÆ,	D_0179,					""
 	S_MIHONOSWKI			:	"î¸ï€ä÷",		K_IZUMO,		3,		3,		129279,	169369,	12000,	10000,	2500,	1400,	800,	400,	YES,	2,		5,		NO,		10,		ST_ç`,		D_0179,					"ÅyéYã∆Åz ëDìπëO "
@@ -2266,7 +2250,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_AKINADA				:	"à¿å|ìÂ",		K_SETOUCHI,		3,		3,		117363,	192742,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_äCä›,	D_Fukushima,			""
 	S_AKITAKAMATSU			:	"éOì¸çÇèº",		K_AKI,			6,		5,		118014,	185769,	34000,	30000,	500,	400,	0,		0,		NO,		0,		0,		NO,		20,		ST_àÍî äOí¨,D_Fukushima,			""
 	S_YOSHIDAKORIYAMA		:	"ãgìcåSéRèÈ",	K_AKI,			8,		4,		120678,	183182,	35000,	30000,	750,	600,	0,		0,		NO,		0,		0,		NO,		20,		ST_àÍî éRèÈ,D_Fukushima,			""
-	S_ITSUKUSHIMAMIYAO		:	"åµìáê_é–",		K_AKI,			10,		10,		115123,	189516,	6000,	4000,	1400,	700,	1300,	600,	NO,		0,		2,		NO,		10,		ST_ê_é–,	D_CHOTEI,				"ÅyéYã∆Åz åµìáê_é– "
+	S_ITSUKUSHIMAMIYAO		:	"åµìáê_é–",		K_AKI,			10,		10,		115123,	189516,	10000,	0,		1400,	700,	1300,	600,	NO,		0,		2,		NO,		10,		ST_ê_é–,	D_Fukushima,			"ÅyéYã∆Åz åµìáê_é– "
 	SK68					:	"é¸ñh",			K_EZO,			2,		2,		373504,	336064,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_àÍî äOí¨,D_Country,				""
 	S_IWAKUNI				:	"ä‚çëèÈ",		K_SUOU,			7,		6,		114149,	190924,	18000,	60000,	1100,	900,	0,		0,		NO,		0,		0,		NO,		30,		ST_ïΩèÈè¨,	D_0195,					""
 	S_JYOUKUNJIZAN			:	"éRë„",			K_SUOU,			3,		3,		110361,	189443,	45000,	15000,	150,	130,	0,		0,		NO,		0,		0,		NO,		20,		ST_àÍî äOí¨,D_Mouri,				""
@@ -2436,14 +2420,12 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_YASUNAGA				:	"à¿âièÈ",		K_HYUUGA,		5,		5,		94566,	227133,	20000,	18200,	200,	180,	0,		0,		NO,		0,		0,		NO,		20,		ST_ñ¶éRèÈ,	D_0224,					""
 	S_MIYAKONOJYOU			:	"ìsèÈèÈ",		K_HYUUGA,		7,		7,		95385,	228556,	28000,	26000,	2500,	2000,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈëÂ,	D_0224,					""
 	S_SHIWATHI				:	"éuòaírèÈ",		K_HYUUGA,		5,		5,		96640,	226585,	16000,	14300,	400,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_0224,					""
-	S_0034					:	"çÇêÁï‰ïÙ",		K_HYUUGA,		8,		6,		93925,	225409,	7000,	6500,	0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_éR,		D_CHOTEI,				""
 	SK80					:	"ëÂã˜",			K_OOSUMI,		2,		2,		362906,	340288,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_àÍî äOí¨,D_Country,				""
 	S_ZAIBU					:	"ç‡ïîèÈ",		K_OOSUMI,		6,		6,		92919,	228312,	14000,	13000,	400,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_0221,					""
 	S_SUEYOSHI				:	"ññãgèÈ",		K_OOSUMI,		6,		6,		94873,	229937,	15000,	13000,	250,	200,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_0221,					""
 	S_SHIBUSHI				:	"éuïzéuèÈ",		K_OOSUMI,		4,		2,		96053,	232421,	22000,	19500,	600,	500,	0,		0,		YES,	0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_0221,					""
 	S_TARUMIZU				:	"êÇêÖèÈ",		K_OOSUMI,		2,		2,		90573,	232064,	6000,	5200,	550,	400,	0,		0,		NO,		0,		0,		NO,		20,		ST_éRç‘,	D_0221,					""
 	S_TOMIKUMA				:	"çëï™êVèÈ",		K_OOSUMI,		4,		3,		91480,	228350,	25000,	26000,	900,	800,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_0221,					""
-	S_0033					:	"çÇâÆéRè„óÀ",	K_OOSUMI,		8,		6,		90726,	226918,	16000,	13000,	0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_ê_é–,	D_CHOTEI,				""
 	S_0035					:	"å†åªê_é–",		K_OOSUMI,		8,		6,		90201,	230068,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_ê_é–,	D_0221,					""
 	S_KAJIKI				:	"â¡é°ñÿèÈ",		K_OOSUMI,		6,		5,		90087,	228186,	30000,	26000,	1600,	800,	0,		0,		NO,		0,		5,		NO,		20,		ST_ñ¶éRèÈ,	D_0221,					""
 	S_HYUGAKURINO			:	"åIñÏèÈ",		K_OOSUMI,		4,		3,		90700,	225408,	22000,	19500,	250,	200,	0,		0,		NO,		0,		0,		NO,		40,		ST_ïΩèÈè¨,	D_0221,					""
@@ -2518,7 +2500,6 @@ ShiroConnect {
 	S_IWAYADOU,		S_ICHINOSEKI,	NARROW,			LINE,			251981,	114456,	251801,	115276,	251084,	116480	
 	S_FUTAGO,		S_MIZUSAWA,		BROAD,			LINE,			250163,	112716,	250137,	113459	
 	S_MIZUSAWA,		S_ICHINOSEKI,	BROAD,			ARC,			250112,	115430,	250111,	116070	
-	S_HIRAIZUMI,	S_0082,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_Sendai,		S_0131,			BROAD,			LINE
 	S_Sendai,		S_0106,			NARROW,			LINE,			246553,	127782	
 	S_Sendai,		S_SIOGAMA,		NARROW,			LINE
@@ -2657,7 +2638,6 @@ ShiroConnect {
 	S_0151,			S_SHINANONAGANUMA,MOUNTAIN,		LINE,			207360,	151424	
 	S_SHINANONAGANUMA,S_MATSUSIRO,	NARROW,			ARC,			206617,	152601,	206143,	153241,	205542,	153907	
 	S_SHINANONAGANUMA,S_KAWANAKAZIMA,	MOUNTAIN,		LINE,			206194,	152319,	205861,	152562,	205593,	152716,	205248,	153024	
-	S_ZENKOUJI,		S_0082,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_KAWANAKAZIMA,	S_MATSUSIRO,	NARROW,			LINE
 	S_TOISHI,		S_SHINSYUUEDA,	MOUNTAIN,		LINE
 	S_YODA,			S_SUWATAKASHIMA,MOUNTAIN,		LINE,			206540,	159590,	206259,	160204,	205388,	161945	
@@ -2665,7 +2645,6 @@ ShiroConnect {
 	S_0150,			S_KOMORO,		NARROW,			LINE
 	S_0150,			S_YODA,			MOUNTAIN,		LINE,			209971,	158540,	208768,	158924,	207283,	158796	
 	S_KARUIZAWA,	S_0150,			MOUNTAIN,		LINE,			210892,	157849	
-	S_TOGAKUSHI,	S_0045,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_MAKINOSHIMA,	S_MATSUSIRO,	MOUNTAIN,		LINE,			203033,	155852,	204211,	155673	
 	S_MAKINOSHIMA,	S_SHINANOMATSUMOTO,MOUNTAIN,		LINE,			201523,	157977	
 	S_SHINANOMATSUMOTO,S_NOMUGI,		MOUNTAIN,		LINE,			200832,	159539,	199526,	160179,	196633,	161689	
@@ -2704,14 +2683,12 @@ ShiroConnect {
 	S_NATAOSAN,		S_0164,			NARROW,			LINE,			185715,	169241,	185152,	169190,	183347,	168947,	182784,	168806	
 	S_NATAOSAN,		S_SEKI,			NARROW,			ARC,			186188,	169625,	185996,	170137	
 	S_SEKI,			S_MINOYONENO,	NARROW,			ARC,			185574,	171200,	185216,	171532	
-	S_GIFU,			S_OOGAKI,		NARROW,			ARC,			182669,	172173	
-	S_GIFU,			S_KURODA,		NARROW,			LINE,			182668,	172179	
+	S_GIFU,			S_OOGAKI,		NARROW,			ARC,			182784,	172275	
 	S_MINOYONENO,	S_GIFU,			NARROW,			ARC
 	S_KURONO,		S_GIFU,			NARROW,			LINE
 	S_KIYOMIZU,		S_0162,			NARROW,			ARC,			181555,	171148	
 	S_BODAIYAMA,	S_TARUI,		NARROW,			LINE,			180070,	171904	
 	S_SONE,			S_0163,			MOUNTAIN,		LINE,			179878,	169728	
-	S_SUNOMATA,		S_0082,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_0162,			S_OOGAKI,		NARROW,			ARC,			181696,	172134	
 	S_OOGAKI,		S_FUKUTHUKA,	NARROW,			LINE
 	S_OOGAKI,		S_TARUI,		BROAD,			LINE
@@ -2758,7 +2735,6 @@ ShiroConnect {
 	S_MINAGUCHI,	S_0083,			NARROW,			LINE,			174873,	178329	
 	S_MINAGUCHI,	S_OUMIOGAWA,	MOUNTAIN,		LINE,			173414,	178777,	173004,	179289,	172838,	179635	
 	S_OUMIOGAWA,	S_KASAGI,		HLOOP,	MOUNTAIN,		LINE,			172403,	180320,	172064,	180486,	171481,	180672,	171059,	180710,	170828,	180774,	170560,	181094,	170380,	181337	
-	S_0092,			S_KOHAMA,		BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_NAGAHARA,		S_KUSATSU,		BROAD,			ARC,			171622,	177420	
 	S_YOUKAITHI,	S_MIKAMI,		BROAD,			ARC,			174131,	176627,	173478,	176793,	172825,	177011	
 	S_YOUKAITHI,	S_0083,			NARROW,			LINE,			175385,	177152	
@@ -3037,7 +3013,6 @@ ShiroConnect {
 	S_0094,			S_0089,			NARROW,			ARC,			237900,	163763,	237900,	164224,	237798,	164838	
 	S_0156,			S_0144,			SEA,			ARC,			238694,	162124	
 	S_0144,			S_TSUCHIURA,	BROAD,			ARC,			236774,	161280	
-	S_KASHIMA,		S_0082,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_HITACHIFCHU,	S_0144,			SEA,			LINE
 	S_HITACHIFCHU,	S_TSUCHIURA,	NARROW,			LINE
 	S_HITACHIFCHU,	S_0100,			NARROW,			ARC,			236928,	159923	
@@ -3059,7 +3034,6 @@ ShiroConnect {
 	S_0102,			S_KOUNODI,		HLOOP,	BROAD,			LINE
 	S_MUSASHIFKAYA,	S_OSHI,			BROAD,			LINE
 	S_HANAZONO,		S_MUSASHITENJINYAMA,MOUNTAIN,		LINE,			219545,	161382	
-	S_0056,			S_TOGAKUSHI,	BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_HACHIATA,		S_MUSASHIFKAYA,	NARROW,			LINE
 	S_HACHIATA,		S_HANAZONO,		NARROW,			LINE
 	S_MUSASHITENJINYAMA,S_KARISAKA,		MOUNTAIN,		LINE,			217472,	163276,	214912,	163712	
@@ -3139,14 +3113,10 @@ ShiroConnect {
 	S_MIMAKIHASHI,	S_KOKOKUJI,		NARROW,			LINE
 	S_KOKOKUJI,		S_OKITSU,		BROAD,			ARC,			213913,	175846,	213094,	175846,	212326,	176076,	211532,	176435,	210841,	177049	
 	S_KOKOKUJI,		S_SHIMOYAMA,	NARROW,			LINE,			213734,	175462,	212262,	174848,	211161,	174745,	209740,	174118,	209523,	173376,	209561,	172620,	209472,	171635	
-	S_FJI,			S_0082,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
-	S_FJI,			S_0416,			MOUNTAIN,		TOP_BOTTOM_INVISIBLE, LINE
 	S_OKITSU,		S_SUNBU,		BROAD,			ARC,			209279,	177945	
 	S_OKITSU,		S_SURUGAWAN,	SEA,			ARC,			210611,	177638,	211532,	178329	
-	S_OKITSU,		S_SHIMOYAMA,	MOUNTAIN,		BOTTOM_INVISIBLE, LINE,			210560,	176960,	210636,	176332,	210457,	176128,	210662,	175884,	211136,	175283,	211648,	175052,	212255,	174860	
 	S_SUNBU,		S_IGAWA,		MOUNTAIN,		LINE,			208230,	177331,	208307,	176537,	207539,	176128	
 	S_SUNBU,		S_TANAKA,		BROAD,			ARC,			208025,	178841,	207463,	179200	
-	S_SUNBU,		S_0416,			MOUNTAIN,		ARC,			208972,	177561	
 	S_TANAKA,		S_0195,			BROAD,			ARC,			206515,	180377	
 	S_SURUGAWAN,	S_MIMAKIHASHI,	SEA,			ARC,			213529,	178099	
 	S_SURUGAWAN,	S_GOZENSHAKI,	SEA,			ARC,			210777,	181094,	209702,	182118,	208716,	183052,	207193,	183705	
@@ -3154,7 +3124,6 @@ ShiroConnect {
 	S_KAKEGAWA,		S_KUNO,			BROAD,			ARC,			201689,	181248,	200819,	181696	
 	S_KAKEGAWA,		S_YOKOSUKA,		NARROW,			ARC,			203059,	182182	
 	S_KAKEGAWA,		S_GOZENSHAKI,	NARROW,			ARC,			204480,	182873	
-	S_TAKATENJIN,	S_KITANO,		BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_GOZENSHAKI,	S_YOKOSUKA,		SEA,			ARC,			203993,	184307,	202265,	183910,	201830,	183513	
 	S_0152,			S_HAMAMATSU,	NARROW,			LINE
 	S_YOKOSUKA,		S_KAKEZUKA,		SEA,			ARC,			200742,	183513	
@@ -3217,8 +3186,7 @@ ShiroConnect {
 	S_MIKAWAWAN,	S_0085,			SEA,			ARC,			187571,	183846	
 	S_NARUMI,		S_OWARIOGAWA,	NARROW,			ARC,			186291,	177280,	186278,	177600,	186201,	178035	
 	S_NARUMI,		S_KUTSUKAKE,	NARROW,			ARC,			186880,	176972	
-	S_NARUMI,		S_TSUSHIMA,		BROAD,			LINE,			185125,	175866	
-	S_NARUMI,		S_OWARIOBATA,	NARROW,			ARC,			186163,	176339	
+	S_NARUMI,		S_OWARIOBATA,	NARROW,			ARC,			186323,	176295	
 	S_OWARIOGAWA,	S_OWARIHIRAJIMA,NARROW,			ARC,			186073,	178585,	186009,	178892,	186009,	179161	
 	S_OWARIHIRAJIMA,S_HAZUKIZAKI,	NARROW,			ARC,			185856,	179942,	185702,	181427,	185753,	181708,	186176,	182092	
 	S_OWARIHIRAJIMA,S_0072,			SEA,			LINE,			184742,	179136	
@@ -3229,19 +3197,20 @@ ShiroConnect {
 	S_GAKUDEN,		S_INUYAMA,		NARROW,			ARC,			186956,	172864	
 	S_INUYAMA,		S_SEKI,			NARROW,			ARC,			186124,	171840,	186086,	171289,	185958,	170905	
 	S_OWARIOBATA,	S_KIYOSU,		NARROW,			LINE
+	S_OWARIOBATA,	S_ATSUTA,		NARROW,			ARC,			185689,	175846	
 	S_KOMAKIYAMA,	S_INUYAMA,		NARROW,			ARC,			186099,	172953	
-	S_ATSUTA,		S_KITANO,		BROAD,			TOP_BOTTOM_INVISIBLE, LINE
+	S_ATSUTA,		S_NARUMI,		BROAD,			ARC,			185920,	176480	
 	S_KIYOSU,		S_KURODA,		BROAD,			ARC,			184384,	173580,	184012,	173171	
 	S_KIYOSU,		S_OWARIICHINOMIYA,BROAD,			ARC,			184256,	174540	
 	S_KIYOSU,		S_KOMAKIYAMA,	NARROW,			LINE,			185484,	174758,	185715,	174310	
-	S_KIYOSU,		S_NARUMI,		BROAD,			LINE,			185120,	175865	
-	S_KURODA,		S_GIFU,			BROAD,			LINE,			183680,	172339,	183680,	172198,	183680,	171993	
-	S_KURODA,		S_OOGAKI,		NARROW,			LINE,			182668,	172172	
+	S_KURODA,		S_GIFU,			BROAD,			LINE,			183680,	172339,	183668,	172160,	183680,	171993	
+	S_KURODA,		S_OOGAKI,		NARROW,			LINE,			182937,	172672,	182387,	172633	
 	S_OWARIICHINOMIYA,S_OOGAKI,		BROAD,			ARC,			183014,	173414,	182656,	173132	
 	S_OWARIICHINOMIYA,S_KURODA,		NARROW,			ARC,			183808,	173504,	183782,	173286	
 	S_TSUSHIMA,		S_IMAO,			NARROW,			ARC,			183052,	175014,	182771,	174848,	182515,	174745,	182259,	174707,	181785,	174579	
 	S_TSUSHIMA,		S_NAGASHIM,		BROAD,			ARC,			183180,	175398,	183104,	175475,	182976,	175692,	182835,	175859,	182771,	176064	
 	S_TSUSHIMA,		S_OWARIICHINOMIYA,NARROW,			ARC,			183372,	174707,	183462,	174476,	183577,	174195	
+	S_TSUSHIMA,		S_ATSUTA,		BROAD,			ARC,			184294,	175686	
 	S_KASHIWA,		S_OWMITSUCHIYAMA,NARROW,			ARC,			175769,	179852	
 	S_UENO,			S_KASHIWA,		NARROW,			LINE
 	S_UENO,			S_KASAGI,		NARROW,			LINE,			173977,	181388,	173324,	181465,	172537,	181580,	171776,	181657,	171078,	181657,	170585,	181657	
@@ -3274,7 +3243,6 @@ ShiroConnect {
 	S_ISEYTAKEHARA,	S_ANOTSU,		NARROW,			ARC,			178931,	183654	
 	S_TAMARU,		S_ISEOOMINATO,	NARROW,			LINE
 	S_GOKASHINOYAMA,S_TAKMI,		MOUNTAIN,		LINE,			178636,	186406,	177664,	186662,	176601,	186841,	175385,	187161,	174566,	187443	
-	S_ISE,			S_KITANO,		BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_ISEOOMINATO,	S_ISEWANOKI,	SEA,			LINE
 	S_ISEOOMINATO,	S_TOBA,			NARROW,			LINE
 	S_TAKMI,		S_AMATOOGAWA,	MOUNTAIN,		LINE,			173030,	187468,	172531,	187468,	171916,	187110,	171430,	186854	
@@ -3285,14 +3253,8 @@ ShiroConnect {
 	S_ISEWANOKI,	S_0085,			SEA,			LINE
 	S_TOBA,			S_0085,			SEA,			LINE,			185497,	185766,	185945,	185536,	186137,	185472,	186278,	185382	
 	S_0085,			S_ENSHYUNADAOKI,SEA,			ARC,			192204,	185907	
-	S_0082,			S_ENRYAKUJI,	BROAD,			LINE
 	S_Nijou,		S_AMIDAGAMINE,	BROAD,			LINE
 	S_Nijou,		S_TANBAKAMEYAMA,BROAD,			BOTTOM_INVISIBLE, LINE,			167372,	178060,	167072,	178060,	166848,	178131,	166617,	178259	
-	S_Nijou,		S_AMIDAGAMINE,	BROAD,			BOTTOM_INVISIBLE, LINE,			167859,	177702,	168364,	177862	
-	S_KITANO,		S_0082,			BROAD,			LINE
-	S_KITANO,		S_TAGA,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
-	S_KITANO,		S_NISHIOKA,		BROAD,			TOP_BOTTOM_INVISIBLE, LINE
-	S_OINOSAKA,		S_KITANO,		BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_NISHIOKA,		S_OINOSAKA,		BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_0196,			S_FUSHIMI,		BROAD,			ARC,			169049,	178892,	168940,	178988,	168787,	179091,	168697,	179161,	168569,	179219	
 	S_0196,			S_AMIDAGAMINE,	BROAD,			ARC,			168748,	178400	
@@ -3307,10 +3269,6 @@ ShiroConnect {
 	S_YODO,			S_TANBAKAMEYAMA,BROAD,			LINE,			167552,	179168,	167366,	178931,	167225,	178784,	167014,	178636,	166924,	178508,	166771,	178368,	166515,	178188,	166368,	178086,	166156,	178016,	165913,	177804,	165689,	177676	
 	S_YAMASHIROYAMAZAKI,S_MIMAKI,		NARROW,			LINE,			167379,	180147	
 	S_YAMASHIROYAMAZAKI,S_TAKATSUKI,	BROAD,			ARC,			166604,	180044	
-	S_0099,			S_UJI,			NARROW,			LINE
-	S_0112,			S_UJI,			NARROW,			LINE
-	S_0419,			S_0112,			MOUNTAIN,		LINE
-	S_UJI,			S_KITANO,		BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_KASAGI,		S_YAGYU,		NARROW,			ARC,			170470,	182041	
 	S_KASAGI,		S_NARA,			NARROW,			ARC,			169792,	181702,	169388,	182009	
 	S_0018,			S_AMIDAGAMINE,	BROAD,			ARC,			168532,	178098	
@@ -3322,7 +3280,6 @@ ShiroConnect {
 	S_NARA,			S_YAMATOKORIYAMA,BROAD,			ARC,			168588,	182809	
 	S_NARA,			S_MUKOUJIMA,	BROAD,			ARC,			169088,	180416,	169037,	180204	
 	S_0064,			S_SAWA,			MOUNTAIN,		ARC,			171116,	185632	
-	S_KOUFUKUJIJI,	S_TODAIJI,		BROAD,			LINE
 	S_YAGYU,		S_HATA,			NARROW,			ARC,			171097,	182233,	171737,	182515	
 	S_YAGYU,		S_NARA,			NARROW,			ARC,			169843,	182406	
 	S_HATA,			S_NAWARI,		NARROW,			ARC,			172665,	182918,	173004,	183097,	173132,	183245,	173344,	183532	
@@ -3695,12 +3652,9 @@ ShiroConnect {
 	S_NAGAYABU,		S_SAYAMA,		MOUNTAIN,		LINE,			165350,	187891	
 	S_0008,			S_0009,			NARROW,			ARC,			162816,	189068,	162534,	189158,	162227,	189184	
 	S_0009,			S_WAKAYAMA,		NARROW,			ARC,			161100,	189337,	160640,	189440,	160332,	189465,	159872,	189670	
-	S_0166,			S_0056,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_0095,			S_KOYASAN,		MOUNTAIN,		LINE,			165196,	190540	
 	S_KOYASAN,		S_0166,			MOUNTAIN,		LINE,			165273,	190067,	165388,	189977	
 	S_KOYASAN,		S_0010,			MOUNTAIN,		ARC,			164428,	190720	
-	S_0010,			S_0112,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
-	S_0010,			S_0058,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_0011,			S_WAKAYAMA,		NARROW,			LINE,			159616,	190822,	159449,	190464	
 	S_0011,			S_ARITAIWAMURO,	NARROW,			ARC,			159628,	191334,	159360,	191667	
 	S_0023,			S_0060,			NARROW,			ARC,			159513,	195366,	160409,	196262,	161433,	196761	
@@ -4020,7 +3974,6 @@ ShiroConnect {
 	S_KASHIRAZAKI,	S_HIROSHIMA,	BROAD,			ARC,			121856,	186572,	121164,	186547,	120268,	186726,	119168,	187110,	118374,	187571	
 	S_HIROSHIMA,	S_AKIIKEDA,		BROAD,			ARC,			116582,	187366	
 	S_AKIIKEDA,		S_IWAKUNI,		BROAD,			ARC,			115430,	187699,	115251,	188057,	115046,	188441,	114867,	188825,	114636,	189158,	114124,	189491,	113920,	189900,	113996,	190361	
-	S_0058,			S_0103,			BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_SIWAKU,		S_UTATSU,		SEA,			ARC
 	S_SIWAKU,		S_HIUCHI,		SEA,			ARC,			133734,	188569,	132838,	189363,	131814,	190566	
 	S_SETONAIMARUO,	S_MITSUHAMA,	SEA,			ARC,			121548,	192358	
@@ -4031,12 +3984,14 @@ ShiroConnect {
 	S_AKINADA,		S_IYONADA,		SEA,			ARC,			117708,	193868,	117862,	194636,	117478,	195379,	116915,	196147,	116070,	197222	
 	S_AKITAKAMATSU,	S_HIROSHIMA,	NARROW,			LINE
 	S_YOSHIDAKORIYAMA,S_AKITAKAMATSU,	MOUNTAIN,		LINE,			120268,	183654,	119296,	184550,	118604,	184985	
-	S_ITSUKUSHIMAMIYAO,S_KITANO,		BROAD,			TOP_BOTTOM_INVISIBLE, LINE
+	S_ITSUKUSHIMAMIYAO,S_IWAKUNI,		SEA,			ARC,			114841,	190156	
+	S_ITSUKUSHIMAMIYAO,S_NOMI,			SEA,			ARC,			115980,	190259	
+	S_ITSUKUSHIMAMIYAO,S_AKINADA,		SEA,			LINE,			115584,	190502,	116338,	191616	
+	S_ITSUKUSHIMAMIYAO,S_HIROSHIMA,	SEA,			ARC,			116236,	189094	
 	S_IWAKUNI,		S_KURAKAKEYAMA,	BROAD,			ARC,			113689,	191283,	112588,	191641,	111692,	191948	
 	S_IWAKUNI,		S_JYOUKUNJIZAN,	MOUNTAIN,		LINE,			113228,	190694,	112435,	190694,	111744,	190694,	111078,	190438,	110899,	190259,	110336,	190054	
 	S_IWAKUNI,		S_AKINADA,		SEA,			ARC,			115174,	192384	
 	S_IWAKUNI,		S_KAMIZEKI,		NARROW,			ARC,			113638,	191385,	113484,	191744,	113536,	192332,	113664,	192716,	113689,	193305,	113382,	193920,	112716,	194048	
-	S_IWAKUNI,		S_HIROSHIMA,	SEA,			ARC,			115993,	189504	
 	S_JYOUKUNJIZAN,	S_TSUWANO,		MOUNTAIN,		LINE,			110336,	188288,	109952,	187980,	109337,	188032,	109030,	187622,	108774,	186982,	108595,	186572,	108467,	186342,	108339,	185779	
 	S_KURAKAKEYAMA,	S_TOKUYAMA,		BROAD,			ARC,			110233,	192512,	109081,	192998	
 	S_KAMIZEKI,		S_IYONADA,		SEA,			ARC,			113177,	195276,	114713,	196454,	115097,	197094	
@@ -4286,7 +4241,6 @@ ShiroConnect {
 	S_TARUMIZU,		S_TOMIKUMA,		NARROW,			ARC,			91212,	231270,	91852,	230835,	92288,	229991,	92416,	229350,	92031,	228762	
 	S_TARUMIZU,		S_SHIBUSHI,		NARROW,			ARC,			91161,	232704,	91929,	233292,	92851,	233574,	93952,	233344,	95206,	233011,	96076,	232601	
 	S_TOMIKUMA,		S_ZAIBU,		BROAD,			ARC,			92313,	228403	
-	S_0033,			S_0034,			MOUNTAIN,		ARC,			92057,	226636,	93158,	226201	
 	S_0035,			S_TARUMIZU,		NARROW,			LINE,			90393,	230656,	90700,	230937,	90803,	231219,	90752,	231526	
 	S_KAJIKI,		S_TOMIKUMA,		BROAD,			ARC,			90700,	228377	
 	S_KAJIKI,		S_IWATSURUGI,	BROAD,			ARC
@@ -6502,7 +6456,7 @@ Bushou {
 	B_01437	:	"âÕê£ ç∂înèï",		3,	5,	3,	2,		3,		8,	3,	10,		100,	0,		1568?,	1634,	BYOUSHI,	0,		(D_D_OWARI),		-1,		S_KOUFU,			""
 	B_02950	:	"î™è\ìá èïç∂âqñÂ",	2,	4,	2,	1,		3,		5,	3,	10,		100,	0,		1565?,	1630,	BYOUSHI,	0,		(D_0169),			-1,		S_IYOSAIJYOU,		""
 	B_01439	:	"êÖñÏ èØéüòY",		6,	1,	3,	3,		3,		8,	3,	0,		0,		0,		1578?,	1647,	BYOUSHI,	0,		(D_0099),			-1,		S_ECCHYUHIROSE,		""
-	B_02237	:	"ëÚà¡ è@úd",		0,	8,	0,	0,		0,		0,	0,	0,		0,		0,		1573,	1646,	BYOUSHI,	0,		(D_CHOTEI),			-1,		S_0092,				""
+	B_02237	:	"ëÚà¡ è@úd",		0,	8,	0,	0,		0,		0,	0,	0,		0,		0,		1573,	1646,	BYOUSHI,	0,		(D_CHOTEI),			-1,		S_0082,				""
 	B_01440	:	"ç≤ãvä‘ à¿ê≠",		4,	3,	4,	4,		3,		6,	4,	40,		250,	20,		1555,	1627,	BYOUSHI,	0,		D_0020,				0,		S_0091,				""
 	B_01901	:	"ç≤ãvä‘ èüè@",		3,	4,	3,	3,		3,		7,	3,	0,		0,		0,		1589,	1616,	BYOUSHI,	1604,	D_0020,				1,		S_0091,				""
 	B_01902	:	"ç≤ãvä‘ à¿í∑",		3,	5,	2,	3,		3,		7,	3,	0,		0,		0,		1611,	1632,	BYOUSHI,	1615,	D_0020,				2,		S_0091,				""
@@ -6559,10 +6513,6 @@ Bushou {
 	B_01930	:	"ä›ìc âìê≥",		2,	2,	3,	2,		3,		7,	3,	10,		150,	0,		1558?,	1615,	BYOUSHI,	0,		(D_0153),			-1,		S_UENO,				""
 	B_01937	:	"èHéR íºçë",		3,	2,	2,	2,		3,		6,	3,	10,		150,	0,		1572?,	1634,	BYOUSHI,	0,		(D_0153),			-1,		S_UENO,				""
 	B_01475	:	"çÇìc ãgèt",		3,	2,	2,	3,		3,		5,	3,	0,		0,		0,		1560?,	1623,	BYOUSHI,	0,		(D_0153),			-1,		S_UENO,				""
-	B_01964	:	"ïÛë†â@ à˚âh",		7,	1,	1,	4,		3,		7,	3,	0,		200,	0,		1521,	1607,	BYOUSHI,	0,		D_CHOTEI,			-1,		S_KOUFUKUJIJI,		""
-	B_01965	:	"ïÛë†â@ à˚èw",		7,	1,	1,	2,		3,		6,	3,	0,		0,		0,		1589,	1648,	BYOUSHI,	1604,	D_CHOTEI,			-1,		S_KOUFUKUJIJI,		""
-	B_01966	:	"ãªïüéõñÂìk",		2,	1,	1,	1,		3,		10,	3,	0,		400,	0,		1580*,	1650,	BYOUSHI,	0,		D_CHOTEI,			-1,		S_KOUFUKUJIJI,		""
-	B_02498	:	"ãªïüéõñÂìk",		2,	1,	1,	1,		3,		10,	3,	0,		400,	0,		1579,	1664,	BYOUSHI,	0,		D_CHOTEI,			-1,		S_KOUFUKUJIJI,		""
 	B_01926	:	"èºëq èdê≠",		5,	2,	4,	3,		3,		4,	9,	20,		200,	30,		1564?,	1630,	BYOUSHI,	0,		D_0159,				0,		S_GOJYOU,			"ñLå„éÁÅB\n\nÅ@ê^ìcçKë∫Ç™ëÂç‚Ç÷å¸Ç©Ç§ÇÃÇëjé~ÇµÇÊÇ§Ç∆ÇµÇƒé∏îsÇ©?"
 	B_02992	:	"èºëq è@èd",		3,	3,	2,	3,		3,		7,	3,	0,		50,		10,		1566,	1639,	BYOUSHI,	0,		D_0159,				3,		S_GOJYOU,			""
 	B_02993	:	"èºëq èdéü",		3,	2,	3,	2,		3,		7,	3,	0,		50,		10,		1570,	1645,	BYOUSHI,	0,		D_0159,				4,		S_GOJYOU,			""
@@ -6680,8 +6630,8 @@ Bushou {
 	B_02653	:	"íÜâ@ í èü",		0,	5,	0,	0,		0,		9,	3,	0,		0,		0,		1556,	1610,	BYOUSHI,	0,		D_CHOTEI,			-1,		S_0082,				""
 	B_02570	:	"ä©èCéõ ê∞ñL",		0,	7,	0,	0,		0,		9,	3,	0,		0,		0,		1544,	1602,	BYOUSHI,	0,		D_CHOTEI,			-1,		S_0082,				""
 	B_02573	:	"éRâ» åæåo",		0,	5,	0,	0,		0,		7,	3,	0,		0,		0,		1544,	1611,	BYOUSHI,	0,		D_CHOTEI,			-1,		S_0082,				""
-	B_02574	:	"ãgìc åìå©",		0,	7,	0,	0,		0,		9,	3,	0,		0,		0,		1535,	1610,	BYOUSHI,	0,		D_CHOTEI,			-1,		S_KITANO,			""
-	B_02651	:	"âGä€ åıêÈ",		0,	4,	0,	0,		0,		9,	3,	0,		0,		0,		1549,	1611,	BYOUSHI,	0,		D_CHOTEI,			-1,		S_KITANO,			""
+	B_02574	:	"ãgìc åìå©",		0,	7,	0,	0,		0,		9,	3,	0,		0,		0,		1535,	1610,	BYOUSHI,	0,		D_CHOTEI,			-1,		S_0082,				""
+	B_02651	:	"âGä€ åıêÈ",		0,	4,	0,	0,		0,		9,	3,	0,		0,		0,		1549,	1611,	BYOUSHI,	0,		D_CHOTEI,			-1,		S_0082,				""
 	B_01691	:	"å√ìc êDïî",		4,	7,	4,	5,		3,		2,	1,	10,		100,	10,		1544,	1615,	SHOKEI,		0,		D_Furuta,			5,		S_NISHIOKA,			""
 	B_03595	:	"å√ìc èdék",		3,	4,	3,	3,		3,		8,	3,	10,		100,	10,		1567?,	1615,	SHOKEI,		0,		D_Furuta,			3,		S_NISHIOKA,			""
 	B_03596	:	"å√ìc èdèÆ",		2,	3,	2,	3,		3,		8,	3,	10,		100,	10,		1578?,	1615,	SHOKEI,		0,		D_Furuta,			4,		S_NISHIOKA,			""
@@ -6756,7 +6706,6 @@ Bushou {
 	B_03625	:	"êŒêÏ óòê≠",		2,	3,	2,	2,		3,		7,	3,	0,		0,		0,		1641?,	1723,	BYOUSHI,	1656,	D_0036,				3,		S_0253,				""
 	B_02206	:	"ê‘ç¿ íºãK",		3,	4,	3,	4,		3,		8,	3,	25,		250,	30,		1564?,	1615,	SENSHI,		0,		(D_Toyotomi),		-1,		S_0079,				""
 	B_02677	:	"èºå¥ íºå≥",		5,	2,	5,	5,		3,		8,	3,	25,		250,	30,		1554?,	1613,	BYOUSHI,	0,		(D_Toyotomi),		-1,		S_0079,				""
-	B_02213	:	"éRíÜ í∑èr",		2,	7,	3,	4,		3,		8,	3,	50,		500,	30,		1547,	1607,	BYOUSHI,	0,		(D_CHOTEI),			-1,		S_UJI,				""
 	B_02214	:	"éRíÜ çKèr",		2,	3,	2,	3,		3,		7,	3,	0,		0,		0,		1586?,	1633,	BYOUSHI,	0,		(D_Toyotomi),		-1,		S_0079,				""
 	B_02215	:	"éRíÜ è@èr",		2,	5,	2,	2,		3,		7,	3,	0,		0,		0,		1588?,	1645,	BYOUSHI,	0,		(D_Toyotomi),		-1,		S_0079,				""
 	B_02216	:	"éRíÜ ñ{èr",		2,	4,	2,	2,		3,		7,	3,	0,		0,		0,		1613?,	1702,	BYOUSHI,	1628,	(D_Toyotomi),		-1,		S_0079,				""
@@ -10868,7 +10817,6 @@ Label {
 	"âÕ",				165027,	184728,	K_KAWACHI,		PART,		9,			40,				YES,	NO
 	"ìVâ§éR",			166142,	179328,	K_SETTSU,		PART,		1,			20,				NO,		NO
 	"î˙îiåŒ",			173929,	172008,	K_OUMI,			PART,		6,			30,				NO,		NO
-	"î‰âbéR",			169343,	176512,	K_YAMASHIRO,	PART,		1,			20,				NO,		NO
 	"î¸îZ",				187020,	170493,	K_MINO,			PART,		9,			40,				YES,	NO
 	"óÈ",				178542,	176912,	NONE,			PART,		1,			30,				NO,		NO
 	"ãgñÏ",				170343,	186546,	K_YAMATO,		PART,		1,			20,				NO,		NO
@@ -10934,7 +10882,7 @@ Label {
 	"òZçbéR",			160179,	181683,	K_SETTSU,		PART,		1,			20,				NO,		NO
 	"à§ìÜéR",			166387,	176652,	K_YAMASHIRO,	PART,		1,			20,				NO,		NO
 	"â‡ÉñâY",			240818,	161486,	K_HITACHI,		PART,		6,			20,				NO,		NO
-	"é≠ìáê_ã{",			244861,	163175,	K_HITACHI,		PART,		8,			20,				NO,		NO
+	"é≠ìáê_ã{",			244330,	162855,	K_HITACHI,		PART,		8,			20,				NO,		NO
 	"ëΩñÄêÏ",			231396,	168117,	NONE,			PART,		6,			20,				NO,		NO
 	"íÜëTéõåŒ",			225099,	150656,	K_SHIMOTSUKE,	PART,		6,			20,				NO,		NO
 	"óßéRòAïÙ",			196583,	153549,	K_ECCHUU,		PART,		1,			30,				NO,		NO
@@ -11059,7 +11007,7 @@ Label {
 	"èÈ",				168345,	176959,	K_YAMASHIRO,	PART,		0,			40,				YES,	NO
 	"êMîZêÏ",			215602,	136782,	K_MINAMIETIGO,	PART,		6,			20,				NO,		NO
 	"èhñ—òp",			119040,	211404,	NONE,			PART,		6,			24,				NO,		NO
-	"ãvî\éR",			209586,	177100,	K_SURUGA,		PART,		1,			20,				NO,		NO
+	"ãvî\éR",			209356,	177163,	K_SURUGA,		PART,		1,			20,				NO,		NO
 	"éÖãõêÏ",			200678,	145984,	K_MINAMIETIGO,	PART,		6,			20,				NO,		NO
 	"í}îgéR",			234956,	159309,	K_HITACHI,		PART,		1,			20,				NO,		NO
 	"ñÿë]íJ",			197581,	163840,	K_MINAMISHINANO,PART,		1,			30,				NO,		NO
@@ -11085,11 +11033,11 @@ Label {
 	"ìåã‡",				239641,	169932,	K_KAZUSA,		PART,		0,			20,				NO,		NO
 	"è¨ ìc å¥ èÈ",		221489,	173018,	K_SAGAMI,		PART,		0,			20,				NO,		NO
 	"èx ï{ èÈ",			208613,	179128,	K_SURUGA,		PART,		0,			20,				NO,		NO
-	"Å°à…ê®ÇÃê_ã{125é–",182272,	187379,	K_ISE,			PART,		8,			20,				NO,		NO
+	"Å°à…ê®ÇÃê_ã{125é–",182540,	187225,	K_ISE,			PART,		8,			20,				NO,		NO
 	"îMìcê_ã{",			185024,	176906,	K_OWARI,		PART,		8,			18,				NO,		NO
 	"Å°ëΩâÍëÂé–",		176870,	174936,	K_OUMI,			PART,		8,			16,				NO,		NO
 	"Å°äôëq",			226918,	174169,	K_SAGAMI,		PART,		8,			20,				NO,		NO
-	"èoâ_ëÂé–",			119769,	172109,	K_IZUMO,		PART,		8,			20,				NO,		NO
+	"èoâ_ëÂé–",			121164,	172377,	K_IZUMO,		PART,		8,			20,				NO,		NO
 	"è„ ìc èÈ",			207155,	157467,	K_KITASHINANO,	PART,		0,			20,				NO,		NO
 	"òaâÃéRèÈ",			160343,	190386,	K_KII,			PART,		0,			20,				NO,		NO
 	"Å£îíç™ã‡éR",		239245,	102732,	K_UGO,			PART,		2,			16,				NO,		NO
@@ -11108,21 +11056,17 @@ Label {
 	"Å£íÜê£ã‡éR",		150977,	173427,	K_TAJIMA,		PART,		2,			16,				NO,		NO
 	"Å£ä‚î¸ã‚éR",		147967,	170840,	K_INABA,		PART,		2,			16,				NO,		NO
 	"Å£êŒå©ëÂêXã‚éR",	119123,	178355,	K_IWAMI,		PART,		2,			20,				NO,		NO
-	"Å°ïxémêÛä‘ëÂé–",	212084,	173977,	K_SURUGA,		PART,		8,			18,				NO,		NO
+	"Å°ïxémêÛä‘ëÂé–",	212314,	174527,	K_SURUGA,		PART,		8,			18,				NO,		NO
 	"é≠",				178353,	177651,	NONE,			PART,		1,			30,				NO,		NO
-	"ìåëÂéõ",			169740,	182173,	K_YAMATO,		PART,		9,			12,				NO,		NO
-	"ãªïüéõ",			170284,	182919,	K_YAMATO,		PART,		9,			12,				NO,		NO
+	"ô¬ìåëÂéõ",			169848,	182505,	K_YAMATO,		PART,		0,			14,				NO,		NO
+	"ô¬ãªïüéõ",			169484,	182823,	K_YAMATO,		PART,		0,			14,				NO,		NO
 	"çÇñÏéR",			164934,	191185,	K_KII,			PART,		9,			16,				NO,		NO
 	"ì˙åı",				227360,	152177,	K_SHIMOTSUKE,	PART,		9,			20,				NO,		NO
 	"ì äv‚ƒå¥",			235904,	145510,	K_SHIMOTSUKE,	PART,		5,			18,				NO,		NO
 	"ì ê›äyå¥",			196744,	178880,	K_MIKAWA,		PART,		5,			18,				NO,		NO
 	"ì éOï˚Éñå¥",		198554,	180712,	K_TOOTOUMI,		PART,		5,			18,				NO,		NO
 	"ì ",				178751,	171148,	K_MINO,			PART,		5,			20,				NO,		NO
-	"ô¬",				169509,	182188,	K_YAMATO,		PART,		8,			12,				NO,		NO
-	"ô¬",				169975,	182932,	K_YAMATO,		PART,		8,			12,				NO,		NO
-	"ô¬",				205625,	152134,	K_KITASHINANO,	PART,		8,			16,				NO,		NO
 	"ô¬",				226841,	152199,	K_SHIMOTSUKE,	PART,		8,			20,				NO,		NO
-	"ô¬",				249326,	115571,	K_RIKUTYU,		PART,		8,			16,				NO,		NO
 	"ô¬",				164454,	191194,	K_KII,			PART,		8,			16,				NO,		NO
 	"Å£ï∫âzìª",			202136,	173753,	NONE,			PART,		4,			16,				NO,		NO
 	"Å£ë´ïøìª",			218527,	172347,	NONE,			PART,		4,			16,				NO,		NO
@@ -11184,5 +11128,16 @@ Label {
 	"ñkì`íBë∫ï˚ñ ",		172800,	258112,	NONE,			PART,		0,			14,				NO,		NO
 	"ïΩñÏï˚ñ ",			210022,	291737,	K_OKAYAMA,		PART,		0,			16,				NO,		NO
 	"í∑ãèï˚ñ ",			196787,	296242,	K_OKAYAMA,		PART,		0,			16,				NO,		NO
+	"çÇêÁï‰ïÙ",			93427,	225332,	K_HYUUGA,		PART,		0,			18,				NO,		NO
+	"î‰âbéR",			169202,	176263,	K_YAMASHIRO,	PART,		6,			20,				NO,		NO
+	"ô¬âÑóÔéõ",			169375,	176556,	K_YAMASHIRO,	PART,		0,			14,				NO,		NO
+	"ñkñÏìVñûã{",		167391,	177612,	K_YAMASHIRO,	PART,		0,			14,				NO,		NO
+	"âFé°ïΩìôâ@/ç≈èüâ@",169017,	180524,	K_YAMASHIRO,	PART,		0,			14,				NO,		NO
+	"çÇìVê_é–",			203346,	182380,	K_TOOTOUMI,		PART,		0,			14,				NO,		NO
+	"ëÈëÉéR",			218239,	164607,	K_MUSASHI,		PART,		6,			18,				NO,		NO
+	"ô¬íÜë∏éõ",			249453,	115910,	K_RIKUTYU,		PART,		0,			14,				NO,		NO
+	"ñnñìîíÈ¢ê_é–",		182656,	171853,	K_MINO,			PART,		0,			14,				NO,		NO
+	"åÀâBíJê_óÃ",		202469,	151174,	K_KITASHINANO,	PART,		0,			14,				NO,		NO
+	"ô¬ëPåıéõ",			205709,	152255,	K_KITASHINANO,	PART,		0,			14,				NO,		NO
 }
       
