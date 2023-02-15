@@ -7927,6 +7927,8 @@ ConditionalEvent {
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Tokugawa", "#大名番号(D_Tokugawa)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Toyotomi", "#大名番号(D_Toyotomi)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NAB", "#武将番号(B_01506)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "TRUE", "1"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "FALSE", "0"
 		}
 		Message {
 		}
@@ -9028,7 +9030,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0012 {
-		Title		: "■家格"
+		Title		: "■家格の初期設定"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -9037,26 +9039,27 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: "DaimyouA"
 		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#Year", "StartYear"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#Month", "StartMonth"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Kougi", "10000"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Ippan", "1"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Kashin", "-1"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Rounin", "-10000"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Others", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#Year", "StartYear"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#Month", "StartMonth"
 		}
 		Message {
 		}
 		Happening {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0032", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0123", ""
 		}
 	}
 	CE_0032 {
-		Title		: "　家臣の初期設定"
+		Title		: "　家臣"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
-		RepeatType	: ONCE
+		RepeatType	: REPEATABLE
 		SubRoutine	: YES
 		LoopType	: DAIMYOU
 		LoopVariable	: "LD"
@@ -9072,8 +9075,31 @@ ConditionalEvent {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeList[LD]", "#主家大名(LD)"
 		}
 	}
+	CE_0123 {
+		Title		: "　牢人"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: SHIRO
+		LoopVariable	: "LS"
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "#城支配大名(LS)"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#主家大名(DaimyouA)", "#大名番号(D_CHOTEI)"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "LS", "#城番号(S_0082)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "SForRoninList[LS]", "TRUE"
+			CONDITION_JUUZOKU_SPECIFIC, VARIABLE, D_CHOTEI, NONE, NONE, "", ""
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DStatusList[DaimyouA]", "DaimyouA*Ronin"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeList[DaimyouA]", "#大名番号(D_CHOTEI)"
+		}
+	}
 	CE_0030 {
-		Title		: "　家格情報の入手"
+		Title		: "■家格の評価"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -9095,7 +9121,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0013 {
-		Title		: "　　公儀"
+		Title		: "　公儀"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: OR
@@ -9120,7 +9146,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0031 {
-		Title		: "　　家臣"
+		Title		: "　家臣"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -9148,7 +9174,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0065 {
-		Title		: "　　　離反"
+		Title		: "　　離反"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -9168,7 +9194,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0059 {
-		Title		: "　　　盟主に随行"
+		Title		: "　　盟主に随行"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -9192,7 +9218,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0015 {
-		Title		: "　　浪人"
+		Title		: "　牢人"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -9201,8 +9227,7 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "LD"
-			CONDITION_JUUZOKU_SHINJUU_SPECIFIC, VARIABLE, D_CHOTEI, NONE, NONE, "", ""
+			CONDITION_SMALL_EQUAL, NONE, NONE, NONE, NONE, "DStatusList[LD]", "Ronin"
 		}
 		Message {
 		}
@@ -9215,7 +9240,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0003 {
-		Title		: "　　滅亡/非武家"
+		Title		: "　滅亡/非武家"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: OR
@@ -9239,7 +9264,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0067 {
-		Title		: "　家情報の表示"
+		Title		: "■家情報の表示"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -9273,7 +9298,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0058 {
-		Title		: "　　計算"
+		Title		: "　計算"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: OR
@@ -9301,7 +9326,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0111 {
-		Title		: "    大名情報"
+		Title		: "　大名情報"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -9333,7 +9358,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0112 {
-		Title		: "    家臣情報"
+		Title		: "　家臣情報"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
