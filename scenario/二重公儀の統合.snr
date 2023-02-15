@@ -1786,18 +1786,18 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	SC06					:	"畿内",			K_EZO,			2,		2,		306624,	347328,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
 	SK43					:	"山城",			K_EZO,			2,		2,		311808,	347392,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0082					:	"京都御所",		K_YAMASHIRO,	10,		10,		167942,	177709,	330000,	330000,	3200,	3000,	0,		0,		NO,		0,		0,		NO,		50,		ST_京都,	D_CHOTEI,				""
-	S_Nijou					:	"徳川二条城",	K_YAMASHIRO,	10,		10,		167589,	178028,	200000,	60000,	3200,	2400,	0,		0,		NO,		0,		0,		NO,		50,		ST_平城大,	D_Tokugawa,				"京都所司代の役所は本来、二条城内にはありません。"
+	S_Nijou					:	"二条城",		K_YAMASHIRO,	10,		10,		167589,	178028,	200000,	60000,	3200,	2400,	0,		0,		NO,		0,		0,		NO,		50,		ST_平城大,	D_Tokugawa,				"京都所司代の役所は本来、二条城内にはありません。"
+	S_FUSHIMI				:	"伏見城",		K_YAMASHIRO,	10,		9,		168410,	179245,	120000,	40000,	8000,	5500,	0,		0,		NO,		0,		0,		NO,		30,		ST_伏見城,	D_Tokugawa,				""
+	S_0196					:	"山科",			K_YAMASHIRO,	5,		3,		169081,	178790,	10000,	8500,	1000,	500,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Tokugawa,				""
+	S_MUKOUJIMA				:	"向島",			K_YAMASHIRO,	5,		5,		168780,	179712,	20000,	8500,	2000,	1500,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_Tokugawa,				""
+	S_YODO					:	"淀城",			K_YAMASHIRO,	5,		5,		167721,	179382,	35000,	8500,	2800,	2000,	0,		0,		NO,		0,		0,		NO,		30,		ST_簡易堀城,D_Tokugawa,				""
+	S_YAMASHIROYAMAZAKI		:	"山崎",			K_YAMASHIRO,	0,		0,		166989,	179699,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		10,		ST_平地,	D_Tokugawa,				""
+	S_KASAGI				:	"笠置",			K_YAMASHIRO,	4,		2,		170251,	181543,	13000,	8500,	250,	200,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_Bakuhu,				""
 	S_OINOSAKA				:	"老ノ坂",		K_YAMASHIRO,	5,		0,		166303,	178059,	15000,	13000,	100,	100,	0,		0,		NO,		0,		0,		NO,		10,		ST_山,		D_Furuta,				""
 	S_NISHIOKA				:	"西岡",			K_YAMASHIRO,	3,		3,		166892,	178483,	25000,	22000,	500,	400,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_Furuta,				""
-	S_0196					:	"山科",			K_YAMASHIRO,	5,		3,		169081,	178790,	10000,	8500,	1000,	500,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Tokugawa,				""
-	S_FUSHIMI				:	"徳川伏見城",	K_YAMASHIRO,	10,		9,		168410,	179245,	120000,	40000,	8000,	5500,	0,		0,		NO,		0,		0,		NO,		30,		ST_伏見城,	D_Tokugawa,				""
-	S_MUKOUJIMA				:	"向島",			K_YAMASHIRO,	5,		5,		168780,	179712,	20000,	8500,	2000,	1500,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_Tokugawa,				""
-	S_YODO					:	"徳川淀城",		K_YAMASHIRO,	5,		5,		167721,	179382,	35000,	8500,	2800,	2000,	0,		0,		NO,		0,		0,		NO,		30,		ST_簡易堀城,D_Tokugawa,				""
-	S_YAMASHIROYAMAZAKI		:	"山崎",			K_YAMASHIRO,	0,		0,		166989,	179699,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		10,		ST_平地,	D_Tokugawa,				""
 	S_0099					:	"相楽",			K_YAMASHIRO,	2,		2,		168428,	181190,	0,		0,		600,	400,	0,		0,		NO,		0,		0,		NO,		50,		ST_陣屋,	D_0007,					""
 	S_0112					:	"井手",			K_YAMASHIRO,	2,		2,		169562,	181004,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_陣屋,	D_Tyosogabe,			""
 	S_0419					:	"宇治田原",		K_YAMASHIRO,	5,		3,		170566,	180364,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_陣屋,	D_0006,					""
-	S_KASAGI				:	"笠置",			K_YAMASHIRO,	4,		2,		170251,	181543,	13000,	8500,	250,	200,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_Bakuhu,				""
 	S_0018					:	"豊国神社",		K_YAMASHIRO,	7,		6,		168334,	177843,	23000,	10000,	9000,	5000,	0,		0,		NO,		0,		0,		NO,		90,		ST_神社,	D_Toyotomi,				""
 	S_AMIDAGAMINE			:	"円山",			K_YAMASHIRO,	1,		1,		168600,	178308,	40000,	8500,	1000,	700,	1200,	900,	NO,		0,		0,		NO,		10,		ST_神社,	D_Tokugawa,				"金地院、知恩院"
 	S_MIMAKI				:	"御牧城",		K_YAMASHIRO,	5,		5,		167896,	180570,	19000,	13000,	550,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0154,					""
@@ -3254,13 +3254,12 @@ ShiroConnect {
 	S_0085,			S_ENSHYUNADAOKI,SEA,			ARC,			192204,	185907	
 	S_Nijou,		S_AMIDAGAMINE,	BROAD,			LINE
 	S_Nijou,		S_TANBAKAMEYAMA,BROAD,			BOTTOM_INVISIBLE, LINE,			167372,	178060,	167072,	178060,	166848,	178131,	166617,	178259	
-	S_NISHIOKA,		S_OINOSAKA,		BROAD,			TOP_BOTTOM_INVISIBLE, LINE
-	S_0196,			S_FUSHIMI,		BROAD,			ARC,			169049,	178892,	168940,	178988,	168787,	179091,	168697,	179161,	168569,	179219	
-	S_0196,			S_AMIDAGAMINE,	BROAD,			ARC,			168748,	178400	
 	S_FUSHIMI,		S_YODO,			BROAD,			ARC,			168070,	179353	
 	S_FUSHIMI,		S_Nijou,		BROAD,			ARC,			168166,	178790	
 	S_FUSHIMI,		S_AMIDAGAMINE,	BROAD,			LINE
 	S_FUSHIMI,		S_MUKOUJIMA,	BROAD,			ARC,			168620,	179449	
+	S_0196,			S_FUSHIMI,		BROAD,			ARC,			169049,	178892,	168940,	178988,	168787,	179091,	168697,	179161,	168569,	179219	
+	S_0196,			S_AMIDAGAMINE,	BROAD,			ARC,			168748,	178400	
 	S_MUKOUJIMA,	S_YODO,			SEA,			LINE,			168652,	179705,	168531,	179654,	168262,	179564,	167763,	179552	
 	S_MUKOUJIMA,	S_MIMAKI,		NARROW,			LINE,			168608,	180000,	168422,	180198,	168166,	180416	
 	S_YODO,			S_YAMASHIROYAMAZAKI,BROAD,			ARC,			167360,	179494	
@@ -3270,6 +3269,7 @@ ShiroConnect {
 	S_YAMASHIROYAMAZAKI,S_TAKATSUKI,	BROAD,			ARC,			166604,	180044	
 	S_KASAGI,		S_YAGYU,		NARROW,			ARC,			170470,	182041	
 	S_KASAGI,		S_NARA,			NARROW,			ARC,			169792,	181702,	169388,	182009	
+	S_NISHIOKA,		S_OINOSAKA,		BROAD,			TOP_BOTTOM_INVISIBLE, LINE
 	S_0018,			S_AMIDAGAMINE,	BROAD,			ARC,			168532,	178098	
 	S_0018,			S_KUTSUKI,		MOUNTAIN,		LINE,			168902,	177382,	169113,	177068,	169139,	176844,	169100,	176556,	169171,	176332,	169363,	175961,	169382,	175552,	169414,	175212,	169472,	175072,	169664,	175052,	169721,	174835,	169856,	174163,	169894,	173913,	170022,	173830,	170080,	173548,&+
 170329,173081,	170444,	172902	
