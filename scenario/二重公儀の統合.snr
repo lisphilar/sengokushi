@@ -1687,10 +1687,8 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_IGAWA					:	"井川金山口",	K_SURUGA,		0,		0,		206260,	175856,	0,		0,		0,		0,		600,	500,	NO,		0,		0,		NO,		10,		ST_山,		D_Bakuhu,				"【産業】 金山 "
 	S_SURUGAWAN				:	"駿河湾",		K_SURUGA,		3,		3,		211867,	180120,	0,		0,		300,	300,	0,		0,		NO,		0,		0,		YES,	10,		ST_海岸,	D_Bakuhu,				""
 	SK37					:	"遠江",			K_EZO,			2,		2,		325696,	345024,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
-	S_SUWAHARA				:	"金谷宿",		K_TOOTOUMI,		3,		2,		205749,	181106,	100,	8500,	1000,	600,	0,		0,		NO,		0,		0,		YES,	40,		ST_一般外町,D_Bakuhu,				"川越し\n\n\n　金谷宿⇔島田宿の移動には、必ず一月かかります。\n\n　いずれかの宿にいる武将は、月初めに自動&+
-でもう一方の城へ移動します。\n\n　　　　　　　　　（河止めは”おそらく”ありません)\n\n　もちろん、宿の支配家が互いに、　従属ｏｒ敵対だと移動できませんが。\n"
-	S_0195					:	"島田宿",		K_TOOTOUMI,		2,		2,		206284,	180506,	100,	8500,	1000,	600,	0,		0,		NO,		0,		0,		YES,	50,		ST_一般外町,D_Bakuhu,				"川越し\n\n\n　金谷宿⇔島田宿の移動には、必ず一月かかります。\n\n　いずれかの宿にいる武将は、月初めに自動&+
-でもう一方の城へ移動します。\n\n　　　　　　　　　（河止めは”おそらく”ありません)\n\n　もちろん、宿の支配家が互いに、　従属ｏｒ敵対だと移動できませんが。\n"
+	S_SUWAHARA				:	"金谷宿",		K_TOOTOUMI,		3,		2,		205749,	181106,	100,	8500,	1000,	600,	0,		0,		NO,		0,		0,		YES,	40,		ST_一般外町,D_Bakuhu,				""
+	S_0195					:	"島田宿",		K_TOOTOUMI,		2,		2,		206284,	180506,	100,	8500,	1000,	600,	0,		0,		NO,		0,		0,		YES,	50,		ST_一般外町,D_Bakuhu,				""
 	S_KAKEGAWA				:	"掛川城",		K_TOOTOUMI,		6,		6,		203240,	181147,	25000,	10000,	700,	500,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城大,	D_Hisamatsu,			""
 	S_GOZENSHAKI			:	"御前崎",		K_TOOTOUMI,		2,		1,		205977,	183987,	4000,	8500,	800,	300,	400,	150,	NO,		0,		2,		NO,		10,		ST_港,		D_Bakuhu,				"【産業】 船道前 "
 	S_0152					:	"堀江",			K_TOOTOUMI,		2,		2,		197452,	182195,	2800,	2500,	140,	200,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_0098,					""
@@ -3116,10 +3114,11 @@ ShiroConnect {
 	S_OKITSU,		S_SURUGAWAN,	SEA,			ARC,			210611,	177638,	211532,	178329	
 	S_SUNBU,		S_IGAWA,		MOUNTAIN,		LINE,			208230,	177331,	208307,	176537,	207539,	176128	
 	S_SUNBU,		S_TANAKA,		BROAD,			ARC,			208025,	178841,	207463,	179200	
-	S_TANAKA,		S_0195,			BROAD,			ARC,			206515,	180377	
+	S_TANAKA,		S_0195,			BROAD,			ARC,			206515,	180307	
 	S_SURUGAWAN,	S_MIMAKIHASHI,	SEA,			ARC,			213529,	178099	
 	S_SURUGAWAN,	S_GOZENSHAKI,	SEA,			ARC,			210777,	181094,	209702,	182118,	208716,	183052,	207193,	183705	
 	S_SUWAHARA,		S_KAKEGAWA,		BROAD,			ARC,			204326,	181286	
+	S_SUWAHARA,		S_0195,			SEA,			LINE
 	S_KAKEGAWA,		S_KUNO,			BROAD,			ARC,			201689,	181248,	200819,	181696	
 	S_KAKEGAWA,		S_YOKOSUKA,		NARROW,			ARC,			203059,	182182	
 	S_KAKEGAWA,		S_GOZENSHAKI,	NARROW,			ARC,			204480,	182873	
