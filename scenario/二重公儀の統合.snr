@@ -7932,7 +7932,6 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
-			HAPPENING_DAIMYOU_KAIMEI, D_NA, NONE, NONE, NONE, NONE, NONE, "", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "StartYear", "#Year"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "StartMonth", "#Month"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Observer", "#大名番号(Da-70)+1"
@@ -9087,7 +9086,7 @@ ConditionalEvent {
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "#城支配大名(LS)"
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#主家大名(DaimyouA)", "#大名番号(D_CHOTEI)"
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "LS", "#城番号(S_0082)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "SForRoninList[LS]", "TRUE"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "SForRouninFList[LS]", "TRUE"
 			CONDITION_JUUZOKU_SPECIFIC, VARIABLE, D_CHOTEI, NONE, NONE, "", ""
 		}
 		Message {
@@ -9417,6 +9416,64 @@ ConditionalEvent {
 			"・騎馬：%KibaN%名"
 			"・足軽：%AshigaruN%名"
 			"・鉄砲：%GunN%丁"
+		}
+		Happening {
+		}
+	}
+	CE_0125 {
+		Title		: "　牢人家一覧"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+			"配流されている家（牢人）は現在下記の通りです。"
+			"※登録番号. 家名（配流先）"
+			""
+			"$color=0x0000FF$ 0. %大名DRouninList[0]%（%城SCountryList[SNameForRouninList[0]]%-%城SNameForRouninList[0]%）"
+			"$color=0x000000$ 1. %大名DRouninList[1]%（%城SCountryList[SNameForRouninList[1]]%-%城SNameForRouninList[1]%）"
+			"$color=0x0000FF$ 2. %大名DRouninList[2]%（%城SCountryList[SNameForRouninList[2]]%-%城SNameForRouninList[2]%）"
+			"$color=0x000000$ 3. %大名DRouninList[3]%（%城SCountryList[SNameForRouninList[3]]%-%城SNameForRouninList[3]%）"
+			"$color=0x0000FF$ 4. %大名DRouninList[4]%（%城SCountryList[SNameForRouninList[4]]%-%城SNameForRouninList[4]%）"
+			"$color=0x000000$ 5. %大名DRouninList[5]%（%城SCountryList[SNameForRouninList[5]]%-%城SNameForRouninList[5]%）"
+			"$color=0x0000FF$ 6. %大名DRouninList[6]%（%城SCountryList[SNameForRouninList[6]]%-%城SNameForRouninList[6]%）"
+			"$color=0x000000$ 7. %大名DRouninList[7]%（%城SCountryList[SNameForRouninList[7]]%-%城SNameForRouninList[7]%）"
+			"$color=0x0000FF$ 8. %大名DRouninList[8]%（%城SCountryList[SNameForRouninList[8]]%-%城SNameForRouninList[8]%）"
+			"$color=0x000000$ 9. %大名DRouninList[9]%（%城SCountryList[SNameForRouninList[9]]%-%城SNameForRouninList[9]%）"
+			"$color=0x0000FF$10. %大名DRouninList[10]%（%城SCountryList[SNameForRouninList[10]]%-%城SNameForRouninList[10]%）"
+			"$color=0x000000$11. %大名DRouninList[11]%（%城SCountryList[SNameForRouninList[11]]%-%城SNameForRouninList[11]%）"
+			"$color=0x0000FF$12. %大名DRouninList[12]%（%城SCountryList[SNameForRouninList[12]]%-%城SNameForRouninList[12]%）"
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "0"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0126", ""
+			HAPPENING_DAIMYOU_KAIMEI, D_NA, NONE, NONE, NONE, NONE, NONE, "NA", ""
+		}
+	}
+	CE_0126 {
+		Title		: "　　家拠点取得"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: SHIRO
+		LoopVariable	: "LS"
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SForRouninFList[LS]", "TRUE"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Count", "Count+1"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "SNameForRouninList[Count-1]", "LS"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DRouninList[Count-1]", "NA"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Candidate", "#城支配大名(LS)"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Candidate", "#大名番号(D_CHOTEI)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DRouninList[Count-1]", "Candidate"
+		}
+		Message {
 		}
 		Happening {
 		}
@@ -10369,12 +10426,14 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
-			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGSelected", "評定実施月になりました。大項目をご選択ください。/各項目の説明/情報表示/終了"
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGSelected", "評定実施月になりました。大項目をご選択ください。/各項目の説明/情報表示/牢人処遇/終了"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGWhat", "0"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfo", "1"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGCompleted", "2"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRounin", "2"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGCompleted", "3"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0090", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0092", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0128", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0087", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0091", ""
 		}
@@ -10402,6 +10461,8 @@ ConditionalEvent {
 			"    ・地方・国名一覧：地方ごとの国名一覧"
 			"    ・家臣情報（当家）：当家の外交方針に従う家臣の情報を順に表示する"
 			"    ・家臣情報（地方>国名から選択）：家の外交方針に従う家臣の情報を順に表示する"
+			"・牢人処遇："
+			"　　・牢人家一覧：家を有する牢人の一覧"
 			"$color=0x000000$・評定終了：次回評定を何ヶ月後に行うかを指定し、評定を終了する"
 		}
 		Happening {
@@ -10730,6 +10791,44 @@ ConditionalEvent {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0117", ""
 		}
 	}
+	CE_0128 {
+		Title		: "　牢人処遇"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "MTGSelected", "MTGRounin"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRouninSelected", "実施内容をご選択ください。/牢人家一覧"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRouninListup", "0"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0129", ""
+		}
+	}
+	CE_0129 {
+		Title		: "　　牢人家一覧"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "MTGRouninSelected", "MTGRouninListup"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0125", ""
+		}
+	}
 	CE_0087 {
 		Title		: "　評定終了"
 		PeriodStart	: NONE
@@ -10837,6 +10936,23 @@ ConditionalEvent {
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KougiNOld", "KougiN"
+		}
+	}
+	CE_0127 {
+		Title		: "　名称修正"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: ONCE
+		SubRoutine	: NO
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAIMYOU_KAIMEI, D_NA, NONE, NONE, NONE, NONE, NONE, "", ""
 		}
 	}
 }
