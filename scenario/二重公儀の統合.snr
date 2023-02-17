@@ -8588,147 +8588,6 @@ ConditionalEvent {
 			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "DShiroNCountryList[#城支配大名(LS)]", "1"
 		}
 	}
-	CE_0132 {
-		Title		: "■在城中の武将(Un-used)"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0145", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0144", ""
-		}
-	}
-	CE_0145 {
-		Title		: "　在城武将数初期化"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: SHIRO
-		LoopVariable	: "LS"
-		Condition {
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "SBushouNNotRecordedL[LS]", "#城武将数(LS)"
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0147", ""
-		}
-	}
-	CE_0147 {
-		Title		: "　　武将番号初期化"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: "Count"
-		Condition {
-			CONDITION_SMALL, NONE, NONE, NONE, NONE, "Count", "20"
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SBushouList[LS+STotalN*Count]", "0"
-		}
-	}
-	CE_0144 {
-		Title		: "　武将の記録"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: BUSHOU
-		LoopVariable	: "LB"
-		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#包囲中(LB)", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#捕虜大名(LB)", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#人質大名(LB)", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "BushouA", "LB"
-			CONDITION_BUSHOU_EXIST, NONE, NONE, NONE, VARIABLE, "", ""
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SWhere", "#城(LB)"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "SBushouNNotRecordedL[SWhere]-1"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SBushouList[SWhere+STotalN*Count]", "LB"
-			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "SBushouNNotRecordedL[SWhere]", "-1"
-		}
-	}
-	CE_0148 {
-		Title		: "　使用例"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "ShiroA", "#当主城(Player)"
-		}
-		Message {
-			"%城ShiroA%には%武将SBushouList[ShiroA]%, %武将SBushouList[ShiroA+STotalN*1]%らがおります。"
-		}
-		Happening {
-		}
-	}
-	CE_0151 {
-		Title		: "　全員移動"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "BushouN", "#城武将数(ShiroPre)"
-			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "BushouN", "0"
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "0"
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0152", ""
-		}
-	}
-	CE_0152 {
-		Title		: "　　1名移動"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_SMALL, NONE, NONE, NONE, NONE, "Count", "BushouN"
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Shiro1", "ShiroPost"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Bushou1", "SBushouList[ShiroPre+STotalN*Count]"
-			HAPPENING_BUSHOU_MOVE, NONE, NONE, VARIABLE, NONE, VARIABLE, NONE, "", ""
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SBushouList[ShiroPre+STotal*Count]", "0"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SBushouList[ShiroPost+STotal*(Count+#城武将数(ShiroPost))]", "Bushou1"
-			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "1"
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0152", ""
-		}
-	}
 	CE_0081 {
 		Title		: "■大坂"
 		PeriodStart	: NONE
@@ -9355,6 +9214,24 @@ ConditionalEvent {
 		Logic		: AND
 		RepeatType	: REPEATABLE
 		SubRoutine	: NO
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0188", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0189", ""
+		}
+	}
+	CE_0188 {
+		Title		: "　評価の実施"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
 		LoopType	: DAIMYOU
 		LoopVariable	: "LD"
 		Condition {
@@ -9368,10 +9245,11 @@ ConditionalEvent {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0015", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0003", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DStatusList[LD]", "Status"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DKashinNList[LD]", "0"
 		}
 	}
 	CE_0013 {
-		Title		: "　公儀"
+		Title		: "　　公儀"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: OR
@@ -9396,7 +9274,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0031 {
-		Title		: "　家臣"
+		Title		: "　　家臣"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -9424,7 +9302,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0065 {
-		Title		: "　　離反"
+		Title		: "　　　離反"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -9444,7 +9322,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0059 {
-		Title		: "　　盟主に随行"
+		Title		: "　　　盟主に随行"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -9468,7 +9346,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0015 {
-		Title		: "　牢人"
+		Title		: "　　牢人"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -9490,7 +9368,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0003 {
-		Title		: "　滅亡/非武家"
+		Title		: "　　滅亡/非武家"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: OR
@@ -9512,6 +9390,26 @@ ConditionalEvent {
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Status", "LD*Others"
+		}
+	}
+	CE_0189 {
+		Title		: "　家臣数の登録"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: DAIMYOU
+		LoopVariable	: "LD"
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Status", "DStatusList[LD]"
+			CONDITION_SMALL, NONE, NONE, NONE, NONE, "Status", "0"
+			CONDITION_LARGE_EQUAL, NONE, NONE, NONE, NONE, "Status", "Rounin"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "DKashinNList[Status/Kashin]", "1"
 		}
 	}
 	CE_0067 {
@@ -9741,7 +9639,7 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "SyukeSelected", "NA"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "SyukeDetermined", "NA"
 		}
 		Message {
 		}
@@ -9800,13 +9698,13 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "SyukeSelected", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "SyukeDetermined", "NA"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
 		}
 		Message {
 		}
 		Happening {
-			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "DStatusSelected", "対象となる家の家格をご選択ください（従属中の陪臣は不可）。/従属中の一般大名家/臣従家/家臣"
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "DStatusSelected", "対象となる家の家格をご選択ください（従属中の陪臣は不可）。/従属中の一般大名家/臣従中の一般大名家/家臣"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DStatusZyuzoku", "0"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DStatusShinzyu", "1"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DStatusKashin", "2"
@@ -9844,8 +9742,10 @@ ConditionalEvent {
 		LoopVariable	: "LD"
 		Condition {
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "SyukeDetermined"
+			CONDITION_DOKURITSU, VARIABLE, NONE, NONE, NONE, "", ""
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "LD"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouB", "SyukeSelected"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouB", "SyukeDetermined"
 			CONDITION_JUUZOKU_SPECIFIC, VARIABLE, VARIABLE, NONE, NONE, "", ""
 			CONDITION_LARGE, NONE, NONE, NONE, NONE, "DStatusList[LD]", "0"
 		}
@@ -9886,8 +9786,10 @@ ConditionalEvent {
 		LoopVariable	: "LD"
 		Condition {
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "SyukeDetermined"
+			CONDITION_DOKURITSU, VARIABLE, NONE, NONE, NONE, "", ""
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "LD"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouB", "SyukeSelected"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouB", "SyukeDetermined"
 			CONDITION_SHINJUU_SPECIFIC, VARIABLE, VARIABLE, NONE, NONE, "", ""
 			CONDITION_LARGE, NONE, NONE, NONE, NONE, "DStatusList[LD]", "0"
 		}
@@ -9929,8 +9831,8 @@ ConditionalEvent {
 		Condition {
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "LD"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouB", "SyukeSelected"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DStatusList[LD]", "SyukeSelected*Kashin"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouB", "SyukeDetermined"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DStatusList[LD]", "SyukeDetermined*Kashin"
 		}
 		Message {
 		}
@@ -10594,16 +10496,10 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DJyoshu", "#城支配大名(Target)"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Toushu", "#当主(DJyoshu)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Toushu", "#当主(#城支配大名(Target))"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Region", "SRegionList[Target]"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Country", "SCountryList[Target]"
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0150", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0174", ""
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaCurrent", "Kokudaka"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EconomyCurrent", "Economy"
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0156", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0175", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0183", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaPercent", "#Ceil((KokudakaCurrent/(KokudakaMax+1))*100)"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EconomyPercent", "#Ceil((EconomyCurrent/(EconomyMax+1))*100)"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0163", ""
@@ -10953,8 +10849,31 @@ ConditionalEvent {
 		Happening {
 		}
 	}
+	CE_0183 {
+		Title		: "　情報取得"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DJyoshu", "#城支配大名(Target)"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0150", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0174", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaCurrent", "Kokudaka"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EconomyCurrent", "Economy"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0156", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0175", ""
+		}
+	}
 	CE_0150 {
-		Title		: "　前処理"
+		Title		: "　　前処理"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -10976,7 +10895,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0154 {
-		Title		: "　　武将一時移動"
+		Title		: "　　　武将一時移動"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -10999,7 +10918,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0174 {
-		Title		: "　現在値取得"
+		Title		: "　　現在値取得"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -11017,7 +10936,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0156 {
-		Title		: "　最大値取得"
+		Title		: "　　最大値取得"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -11043,7 +10962,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0175 {
-		Title		: "　後処理"
+		Title		: "　　後処理"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -11066,7 +10985,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0155 {
-		Title		: "　　武将を戻す"
+		Title		: "　　　武将を戻す"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -11085,6 +11004,255 @@ ConditionalEvent {
 			HAPPENING_BUSHOU_MOVE, NONE, NONE, VARIABLE, NONE, VARIABLE, NONE, "", ""
 			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "1"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0155", ""
+		}
+	}
+	CE_0130 {
+		Title		: "■増封"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: ONCE
+		SubRoutine	: NO
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+		}
+	}
+	CE_0131 {
+		Title		: "　城単位"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "SyukeDetermined", "Player"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "ShiroDetermined", "NA"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0176", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0192", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0114", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0177", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0178", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0180", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0181", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0182", ""
+		}
+	}
+	CE_0176 {
+		Title		: "　　家選択"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0134", ""
+		}
+	}
+	CE_0192 {
+		Title		: "    家の選択成功"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
+		}
+		Message {
+			"「%大名DaimyouDetermined%」に対して当家直轄の拠点を増封します。"
+			"以降の画面にて増封対象の拠点をご選択ください。"
+		}
+		Happening {
+		}
+	}
+	CE_0114 {
+		Title		: "　　家再選択"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "指定いただいた区分に該当する家がございませんでした。再選択しますか？"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0176", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0192", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0114", ""
+		}
+	}
+	CE_0177 {
+		Title		: "　　国指定"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0001", ""
+		}
+	}
+	CE_0178 {
+		Title		: "　　城選択"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: SHIRO
+		LoopVariable	: "LS"
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroDetermined", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SCountryList[LS]", "CountrySelected"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#城支配大名(LS)", "SyukeDetermined"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Target", "LS"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0153", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0179", ""
+		}
+	}
+	CE_0179 {
+		Title		: "　　　城決定"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "当該拠点を与えますか？"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroDetermined", "Target"
+		}
+	}
+	CE_0180 {
+		Title		: "　　城再選択"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroDetermined", "NA"
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "指定いただいた国に当家直轄の拠点がございませんでした。国を再度選択しますか？"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0177", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0178", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0180", ""
+		}
+	}
+	CE_0181 {
+		Title		: "　　増封内容表示"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "ShiroDetermined", "NA"
+		}
+		Message {
+			"%大名DaimyouDetermined%に%城ShiroDetermined%（%a%万%b%%c%%d%%e%石）を増封することで、直轄石高は次のように変更となります。"
+			""
+			"・%大名SyukeDetermined%（当家）：%SyukeOldMU%万石→%SyukeNewMU%万石"
+			""
+			"・%大名DaimyouDetermined%：%DaimyouOldMU%万石→%DaimyouNewMU%万石"
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Target", "ShiroDetermined"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0183", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Value", "KokudakaCurrent"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0157", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeOldK", "#直轄石高(SyukeDetermined)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeOldMU", "#Round(SyukeOldK/10000)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeNewMU", "#Round((SyukeOldK-KokudakaCurrent)/10000)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DaimyouOldK", "#直轄石高(DaimyouDetermined)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DaimyouOldMU", "#Round(DaimyouOldK/10000)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DaimyouNewMU", "#Round((DaimyouOldK+KokudakaCurrent)/10000)"
+		}
+	}
+	CE_0182 {
+		Title		: "　　増封実行"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "ShiroDetermined", "NA"
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "増封を実行しますか？"
+		}
+		Message {
+			"%城ShiroDetermined%（%a%万%b%%c%%d%%e%石）の増封が実行されました。"
+			""
+			""
+			"【直轄石高】"
+			"・%大名SyukeDetermined%：%SyukeOldMU%万石→%SyukeNewMU%万石"
+			"・%大名DaimyouDetermined%：%DaimyouOldMU%万石→%DaimyouNewMU%万石"
+			""
+			"【副次効果】"
+			"%大名SyukeDetermined%および%大名DaimyouDetermined%のすべての拠点にて民衆支持が%Popularity%%増加します。"
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Popularity", "#Ceil(5*((DaimyouNewMU+1)*(SyukeNewMU+1))/((DaimyouOldMU+1)*(SyukeOldMU+1)))"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "SyukeDetermined"
+			HAPPENING_DAIMYOU_MINSHUU_PLUS, VARIABLE, NONE, NONE, NONE, NONE, NONE, "Popularity", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "DaimyouDetermined"
+			HAPPENING_DAIMYOU_MINSHUU_PLUS, VARIABLE, NONE, NONE, NONE, NONE, NONE, "Popularity", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Shiro1", "ShiroDetermined"
+			HAPPENING_SHIRO_SHOZOKU_CHANGE, VARIABLE, NONE, VARIABLE, NONE, NONE, NONE, "", ""
 		}
 	}
 	CE_0074 {
@@ -11376,41 +11544,6 @@ ConditionalEvent {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Mouri", "#大名番号(D_Mouri)"
 		}
 	}
-	CE_0130 {
-		Title		: "■増封"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: ONCE
-		SubRoutine	: NO
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-		}
-		Message {
-		}
-		Happening {
-		}
-	}
-	CE_0131 {
-		Title		: "　城単位"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "SyukeDetermined", "Player"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0134", ""
-		}
-	}
 	CE_0085 {
 		Title		: "■評定"
 		PeriodStart	: NONE
@@ -11465,13 +11598,15 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
-			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGSelected", "評定実施月になりました。大項目をご選択ください。/各項目の説明/情報表示/牢人処遇/終了"
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGSelected", "評定実施月になりました。大項目をご選択ください。/各項目の説明/情報表示/増封/牢人処遇/終了"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGWhat", "0"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfo", "1"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRounin", "2"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGCompleted", "3"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGAdd", "2"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRounin", "3"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGCompleted", "4"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0090", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0092", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0184", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0128", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0087", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0091", ""
@@ -11501,6 +11636,8 @@ ConditionalEvent {
 			"    ・家臣情報（当家）：当家の外交方針に従う家臣の情報を順に表示する"
 			"    ・家臣情報（地方>国名から選択）：家の外交方針に従う家臣の情報を順に表示する"
 			"　　・拠点情報：選択した国内の拠点情報を順に表示する"
+			"・増封："
+			"　　・増封実施（国単位）：従属・臣従家・家臣に対して、城単位で増封を実施する"
 			"・牢人処遇："
 			"　　・牢人家一覧：家を有する牢人の一覧"
 			"$color=0x000000$・評定終了：次回評定を何ヶ月後に行うかを指定し、評定を終了する"
@@ -11649,29 +11786,10 @@ ConditionalEvent {
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Meisyu", "Player"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KashinN", "0"
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0114", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KashinN", "DKashinNList[Meisyu]"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0115", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0116", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0117", ""
-		}
-	}
-	CE_0114 {
-		Title		: "　　　家臣数取得"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: DAIMYOU
-		LoopVariable	: "LD"
-		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DStatusList[LD]/Kashin", "Meisyu"
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "KashinN", "1"
 		}
 	}
 	CE_0115 {
@@ -11687,7 +11805,7 @@ ConditionalEvent {
 			CONDITION_LARGE, NONE, NONE, NONE, NONE, "KashinN", "0"
 		}
 		Message {
-			"%大名Meisyu%の外交方針に従う家臣は%KashinN%家います。"
+			"%大名Meisyu%の外交方針に従う家臣は%KashinN%家ございます。"
 			"以降の画面にて各家臣の情報を順にご報告致します。"
 		}
 		Happening {
@@ -11863,13 +11981,137 @@ ConditionalEvent {
 		LoopVariable	: "LS"
 		Condition {
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SCountryList[LS]", "CountrySelected"
-			CONDITION_LARGE, NONE, NONE, NONE, NONE, "DStatusList[#城支配大名(LS)]", "0"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Status", "DStatusList[#城支配大名(LS)]"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Status", "0"
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "Status", "Rounin"
 		}
 		Message {
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Target", "LS"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0153", ""
+		}
+	}
+	CE_0184 {
+		Title		: "　増封"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "MTGSelected", "MTGAdd"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGAddSelected", "実施内容をご選択ください。/増封実施（城単位）"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGAddSyukeShiro", "0"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0185", ""
+		}
+	}
+	CE_0185 {
+		Title		: "　　増封実施（城）"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "MTGAddSelected", "MTGAddSyukeShiro"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EnabledF", "FALSE"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0186", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0190", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0191", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0187", ""
+		}
+	}
+	CE_0186 {
+		Title		: "　　　従属・臣従あり"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "Player"
+			CONDITION_DOKURITSU, VARIABLE, NONE, NONE, NONE, "", ""
+			CONDITION_LARGE_EQUAL, NONE, NONE, NONE, NONE, "#従属大名数(DaimyouA)+#臣従大名数(DaimyouA)", "1"
+			CONDITION_LARGE_EQUAL, NONE, NONE, NONE, NONE, "#直轄城数(DaimyouA)", "2"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EnabledF", "TRUE"
+		}
+	}
+	CE_0190 {
+		Title		: "　　　家臣あり"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "Player"
+			CONDITION_LARGE_EQUAL, NONE, NONE, NONE, NONE, "DKashinNList[DaimyouA]", "1"
+			CONDITION_LARGE_EQUAL, NONE, NONE, NONE, NONE, "#直轄城数(DaimyouA)", "2"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EnabledF", "TRUE"
+		}
+	}
+	CE_0191 {
+		Title		: "　　　実行"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "EnabledF", "TRUE"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0131", ""
+		}
+	}
+	CE_0187 {
+		Title		: "　　　実施不可"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "EnabledF", "FALSE"
+		}
+		Message {
+			"下記いずれかの条件を満たさなかったため、増封を実施できませんでした。"
+			""
+			"・当家が独立大名（従属・臣従家を1家以上持つ）である、または家臣を有する。"
+			"・当家直轄の拠点が2以上存在する。"
+		}
+		Happening {
 		}
 	}
 	CE_0128 {

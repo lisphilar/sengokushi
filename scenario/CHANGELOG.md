@@ -3,7 +3,7 @@
 安定版及び開発版の最新Versionは以下のとおりです。
 
 - [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.1.0
-- [開発版](https://github.com/lisphilar/sengokushi/tree/main/scenario)：1.2.0.dev20
+- [開発版](https://github.com/lisphilar/sengokushi/tree/main/scenario)：1.2.0.dev21
 
 ## Change log
 
@@ -24,6 +24,7 @@
 - [駿河-島田宿、遠江-金谷宿間の水路設置 #37](https://github.com/lisphilar/sengokushi/issues/37)
 - [城名から家名を削除する（二条城、伏見城、淀城） #38](https://github.com/lisphilar/sengokushi/issues/38)
 - ~~実装中止：[評定イベント終了時の次回月数選択から数字入力をなくす #39](https://github.com/lisphilar/sengokushi/issues/39)~~
+- [評定：城単位で増封する機能の追加 #40](https://github.com/lisphilar/sengokushi/issues/40)
 - [評定：城石高、城経済を表示する機能を追加 #43](https://github.com/lisphilar/sengokushi/issues/43)
 
 ### Version 1.1.0 (2023/2/10)
