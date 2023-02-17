@@ -8178,10 +8178,8 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
-			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "RegionSelected", "地方名をご選択ください。/五畿七道外/東山道奥羽/東山道中山/北陸道/関八州/東海道/畿内/南海道/山陰道/山陽道/西海道北部/西海道南部"
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0056", ""
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "RegionSelected", "地方名をご選択ください。/東山道奥羽/北陸道/関八州/東海道/畿内/南海道/山陰道/山陽道/西海道北部・蝦夷・琉球/西海道南部・東山道中山"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0057", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0068", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0095", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0096", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0097", ""
@@ -8194,34 +8192,6 @@ ConditionalEvent {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "CountrySelected", "CountryDict[CountrySelN]"
 		}
 	}
-	CE_0056 {
-		Title		: "　　五畿七道外"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[0]", "#城番号(SK03)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[1]", "#城番号(SK04)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[2]", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[3]", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[4]", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[5]", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[6]", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[7]", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[8]", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[9]", "0"
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "CountrySelN", "国名をご選択ください。/蝦夷地/琉球"
-		}
-	}
 	CE_0057 {
 		Title		: "　　東山道奥羽"
 		PeriodStart	: NONE
@@ -8232,7 +8202,7 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "1"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "0"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[0]", "#城番号(SK05)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[1]", "#城番号(SK06)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[2]", "#城番号(SK07)"
@@ -8250,34 +8220,6 @@ ConditionalEvent {
 			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "CountrySelN", "国名をご選択ください。/陸奥-津軽/陸奥-南部/陸奥-北上/陸奥-大崎/陸奥-白河/陸奥-会津/出羽-北部/出羽-庄内/出羽-最上/出羽-置賜"
 		}
 	}
-	CE_0068 {
-		Title		: "　　東山道中山"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "2"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[0]", "#城番号(SK15)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[1]", "#城番号(SK16)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[2]", "#城番号(SK17)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[3]", "#城番号(SK18)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[4]", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[5]", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[6]", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[7]", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[8]", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[9]", "0"
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "CountrySelN", "国名をご選択ください。/信濃/飛騨/美濃/近江"
-		}
-	}
 	CE_0095 {
 		Title		: "　　北陸道"
 		PeriodStart	: NONE
@@ -8288,7 +8230,7 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "3"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "1"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[0]", "#城番号(SK19)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[1]", "#城番号(SK20)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[2]", "#城番号(SK21)"
@@ -8316,7 +8258,7 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "4"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "2"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[0]", "#城番号(SK26)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[1]", "#城番号(SK27)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[2]", "#城番号(SK28)"
@@ -8344,7 +8286,7 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "5"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "3"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[0]", "#城番号(SK34)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[1]", "#城番号(SK35)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[2]", "#城番号(SK36)"
@@ -8372,7 +8314,7 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "6"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "4"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[0]", "#城番号(SK43)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[1]", "#城番号(SK44)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[2]", "#城番号(SK45)"
@@ -8400,7 +8342,7 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "7"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "5"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[0]", "#城番号(SK49)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[1]", "#城番号(SK50)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[2]", "#城番号(SK51)"
@@ -8428,7 +8370,7 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "8"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "6"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[0]", "#城番号(SK55)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[1]", "#城番号(SK56)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[2]", "#城番号(SK57)"
@@ -8456,7 +8398,7 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "9"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "7"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[0]", "#城番号(SK62)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[1]", "#城番号(SK63)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[2]", "#城番号(SK64)"
@@ -8475,7 +8417,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0102 {
-		Title		: "　　西海道北部"
+		Title		: "　　西海道北部・琉球・蝦夷"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -8484,7 +8426,7 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "10"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "8"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[0]", "#城番号(SK70)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[1]", "#城番号(SK71)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[2]", "#城番号(SK72)"
@@ -8493,17 +8435,17 @@ ConditionalEvent {
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[5]", "#城番号(SK75)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[6]", "#城番号(SK76)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[7]", "#城番号(SK77)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[8]", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[9]", "0"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[8]", "#城番号(SK04)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[9]", "#城番号(SK03)"
 		}
 		Message {
 		}
 		Happening {
-			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "CountrySelN", "国名をご選択ください。/筑前/筑後/豊前/豊後/肥前/平戸・五島/天草/壱岐・対馬"
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "CountrySelN", "国名をご選択ください。/筑前/筑後/豊前/豊後/肥前/平戸・五島/天草/壱岐・対馬/琉球/蝦夷地"
 		}
 	}
 	CE_0103 {
-		Title		: "　　西海道南部"
+		Title		: "　　西海道南部・東山道中山"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -8512,22 +8454,22 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "11"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "RegionSelected", "9"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[0]", "#城番号(SK78)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[1]", "#城番号(SK79)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[2]", "#城番号(SK80)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[3]", "#城番号(SK81)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[4]", "#城番号(SK82)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[5]", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[6]", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[7]", "0"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[8]", "0"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[5]", "#城番号(SK15)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[6]", "#城番号(SK16)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[7]", "#城番号(SK17)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[8]", "#城番号(SK18)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CountryDict[9]", "0"
 		}
 		Message {
 		}
 		Happening {
-			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "CountrySelN", "国名をご選択ください。/肥後/日向/大隅/薩摩/奄美"
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "CountrySelN", "国名をご選択ください。/肥後/日向/大隅/薩摩/奄美/信濃/飛騨/美濃/近江"
 		}
 	}
 	CE_0105 {
