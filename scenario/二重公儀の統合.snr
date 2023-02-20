@@ -10727,7 +10727,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0183 {
-		Title		: "　情報取得"
+		Title		: "　石高・経済情報取得"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -10916,9 +10916,7 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0176", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0192", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0114", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0132", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0177", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0178", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0180", ""
@@ -10926,8 +10924,27 @@ ConditionalEvent {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0182", ""
 		}
 	}
+	CE_0132 {
+		Title		: "　　増封対象の家"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0176", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0192", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0114", ""
+		}
+	}
 	CE_0176 {
-		Title		: "　　家選択"
+		Title		: "　　　家選択"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -10944,7 +10961,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0192 {
-		Title		: "    家の選択成功"
+		Title		: "    　選択成功"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -10963,7 +10980,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0114 {
-		Title		: "　　家再選択"
+		Title		: "　　　再選択"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -11078,7 +11095,7 @@ ConditionalEvent {
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "ShiroDetermined", "NA"
 		}
 		Message {
-			"%大名DaimyouDetermined%に%城ShiroDetermined%（%a%万%b%%c%%d%%e%石）を増封することで、直轄石高は次のように変更となります。"
+			"%大名DaimyouDetermined%に%城ShiroDetermined%（%a%万%b%%c%%d%%e%石）を与えることで各家の直轄石高が次のように変更となります。"
 			""
 			"・%大名SyukeDetermined%（当家）：%SyukeOldMU%万石→%SyukeNewMU%万石"
 			""
@@ -11098,7 +11115,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0182 {
-		Title		: "　　増封実行"
+		Title		: "　　増封実施"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -11109,7 +11126,7 @@ ConditionalEvent {
 		Condition {
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "ShiroDetermined", "NA"
-			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "増封を実行しますか？"
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "増封を実施しますか？"
 		}
 		Message {
 			"%城ShiroDetermined%（%a%万%b%%c%%d%%e%石）の増封が実行されました。"
@@ -11132,13 +11149,340 @@ ConditionalEvent {
 			HAPPENING_SHIRO_SHOZOKU_CHANGE, VARIABLE, NONE, VARIABLE, NONE, NONE, NONE, "", ""
 		}
 	}
+	CE_0056 {
+		Title		: "　国単位"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "SyukeDetermined", "Player"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0195", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0177", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0068", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0152", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0196", ""
+		}
+	}
+	CE_0195 {
+		Title		: "　　増封対象の家"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0176", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0198", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0199", ""
+		}
+	}
+	CE_0198 {
+		Title		: "    　選択成功"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
+		}
+		Message {
+			"「%大名DaimyouDetermined%」に対して国単位で増封を実施致します。"
+			"以降の画面にて増封対象の国をご選択ください。"
+		}
+		Happening {
+		}
+	}
+	CE_0199 {
+		Title		: "　　　再選択"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "指定いただいた区分に該当する家がございませんでした。再選択しますか？"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0176", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0198", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0199", ""
+		}
+	}
+	CE_0068 {
+		Title		: "　　国内情報"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
+		}
+		Message {
+			"%大名DaimyouDetermined%への増封先として$color=0xFF0000$%城CountrySelected%$color=0x000000$が選択されました。"
+			"増封可能な拠点数及び合計の石高・経済は以下の通りです。"
+			"$color=0x0000FF$"
+			"【現時点で増封可能】"
+			"%大名SyukeDetermined%（当家）の直轄拠点"
+			"→拠点数%ShiroNL[0]%, 石高%aa%万%ab%%ac%%ad%%ae%石, 経済%EconomyL[0]%"
+			""
+			"※国内の全直轄拠点を%大名DaimyouDetermined%へ与えることで各家の直轄石高が変更となります。"
+			"　・%大名SyukeDetermined%：%SyukeOldMU%万石→%SyukeNewMU%万石"
+			"　・%大名DaimyouDetermined%：%DaimyouOldMU%万石→%DaimyouNewMU%万石"
+			"$color=0x000000$"
+			"【増封不可】"
+			"A. %大名SyukeDetermined%以外の家が所有している拠点"
+			"→拠点数%ShiroNL[1]%, %ba%万%bb%%bc%%bd%%be%石, 経済%EconomyL[1]%"
+			""
+			"B. %大名SyukeDetermined%に従属・臣従中の家の拠点"
+			"→拠点数%ShiroNL[2]%, %ca%万%cb%%cc%%cd%%ce%石, 経済%EconomyL[2]%"
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroNL[0]", "0"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroNL[1]", "0"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroNL[2]", "0"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaL[0]", "0"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaL[1]", "0"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaL[2]", "0"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EconomyL[0]", "0"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EconomyL[1]", "0"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EconomyL[2]", "0"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SAddCount", "0"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0144", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Value", "KokudakaL[0]"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0157", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "aa", "a"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ab", "b"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ac", "c"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ad", "d"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ae", "e"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Value", "KokudakaL[1]"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0157", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ba", "a"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "bb", "b"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "bc", "c"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "bd", "d"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "be", "e"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Value", "KokudakaL[2]"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0157", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ca", "a"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "cb", "b"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "cc", "c"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "cd", "d"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ce", "e"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeOldK", "#直轄石高(SyukeDetermined)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeOldMU", "#Round(SyukeOldK/10000)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeNewMU", "#Round((SyukeOldK-KokudakaL[0])/10000)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DaimyouOldK", "#直轄石高(DaimyouDetermined)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DaimyouOldMU", "#Round(DaimyouOldK/10000)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DaimyouNewMU", "#Round((DaimyouOldK+KokudakaL[0])/10000)"
+		}
+	}
+	CE_0144 {
+		Title		: "　　　累計の計算"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: SHIRO
+		LoopVariable	: "LS"
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SCountryList[LS]", "CountrySelected"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Target", "LS"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0145", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0147", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0148", ""
+		}
+	}
+	CE_0145 {
+		Title		: "　　　　直轄"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "SyukeDetermined"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "ShiroA", "Target"
+			CONDITION_SHIRO_OWNER1, VARIABLE, NONE, VARIABLE, NONE, "", ""
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroNL[0]", "1"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0183", ""
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaL[0]", "KokudakaCurrent"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "EconomyL[0]", "EconomyCurrent"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SAddL[SAddCount]", "Target"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "SAddCount", "1"
+		}
+	}
+	CE_0147 {
+		Title		: "　　　　他家"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "SyukeDetermined"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "ShiroA", "Target"
+			CONDITION_SHIRO_NOT_OWNER3, VARIABLE, NONE, VARIABLE, NONE, "", ""
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "DStatusList[#城支配大名(Target)]", "0"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroNL[1]", "1"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0183", ""
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaL[1]", "KokudakaCurrent"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "EconomyL[1]", "EconomyCurrent"
+		}
+	}
+	CE_0148 {
+		Title		: "　　　　従属・臣従"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "SyukeDetermined"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "ShiroA", "Target"
+			CONDITION_SHIRO_OWNER3, VARIABLE, NONE, VARIABLE, NONE, "", ""
+			CONDITION_SHIRO_NOT_OWNER1, VARIABLE, NONE, VARIABLE, NONE, "", ""
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroNL[2]", "1"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0183", ""
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaL[2]", "KokudakaCurrent"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "EconomyL[2]", "EconomyCurrent"
+		}
+	}
+	CE_0152 {
+		Title		: "　　増封実施"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "ShiroNL[0]", "0"
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "国内すべての当家直轄拠点について増封を実施しますか？"
+		}
+		Message {
+			"%城CountrySelected%国内のすべての当家直轄拠点（拠点数%ShiroNL[0]%, 石高%aa%万%ab%%ac%%ad%%ae%石）について%大名DaimyouDetermined%への増封が実行されました。"
+			""
+			""
+			"【直轄石高】"
+			"・%大名SyukeDetermined%：%SyukeOldMU%万石→%SyukeNewMU%万石"
+			"・%大名DaimyouDetermined%：%DaimyouOldMU%万石→%DaimyouNewMU%万石"
+			""
+			"【副次効果】"
+			"%大名SyukeDetermined%および%大名DaimyouDetermined%のすべての拠点にて民衆支持が%Popularity%%増加します。"
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Popularity", "#Ceil(5*((DaimyouNewMU+1)*(SyukeNewMU+1))/((DaimyouOldMU+1)*(SyukeOldMU+1)))"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "SyukeDetermined"
+			HAPPENING_DAIMYOU_MINSHUU_PLUS, VARIABLE, NONE, NONE, NONE, NONE, NONE, "Popularity", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "DaimyouDetermined"
+			HAPPENING_DAIMYOU_MINSHUU_PLUS, VARIABLE, NONE, NONE, NONE, NONE, NONE, "Popularity", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "0"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0194", ""
+		}
+	}
+	CE_0194 {
+		Title		: "　　　実行"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_SMALL, NONE, NONE, NONE, NONE, "Count", "SAddCount"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "DaimyouDetermined"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Shiro1", "SAddL[Count]"
+			HAPPENING_SHIRO_SHOZOKU_CHANGE, VARIABLE, NONE, VARIABLE, NONE, NONE, NONE, "", ""
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "1"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0194", ""
+		}
+	}
+	CE_0196 {
+		Title		: "　　国再選択"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroNL[0]", "0"
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "指定いただいた国に当家直轄の拠点がございませんでした。国を再度選択しますか？"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0177", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0068", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0196", ""
+		}
+	}
 	CE_0074 {
 		Title		: "■豊臣の浪人集合"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
 		RepeatType	: ONCE
-		SubRoutine	: NO
+		SubRoutine	: YES
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
@@ -11514,7 +11858,8 @@ ConditionalEvent {
 			"    ・家臣情報（地方>国名から選択）：家の外交方針に従う家臣の情報を順に表示する"
 			"　　・拠点情報：選択した国内の拠点情報を順に表示する"
 			"・増封："
-			"　　・増封実施（国単位）：従属・臣従家・家臣に対して、城単位で増封を実施する"
+			"　　・増封実施（城単位）：従属・臣従家・家臣に対して、城単位で増封を実施する"
+			"　　・増封実施（国単位）：従属・臣従家・家臣に対して、国単位で増封を実施する"
 			"・牢人処遇："
 			"　　・牢人家一覧：家を有する牢人の一覧"
 			"$color=0x000000$・評定終了：次回評定を何ヶ月後に行うかを指定し、評定を終了する"
@@ -11884,9 +12229,11 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
-			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGAddSelected", "実施内容をご選択ください。/増封実施（城単位）"
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGAddSelected", "実施内容をご選択ください。/増封実施（城単位）/増封実施（国単位）"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGAddSyukeShiro", "0"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGAddSyukeCountry", "1"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0185", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0151", ""
 		}
 	}
 	CE_0185 {
@@ -11989,6 +12336,46 @@ ConditionalEvent {
 			"・当家直轄の拠点が2以上存在する。"
 		}
 		Happening {
+		}
+	}
+	CE_0151 {
+		Title		: "　　増封実施（国）"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "MTGAddSelected", "MTGAddSyukeCountry"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EnabledF", "FALSE"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0186", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0190", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0193", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0187", ""
+		}
+	}
+	CE_0193 {
+		Title		: "　　　実行"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "EnabledF", "TRUE"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0056", ""
 		}
 	}
 	CE_0128 {
