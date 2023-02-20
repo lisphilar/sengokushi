@@ -3,7 +3,7 @@
 安定版及び開発版の最新Versionは以下のとおりです。
 
 - [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.1.0
-- [開発版](https://github.com/lisphilar/sengokushi/tree/main/scenario)：1.2.0.dev23
+- [開発版](https://github.com/lisphilar/sengokushi/tree/main/scenario)：1.2.0.dev24
 
 ## Change log
 
@@ -28,6 +28,7 @@
 - [評定：城石高、城経済を表示する機能を追加 #43](https://github.com/lisphilar/sengokushi/issues/43)
 - [評定：地方名選択時の見切れを修正 #44](https://github.com/lisphilar/sengokushi/issues/44)
 - [Opening画像を輝度の低いものに修正する #45](https://github.com/lisphilar/sengokushi/issues/45)
+- [オープニングメッセージの簡略化 #46](https://github.com/lisphilar/sengokushi/issues/46)
 
 ### Version 1.1.0 (2023/2/10)
 
