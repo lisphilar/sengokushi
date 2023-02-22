@@ -7983,6 +7983,26 @@ ConditionalEvent {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0158", ""
 		}
 	}
+	CE_0215 {
+		Title		: "■借金算出"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Debt", "0"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Balance", "#資金(Target)"
+			CONDITION_SMALL, NONE, NONE, NONE, NONE, "Balance", "0"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Debt", "0-Balance"
+		}
+	}
 	CE_0110 {
 		Title		: "■地方・国名一覧"
 		PeriodStart	: NONE
@@ -8021,6 +8041,28 @@ ConditionalEvent {
 			"【西海道南部】肥後、日向、大隅、薩摩、奄美"
 		}
 		Happening {
+		}
+	}
+	CE_0082 {
+		Title		: "■城内の武将移動"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: BUSHOU
+		LoopVariable	: "LB"
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "ShiroA", "SBefore"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "BushouA", "LB"
+			CONTITION_BUSHOU_AT_SHIRO, NONE, NONE, VARIABLE, VARIABLE, "", ""
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Shiro1", "SAfter"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Bushou1", "LB"
+			HAPPENING_BUSHOU_MOVE, NONE, NONE, VARIABLE, NONE, VARIABLE, NONE, "", ""
 		}
 	}
 	CE_0022 {
@@ -8518,27 +8560,9 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SBefore", "#城番号(S_i)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SAfter", "#城番号(S_18)"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0082", ""
-		}
-	}
-	CE_0082 {
-		Title		: "　　移動"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: BUSHOU
-		LoopVariable	: "LB"
-		Condition {
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "BushouA", "LB"
-			CONTITION_BUSHOU_AT_SHIRO, NONE, NONE, S_i, VARIABLE, "", ""
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Bushou1", "LB"
-			HAPPENING_BUSHOU_MOVE, NONE, NONE, S_18, NONE, VARIABLE, NONE, "", ""
 		}
 	}
 	CE_0014 {
@@ -9484,7 +9508,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0126 {
-		Title		: "　　家拠点取得"
+		Title		: "　　牢人家取得"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -10920,11 +10944,7 @@ ConditionalEvent {
 		}
 		Happening {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0132", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0177", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0178", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0180", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0181", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0182", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0224", ""
 		}
 	}
 	CE_0132 {
@@ -11001,6 +11021,30 @@ ConditionalEvent {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0176", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0192", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0114", ""
+		}
+	}
+	CE_0224 {
+		Title		: "　城単位（家選択後）"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "SyukeDetermined", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "ShiroDetermined", "NA"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0177", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0178", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0180", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0181", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0182", ""
 		}
 	}
 	CE_0177 {
@@ -11700,6 +11744,551 @@ ConditionalEvent {
 			HAPPENING_DAIMYOU_MINSHUU_PLUS, VARIABLE, NONE, NONE, NONE, NONE, NONE, "Popularity", ""
 		}
 	}
+	CE_0207 {
+		Title		: "■牢人家雇用"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: ONCE
+		SubRoutine	: NO
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EmployCount", "0"
+		}
+	}
+	CE_0225 {
+		Title		: "　変動費支払い"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: NO
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#Month", "1"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "0"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0226", ""
+		}
+	}
+	CE_0226 {
+		Title		: "　　支払い要否確認"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_SMALL, NONE, NONE, NONE, NONE, "Count", "EmployCount"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Employer", "EmployerList[Count]"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Employee", "EmployeeList[Count]"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "EmployCost", "EmployCostList[Count]"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Employer", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Employee", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "EmployCost", "0"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0227", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0229", ""
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "1"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0226", ""
+		}
+	}
+	CE_0227 {
+		Title		: "　　　支払い実施"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "Employee"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouB", "Employer"
+			CONDITION_SHINJUU_SPECIFIC, VARIABLE, VARIABLE, NONE, NONE, "", ""
+			CONDITION_SMALL, NONE, NONE, NONE, NONE, "#直轄経済(Employee)*12", "EmployCost"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "Employer"
+			HAPPENING_DAIMYOU_SHIKIN, VARIABLE, NONE, NONE, NONE, NONE, NONE, "#資金(Employer)-EmployCost", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "Employee"
+			HAPPENING_DAIMYOU_SHIKIN, VARIABLE, NONE, NONE, NONE, NONE, NONE, "#資金(Employer)+EmployCost", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0228", ""
+		}
+	}
+	CE_0228 {
+		Title		: "　　　　支払い実施の報告"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: OR
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Employer", "Player"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Employee", "Player"
+		}
+		Message {
+			"牢人家から臣従大名に取り立てられた%大名Employee%の経済状況が安定しないため、資金%EmployCost%が%大名Employer%から%大名Employee%に提供されました。"
+		}
+		Happening {
+		}
+	}
+	CE_0229 {
+		Title		: "　　　支払い終了"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: OR
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "Employee"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouB", "Employer"
+			CONDITION_NOT_SHINJUU_SPECIFIC, VARIABLE, VARIABLE, NONE, NONE, "", ""
+			CONDITION_LARGE_EQUAL, NONE, NONE, NONE, NONE, "#直轄経済(Employee)*12", "EmployCost"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EmployerList[Count]", "NA"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EmployeeList[Count]", "NA"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EmployCostList[Count]", "0"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0230", ""
+		}
+	}
+	CE_0230 {
+		Title		: "　　　　支払い終了の報告"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: OR
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Employer", "Player"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Employee", "Player"
+		}
+		Message {
+			"牢人家から臣従大名に取り立てられた%大名Employee%の経済状況が安定、または臣従大名から外れたため、%大名Employer%から%大名Employee%への資金提供が終了となりました。"
+		}
+		Happening {
+		}
+	}
+	CE_0208 {
+		Title		: "　ユーザーが雇用"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Employer", "Player"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Employee", "NA"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0231", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0211", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0125", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0212", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0213", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0209", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0222", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0223", ""
+		}
+	}
+	CE_0231 {
+		Title		: "　　要件確認"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: OR
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "Employer"
+			CONDITION_JUUZOKU_SHINJUU_UNSPECIFIC, VARIABLE, NONE, NONE, NONE, "", ""
+			CONDITION_SMALL, NONE, NONE, NONE, NONE, "#資金(Employer)", "0"
+		}
+		Message {
+			"%大名Employer%が独立大名でない、または資金残高がマイナスのため、牢人家の臣従家取り立てを実施することができませんでした。"
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0232", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Employer", "NA"
+		}
+	}
+	CE_0232 {
+		Title		: "　　　要件満たさず"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: OR
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Employer", "Player"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Employee", "Player"
+		}
+		Message {
+			"%大名Employer%が独立大名でない、または資金残高がマイナスのため、牢人家の臣従家取り立てを実施することができませんでした。"
+		}
+		Happening {
+		}
+	}
+	CE_0211 {
+		Title		: "　　手順説明"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Employer", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Employee", "NA"
+		}
+		Message {
+			"牢人家を当家の臣従家として取り立てます。"
+			"次の画面にて表示致しますので、対象の牢人家の番号を記録いただくようお願い致します。"
+			""
+			"【取り立ての手順】"
+			"$color=0xFF0000$赤字$color=0x000000$の箇所についてはご対応をお願い致します。"
+			""
+			"1. 牢人家の一覧表示"
+			"$color=0xFF0000$2. 取り立てを行う家をご選択いただく（番号の入力）$color=0x000000$"
+			"3. 各武将が兵を集める"
+			"4. 取り立ての支度金（固定費 + 変動費/年）を算出"
+			"$color=0xFF0000$5. 取り立て可否の決定$color=0x000000$"
+			"6. 支度金（固定費 + 変動費1年分）の支払い"
+			"$color=0xFF0000$7. 与える拠点1箇所の決定$color=0x000000$"
+			""
+			"※牢人家が当家に臣従しかつ町収入が変動費/年を超えない限り、変動費を毎年1月に前払いで支払います。"
+		}
+		Happening {
+		}
+	}
+	CE_0212 {
+		Title		: "　　家問い合わせ"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Employer", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Employee", "NA"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_INPUT_NUMBER, NONE, NONE, NONE, NONE, NONE, NONE, "EmployeeNumber", "取り立てる牢人家の番号をご入力ください（該当する牢人がいない数字: 中止）。"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EmployeeTentative", "DRouninList[EmployeeNumber]"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EmployeeOldShiroTentative", "SNameForRouninList[EmployeeNumber]"
+		}
+	}
+	CE_0213 {
+		Title		: "　　牢人家決定"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Employer", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Employee", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "EmployeeTentative", "0"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Employee", "EmployeeTentative"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EmployeeOldShiro", "EmployeeOldShiroTentative"
+		}
+	}
+	CE_0209 {
+		Title		: "　　兵数・支度金設定"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Employer", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Employee", "NA"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0214", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Target", "Employee"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0215", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "FixedCost", "Debt"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Kiba", "#直轄騎馬兵数(Employee)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Ashigaru", "#直轄足軽兵数(Employee)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "VariableCost", "(Kiba*1.5+Ashigaru*0.5)*12"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "TotalCost", "FixedCost+VariableCost"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "BalanceCurrent", "#資金(Employer)"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0216", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0217", ""
+		}
+	}
+	CE_0214 {
+		Title		: "　　　兵数設定"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: BUSHOU
+		LoopVariable	: "LB"
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "Employee"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "BushouA", "LB"
+			CONTITION_BUSHOU_SHOZOKU, VARIABLE, NONE, NONE, VARIABLE, "", ""
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Bushou1", "LB"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Adjustment", "(#Random/2)+0.75"
+			HAPPENING_BUSHOU_KIBA_PLUS, NONE, NONE, NONE, NONE, VARIABLE, NONE, "40*Adjustment", ""
+			HAPPENING_BUSHOU_ASHIGARU_PLUS, NONE, NONE, NONE, NONE, VARIABLE, NONE, "400*Adjustment", ""
+		}
+	}
+	CE_0216 {
+		Title		: "　　　資金不足"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_SMALL, NONE, NONE, NONE, NONE, "BalanceCurrent", "TotalCost"
+		}
+		Message {
+			"%大名Employee%が騎馬兵%Kiba%名、足軽兵%Ashigaru%名を集めてきました。"
+			"しかしながら、下記経費が支度金として必要となるものの当家にその資金がなく（現在：%BalanceCurrent%）、取り立ては今回難しいようです。"
+			""
+			"合計：%TotalCost%"
+			"    ・固定費：%FixedCost%（借金返済のため）"
+			"    ・変動費：%VariableCost%/年（兵数維持のため）"
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0218", ""
+		}
+	}
+	CE_0218 {
+		Title		: "　　　　雇用撤回"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+			"%大名Daimyou1%の取り立ては見送りとなりました。"
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "Employee"
+			HAPPENING_DAIMYOU_KIBA_PLUS, VARIABLE, NONE, NONE, NONE, NONE, NONE, "-9999", ""
+			HAPPENING_DAIMYOU_ASHIGARU_PLUS, VARIABLE, NONE, NONE, NONE, NONE, NONE, "-9999", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Employee", "NA"
+		}
+	}
+	CE_0217 {
+		Title		: "　　　支度金検討"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "BalanceCurrent", "TotalCost"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0219", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0220", ""
+		}
+	}
+	CE_0219 {
+		Title		: "　　　　金額表示"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+			"%大名Employee%が$color=0xFF0000$騎馬兵%Kiba%名$color=0x000000$、$color=0xFF0000$足軽兵%Ashigaru%名$color=0x000000$を集めてきました。"
+			"取り立て時点で支度金%TotalCost%（固定費 + 変動費1年分）の支払いが必要となります。"
+			""
+			"・固定費：%FixedCost%（借金返済のため）"
+			""
+			"・変動費：$color=0x0000FF$%VariableCost%/年$color=0x000000$（兵数維持のため）"
+			""
+			""
+			"当家の現在の資金は%BalanceCurrent%であり取り立てが可能です。"
+			""
+			"%大名Employee%が当家に臣従し「町経済合計×12ヶ月」が変動費$color=0x0000FF$%VariableCost%$color=0x000000$を超えない限りは、毎年1月に変動費の支払いが必要となります。支払い時にお知らせします。"
+			""
+			"取り立てを実施する場合は次の画面にてYesを選択し、%大名Employee%に与える拠点1つの決定をお願い致します。2箇所目以降については増封機能にて通常通り実施をお願い致します。"
+		}
+		Happening {
+		}
+	}
+	CE_0220 {
+		Title		: "　　　　雇用撤回へ"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: OR
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_QUESTION_NO, NONE, NONE, NONE, NONE, "", "支払いを実施し、取り立てを決定しますか？"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0218", ""
+		}
+	}
+	CE_0222 {
+		Title		: "　　拠点決定"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Employee", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Employee", "NA"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeDetermined", "Employer"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DaimyouDetermined", "Employee"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroDetermined", "NA"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0224", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0221", ""
+		}
+	}
+	CE_0221 {
+		Title		: "　　　拠点なし"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroDetermined", "NA"
+		}
+		Message {
+			"%大名Employee%に対して拠点が与えられなかったため臣従家として取り立てられませんでした。"
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0218", ""
+		}
+	}
+	CE_0223 {
+		Title		: "　　取り立て実行"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Employer", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Employee", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "ShiroDetermined", "NA"
+		}
+		Message {
+			"次の通り、牢人家の取り立てが完了致しました。"
+			""
+			"・%大名Employer%に%大名Employee%に拠点1箇所（%城ShiroDetermined%）を増封しました。"
+			""
+			"・%大名Employer%が%大名Employee%に支度金%TotalCost%を支払いました。"
+			""
+			"・%大名Employee%が配流先「%城EmployeeOldShiro%」を朝廷に変換しました。"
+			""
+			"・%大名Employee%が%大名Employer%に臣従しました。"
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "Employer"
+			HAPPENING_DAIMYOU_SHIKIN, VARIABLE, NONE, NONE, NONE, NONE, NONE, "#資金(Daimyou1)-TotalCost", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "Employee"
+			HAPPENING_DAIMYOU_SHIKIN, VARIABLE, NONE, NONE, NONE, NONE, NONE, "#資金(Daimyou1)+TotalCost", ""
+			HAPPENING_DAIMYO_KOUDOU_TYPE_NORMAL, VARIABLE, NONE, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "Employer"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou2", "Employee"
+			HAPPENING_SHINJUU, VARIABLE, VARIABLE, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DStatusList[Employee]", "Employee*Ippan"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeList[Employee]", "Employer"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SBefore", "EmployeeOldShiro"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SAfter", "ShiroDetermined"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0082", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "#大名番号(D_CHOTEI)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Shiro1", "EmployeeOldShiro"
+			HAPPENING_SHIRO_SHOZOKU_CHANGE, VARIABLE, NONE, VARIABLE, NONE, NONE, NONE, "", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EmployerList[EmployCount]", "Employer"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EmployeeList[EmployCount]", "Employee"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EmployCostList[EmployCount]", "VariableCost"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "EmployCount", "1"
+		}
+	}
 	CE_0074 {
 		Title		: "■豊臣の浪人集合"
 		PeriodStart	: NONE
@@ -12089,6 +12678,8 @@ ConditionalEvent {
 			""
 			"・牢人処遇："
 			"　　・牢人家一覧：家を有する牢人の一覧"
+			"　　・臣従家として取り立て：牢人家を当家の臣従大名として取り立てる"
+			""
 			"$color=0x000000$・評定終了：次回評定を何ヶ月後に行うかを指定し、評定を終了する"
 		}
 		Happening {
@@ -12620,9 +13211,11 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
-			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRouninSelected", "実施内容をご選択ください。/牢人家一覧"
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRouninSelected", "実施内容をご選択ください。/牢人家一覧/臣従家として取り立て"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRouninListup", "0"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRouninEmploy", "1"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0129", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0210", ""
 		}
 	}
 	CE_0129 {
@@ -12641,6 +13234,24 @@ ConditionalEvent {
 		}
 		Happening {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0125", ""
+		}
+	}
+	CE_0210 {
+		Title		: "　　臣従家として取り立て"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "MTGRouninSelected", "MTGRouninEmploy"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0208", ""
 		}
 	}
 	CE_0087 {
