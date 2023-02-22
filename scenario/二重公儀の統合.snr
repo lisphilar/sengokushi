@@ -8525,7 +8525,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0077 {
-		Title		: "　大坂城城主"
+		Title		: "　大坂城落城"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -11197,6 +11197,7 @@ ConditionalEvent {
 			HAPPENING_DAIMYOU_MINSHUU_PLUS, VARIABLE, NONE, NONE, NONE, NONE, NONE, "Popularity", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Shiro1", "ShiroDetermined"
 			HAPPENING_SHIRO_SHOZOKU_CHANGE, VARIABLE, NONE, VARIABLE, NONE, NONE, NONE, "", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0233", ""
 		}
 	}
 	CE_0056 {
@@ -11505,6 +11506,8 @@ ConditionalEvent {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "DaimyouDetermined"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Shiro1", "SAddL[Count]"
 			HAPPENING_SHIRO_SHOZOKU_CHANGE, VARIABLE, NONE, VARIABLE, NONE, NONE, NONE, "", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroDetermined", "Shiro1"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0233", ""
 			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "1"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0194", ""
 		}
@@ -11745,6 +11748,53 @@ ConditionalEvent {
 			HAPPENING_DAIMYOU_MINSHUU_PLUS, VARIABLE, NONE, NONE, NONE, NONE, NONE, "Popularity", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "SyukeDetermined"
 			HAPPENING_DAIMYOU_MINSHUU_PLUS, VARIABLE, NONE, NONE, NONE, NONE, NONE, "Popularity", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0233", ""
+		}
+	}
+	CE_0233 {
+		Title		: "　大坂城増封"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroDetermined", "#城番号(S_i)"
+		}
+		Message {
+			"%城ShiroDetermined%が増封の対象となったため、城下すべての直轄拠点が%大名SyukeDetermined%から%大名DaimyouDetermined%に引き渡されることとなりました。"
+			""
+			"※当該手続きによって%大名SyukeDetermined%の拠点数が0になってしまう場合、1箇所のみ引き渡しは行われません。"
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Osaka", "SCountryList[#城番号(S_0075)]"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0234", ""
+		}
+	}
+	CE_0234 {
+		Title		: "　　町内すべて増封"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: SHIRO
+		LoopVariable	: "LS"
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SCountryList[LS]", "Osaka"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "SyukeDetermined"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "ShiroA", "LS"
+			CONDITION_SHIRO_OWNER1, VARIABLE, NONE, VARIABLE, NONE, "", ""
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "#直轄城数(SyukeDetermined)", "1"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "DaimyouDetermined"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Shiro1", "LS"
+			HAPPENING_SHIRO_SHOZOKU_CHANGE, VARIABLE, NONE, VARIABLE, NONE, NONE, NONE, "", ""
 		}
 	}
 	CE_0207 {
@@ -13154,7 +13204,7 @@ ConditionalEvent {
 			"下記いずれかの条件を満たさなかったため、増封を実施できませんでした。"
 			""
 			"・当家が独立大名（従属・臣従家を1家以上持つ）である、または家臣を有する。"
-			"・当家直轄の拠点が2以上存在する。"
+			"・当家直轄の拠点が2箇所以上存在する。"
 		}
 		Happening {
 		}
