@@ -12619,6 +12619,29 @@ ConditionalEvent {
 		Happening {
 		}
 	}
+	CE_0248 {
+		Title		: "　　佐野道可"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DStatusList[#大名番号(D_0188)]", "#大名番号(D_Mouri)*Kashin"
+			CONTITION_BUSHOU_SHOZOKU, D_0188, NONE, NONE, B_01621, "", ""
+			CONDITION_BUSHOU_EXIST, NONE, NONE, NONE, B_01621, "", ""
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_01621, NONE, "佐野 道可", ""
+			HAPPENING_BUSHOU_SHOZOKU_CHANGE, D_Toyotomi, NONE, NONE, NONE, B_01621, NONE, "", ""
+			HAPPENING_BUSHOU_MOVE, NONE, NONE, S_0299, NONE, B_01621, NONE, "", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SanoDoukaF", "TRUE"
+		}
+	}
 	CE_0074 {
 		Title		: "■豊臣の兵数増加"
 		PeriodStart	: NONE
@@ -12816,6 +12839,7 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SanoDoukaF", "FALSE"
 		}
 	}
 	CE_0076 {
@@ -12898,6 +12922,43 @@ ConditionalEvent {
 			HAPPENING_SHIRO_SHOZOKU_CHANGE, D_0203, NONE, S_MASUTOMI, NONE, NONE, NONE, "", ""
 			HAPPENING_KYOUSEI_SHUKUTEKI, D_0203, D_0037, NONE, NONE, NONE, NONE, "", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "GotouToshu", "#当主(Gotou)"
+		}
+	}
+	CE_0249 {
+		Title		: "　佐野道可事件"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: ONCE
+		SubRoutine	: NO
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SanoDoukaF", "TRUE"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DStatusList[#大名番号(D_0188)]", "#大名番号(D_Mouri)*Kashin"
+			CONDITION_JUUZOKU_SHINJUU_SPECIFIC, D_Mouri, D_Tokugawa, NONE, NONE, "", ""
+			CONDITION_BUSHOU_DEAD, NONE, NONE, NONE, B_01621, "", ""
+			CONTITION_BUSHOU_SHOZOKU, D_0188, NONE, NONE, B_02760, "", ""
+			CONTITION_BUSHOU_SHOZOKU, D_0188, NONE, NONE, B_02761, "", ""
+			CONDITION_BUSHOU_EXIST, NONE, NONE, NONE, B_02760, "", ""
+			CONDITION_BUSHOU_EXIST, NONE, NONE, NONE, B_02761, "", ""
+		}
+		Message {
+			"長府毛利家（毛利家の家臣）に所属していた内藤 元盛が佐野 道可と名を変え、豊臣氏宗家の武将となっていたことが判明致しました。元盛自身はすでに死去しております。"
+			""
+			"%武将TokugawaToshu%としては元盛の子である元珍・元豊は無関係と判断したようですが、毛利家への責任追及を恐れた%武将MouriToshu%により2名が自刃させられました。"
+			""
+			"・内藤 元珍 死亡"
+			"・内藤 元豊 死亡"
+			"・長府毛利家のすべての城の民衆支持が10%低下"
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SanoDoukaF", "FALSE"
+			HAPPENING_BUSHOU_DEAD, NONE, NONE, NONE, NONE, B_02760, NONE, "", ""
+			HAPPENING_BUSHOU_DEAD, NONE, NONE, NONE, NONE, B_02761, NONE, "", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "TokugawaToshu", "#当主(Tokugawa)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MouriToshu", "#当主(#大名番号(D_Mouri))"
+			HAPPENING_DAIMYOU_MINSHUU_PLUS, D_0188, NONE, NONE, NONE, NONE, NONE, "-10", ""
 		}
 	}
 	CE_0083 {
