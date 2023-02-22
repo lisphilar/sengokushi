@@ -2,14 +2,18 @@
 
 安定版及び開発版の最新Versionは以下のとおりです。
 
-- [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.1.0
-- [開発版](https://github.com/lisphilar/sengokushi/tree/main/scenario)：1.2.0.dev29
+- [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.2.0
+- [開発版](https://github.com/lisphilar/sengokushi/tree/main/scenario)：1.2.0
 
 ## Change log
 
 戦国史シナリオ「豊徳二重公儀の統合」の変更履歴をまとめた資料です。GitHub IssueのタイトルとリンクをVersionごとに一覧化しておりますので、詳細はそれぞれリンクよりご確認ください。
 
 ### Un-released
+
+NA
+
+### Version 1.2.0 (2023/2/23)
 
 - [初期浪人家の雇用イベント #6](https://github.com/lisphilar/sengokushi/issues/6)
 - [version.txtをCHANGELOG.md (.html)に統合する #26](https://github.com/lisphilar/sengokushi/issues/26)
