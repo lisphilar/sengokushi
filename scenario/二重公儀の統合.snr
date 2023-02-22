@@ -9670,7 +9670,7 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DStatusSelected", "DStatusSinzyu"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DStatusSelected", "DStatusShinzyu"
 		}
 		Message {
 		}

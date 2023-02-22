@@ -3,7 +3,7 @@
 安定版及び開発版の最新Versionは以下のとおりです。
 
 - [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.2.0
-- [開発版](https://github.com/lisphilar/sengokushi/tree/main/scenario)：1.2.0
+- [開発版](https://github.com/lisphilar/sengokushi/tree/main/scenario)：1.3.0.dev0
 
 ## Change log
 
@@ -11,7 +11,7 @@
 
 ### Un-released
 
-NA
+- [評定：増封時に臣従大名を選択できない問題の修正 #49](https://github.com/lisphilar/sengokushi/issues/49)
 
 ### Version 1.2.0 (2023/2/23)
 
