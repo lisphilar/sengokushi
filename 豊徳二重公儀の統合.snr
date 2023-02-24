@@ -9895,12 +9895,12 @@ ConditionalEvent {
 		Condition {
 		}
 		Message {
-			"既存の公儀に対抗するため、独立勢力が%大名TopD%のもとに集結しています！"
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "CurrentRank", "1"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0054", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0053", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0074", ""
 		}
 	}
 	CE_0054 {
@@ -9945,6 +9945,25 @@ ConditionalEvent {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "TopD"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou2", "LD"
 			HAPPENING_JUUZOKU, VARIABLE, VARIABLE, NONE, NONE, NONE, NONE, "", ""
+		}
+	}
+	CE_0074 {
+		Title		: "　　独立勢力の糾合報告"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "#Year", "StartYear"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "#Month", "StartMonth"
+		}
+		Message {
+			"既存の公儀に対抗するため、独立勢力が%大名TopD%のもとに集結しています！"
+		}
+		Happening {
 		}
 	}
 	CE_0062 {
@@ -13552,6 +13571,8 @@ ConditionalEvent {
 			CONDITION_SMALL, NONE, NONE, NONE, NONE, "KougiNOld", "2"
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Player", "Observer"
 			CONDITION_LARGE_EQUAL, NONE, NONE, NONE, NONE, "DStatusList[Player]", "Kougi"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "#Year", "StartYear"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "#Month", "StartMonth"
 		}
 		Message {
 			"【当家（%大名Player%）の目標】"
