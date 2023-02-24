@@ -3,7 +3,7 @@
 安定版及び開発版の最新Versionは以下のとおりです。
 
 - [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.2.0
-- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0.dev6
+- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0.dev7
 
 ## Change log
 
@@ -40,6 +40,7 @@
 - [オープニングメッセージの簡略化 #46](https://github.com/lisphilar/sengokushi/issues/46)
 - [評定：大坂城を増封すると天守閣との城主不一致にて翌月に城主が戻る問題の修正 #47](https://github.com/lisphilar/sengokushi/issues/47)
 - [プレーヤーが大阪城城主のとき文字列処理用の武将が配下の武将として表示されることの修正 #48](https://github.com/lisphilar/sengokushi/issues/48)
+- [史実：牢人の豊臣氏宗家への再仕官 #54](https://github.com/lisphilar/sengokushi/issues/54)
 
 ### Version 1.1.0 (2023/2/10)
 
