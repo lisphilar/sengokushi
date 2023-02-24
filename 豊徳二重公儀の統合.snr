@@ -9518,7 +9518,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0125 {
-		Title		: "　牢人家一覧"
+		Title		: "■牢人家一覧"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -9548,7 +9548,7 @@ ConditionalEvent {
 			"$color=0x000000$12. %大名DRouninList[13]%（%城SCountryList[SNameForRouninList[13]]%-%城SNameForRouninList[13]%）"
 		}
 		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "0"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "RouninCount", "0"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0126", ""
 			HAPPENING_DAIMYOU_KAIMEI, D_NA, NONE, NONE, NONE, NONE, NONE, "NA", ""
 		}
@@ -9564,12 +9564,12 @@ ConditionalEvent {
 		LoopVariable	: "LS"
 		Condition {
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SForRouninFList[LS]", "TRUE"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Count", "Count+1"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "SNameForRouninList[Count-1]", "LS"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DRouninList[Count-1]", "NA"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "RouninCount", "RouninCount+1"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "SNameForRouninList[RouninCount-1]", "LS"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DRouninList[RouninCount-1]", "NA"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Candidate", "#城支配大名(LS)"
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Candidate", "#大名番号(D_CHOTEI)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DRouninList[Count-1]", "Candidate"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DRouninList[RouninCount-1]", "Candidate"
 		}
 		Message {
 		}
@@ -13861,9 +13861,9 @@ ConditionalEvent {
 		Message {
 			"評定では、領内の政治や外交（調略）などを指定した月に行うことができます。"
 			""
-			"・項目一覧：本画面を表示する$color=0x0000FF$"
+			"・項目一覧：本画面を表示する"
 			""
-			"・情報表示："
+			"・$color=0x0000FF$情報表示：$color=0x000000$"
 			"    ・公儀一覧：各氏長者の一覧"
 			"    ・家情報（当家）：石高や武将数など、当家に関する情報の一覧"
 			"    ・家情報（地方>国名から選択）：特定の国内に拠点を持つ家の情報を順に表示する"
@@ -13872,15 +13872,15 @@ ConditionalEvent {
 			"    ・家臣情報（地方>国名から選択）：家の外交方針に従う家臣の情報を順に表示する"
 			"　　・拠点情報：選択した国内の拠点情報を順に表示する"
 			""
-			"・増封："
+			"・$color=0x0000FF$増封：主家側の直轄拠点を従属家・臣従家（家臣以外）・家臣に与える$color=0x000000$"
 			"　　・増封実施（城単位）：従属・臣従家・家臣に対して、城単位で増封を実施する"
 			"　　・増封実施（国単位・約束含む）：従属・臣従家・家臣に対して、国単位で増封を実施する、または将来の増封を約束する"
 			""
-			"・牢人処遇："
+			"・$color=0x0000FF$牢人処遇：$color=0x000000$"
 			"　　・牢人家一覧：家を有する牢人の一覧"
 			"　　・臣従家として取り立て：牢人家を当家の臣従大名として取り立てる"
 			""
-			"$color=0x000000$・評定終了：次回評定を何ヶ月後に行うかを指定し、評定を終了する"
+			"・評定終了：次回評定を何ヶ月後に行うかを指定し、評定を終了する"
 		}
 		Happening {
 		}
@@ -14568,7 +14568,7 @@ ConditionalEvent {
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
-		RepeatType	: ONCE
+		RepeatType	: REPEATABLE
 		SubRoutine	: NO
 		LoopType	: NONE
 		LoopVariable	: ""
@@ -14578,6 +14578,7 @@ ConditionalEvent {
 		}
 		Happening {
 			HAPPENING_DAIMYOU_KAIMEI, D_NA, NONE, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_01506, NONE, "NA", ""
 		}
 	}
 }
