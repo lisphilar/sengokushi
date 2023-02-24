@@ -14,6 +14,10 @@
 - [評定：増封時に臣従大名を選択できない問題の修正 #49](https://github.com/lisphilar/sengokushi/issues/49)
 - [開発版をRepository top directoryに移動する #50](https://github.com/lisphilar/sengokushi/issues/50)
 - [シナリオファイルの名称を二重公儀の統合,snr から 豊徳二重公儀の統合.snr に変更する #51](https://github.com/lisphilar/sengokushi/issues/51)
+- [大名家選択時に空白地勢力などが表示される問題の修正 #52](https://github.com/lisphilar/sengokushi/issues/52)
+- [史実：牢人の豊臣氏宗家への再仕官 #54](https://github.com/lisphilar/sengokushi/issues/54)
+- [シナリオ開始時の表示を抑制する #55](https://github.com/lisphilar/sengokushi/issues/55)
+- [全国マップ：「大坂」ラベルを大坂マップの上へ #56](https://github.com/lisphilar/sengokushi/issues/56)
 
 ### Version 1.2.0 (2023/2/23)
 
@@ -40,10 +44,6 @@
 - [オープニングメッセージの簡略化 #46](https://github.com/lisphilar/sengokushi/issues/46)
 - [評定：大坂城を増封すると天守閣との城主不一致にて翌月に城主が戻る問題の修正 #47](https://github.com/lisphilar/sengokushi/issues/47)
 - [プレーヤーが大阪城城主のとき文字列処理用の武将が配下の武将として表示されることの修正 #48](https://github.com/lisphilar/sengokushi/issues/48)
-- [大名家選択時に空白地勢力などが表示される問題の修正 #52](https://github.com/lisphilar/sengokushi/issues/52)
-- [史実：牢人の豊臣氏宗家への再仕官 #54](https://github.com/lisphilar/sengokushi/issues/54)
-- [シナリオ開始時の表示を抑制する #55](https://github.com/lisphilar/sengokushi/issues/55)
-- [全国マップ：「大坂」ラベルを大坂マップの上へ #56](https://github.com/lisphilar/sengokushi/issues/56)
 
 ### Version 1.1.0 (2023/2/10)
 
