@@ -9262,10 +9262,29 @@ ConditionalEvent {
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "SyukeCurrent", "SyukeMeisyu"
 		}
 		Message {
-			"外交方針の違いにより、%大名LD%（主家変更済：%大名SyukeOld%→%大名SyukeCurrent%）が%大名Meisyu%（主家：%大名SyukeMeisyu%）の家臣団から離脱しました。"
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Status", "LD*Ippan"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0238", ""
+		}
+	}
+	CE_0238 {
+		Title		: "　　　　離反報告"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: OR
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "LD", "Player"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Meisyu", "Player"
+		}
+		Message {
+			"外交方針の違いにより、%大名LD%（主家変更済：%大名SyukeOld%→%大名SyukeCurrent%）が%大名Meisyu%（主家：%大名SyukeMeisyu%）の家臣団から離脱しました。"
+		}
+		Happening {
 		}
 	}
 	CE_0235 {
@@ -9284,12 +9303,32 @@ ConditionalEvent {
 			CONDITION_DOKURITSU, VARIABLE, NONE, NONE, NONE, "", ""
 		}
 		Message {
-			"%大名Meisyu%が独立したため、%大名LD%が%大名SyukeCurrent%を離れて%大名Meisyu%に臣従しました。"
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "Meisyu"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou2", "LD"
 			HAPPENING_SHINJUU, VARIABLE, VARIABLE, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0277", ""
+		}
+	}
+	CE_0277 {
+		Title		: "　　　　臣従報告"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: OR
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "LD", "Player"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Meisyu", "Player"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SyukeCurrent", "Player"
+		}
+		Message {
+			"%大名Meisyu%が独立したため、%大名LD%が%大名SyukeCurrent%を離れて%大名Meisyu%に臣従しました。"
+		}
+		Happening {
 		}
 	}
 	CE_0059 {
@@ -9308,12 +9347,33 @@ ConditionalEvent {
 			CONDITION_JUUZOKU_SHINJUU_UNSPECIFIC, VARIABLE, NONE, NONE, NONE, "", ""
 		}
 		Message {
-			"%大名Meisyu%の外交方針に従い、%大名LD%が%大名SyukeCurrent%から%大名SyukeMeisyu%に鞍替えしました。"
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "SyukeMeisyu"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou2", "LD"
 			HAPPENING_JUUZOKU, VARIABLE, VARIABLE, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0278", ""
+		}
+	}
+	CE_0278 {
+		Title		: "　　　　随行報告"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: OR
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Meisyu", "Player"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "LD", "Player"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SyukeCurrent", "Player"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SyukeMeisyu", "Player"
+		}
+		Message {
+			"%大名Meisyu%の外交方針に従い、%大名LD%が%大名SyukeCurrent%から%大名SyukeMeisyu%に鞍替えしました。"
+		}
+		Happening {
 		}
 	}
 	CE_0015 {
