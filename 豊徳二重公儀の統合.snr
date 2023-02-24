@@ -9243,7 +9243,9 @@ ConditionalEvent {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Meisyu", "DStatusList[LD]/Kashin"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeMeisyu", "#主家大名(Meisyu)"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0065", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0235", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0059", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DStatusList[LD]", "Status"
 		}
 	}
 	CE_0065 {
@@ -9256,14 +9258,38 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "SyukeMeisyu", "SyukeCurrent"
-			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "SyukeOld", "SyukeCurrent"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "SyukeCurrent", "SyukeOld"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "SyukeCurrent", "SyukeMeisyu"
 		}
 		Message {
-			"外交方針の違いにより、%大名LD%が%大名Meisyu%の家臣団から離脱しました。"
+			"外交方針の違いにより、%大名LD%（主家変更済：%大名SyukeOld%→%大名SyukeCurrent%）が%大名Meisyu%（主家：%大名SyukeMeisyu%）の家臣団から離脱しました。"
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Status", "LD*Ippan"
+		}
+	}
+	CE_0235 {
+		Title		: "　　　独立家に臣従"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SyukeCurrent", "SyukeOld"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "SyukeCurrent", "SyukeMeisyu"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "SyukeMeisyu"
+			CONDITION_DOKURITSU, VARIABLE, NONE, NONE, NONE, "", ""
+		}
+		Message {
+			"%大名Meisyu%が独立したため、%大名LD%が%大名SyukeCurrent%を離れて%大名Meisyu%に臣従しました。"
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "Meisyu"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou2", "LD"
+			HAPPENING_SHINJUU, VARIABLE, VARIABLE, NONE, NONE, NONE, NONE, "", ""
 		}
 	}
 	CE_0059 {
@@ -9276,15 +9302,15 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "SyukeMeisyu", "SyukeCurrent"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SyukeOld", "SyukeCurrent"
-			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "LD", "Player"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SyukeCurrent", "SyukeOld"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "SyukeCurrent", "SyukeMeisyu"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "SyukeMeisyu"
+			CONDITION_JUUZOKU_SHINJUU_UNSPECIFIC, VARIABLE, NONE, NONE, NONE, "", ""
 		}
 		Message {
 			"%大名Meisyu%の外交方針に従い、%大名LD%が%大名SyukeCurrent%から%大名SyukeMeisyu%に鞍替えしました。"
 		}
 		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Status", "SyukeMeisyu*Kashin"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "SyukeMeisyu"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou2", "LD"
 			HAPPENING_JUUZOKU, VARIABLE, VARIABLE, NONE, NONE, NONE, NONE, "", ""
@@ -14534,7 +14560,7 @@ ConditionalEvent {
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
-		RepeatType	: ONCE
+		RepeatType	: REPEATABLE
 		SubRoutine	: NO
 		LoopType	: DAIMYOU
 		LoopVariable	: "LD"

@@ -3,7 +3,7 @@
 安定版及び開発版の最新Versionは以下のとおりです。
 
 - [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.2.0
-- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0.dev11
+- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0.dev12
 
 ## Change log
 
@@ -19,6 +19,7 @@
 - [シナリオ開始時の表示を抑制する #55](https://github.com/lisphilar/sengokushi/issues/55)
 - [全国マップ：「大坂」ラベルを大坂マップの上へ #56](https://github.com/lisphilar/sengokushi/issues/56)
 - [条件イベントの概要をREADME, CONTRIBUTINGに記載する #57](https://github.com/lisphilar/sengokushi/issues/57)
+- [一般大名家が独立した時、当該大名家に対して家臣は従属ではなく臣従する #58](https://github.com/lisphilar/sengokushi/issues/58)
 
 ### Version 1.2.0 (2023/2/23)
 
