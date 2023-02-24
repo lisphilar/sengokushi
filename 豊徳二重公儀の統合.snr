@@ -4307,6 +4307,13 @@ TradingPort {
 }
 Bushou {
 	B_01506	:	"NA",				0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
+	B_white	:	"$color=0xFFFFFF$",	0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
+	B_red	:	"$color=0xFF0000$",	0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
+	B_blackred:	"$color=0x400000$",	0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
+	B_blue	:	"$color=0x0000FF$",	0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
+	B_green	:	"$color=0x00FF00$",	0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
+	B_yellow:	"$color=0xFFFF00$",	0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
+	B_black	:	"$color=0x000000$",	0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
 	B_00119	:	"源氏長者（",		0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
 	B_00150	:	"平氏長者（",		0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
 	B_01425	:	"藤氏長者（",		0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
@@ -7909,6 +7916,13 @@ ConditionalEvent {
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NAB", "#武将番号(B_01506)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "TRUE", "1"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "FALSE", "0"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "WHITE", "#武将番号(B_white)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "RED", "#武将番号(B_red)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "BLACKRED", "#武将番号(B_blackred)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "BLUE", "#武将番号(B_blue)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "GREEN", "#武将番号(B_green)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "YELLOW", "#武将番号(B_yellow)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "BLACK", "#武将番号(B_black)"
 		}
 		Message {
 		}
@@ -8910,53 +8924,22 @@ ConditionalEvent {
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
-		RepeatType	: ONCE
-		SubRoutine	: NO
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-		}
-		Message {
-		}
-		Happening {
-		}
-	}
-	CE_0049 {
-		Title		: "　一覧表示"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
 		RepeatType	: REPEATABLE
 		SubRoutine	: YES
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Bushou1", "#武将番号(B_00119)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Bushou2", "#武将番号(B_00150)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Bushou3", "#武将番号(B_01425)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Bushou4", "#武将番号(B_01426)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Bushou9", "#武将番号(B_00012)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Bushou5", "#武将番号(B_01427)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Bushou6", "#武将番号(B_01428)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Bushou7", "#武将番号(B_01429)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Bushou8", "#武将番号(B_01430)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Bushou10", "#武将番号(B_00014)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "MinamotoC", "#武将番号(B_01506)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "TairaC", "#武将番号(B_01506)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "FujiwaraC", "#武将番号(B_01506)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "TachibanaC", "#武将番号(B_01506)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "ToyotomiC", "#武将番号(B_01506)"
 		}
 		Message {
-			"【公儀一覧】"
 			"以下の当主が氏長者に現在就任しており、公儀（政権）として認められています。"
-			"$color=0x0000FF$"
-			"源氏長者: %武将MinamotoC%%武将Bushou1%%大名KougiList[0]%%武将Bushou5%"
-			"平氏長者: %武将TairaC%%武将Bushou2%%大名KougiList[1]%%武将Bushou6%"
-			"藤氏長者: %武将FujiwaraC%%武将Bushou3%%大名KougiList[2]%%武将Bushou7%"
-			"橘氏長者: %武将TachibanaC%%武将Bushou4%%大名KougiList[3]%%武将Bushou8%"
-			"豊氏長者: %武将ToyotomiC%%武将Bushou9%%大名KougiList[4]%%武将Bushou10%"
-			"$color=0x000000$"
+			""
+			"%武将PreColorL[0]%源氏長者: %武将ChojyaL[0]%%武将ColorL[0]%（%大名KougiList[0]%）"
+			"%武将PreColorL[1]%平氏長者: %武将ChojyaL[1]%%武将ColorL[1]%（%大名KougiList[1]%）"
+			"%武将PreColorL[2]%藤氏長者: %武将ChojyaL[2]%%武将ColorL[2]%（%大名KougiList[2]%）"
+			"%武将PreColorL[3]%橘氏長者: %武将ChojyaL[3]%%武将ColorL[3]%（%大名KougiList[3]%）"
+			"%武将PreColorL[4]%豊氏長者: %武将ChojyaL[4]%%武将ColorL[4]%（%大名KougiList[4]%）"
+			""
+			"%武将BLACK%"
 			"※臣従込石高1位かつ京都伏見・京都二条を占領するといずれかの氏長者となります。"
 			"※滅亡または従属・臣従すると公儀から外されます。"
 			""
@@ -8965,26 +8948,12 @@ ConditionalEvent {
 			"※氏長者：各氏族の中で最も官位の高い者（宣旨により天皇家の任命を受ける）"
 		}
 		Happening {
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_00119, NONE, "", ""
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_00150, NONE, "", ""
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_01425, NONE, "", ""
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_01426, NONE, "", ""
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_00012, NONE, "", ""
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_01427, NONE, "", ""
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_01428, NONE, "", ""
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_01429, NONE, "", ""
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_01430, NONE, "", ""
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_00014, NONE, "", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "-1"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0021", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0027", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0028", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0029", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0072", ""
-			HAPPENING_DAIMYOU_KAIMEI, D_NA, NONE, NONE, NONE, NONE, NONE, "", ""
 		}
 	}
 	CE_0021 {
-		Title		: "　　源氏長者"
+		Title		: "　初期化"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -8993,18 +8962,21 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "KougiList[0]", "NA"
+			CONDITION_SMALL, NONE, NONE, NONE, NONE, "Count", "5-1"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Count", "Count+1"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "ChojyaL[Count]", "NAB"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "PreColorL[Count]", "BLACK"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "ColorL[Count]", "WHITE"
 		}
 		Message {
 		}
 		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MinamotoC", "#当主(KougiList[0])"
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_00119, NONE, "（", ""
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_01427, NONE, "）", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0027", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0021", ""
 		}
 	}
 	CE_0027 {
-		Title		: "　　平氏長者"
+		Title		: "　氏長者登録"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -9013,74 +8985,14 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
-			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "KougiList[1]", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "KougiList[Count]", "NA"
 		}
 		Message {
 		}
 		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "TairaC", "#当主(KougiList[1])"
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_00150, NONE, "（", ""
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_01428, NONE, "）", ""
-		}
-	}
-	CE_0028 {
-		Title		: "　　藤氏長者"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "KougiList[2]", "NA"
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "FujiwaraC", "#当主(KougiList[2])"
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_01425, NONE, "（", ""
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_01429, NONE, "）", ""
-		}
-	}
-	CE_0029 {
-		Title		: "　　橘氏長者"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "KougiList[3]", "NA"
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "TachibanaC", "#当主(KougiList[3])"
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_01426, NONE, "（", ""
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_01430, NONE, "）", ""
-		}
-	}
-	CE_0072 {
-		Title		: "　　豊氏長者"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "KougiList[4]", "NA"
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ToyotomiC", "#当主(KougiList[4])"
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_00012, NONE, "（", ""
-			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_00014, NONE, "）", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ChojyaL[Count]", "#当主(KougiList[Count])"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "PreColorL[Count]", "BLUE"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ColorL[Count]", "BLUE"
 		}
 	}
 	CE_0012 {
@@ -10233,7 +10145,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0039 {
-		Title		: "　　源氏長者"
+		Title		: "　　平氏長者"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -10261,7 +10173,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0040 {
-		Title		: "　　源氏長者"
+		Title		: "　　藤氏長者"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -14018,7 +13930,7 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0049", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0020", ""
 		}
 	}
 	CE_0094 {
