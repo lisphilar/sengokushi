@@ -1726,7 +1726,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	SC06					:	"畿内",			K_SCENARIO,		2,		2,		306624,	347328,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
 	SK43					:	"山城",			K_SCENARIO,		2,		2,		311808,	347392,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0082					:	"京都御所",		K_YAMASHIRO,	10,		10,		167942,	177709,	330000,	330000,	3200,	3000,	0,		0,		NO,		0,		0,		NO,		50,		ST_京都,	D_CHOTEI,				""
-	S_Nijou					:	"二条城",		K_YAMASHIRO,	10,		10,		167589,	178028,	200000,	60000,	3200,	2400,	0,		0,		NO,		0,		0,		NO,		50,		ST_平城大,	D_Tokugawa,				"京都所司代の役所は本来、二条城内にはありません。"
+	S_NIJYO					:	"二条城",		K_YAMASHIRO,	10,		10,		167589,	178028,	200000,	60000,	3200,	2400,	0,		0,		NO,		0,		0,		NO,		50,		ST_平城大,	D_Tokugawa,				"京都所司代の役所は本来、二条城内にはありません。"
 	S_FUSHIMI				:	"伏見城",		K_YAMASHIRO,	10,		9,		168410,	179245,	120000,	40000,	8000,	5500,	0,		0,		NO,		0,		0,		NO,		30,		ST_伏見城,	D_Tokugawa,				""
 	S_0196					:	"山科",			K_YAMASHIRO,	5,		3,		169081,	178790,	10000,	8500,	1000,	500,	0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Tokugawa,				""
 	S_MUKOUJIMA				:	"向島",			K_YAMASHIRO,	5,		5,		168780,	179712,	20000,	8500,	2000,	1500,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_Tokugawa,				""
@@ -1787,6 +1787,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	SK47					:	"摂津",			K_SCENARIO,		2,		2,		329664,	347520,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_TAKATSUKI				:	"高槻城",		K_SETTSU,		5,		3,		166193,	180339,	32000,	30000,	400,	300,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_Toyotomi,				""
 	S_IBARAKI				:	"茨木城",		K_SETTSU,		6,		5,		165403,	181275,	18000,	15000,	500,	400,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_0155,					""
+	S_SANDA					:	"三田",			K_SETTSU,		3,		2,		159781,	179838,	23000,	20000,	400,	350,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_Arimahouin,			""
 	S_OOSAKAWANOKI			:	"大坂湾",		K_SETTSU,		9,		5,		160603,	184716,	0,		0,		5000,	3000,	0,		0,		YES,	20,		15,		YES,	80,		ST_海岸,	D_Toyotomi,				""
 	S_i						:	"大坂城",		K_SETTSU,		10,		10,		163903,	182724,	200000,	195000,	32000,	25000,	0,		0,		YES,	5,		10,		NO,		90,		ST_大坂城,	D_Toyotomi,				"大坂マップの「天守閣」が占領されると、摂津マップ「大坂城」の城主も交代します。"
 	S_h						:	"中島",			K_SETTSU,		5,		3,		163878,	182028,	10000,	5000,	1000,	500,	0,		0,		NO,		0,		0,		NO,		80,		ST_一般外町,D_Toyotomi,				"不可視ですが、大坂マップの「至 中島」と経路で接続しています。"
@@ -1797,6 +1798,15 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_e						:	"長居",			K_SETTSU,		8,		8,		164142,	183744,	17000,	11500,	1000,	700,	0,		0,		NO,		0,		0,		NO,		70,		ST_寺,		D_Toyotomi,				"不可視ですが、大坂マップの「至 長居」と経路で接続しています。"
 	S_f						:	"大坂湾口",		K_SETTSU,		6,		2,		163559,	183205,	0,		0,		300,	300,	0,		0,		NO,		0,		10,		NO,		80,		ST_海岸,	D_Toyotomi,				"不可視ですが、大坂マップの「至 大阪湾口」と経路で接続しています。"
 	S_g						:	"北伝達村",		K_SETTSU,		8,		8,		163316,	182668,	10000,	10000,	500,	300,	0,		0,		NO,		0,		0,		NO,		80,		ST_堺,		D_Toyotomi,				"不可視ですが、大坂マップの「至 北伝達村」と経路で接続しています。"
+	S_NOSE					:	"能勢城",		K_SETTSU,		2,		2,		162508,	179174,	15000,	12000,	300,	250,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_Toyotomi,				""
+	S_ARIMA					:	"有馬城",		K_SETTSU,		3,		2,		160510,	180960,	18000,	10000,	500,	400,	800,	400,	NO,		0,		0,		NO,		40,		ST_陣屋,	D_Toyotomi,				"【産業】 湯治場"
+	S_NISHINOMIYA			:	"西宮",			K_SETTSU,		1,		1,		161802,	182220,	12000,	10000,	1200,	800,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_Toyotomi,				""
+	S_ITAMI					:	"伊丹城",		K_SETTSU,		6,		3,		162831,	181504,	20000,	12000,	700,	450,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_Toyotomi,				""
+	S_IKEDA					:	"池田城",		K_SETTSU,		4,		3,		163279,	180657,	20000,	15000,	400,	300,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_Toyotomi,				""
+	S_OUGO					:	"淡河城",		K_SETTSU,		3,		2,		158772,	181758,	1500,	10000,	200,	150,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_Toyotomi,				""
+	S_HYOUGO				:	"兵庫城",		K_SETTSU,		4,		4,		159296,	183103,	22000,	20000,	2000,	1400,	800,	400,	YES,	3,		5,		NO,		40,		ST_平城小,	D_Toyotomi,				"【産業】 船道前 "
+	S_AMAGASAKI				:	"尼崎城",		K_SETTSU,		5,		5,		162695,	182451,	45000,	35000,	800,	500,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_Toyotomi,				""
+	S_TADA					:	"多田銀山口",	K_SETTSU,		3,		3,		162061,	180185,	0,		0,		0,		0,		3200,	1800,	NO,		0,		0,		NO,		10,		ST_山,		D_Toyotomi,				"【産業】 銀山"
 	SK48					:	"摂津-大坂",	K_SCENARIO,		2,		2,		332992,	347264,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_0075					:	"天守閣",		K_OSAKA,		7,		6,		197114,	269216,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_大坂城,	D_Toyotomi,				""
 	S_18					:	"本丸御殿",		K_OSAKA,		5,		4,		197108,	269708,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中屋敷,D_Toyotomi,				""
@@ -1812,17 +1822,14 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_0171					:	"西ノ丸曲輪",	K_OSAKA,		5,		4,		195871,	269043,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
 	S_0172					:	"追手口",		K_OSAKA,		3,		2,		196325,	270929,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
 	S_0178					:	"一櫓門",		K_OSAKA,		3,		2,		197824,	270957,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0183					:	"南内堀",		K_SCENARIO,		0,		0,		196772,	271258,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
 	S_0184					:	"二ノ丸北番所",	K_OSAKA,		3,		2,		196704,	267737,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中屋敷,D_Toyotomi,				""
 	S_0185					:	"水手埋門口",	K_OSAKA,		3,		2,		196953,	267378,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中簡易櫓,D_Toyotomi,				""
-	S_0186					:	"西内堀",		K_SCENARIO,		0,		0,		195442,	269700,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
 	S_0187					:	"二櫓門",		K_OSAKA,		3,		2,		198444,	270239,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
 	S_0188					:	"三櫓門",		K_OSAKA,		3,		2,		198382,	270779,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
 	S_0189					:	"玉造口",		K_OSAKA,		3,		2,		198585,	271200,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
 	S_0190					:	"玉造口外",		K_OSAKA,		3,		2,		199417,	271207,	0,		0,		0,		0,		0,		0,		NO,		0,		4,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
 	S_0191					:	"四櫓門",		K_OSAKA,		3,		2,		198573,	271596,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
 	S_0199					:	"三の丸門外",	K_OSAKA,		3,		2,		199034,	272102,	0,		0,		0,		0,		0,		0,		NO,		0,		4,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
-	S_0204					:	"東内堀",		K_SCENARIO,		0,		0,		198874,	269076,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
 	S_0205					:	"城東",			K_OSAKA,		3,		2,		199423,	269421,	0,		0,		0,		0,		0,		0,		NO,		0,		4,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
 	S_0206					:	"青屋口",		K_OSAKA,		3,		2,		198445,	268281,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
 	S_0207					:	"青屋口外",		K_OSAKA,		3,		2,		199417,	268280,	0,		0,		0,		0,		0,		0,		NO,		0,		2,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
@@ -1841,14 +1848,17 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_0232					:	"城西",			K_OSAKA,		3,		2,		194363,	269614,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
 	S_0233					:	"城北西",		K_OSAKA,		3,		2,		194386,	267890,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
 	S_0236					:	"水手埋門外",	K_OSAKA,		3,		2,		196946,	266618,	0,		0,		0,		0,		0,		0,		NO,		0,		4,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
-	S_0237					:	"北内堀",		K_SCENARIO,		0,		0,		198029,	267360,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
 	S_0238					:	"京橋",			K_OSAKA,		3,		2,		198579,	266778,	0,		0,		0,		0,		0,		0,		NO,		0,		4,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
+	S_0183					:	"南内堀",		K_SCENARIO,		0,		0,		196772,	271258,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
+	S_0186					:	"西内堀",		K_SCENARIO,		0,		0,		195442,	269700,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
+	S_0204					:	"東内堀",		K_SCENARIO,		0,		0,		198874,	269076,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
+	S_0237					:	"北内堀",		K_SCENARIO,		0,		0,		198029,	267360,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
+	S_0245					:	"備前島",		K_OSAKA,		2,		2,		197248,	265190,	0,		0,		0,		0,		0,		0,		NO,		0,		10,		NO,		50,		ST_港,		D_Toyotomi,				""
 	S_0239					:	"猫間川流域",	K_NANTOU,		2,		2,		201024,	268006,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
 	S_0240					:	"平野川流域",	K_NANTOU,		2,		2,		203161,	268019,	0,		0,		0,		0,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
 	S_0315					:	"中浜村北",		K_HIGASHI,		2,		2,		206771,	272076,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
 	S_0327					:	"中浜村南",		K_HIGASHI,		2,		2,		206912,	276288,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
 	S_0316					:	"岡山",			K_NANTOU,		2,		2,		202176,	286272,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_布陣山,	D_Toyotomi,				""
-	S_0317					:	"猪飼野村",		K_OKAYAMA,		2,		2,		206528,	286208,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
 	S_0318					:	"木野村",		K_NANTOU,		2,		2,		201856,	282112,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
 	S_0319					:	"毘沙門池",		K_TYUUOU,		2,		2,		198272,	281152,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_布陣池,	D_Toyotomi,				""
 	S_0320					:	"天王寺",		K_NANTOU,		2,		2,		195712,	283200,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_町内寺,	D_Toyotomi,				""
@@ -1861,6 +1871,7 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_0328					:	"木津村",		K_TYUUOU,		2,		2,		186112,	281344,	0,		0,		0,		0,		0,		0,		NO,		0,		10,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
 	S_0329					:	"舎利寺村",		K_NANTOU,		2,		2,		203776,	289088,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
 	S_13					:	"桑津村",		K_NANTOU,		2,		2,		200448,	290944,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
+	S_0317					:	"猪飼野村",		K_OKAYAMA,		2,		2,		206528,	286208,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
 	S_4						:	"至 平野",		K_OKAYAMA,		2,		2,		208960,	290880,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
 	S_0337					:	"生野",			K_OKAYAMA,		2,		2,		207104,	281152,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
 	S_5						:	"至 長居",		K_NANTOU,		2,		2,		195264,	294848,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
@@ -1872,7 +1883,6 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_0242					:	"島野村東",		K_NANTOU,		2,		2,		208460,	268083,	0,		0,		0,		0,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
 	S_12					:	"鴫野村",		K_NANTOU,		2,		2,		212377,	268416,	0,		0,		0,		0,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
 	S_3						:	"至 渋川",		K_NANTOU,		2,		2,		215129,	269056,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中砦用,D_Toyotomi,				""
-	S_0245					:	"備前島",		K_OSAKA,		2,		2,		197248,	265190,	0,		0,		0,		0,		0,		0,		NO,		0,		10,		NO,		50,		ST_港,		D_Toyotomi,				""
 	S_0246					:	"片原町",		K_IMAFUKU,		2,		2,		200346,	263270,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
 	S_0247					:	"蒲生町",		K_IMAFUKU,		2,		2,		208231,	265318,	0,		0,		0,		0,		0,		0,		NO,		0,		5,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
 	S_0248					:	"今福村",		K_IMAFUKU,		2,		2,		213401,	263321,	0,		0,		0,		0,		0,		0,		NO,		0,		10,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
@@ -1924,17 +1934,17 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_0292					:	"安堂寺橋",		K_OSAKA,		5,		4,		192358,	272882,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
 	S_0293					:	"愃谷橋",		K_OSAKA,		5,		4,		192359,	273664,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
 	S_0294					:	"城南西",		K_OSAKA,		5,		4,		194368,	272109,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街中屋敷,D_Toyotomi,				""
+	S_0297					:	"松屋町口",		K_OSAKA,		5,		4,		193254,	274559,	0,		0,		0,		0,		0,		0,		NO,		0,		2,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0298					:	"谷町口",		K_OSAKA,		5,		4,		194892,	274560,	0,		0,		0,		0,		0,		0,		NO,		0,		2,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0299					:	"八丁目口",		K_OSAKA,		5,		4,		195955,	274560,	0,		0,		0,		0,		0,		0,		NO,		0,		2,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0300					:	"平野口",		K_OSAKA,		5,		4,		198028,	274548,	0,		0,		0,		0,		0,		0,		NO,		0,		2,		NO,		50,		ST_城門,	D_Toyotomi,				""
+	S_0301					:	"黒門口",		K_OSAKA,		5,		4,		199731,	273894,	0,		0,		0,		0,		0,		0,		NO,		0,		8,		NO,		50,		ST_城門,	D_Toyotomi,				""
 	S_0039					:	"松屋外堀",		K_SCENARIO,		0,		0,		193932,	275072,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
 	S_0076					:	"谷町外堀",		K_SCENARIO,		0,		0,		195443,	275097,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
 	S_0077					:	"八丁目外堀",	K_SCENARIO,		0,		0,		197107,	275097,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
 	S_0078					:	"平野外堀",		K_SCENARIO,		0,		0,		199270,	275059,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
 	S_0101					:	"黒門外堀",		K_SCENARIO,		0,		0,		200230,	272792,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
 	S_0104					:	"城東外堀",		K_SCENARIO,		0,		0,		200204,	270131,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_入れない塔や壁,D_NA,					""
-	S_0297					:	"松屋町口",		K_OSAKA,		5,		4,		193254,	274559,	0,		0,		0,		0,		0,		0,		NO,		0,		2,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0298					:	"谷町口",		K_OSAKA,		5,		4,		194892,	274560,	0,		0,		0,		0,		0,		0,		NO,		0,		2,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0299					:	"八丁目口",		K_OSAKA,		5,		4,		195955,	274560,	0,		0,		0,		0,		0,		0,		NO,		0,		2,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0300					:	"平野口",		K_OSAKA,		5,		4,		198028,	274548,	0,		0,		0,		0,		0,		0,		NO,		0,		2,		NO,		50,		ST_城門,	D_Toyotomi,				""
-	S_0301					:	"黒門口",		K_OSAKA,		5,		4,		199731,	273894,	0,		0,		0,		0,		0,		0,		NO,		0,		8,		NO,		50,		ST_城門,	D_Toyotomi,				""
 	S_0302					:	"黒門口外",		K_NANTOU,		5,		4,		200974,	273919,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
 	S_0303					:	"松屋町口外",	K_NANTOU,		5,		4,		192678,	275610,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
 	S_0304					:	"谷町口外",		K_NANTOU,		5,		4,		194918,	275635,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
@@ -1948,16 +1958,6 @@ p/~ju8t-hnm/Shiro/Kantou/Tokyo/Hachiouji/index.htm"
 	S_0313					:	"森林口",		K_NANTOU,		2,		2,		200955,	270324,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_城門,	D_Toyotomi,				""
 	S_0338					:	"玉造",			K_TYUUOU,		2,		2,		195353,	278758,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
 	S_0314					:	"生玉",			K_NANTOU,		2,		2,		193856,	276812,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_街の中の町,D_Toyotomi,				""
-	S_AMAGASAKI				:	"尼崎城",		K_SETTSU,		5,		5,		162695,	182451,	45000,	35000,	800,	500,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_Toyotomi,				""
-	S_ITAMI					:	"伊丹城",		K_SETTSU,		6,		3,		162831,	181504,	20000,	12000,	700,	450,	0,		0,		NO,		0,		0,		NO,		40,		ST_平城小,	D_Toyotomi,				""
-	S_IKEDA					:	"池田城",		K_SETTSU,		4,		3,		163279,	180657,	20000,	15000,	400,	300,	0,		0,		NO,		0,		0,		NO,		20,		ST_岬山城,	D_Toyotomi,				""
-	S_TADA					:	"多田銀山口",	K_SETTSU,		3,		3,		162061,	180185,	0,		0,		0,		0,		3200,	1800,	NO,		0,		0,		NO,		10,		ST_山,		D_Toyotomi,				"【産業】 銀山"
-	S_NOSE					:	"能勢城",		K_SETTSU,		2,		2,		162508,	179174,	15000,	12000,	300,	250,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_Toyotomi,				""
-	S_ARIMA					:	"有馬城",		K_SETTSU,		3,		2,		160510,	180960,	18000,	10000,	500,	400,	800,	400,	NO,		0,		0,		NO,		40,		ST_陣屋,	D_Toyotomi,				"【産業】 湯治場"
-	S_OUGO					:	"淡河城",		K_SETTSU,		3,		2,		158772,	181758,	1500,	10000,	200,	150,	0,		0,		NO,		0,		0,		NO,		20,		ST_山砦,	D_Toyotomi,				""
-	S_SANDA					:	"三田",			K_SETTSU,		3,		2,		159781,	179838,	23000,	20000,	400,	350,	0,		0,		NO,		0,		0,		NO,		20,		ST_一般外町,D_Arimahouin,			""
-	S_NISHINOMIYA			:	"西宮",			K_SETTSU,		1,		1,		161802,	182220,	12000,	10000,	1200,	800,	0,		0,		NO,		0,		0,		NO,		10,		ST_関所,	D_Toyotomi,				""
-	S_HYOUGO				:	"兵庫城",		K_SETTSU,		4,		4,		159296,	183103,	22000,	20000,	2000,	1400,	800,	400,	YES,	3,		5,		NO,		40,		ST_平城小,	D_Toyotomi,				"【産業】 船道前 "
 	SC08					:	"南海道",		K_SCENARIO,		2,		2,		355008,	331392,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Region,				""
 	SK49					:	"紀伊",			K_SCENARIO,		2,		2,		359488,	331200,	0,		0,		0,		0,		0,		0,		NO,		0,		0,		NO,		50,		ST_一般外町,D_Country,				""
 	S_KIINAKANO				:	"中野",			K_KII,			5,		4,		158252,	189280,	28000,	20000,	400,	170,	0,		0,		NO,		0,		0,		NO,		40,		ST_一般外町,D_0161,					""
@@ -3194,10 +3194,10 @@ ShiroConnect {
 	S_ISEWANOKI,	S_0085,			SEA,			LINE
 	S_TOBA,			S_0085,			SEA,			LINE,			185497,	185766,	185945,	185536,	186137,	185472,	186278,	185382	
 	S_0085,			S_ENSHYUNADAOKI,SEA,			ARC,			192204,	185907	
-	S_Nijou,		S_AMIDAGAMINE,	BROAD,			LINE
-	S_Nijou,		S_TANBAKAMEYAMA,BROAD,			BOTTOM_INVISIBLE, LINE,			167372,	178060,	167072,	178060,	166848,	178131,	166617,	178259	
+	S_NIJYO,		S_AMIDAGAMINE,	BROAD,			LINE
+	S_NIJYO,		S_TANBAKAMEYAMA,BROAD,			BOTTOM_INVISIBLE, LINE,			167372,	178060,	167072,	178060,	166848,	178131,	166617,	178259	
 	S_FUSHIMI,		S_YODO,			BROAD,			ARC,			168070,	179353	
-	S_FUSHIMI,		S_Nijou,		BROAD,			ARC,			168166,	178790	
+	S_FUSHIMI,		S_NIJYO,		BROAD,			ARC,			168166,	178790	
 	S_FUSHIMI,		S_AMIDAGAMINE,	BROAD,			LINE
 	S_FUSHIMI,		S_MUKOUJIMA,	BROAD,			ARC,			168620,	179449	
 	S_0196,			S_FUSHIMI,		BROAD,			ARC,			169049,	178892,	168940,	178988,	168787,	179091,	168697,	179161,	168569,	179219	
@@ -3205,7 +3205,7 @@ ShiroConnect {
 	S_MUKOUJIMA,	S_YODO,			SEA,			LINE,			168652,	179705,	168531,	179654,	168262,	179564,	167763,	179552	
 	S_MUKOUJIMA,	S_MIMAKI,		NARROW,			LINE,			168608,	180000,	168422,	180198,	168166,	180416	
 	S_YODO,			S_YAMASHIROYAMAZAKI,BROAD,			ARC,			167360,	179494	
-	S_YODO,			S_Nijou,		BROAD,			ARC,			167705,	178835	
+	S_YODO,			S_NIJYO,		BROAD,			ARC,			167705,	178835	
 	S_YODO,			S_TANBAKAMEYAMA,BROAD,			LINE,			167552,	179168,	167366,	178931,	167225,	178784,	167014,	178636,	166924,	178508,	166771,	178368,	166515,	178188,	166368,	178086,	166156,	178016,	165913,	177804,	165689,	177676	
 	S_YAMASHIROYAMAZAKI,S_MIMAKI,		NARROW,			LINE,			167379,	180147	
 	S_YAMASHIROYAMAZAKI,S_TAKATSUKI,	BROAD,			ARC,			166604,	180044	
@@ -3279,6 +3279,7 @@ ShiroConnect {
 	S_TAKATSUKI,	S_IBARAKI,		BROAD,			ARC,			165964,	180614,	165670,	181017	
 	S_IBARAKI,		S_a,			BROAD,			ARC,			165017,	181555	
 	S_IBARAKI,		S_0157,			NARROW,			ARC,			165836,	181273	
+	S_SANDA,		S_ARIMA,		NARROW,			ARC,			159961,	180262,	160128,	180556	
 	S_OOSAKAWANOKI,	S_HYOUGO,		SEA,			ARC,			159372,	184000	
 	S_h,			S_a,			BROAD,			LINE
 	S_a,			S_b,			BROAD,			LINE
@@ -3293,6 +3294,20 @@ ShiroConnect {
 	S_g,			S_h,			BROAD,			ARC,			163558,	182227	
 	S_g,			S_OOSAKAWANOKI,	SEA,			ARC,			162227,	183360	
 	S_g,			S_AMAGASAKI,	BROAD,			ARC,			163033,	182540	
+	S_ARIMA,		S_TADA,			NARROW,			ARC,			161446,	180659	
+	S_ARIMA,		S_ITAMI,		NARROW,			ARC,			161088,	180928,	161561,	180888,	162252,	181043	
+	S_ARIMA,		S_OUGO,			NARROW,			ARC,			160064,	181196,	159577,	181529,	159193,	181747	
+	S_NISHINOMIYA,	S_OOSAKAWANOKI,	SEA,			ARC,			160729,	183526	
+	S_NISHINOMIYA,	S_HYOUGO,		BROAD,			ARC,			161100,	182348,	160358,	182566,	159756,	182771	
+	S_ITAMI,		S_AMAGASAKI,	BROAD,			ARC,			162752,	181900	
+	S_IKEDA,		S_ITAMI,		BROAD,			ARC,			163059,	181004	
+	S_IKEDA,		S_NOSE,			NARROW,			ARC,			162777,	179788	
+	S_IKEDA,		S_TADA,			NARROW,			ARC,			162444,	180249	
+	S_OUGO,			S_MIKI1,		NARROW,			ARC,			158169,	181683,	157273,	181465	
+	S_HYOUGO,		S_AKASHI,		BROAD,			ARC,			158732,	183411,	158169,	183641,	157568,	183705	
+	S_HYOUGO,		S_OUGO,			NARROW,			ARC,			158643,	182476	
+	S_AMAGASAKI,	S_NISHINOMIYA,	BROAD,			ARC,			162214,	182336	
+	S_TADA,			S_SANDA,		NARROW,			ARC,			160819,	180032	
 	S_18,			S_0075,			NARROW,			LINE
 	S_0201,			S_18,			NARROW,			LINE
 	S_0216,			S_0201,			NARROW,			LINE
@@ -3368,10 +3383,12 @@ ShiroConnect {
 	S_0236,			S_0231,			NARROW,			ARC,			196153,	266637	
 	S_0236,			S_0245,			SEA,			LINE
 	S_0236,			S_0237,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
-	S_0237,			S_0185,			MOUNTAIN,		TOP_INVISIBLE, LINE
 	S_0238,			S_0237,			MOUNTAIN,		BOTTOM_INVISIBLE, LINE
 	S_0238,			S_0236,			NARROW,			ARC,			197586,	266656	
 	S_0238,			S_0245,			SEA,			LINE
+	S_0237,			S_0185,			MOUNTAIN,		TOP_INVISIBLE, LINE
+	S_0245,			S_0246,			SEA,			LINE
+	S_0245,			S_0253,			SEA,			LINE
 	S_0239,			S_0240,			NARROW,			LINE
 	S_0239,			S_0311,			NARROW,			LINE
 	S_0240,			S_0241,			SEA,			LINE
@@ -3379,7 +3396,6 @@ ShiroConnect {
 	S_0315,			S_0327,			NARROW,			ARC,			206796,	273612	
 	S_0327,			S_0337,			NARROW,			ARC,			207168,	278400,	207143,	280064	
 	S_0316,			S_0319,			BROAD,			LINE
-	S_0317,			S_0329,			NARROW,			LINE
 	S_0318,			S_0337,			NARROW,			LINE
 	S_0319,			S_0318,			NARROW,			LINE
 	S_0320,			S_0331,			BROAD,			LINE
@@ -3399,6 +3415,7 @@ ShiroConnect {
 	S_0329,			S_0316,			BROAD,			LINE
 	S_13,			S_4,			BROAD,			LINE,			204480,	291072	
 	S_13,			S_14,			NARROW,			LINE
+	S_0317,			S_0329,			NARROW,			LINE
 	S_4,			S_d,			BROAD,			BOTTOM_INVISIBLE, LINE,			216524,	290611	
 	S_0337,			S_0317,			NARROW,			LINE
 	S_5,			S_14,			NARROW,			LINE
@@ -3413,8 +3430,6 @@ ShiroConnect {
 	S_0242,			S_12,			SEA,			LINE,			210176,	268057,	212262,	268326	
 	S_12,			S_3,			NARROW,			LINE
 	S_12,			S_0248,			SEA,			LINE
-	S_0245,			S_0246,			SEA,			LINE
-	S_0245,			S_0253,			SEA,			LINE
 	S_0246,			S_0252,			NARROW,			LINE
 	S_0246,			S_0238,			SEA,			LINE
 	S_0247,			S_0248,			NARROW,			LINE
@@ -3508,18 +3523,6 @@ ShiroConnect {
 	S_0294,			S_0232,			NARROW,			LINE
 	S_0294,			S_0290,			NARROW,			LINE
 	S_0294,			S_0292,			NARROW,			LINE
-	S_0039,			S_0303,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
-	S_0039,			S_0304,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
-	S_0076,			S_0305,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
-	S_0076,			S_0304,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
-	S_0077,			S_0306,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
-	S_0077,			S_0305,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
-	S_0078,			S_0302,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
-	S_0078,			S_0306,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
-	S_0101,			S_0312,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
-	S_0101,			S_0302,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
-	S_0104,			S_0313,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
-	S_0104,			S_0311,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
 	S_0297,			S_0293,			NARROW,			LINE
 	S_0297,			S_0294,			NARROW,			LINE
 	S_0297,			S_0039,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
@@ -3540,6 +3543,18 @@ ShiroConnect {
 	S_0301,			S_0300,			NARROW,			LINE
 	S_0301,			S_0078,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
 	S_0301,			S_0101,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
+	S_0039,			S_0303,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
+	S_0039,			S_0304,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
+	S_0076,			S_0305,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
+	S_0076,			S_0304,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
+	S_0077,			S_0306,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
+	S_0077,			S_0305,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
+	S_0078,			S_0302,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
+	S_0078,			S_0306,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
+	S_0101,			S_0312,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
+	S_0101,			S_0302,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
+	S_0104,			S_0313,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
+	S_0104,			S_0311,			NARROW,			TOP_BOTTOM_INVISIBLE, LINE
 	S_0302,			S_0312,			NARROW,			LINE
 	S_0302,			S_0301,			SEA,			LINE
 	S_0302,			S_0327,			BROAD,			ARC,			203200,	274880,	204608,	275456	
@@ -3570,21 +3585,6 @@ ShiroConnect {
 	S_0314,			S_0304,			NARROW,			LINE
 	S_0314,			S_0303,			NARROW,			LINE
 	S_0314,			S_0338,			NARROW,			ARC
-	S_AMAGASAKI,	S_NISHINOMIYA,	BROAD,			ARC,			162214,	182336	
-	S_ITAMI,		S_AMAGASAKI,	BROAD,			ARC,			162752,	181900	
-	S_IKEDA,		S_ITAMI,		BROAD,			ARC,			163059,	181004	
-	S_IKEDA,		S_NOSE,			NARROW,			ARC,			162777,	179788	
-	S_IKEDA,		S_TADA,			NARROW,			ARC,			162444,	180249	
-	S_TADA,			S_SANDA,		NARROW,			ARC,			160819,	180032	
-	S_ARIMA,		S_TADA,			NARROW,			ARC,			161446,	180659	
-	S_ARIMA,		S_ITAMI,		NARROW,			ARC,			161088,	180928,	161561,	180888,	162252,	181043	
-	S_ARIMA,		S_OUGO,			NARROW,			ARC,			160064,	181196,	159577,	181529,	159193,	181747	
-	S_OUGO,			S_MIKI1,		NARROW,			ARC,			158169,	181683,	157273,	181465	
-	S_SANDA,		S_ARIMA,		NARROW,			ARC,			159961,	180262,	160128,	180556	
-	S_NISHINOMIYA,	S_OOSAKAWANOKI,	SEA,			ARC,			160729,	183526	
-	S_NISHINOMIYA,	S_HYOUGO,		BROAD,			ARC,			161100,	182348,	160358,	182566,	159756,	182771	
-	S_HYOUGO,		S_AKASHI,		BROAD,			ARC,			158732,	183411,	158169,	183641,	157568,	183705	
-	S_HYOUGO,		S_OUGO,			NARROW,			ARC,			158643,	182476	
 	S_KIINAKANO,	S_WAKAYAMA,		BROAD,			LINE
 	S_KIINAKANO,	S_0012,			BROAD,			ARC
 	S_NAGAYABU,		S_0008,			NARROW,			ARC,			165222,	188620,	164608,	188748,	163852,	188940	
@@ -3732,7 +3732,7 @@ ShiroConnect {
 	S_0024,			S_YAGAMI,		MOUNTAIN,		LINE,			163046,	176448,	162764,	176576,	162073,	176678	
 	S_TANBAKAMEYAMA,S_0024,			BROAD,			ARC,			164633,	176819	
 	S_SYUZAN,		S_0024,			MOUNTAIN,		LINE,			166246,	175526,	166144,	175705,	165875,	175872,	165619,	175948,	165350,	175948,	165004,	175961,	164672,	175974,	164313,	175974	
-	S_SYUZAN,		S_Nijou,		MOUNTAIN,		LINE,			166355,	175430,	166675,	175564,	166867,	175616,	166976,	175635,	166988,	175737,	167014,	175846,	167008,	175974,	166969,	176108,	166956,	176294,	166976,	176428,	167040,	176633,	167078,	176806,	166988,	177043,	166880,	177203,	166764,	177267,&+
+	S_SYUZAN,		S_NIJYO,		MOUNTAIN,		LINE,			166355,	175430,	166675,	175564,	166867,	175616,	166976,	175635,	166988,	175737,	167014,	175846,	167008,	175974,	166969,	176108,	166956,	176294,	166976,	176428,	167040,	176633,	167078,	176806,	166988,	177043,	166880,	177203,	166764,	177267,&+
 166700,177324,	166694,	177433,	166681,	177574,	166681,	177683,	166860,	177747,	167052,	177843,	167334,	177932	
 	S_YAGAMI,		S_SASAYAMA,		MOUNTAIN,		LINE,			160550,	176716,	159872,	176908	
 	S_YAGAMI,		S_NOSE,			MOUNTAIN,		LINE,			161420,	177152,	161561,	177536,	161523,	177766,	161561,	178201,	161536,	178457,	161459,	178585,	161600,	178867,	161945,	178892,	162188,	178956	
@@ -5685,9 +5685,9 @@ Bushou {
 	B_00979	:	"彦坂 元正",		1,	7,	2,	5,		3,		6,	7,	30,		800,	30,		1552,	1634,	BYOUSHI,	0,		(D_Tokugawa),		-1,		K_MUSASHI,			""
 	B_03852	:	"彦坂 元綱",		3,	5,	3,	3,		3,		7,	3,	0,		0,		0,		1583,	1656,	BYOUSHI,	0,		(D_Tokugawa),		-1,		K_MUSASHI,			""
 	B_00980	:	"長谷川 藤広",		2,	6,	2,	2,		3,		9,	3,	30,		500,	30,		1567,	1617,	BYOUSHI,	0,		(D_Tokugawa),		-1,		K_MUSASHI,			""
-	B_00981	:	"板倉 勝重",		2,	7,	2,	4,		3,		8,	2,	30,		400,	30,		1545,	1624,	BYOUSHI,	0,		(D_Tokugawa),		-1,		S_Nijou,			"京都所司代"
-	B_00982	:	"板倉 重宗",		2,	7,	3,	4,		3,		8,	3,	0,		0,		0,		1586,	1656,	BYOUSHI,	0,		(D_Tokugawa),		-1,		S_Nijou,			""
-	B_00983	:	"板倉 重昌",		4,	4,	2,	3,		3,		8,	6,	0,		0,		0,		1588,	1638,	SENSHI,		0,		(D_Tokugawa),		-1,		S_Nijou,			""
+	B_00981	:	"板倉 勝重",		2,	7,	2,	4,		3,		8,	2,	30,		400,	30,		1545,	1624,	BYOUSHI,	0,		(D_Tokugawa),		-1,		S_NIJYO,			"京都所司代"
+	B_00982	:	"板倉 重宗",		2,	7,	3,	4,		3,		8,	3,	0,		0,		0,		1586,	1656,	BYOUSHI,	0,		(D_Tokugawa),		-1,		S_NIJYO,			""
+	B_00983	:	"板倉 重昌",		4,	4,	2,	3,		3,		8,	6,	0,		0,		0,		1588,	1638,	SENSHI,		0,		(D_Tokugawa),		-1,		S_NIJYO,			""
 	B_01821	:	"朝倉 宣正",		4,	5,	3,	4,		3,		8,	3,	0,		0,		0,		1573,	1637,	BYOUSHI,	0,		(D_Tokugawa),		-1,		S_FUSHIMI,			""
 	B_02517	:	"朝倉 宣重",		4,	4,	3,	4,		3,		8,	3,	0,		0,		0,		1576?,	1644,	BYOUSHI,	0,		(D_Tokugawa),		-1,		S_FUSHIMI,			""
 	B_01822	:	"朝倉 政元",		4,	4,	3,	3,		3,		6,	3,	0,		0,		0,		1546,	1629,	BYOUSHI,	0,		(D_Tokugawa),		-1,		S_FUSHIMI,			""
@@ -8561,7 +8561,7 @@ ConditionalEvent {
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
-		RepeatType	: ONCE
+		RepeatType	: REPEATABLE
 		SubRoutine	: NO
 		LoopType	: NONE
 		LoopVariable	: ""
@@ -8570,6 +8570,7 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0080", ""
 		}
 	}
 	CE_0077 {
@@ -8600,7 +8601,7 @@ ConditionalEvent {
 		PeriodEnd	: NONE
 		Logic		: AND
 		RepeatType	: REPEATABLE
-		SubRoutine	: NO
+		SubRoutine	: YES
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
@@ -8666,7 +8667,7 @@ ConditionalEvent {
 		LoopVariable	: ""
 		Condition {
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "#石高順独立大名(1)"
-			CONDITION_SHIRO_OWNER3, VARIABLE, NONE, S_Nijou, NONE, "", ""
+			CONDITION_SHIRO_OWNER3, VARIABLE, NONE, S_NIJYO, NONE, "", ""
 			CONDITION_SHIRO_OWNER3, VARIABLE, NONE, S_FUSHIMI, NONE, "", ""
 		}
 		Message {
@@ -9574,6 +9575,111 @@ ConditionalEvent {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SNameForRouninList[Count]", "LS"
 		}
 	}
+	CE_0305 {
+		Title		: "■独立他大名の選択"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DIndipendent", "NA"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DIndipendentN", "#生存独立大名数"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "0"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0306", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "0"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0309", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0308", ""
+		}
+	}
+	CE_0306 {
+		Title		: "　候補取得"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_SMALL, NONE, NONE, NONE, NONE, "Count", "DIndipendentN"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Candidate", "#石高順独立大名(Count+1)"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Candidate", "#主家大名(Player)"
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "DStatusList[Candidate]", "0"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KouhoL[Count]", "Candidate"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "1"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0306", ""
+		}
+	}
+	CE_0309 {
+		Title		: "　候補の表示"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DIndipendent", "NA"
+			CONDITION_SMALL, NONE, NONE, NONE, NONE, "Count", "DIndipendentN"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Target", "KouhoL[Count]"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0067", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0307", ""
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "1"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0309", ""
+		}
+	}
+	CE_0307 {
+		Title		: "　　選択確認"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "当該大名家を選択しますか？"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DIndipendent", "KouhoL[Count]"
+		}
+	}
+	CE_0308 {
+		Title		: "　選択エラー"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DIndipendent", "NA"
+		}
+		Message {
+			"選択可能な独立大名家が存在しませんでした。"
+		}
+		Happening {
+		}
+	}
 	CE_0133 {
 		Title		: "■配下選択"
 		PeriodStart	: NONE
@@ -9605,7 +9711,9 @@ ConditionalEvent {
 		Condition {
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "LD"
 			CONDITION_DOKURITSU, VARIABLE, NONE, NONE, NONE, "", ""
+			CONDITION_DAIMYOU_EXIST, VARIABLE, NONE, NONE, NONE, "", ""
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouA", "#主家大名(Player)"
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "DStatusList[LD]", "0"
 		}
 		Message {
 		}
@@ -10971,6 +11079,89 @@ ConditionalEvent {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0155", ""
 		}
 	}
+	CE_0310 {
+		Title		: "■国内の城選択"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Jyoshu", "NA"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "CountrySelected", "NA"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroSelected", "NA"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0001", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0312", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0314", ""
+		}
+	}
+	CE_0312 {
+		Title		: "　城選択"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: SHIRO
+		LoopVariable	: "LS"
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroSelected", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SCountryList[LS]", "CountrySelected"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#城支配大名(LS)", "Jyoshu"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Target", "LS"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0153", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0313", ""
+		}
+	}
+	CE_0313 {
+		Title		: "　　城決定"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "当該拠点を選択しますか？"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroSelected", "Target"
+		}
+	}
+	CE_0314 {
+		Title		: "　城再選択"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroSelected", "NA"
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "指定いただいた国に選択可能な拠点がございませんでした。国を選択し直しますか？"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0001", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0312", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0314", ""
+		}
+	}
 	CE_0130 {
 		Title		: "■増封"
 		PeriodStart	: NONE
@@ -11104,92 +11295,11 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0177", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0178", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0180", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Jyoshu", "Player"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0310", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroDetermined", "ShiroSelected"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0181", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0182", ""
-		}
-	}
-	CE_0177 {
-		Title		: "　　国指定"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0001", ""
-		}
-	}
-	CE_0178 {
-		Title		: "　　城選択"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: SHIRO
-		LoopVariable	: "LS"
-		Condition {
-			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroDetermined", "NA"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SCountryList[LS]", "CountrySelected"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#城支配大名(LS)", "SyukeDetermined"
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Target", "LS"
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0153", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0179", ""
-		}
-	}
-	CE_0179 {
-		Title		: "　　　城決定"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "当該拠点を与えますか？"
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroDetermined", "Target"
-		}
-	}
-	CE_0180 {
-		Title		: "　　城再選択"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroDetermined", "NA"
-			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "指定いただいた国に当家直轄の拠点がございませんでした。国を再度選択しますか？"
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0177", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0178", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0180", ""
 		}
 	}
 	CE_0181 {
@@ -11366,7 +11476,7 @@ ConditionalEvent {
 		}
 		Happening {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0195", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0177", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0001", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0068", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0152", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0197", ""
@@ -11801,7 +11911,7 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0177", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0001", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0068", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0196", ""
 		}
@@ -13037,6 +13147,10 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Employer", "NA"
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Employee", "NA"
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "ShiroToProvide", "NA"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "Employer"
+			CONDITION_DOKURITSU, VARIABLE, NONE, NONE, NONE, "", ""
+			CONDITION_LARGE_EQUAL, NONE, NONE, NONE, NONE, "#資金(Employer)", "0"
+			CONDITION_SMALL_EQUAL, NONE, NONE, NONE, NONE, "DStatusList[Employee]", "Rounin"
 		}
 		Message {
 		}
@@ -13082,7 +13196,7 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 		Condition {
 		}
 		Message {
-			"$color=0x0000FF$%大名Employer%$color=0x000000$及び$color=0xFF0000$%大名Employee%$color=0x000000$（配流中）の間で、$color=0xFF0000$%%大名Employee%$color=0x000000$を一般大名家として取り立てる方向で協議が進んでおります。合意可能かご検討ください。"
+			"$color=0x0000FF$%大名Employer%$color=0x000000$及び$color=0xFF0000$%大名Employee%$color=0x000000$（牢人家）の間で、$color=0xFF0000$%大名Employee%$color=0x000000$を一般大名家として取り立てる方向で協議が進んでおります。合意可能かご検討ください。"
 			""
 			"【合意した場合】"
 			"・%大名Employee%が%大名Employer%に臣従する。"
@@ -13143,6 +13257,350 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DaimyouDetermined", "Employee"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroDetermined", "ShiroToProvide"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0281", ""
+		}
+	}
+	CE_0299 {
+		Title		: "　牢人家仕官"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Employee", "Player"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0177", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0178", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0311", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0316", ""
+		}
+	}
+	CE_0177 {
+		Title		: "　　仕官不可"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "DStatusList[Player]", "Rounin"
+		}
+		Message {
+			"%大名Player%（当家）は牢人家でないため、仕官は不要でございます。"
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Employee", "NA"
+		}
+	}
+	CE_0178 {
+		Title		: "　　仕官先の決定"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Employee", "NA"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0179", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0305", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Employer", "DIndipendent"
+		}
+	}
+	CE_0179 {
+		Title		: "　　　手順説明"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+			"当家の仕官手続きを次の通り進めます。"
+			"次の画面にて赤字部分の実施をお願い致します。"
+			""
+			"【%大名Employee%の仕官手続き】"
+			""
+			"%武将RED%1. 仕官先の独立大名家をご選択ください。%武将BLACK%"
+			"2. 仕官先大名家より受領したい拠点1箇所をご選択ください。"
+			"3. 仕官先大名家にて可否を検討します。"
+			"4. 仕官先大名家より条件が提示されますので、合意可能か検討をお願い致します。"
+			"5. 合意に至った場合は仕官し、当家が一般大名家に復帰します。"
+		}
+		Happening {
+		}
+	}
+	CE_0311 {
+		Title		: "　　拠点の決定"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Employer", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Employee", "NA"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0180", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0323", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0315", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0324", ""
+		}
+	}
+	CE_0180 {
+		Title		: "　　　手順説明"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+			"当家の仕官手続きを続けます。"
+			"次の画面にて%武将RED%赤字部分%武将BLACK%の実施をお願い致します。"
+			""
+			"【%大名Employee%の仕官手続き】"
+			""
+			"1. 仕官先の独立大名家をご選択ください。→%大名Employer%を選択済"
+			"%武将RED%2. %大名Employer%より受領したい拠点1箇所をご選択ください。%武将BLACK%"
+			"3. %大名Employer%にて可否を検討します。"
+			"4. %大名Employer%より条件が提示されますので、合意可能か検討をお願い致します。"
+			"5. 合意に至った場合は仕官し、当家が一般大名家に復帰します。"
+		}
+		Happening {
+		}
+	}
+	CE_0323 {
+		Title		: "　　　選択"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Jyoshu", "Employer"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0310", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroToProvide", "ShiroSelected"
+		}
+	}
+	CE_0315 {
+		Title		: "　　　妥当性"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "ShiroToProvide", "NA"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroTentative", "ShiroToProvide"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Receiver", "Employee"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0319", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroToProvide", "ShiroApproved"
+		}
+	}
+	CE_0324 {
+		Title		: "　　　再選択"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroToProvide", "NA"
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "拠点を再度選択し直しますか？"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0323", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0315", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0324", ""
+		}
+	}
+	CE_0316 {
+		Title		: "　　仕官実施"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Employer", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Employee", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "ShiroToProvide", "NA"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0274", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0317", ""
+		}
+	}
+	CE_0317 {
+		Title		: "　　　合意に至らず"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: OR
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Employer", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Employee", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroToProvide", "NA"
+		}
+		Message {
+			"%大名Employer%（仕官希望先）との間で合意に至りませんでした。"
+			"当家が条件に賛同していた場合、%大名Employer%の資金が不足していた可能性があります。"
+		}
+		Happening {
+		}
+	}
+	CE_0319 {
+		Title		: "■拠点提供の妥当性"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "ShiroTentative", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Receiver", "NA"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Provider", "#城支配大名(ShiroTentative)"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Provider", "Player"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "S", "ShiroTentative"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroApproved", "ShiroTentative"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ColorL[0]", "BLACK"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ColorL[1]", "WHITE"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ColorL[2]", "WHITE"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0322", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Target", "ShiroTentative"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0183", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SK", "KokudakaCurrent"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0321", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0320", ""
+		}
+	}
+	CE_0322 {
+		Title		: "　史実上の妥当性"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: OR
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "S", "#城番号(S_NIJYO)"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "S", "#城番号(S_FUSHIMI)"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "S*DTotalN+Provider", "#城番号(S_i)*DTotalN+Toyotomi"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "S*DTotalN+Provider", "#城番号(S_0075)*DTotalN+Toyotomi"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "S*DTotalN+Provider", "#城番号(S_0018)*DTotalN+Toyotomi"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "S*DTotalN+Provider", "#城番号(S_0102)*DTotalN+Tokugawa"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Matsumae", "#大名番号(D_0064)"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "S*DTotalN+Provider", "#城番号(S_EFY)*DTotalN+Matsumae"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Sou", "#大名番号(D_0197)"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "S*DTotalN+Provider", "#城番号(S_0102)*DTotalN+Sou"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Ryukyu", "#大名番号(D_0231)"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SCountryList[S]*DTotalN+Provider", "SCountryList[#城番号(S_SYURI)]*DTotalN+Ryukyu"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroApproved", "NA"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ColorL[1]", "RED"
+		}
+	}
+	CE_0321 {
+		Title		: "　石高の妥当性"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "ShiroApproved", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "ShiroKokudaka", "0"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "AR", "#直轄足軽兵数(Receiver)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Reference", "AR/(AR+#直轄足軽兵数(Provider))"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "KR", "#直轄石高(Receiver)"
+			CONDITION_SMALL_EQUAL, NONE, NONE, NONE, NONE, "KR/(KR+#直轄石高(Provider))", "Reference"
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "(KR+SK)/(KR+#直轄石高(Provider))", "Reference"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroApproved", "NA"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ColorL[2]", "RED"
+		}
+	}
+	CE_0320 {
+		Title		: "　現領主が難色"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroApproved", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Receiver", "Player"
+		}
+		Message {
+			"%武将ColorL[0]%%城ShiroTentative%の領主交代（%大名Provider%→%大名Receiver%）に%大名Provider%が難色を示しました。"
+			"%武将ColorL[1]%歴史的・戦略的に、%城ShiroTentative%を非常に重視しているようです。"
+			"%武将ColorL[2]%当家の兵数に対して当該拠点の石高が大きすぎるようです。"
+		}
+		Happening {
 		}
 	}
 	CE_0237 {
@@ -14352,6 +14810,7 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 			"・$color=0x0000FF$牢人処遇：$color=0x000000$"
 			"　　・牢人家一覧：家を有する牢人の一覧"
 			"　　・臣従家として取り立て：牢人家を当家の臣従大名として取り立てる"
+			"　　・仕官：独立大名家に当家（牢人家）が臣従大名として仕官する"
 			"　　・出奔：プレーヤー家が現在の拠点をすべて主家または盟主に返却し、牢人化する"
 			""
 			"・評定終了：次回評定を何ヶ月後に行うかを指定し、評定を終了する"
@@ -14885,12 +15344,14 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 		Message {
 		}
 		Happening {
-			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRouninSelected", "実施内容をご選択ください。/牢人家一覧/臣従家として取り立て/出奔"
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRouninSelected", "実施内容をご選択ください。/牢人家一覧/臣従家として取り立て/仕官/出奔"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRouninListup", "0"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRouninEmploy", "1"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRouninRetire", "2"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRouninEntry", "2"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRouninRetire", "3"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0129", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0210", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0318", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0303", ""
 		}
 	}
@@ -14928,6 +15389,24 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 		}
 		Happening {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0208", ""
+		}
+	}
+	CE_0318 {
+		Title		: "　　仕官"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "MTGRouninSelected", "MTGRouninEntry"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0299", ""
 		}
 	}
 	CE_0303 {
@@ -15012,7 +15491,7 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
-		RepeatType	: ONCE
+		RepeatType	: REPEATABLE
 		SubRoutine	: NO
 		LoopType	: NONE
 		LoopVariable	: ""
@@ -15021,6 +15500,7 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 		Message {
 		}
 		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0080", ""
 		}
 	}
 	CE_0061 {
