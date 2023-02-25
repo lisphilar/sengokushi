@@ -7911,8 +7911,9 @@ ConditionalEvent {
 		LoopVariable	: "LD"
 		Condition {
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NA", "#大名番号(D_NA)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Tokugawa", "#大名番号(D_Tokugawa)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Chotei", "#大名番号(D_CHOTEI)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Toyotomi", "#大名番号(D_Toyotomi)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Tokugawa", "#大名番号(D_Tokugawa)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NAB", "#武将番号(B_01506)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "TRUE", "1"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "FALSE", "0"
@@ -9016,6 +9017,7 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SForRouninN", "0"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0032", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0123", ""
 		}
@@ -9052,16 +9054,17 @@ ConditionalEvent {
 		LoopVariable	: "LS"
 		Condition {
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "#城支配大名(LS)"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#主家大名(DaimyouA)", "#大名番号(D_CHOTEI)"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#主家大名(DaimyouA)", "Chotei"
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "LS", "#城番号(S_0082)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "SForRouninFList[LS]", "TRUE"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "SForRouninN", "SForRouninN+1"
 			CONDITION_JUUZOKU_SPECIFIC, VARIABLE, D_CHOTEI, NONE, NONE, "", ""
 		}
 		Message {
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DStatusList[DaimyouA]", "DaimyouA*Rounin"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeList[DaimyouA]", "#大名番号(D_CHOTEI)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeList[DaimyouA]", "Chotei"
 		}
 	}
 	CE_0030 {
@@ -9322,8 +9325,8 @@ ConditionalEvent {
 		Condition {
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "LD"
 			CONDITION_DAIMYOU_METSUBOU, VARIABLE, NONE, NONE, NONE, "", ""
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DaimyouA", "#大名番号(D_NA)"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DaimyouA", "#大名番号(D_CHOTEI)"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DaimyouA", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DaimyouA", "Chotei"
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DaimyouA", "#大名番号(D_Region)"
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DaimyouA", "#大名番号(D_Country)"
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DaimyouA", "#大名番号(D_ShiroInfo)"
@@ -9527,28 +9530,28 @@ ConditionalEvent {
 		Condition {
 		}
 		Message {
-			"配流されている家（牢人）は現在下記の通りです。"
-			"※登録番号. 家名（配流先）"
+			"配流されている家（牢人, 最大%SForRouninN%家）は現在下記の通りです。"
+			"※登録番号. 当主（家名, 配流先）"
 			""
-			"$color=0x0000FF$ 0. %大名DRouninList[0]%（%城SCountryList[SNameForRouninList[0]]%-%城SNameForRouninList[0]%）"
-			"$color=0x000000$ 1. %大名DRouninList[1]%（%城SCountryList[SNameForRouninList[1]]%-%城SNameForRouninList[1]%）"
-			"$color=0x0000FF$ 2. %大名DRouninList[2]%（%城SCountryList[SNameForRouninList[2]]%-%城SNameForRouninList[2]%）"
-			"$color=0x000000$ 3. %大名DRouninList[3]%（%城SCountryList[SNameForRouninList[3]]%-%城SNameForRouninList[3]%）"
-			"$color=0x0000FF$ 4. %大名DRouninList[4]%（%城SCountryList[SNameForRouninList[4]]%-%城SNameForRouninList[4]%）"
-			"$color=0x000000$ 5. %大名DRouninList[5]%（%城SCountryList[SNameForRouninList[5]]%-%城SNameForRouninList[5]%）"
-			"$color=0x0000FF$ 6. %大名DRouninList[6]%（%城SCountryList[SNameForRouninList[6]]%-%城SNameForRouninList[6]%）"
-			"$color=0x000000$ 7. %大名DRouninList[7]%（%城SCountryList[SNameForRouninList[7]]%-%城SNameForRouninList[7]%）"
-			"$color=0x0000FF$ 8. %大名DRouninList[8]%（%城SCountryList[SNameForRouninList[8]]%-%城SNameForRouninList[8]%）"
-			"$color=0x000000$ 9. %大名DRouninList[9]%（%城SCountryList[SNameForRouninList[9]]%-%城SNameForRouninList[9]%）"
-			"$color=0x0000FF$10. %大名DRouninList[10]%（%城SCountryList[SNameForRouninList[10]]%-%城SNameForRouninList[10]%）"
-			"$color=0x000000$11. %大名DRouninList[11]%（%城SCountryList[SNameForRouninList[11]]%-%城SNameForRouninList[11]%）"
-			"$color=0x0000FF$12. %大名DRouninList[12]%（%城SCountryList[SNameForRouninList[12]]%-%城SNameForRouninList[12]%）"
-			"$color=0x000000$12. %大名DRouninList[13]%（%城SCountryList[SNameForRouninList[13]]%-%城SNameForRouninList[13]%）"
+			"%武将PreColorL[0]% 0. %武将BRouninL[0]%%武将PostColorL[0]%（%大名DRouninList[0]%, %城CountryRSL[0]%-%城SNameForRouninList[0]%）"
+			"%武将PreColorL[1]% 1. %武将BRouninL[1]%%武将PostColorL[1]%（%大名DRouninList[1]%, %城CountryRSL[1]%-%城SNameForRouninList[1]%）"
+			"%武将PreColorL[2]% 2. %武将BRouninL[2]%%武将PostColorL[2]%（%大名DRouninList[2]%, %城CountryRSL[2]%-%城SNameForRouninList[2]%）"
+			"%武将PreColorL[3]% 3. %武将BRouninL[3]%%武将PostColorL[3]%（%大名DRouninList[3]%, %城CountryRSL[3]%-%城SNameForRouninList[3]%）"
+			"%武将PreColorL[4]% 4. %武将BRouninL[4]%%武将PostColorL[4]%（%大名DRouninList[4]%, %城CountryRSL[4]%-%城SNameForRouninList[4]%）"
+			"%武将PreColorL[5]% 5. %武将BRouninL[5]%%武将PostColorL[5]%（%大名DRouninList[5]%, %城CountryRSL[5]%-%城SNameForRouninList[5]%）"
+			"%武将PreColorL[6]% 6. %武将BRouninL[6]%%武将PostColorL[6]%（%大名DRouninList[6]%, %城CountryRSL[6]%-%城SNameForRouninList[6]%）"
+			"%武将PreColorL[7]% 7. %武将BRouninL[7]%%武将PostColorL[7]%（%大名DRouninList[7]%, %城CountryRSL[7]%-%城SNameForRouninList[7]%）"
+			"%武将PreColorL[8]% 8. %武将BRouninL[8]%%武将PostColorL[8]%（%大名DRouninList[8]%, %城CountryRSL[8]%-%城SNameForRouninList[8]%）"
+			"%武将PreColorL[9]% 9. %武将BRouninL[9]%%武将PostColorL[9]%（%大名DRouninList[9]%, %城CountryRSL[9]%-%城SNameForRouninList[9]%）"
+			"%武将PreColorL[10]%10. %武将BRouninL[10]%%武将PostColorL[10]%（%大名DRouninList[10]%, %城CountryRSL[10]%-%城SNameForRouninList[10]%）"
+			"%武将PreColorL[11]%11. %武将BRouninL[11]%%武将PostColorL[11]%（%大名DRouninList[11]%, %城CountryRSL[11]%-%城SNameForRouninList[11]%）"
+			"%武将PreColorL[12]%12. %武将BRouninL[12]%%武将PostColorL[12]%（%大名DRouninList[12]%, %城CountryRSL[12]%-%城SNameForRouninList[12]%）"
+			"%武将PreColorL[13]%13. %武将BRouninL[13]%%武将PostColorL[13]%（%大名DRouninList[13]%, %城CountryRSL[13]%-%城SNameForRouninList[13]%）"
 		}
 		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "RouninCount", "0"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SCount", "-1"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "-1"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0126", ""
-			HAPPENING_DAIMYOU_KAIMEI, D_NA, NONE, NONE, NONE, NONE, NONE, "NA", ""
 		}
 	}
 	CE_0126 {
@@ -9562,16 +9565,22 @@ ConditionalEvent {
 		LoopVariable	: "LS"
 		Condition {
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SForRouninFList[LS]", "TRUE"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "RouninCount", "RouninCount+1"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "SNameForRouninList[RouninCount-1]", "LS"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DRouninList[RouninCount-1]", "NA"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "PreColorL[SCount+1]", "WHITE"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "PostColorL[SCount+1]", "WHITE"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "SCount", "SCount+1"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Candidate", "#城支配大名(LS)"
-			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Candidate", "#大名番号(D_CHOTEI)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DRouninList[RouninCount-1]", "Candidate"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Candidate", "Chotei"
 		}
 		Message {
 		}
 		Happening {
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "1"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "PreColorL[Count]", "BLUE"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "BRouninL[Count]", "#当主(Candidate)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "PostColorL[Count]", "BLACK"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DRouninList[Count]", "Candidate"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "CountryRSL[Count]", "SCountryList[LS]"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SNameForRouninList[Count]", "LS"
 		}
 	}
 	CE_0133 {
