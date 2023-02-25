@@ -3,7 +3,7 @@
 安定版及び開発版の最新Versionは以下のとおりです。
 
 - [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.2.0
-- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0.dev16
+- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0.dev17
 
 ## Change log
 
@@ -23,6 +23,7 @@
 - [家臣団制御（離反、盟主の外交方針に従う）報告をプレーヤーが関与する場合に限定 #59](https://github.com/lisphilar/sengokushi/issues/59)
 - [評定：公儀一覧においてNAの行を黒で表示する #60](https://github.com/lisphilar/sengokushi/issues/60)
 - [評定：牢人家一覧の見やすさ向上、当主の追記 #61](https://github.com/lisphilar/sengokushi/issues/61)
+- [評定：一般大名家（従属・臣従中）の出奔機能追加 #62](https://github.com/lisphilar/sengokushi/issues/62)
 
 ### Version 1.2.0 (2023/2/23)
 

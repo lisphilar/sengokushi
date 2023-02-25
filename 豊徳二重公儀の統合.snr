@@ -9426,7 +9426,6 @@ ConditionalEvent {
 		}
 		Message {
 			"【%大名Target%の情報】"
-			""
 			"・当主：%武将Toushu%（所在地： %城Region%-%城Country%-%城ToushuShiro%）"
 			""
 			"・石高：%KokudakaMU%万石（直轄・臣従のみ： %KokudakaDirect%万石）"
@@ -9459,10 +9458,9 @@ ConditionalEvent {
 		}
 		Message {
 			"【%大名Target%の情報】"
-			""
 			"・当主：%武将Toushu%（所在地： %城Region%-%城Country%-%城ToushuShiro%）"
 			""
-			"・石高：%KokudakaMU%万石"
+			"・石高：%KokudakaMU%万石（盟主=%大名Meisyu%の家臣）"
 			"・経済：%Economy%"
 			"・資産：%Capital%"
 			"・城数：%ShiroN%"
@@ -9472,7 +9470,11 @@ ConditionalEvent {
 			"・足軽：%AshigaruN%名"
 			"・鉄砲：%GunN%丁"
 			""
-			"※%大名Meisyu%の家臣（外交方針変更に従う）"
+			"※家臣とは"
+			"・盟主が独立を行った場合、家臣はその外交方針に従って盟主に臣従する。"
+			"・盟主が鞍替えを行った場合、家臣は盟主の鞍替え先に従属する。"
+			"・家臣が独立・鞍替えを実施し、主家が盟主と異なる場合は家臣から外れる。"
+			"・盟主は家臣に対して増封など領地の変更を命ずることができる。"
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Meisyu", "DStatusList[Target]/Kashin"
@@ -9492,7 +9494,6 @@ ConditionalEvent {
 		}
 		Message {
 			"【%大名Target%の情報】"
-			""
 			"・当主：%武将Toushu%（所在地： %城Region%-%城Country%-%城ToushuShiro%）"
 			""
 			"・石高：%Kokudaka%石（牢人中）"
@@ -11945,6 +11946,484 @@ ConditionalEvent {
 			HAPPENING_SHIRO_SHOZOKU_CHANGE, VARIABLE, NONE, VARIABLE, NONE, NONE, NONE, "", ""
 		}
 	}
+	CE_0028 {
+		Title		: "■牢人化"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Retiree", "NA"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "RetireeStatus", "DStatusList[Retiree]"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "RetireeStatus", "0"
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "RetireeStatus", "Rounin"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "Retiree"
+			CONDITION_JUUZOKU_SHINJUU_UNSPECIFIC, VARIABLE, NONE, NONE, NONE, "", ""
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "ShiroExile", "0"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "BRetireNMax", "20"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "BreakUpColor", "WHITE"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "BushouNPre", "#大名家直属武将数(Retiree)"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0029", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0072", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0304", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0049", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0293", ""
+		}
+	}
+	CE_0029 {
+		Title		: "　家情報取得　"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Syuke", "#主家大名(Retiree)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "RetireeKMUOld", "#Round(#直轄石高(Retiree)/10000)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "RetireeSNOld", "#直轄城数(Retiree)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "SyukeKMUOld", "#Round(#直轄石高(Syuke)/10000)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "SyukeSNOld", "#直轄城数(Syuke)"
+			CONDITION_SMALL, NONE, NONE, NONE, NONE, "RetireeStatus", "0"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Syuke", "RetireeStatus/Kashin"
+		}
+	}
+	CE_0072 {
+		Title		: "　配流先探索"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: SHIRO
+		LoopVariable	: "LS"
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroExile", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SForRouninFList[LS]", "TRUE"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "ShiroA", "LS"
+			CONDITION_SHIRO_OWNER1, D_CHOTEI, NONE, VARIABLE, NONE, "", ""
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroExile", "LS"
+		}
+	}
+	CE_0304 {
+		Title		: "　配流先エラー"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: OR
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SForRouninFList[ShiroExile]", "FALSE"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "ShiroA", "ShiroExile"
+			CONDITION_SHIRO_NOT_OWNER1, D_CHOTEI, NONE, VARIABLE, NONE, "", ""
+		}
+		Message {
+			"%城ShiroExilePre%は空いていない、もしくは隠遁先として使用可能な場所ではないため、%大名Retiree%の牢人化は失敗しました。"
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroExilePre", "ShiroExile"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroExile", "NA"
+		}
+	}
+	CE_0049 {
+		Title		: "　配流"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Retiree", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "ShiroExile", "NA"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "BUnFollowedLast", "NAB"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "Retiree"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Shiro1", "ShiroExile"
+			HAPPENING_TETTAI2, VARIABLE, NONE, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_TETTAI3, VARIABLE, NONE, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_SHIRO_SHOZOKU_CHANGE, VARIABLE, NONE, VARIABLE, NONE, NONE, NONE, "", ""
+			HAPPENING_DAIMYO_KOUDOU_TYPE_STATIC, VARIABLE, NONE, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Bushou1", "#当主(Retiree)"
+			HAPPENING_BUSHOU_MOVE, NONE, NONE, VARIABLE, NONE, VARIABLE, NONE, "", ""
+			HAPPENING_BUSHOU_KIBA_PLUS, NONE, NONE, NONE, NONE, VARIABLE, NONE, "-9999", ""
+			HAPPENING_BUSHOU_ASHIGARU_PLUS, NONE, NONE, NONE, NONE, VARIABLE, NONE, "-9999", ""
+			HAPPENING_BUSHOU_TEPPOU_PLUS, NONE, NONE, NONE, NONE, VARIABLE, NONE, "-9999", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0287", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0290", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0291", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou2", "Retiree"
+			HAPPENING_JUUZOKU, D_CHOTEI, VARIABLE, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DStatusList[Retiree]", "Retiree*Rounin"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeList[Retiree]", "Chotei"
+		}
+	}
+	CE_0287 {
+		Title		: "　　武将移動"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: BUSHOU
+		LoopVariable	: "LB"
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "Retiree"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "BushouA", "LB"
+			CONTITION_BUSHOU_SHOZOKU, VARIABLE, NONE, NONE, VARIABLE, "", ""
+			CONTITION_BUSHOU_NOT_TOUSHU_SPECIFIC, VARIABLE, NONE, NONE, VARIABLE, "", ""
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "FollowedF", "FALSE"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0288", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0289", ""
+		}
+	}
+	CE_0288 {
+		Title		: "　　　配流随行"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_SMALL, NONE, NONE, NONE, NONE, "#城武将数(ShiroExile)", "BRetireNMax"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Shiro1", "ShiroExile"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Bushou1", "LB"
+			HAPPENING_BUSHOU_MOVE, NONE, NONE, VARIABLE, NONE, VARIABLE, NONE, "", ""
+			HAPPENING_BUSHOU_KIBA_PLUS, NONE, NONE, NONE, NONE, VARIABLE, NONE, "-9999", ""
+			HAPPENING_BUSHOU_ASHIGARU_PLUS, NONE, NONE, NONE, NONE, VARIABLE, NONE, "-9999", ""
+			HAPPENING_BUSHOU_TEPPOU_PLUS, NONE, NONE, NONE, NONE, VARIABLE, NONE, "-9999", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "FollowedF", "TRUE"
+		}
+	}
+	CE_0289 {
+		Title		: "　　　主家へ"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "FollowedF", "FALSE"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "Syuke"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Bushou1", "LB"
+			HAPPENING_BUSHOU_SHOZOKU_CHANGE, VARIABLE, NONE, NONE, NONE, VARIABLE, NONE, "", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "BUnFollowedLast", "LB"
+		}
+	}
+	CE_0290 {
+		Title		: "　　主家へ城返却"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: SHIRO
+		LoopVariable	: "LS"
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "Retiree"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "ShiroA", "LS"
+			CONDITION_SHIRO_OWNER1, VARIABLE, NONE, VARIABLE, NONE, "", ""
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SForRouninFList[LS]", "FALSE"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "Syuke"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Shiro1", "LS"
+			HAPPENING_SHIRO_SHOZOKU_CHANGE, VARIABLE, NONE, VARIABLE, NONE, NONE, NONE, "", ""
+		}
+	}
+	CE_0291 {
+		Title		: "　　家臣団解散"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "RetireeStatus", "0"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0292", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DKashinNPre", "DKashinNList[Retiree]"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DKashinNList[Retiree]", "0"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "BreakUpColor", "BLACK"
+		}
+	}
+	CE_0292 {
+		Title		: "　　　盟主削除"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: DAIMYOU
+		LoopVariable	: "LD"
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DStatusList[LD]", "Retiree*Kashin"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DStatusList[LD]", "LD"
+		}
+	}
+	CE_0293 {
+		Title		: "　牢人化実施報告"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Retiree", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "ShiroExile", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "(Player-Retiree)*(Player-Syuke)", "0"
+		}
+		Message {
+			"%武将RED%%大名Retiree%%武将BLACK%（直轄%RetireeKMUOld%万石）が全%RetireeSNOld%拠点を%大名Syuke%に明け渡して牢人となりました。"
+			"再起を図るため下記武将%BushouNPost%名がすべての兵を解散し、%武将BLUE%%城SCountryList[ShiroExile]%-%城ShiroExile%%武将BLACK%へ隠遁しました。"
+			""
+			"%武将#当主(Retiree)%（当主）%武将BColorL[0]%、%武将BFollowL[0]%%武将BColorL[1]%、%武将BFollowL[1]%%武将BColorL[2]%、%武将BFollowL[2]%%武将BColorL[3]%、%武将BFollowL[3]%%武将BColorL[4]%、%武将BFollowL[4]%%武将BColorL[5]%、%武将BFollowL[5]%%武将BColorL[6]%、%武将BFollowL[6]%%武将BColorL[7]%、%武将BFollowL[7]%%武将BCol&+
+orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、%武将BFollowL[10]%%武将BColorL[11]%、%武将BFollowL[11]%%武将BColorL[12]%、%武将BFollowL[12]%%武将BColorL[13]%、%武将BFollowL[13]%%武将BColorL[14]%、%武将BFollowL[14]%%武将BColorL[15]%、%武将BFollowL[15]%%武将BColorL[16]%、%武将BFollowL[16]%%&+
+武将BColorL[17]%、%武将BFollowL[17]%%武将BColorL[18]%、%武将BFollowL[18]%%武将BColorL[19]%、%武将BFollowL[19]%"
+			""
+			""
+			"%武将BLACK%※%大名Syuke%の直轄石高：%SyukeKMUOld%万石→%SyukeKMUNew%万石"
+			"%武将BLACK%※%大名Syuke%の直轄拠点数：%SyukeSNOld%→%SyukeSNNew%"
+			""
+			"%武将UnFollowedColor%※%武将BUnFollowedLast%ら武将%UnFollowedN%名は随行せず、%大名Syuke%の武将となりました。"
+			"%武将BreakUpColor%※%大名Retiree%の家臣団は解散し、%DKashinNPre%家は一般大名家となりました。"
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "0"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0294", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "0"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0295", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "BFollowN", "Count"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0296", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "BushouNPost", "#大名家直属武将数(Retiree)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeKMUNew", "#Round(#直轄石高(Syuke)/10000)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeSNNew", "#直轄城数(Syuke)"
+		}
+	}
+	CE_0294 {
+		Title		: "　　随行武将初期化"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_SMALL, NONE, NONE, NONE, NONE, "Count", "BRetireNMax"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "BColorL[Count]", "WHITE"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "BFollowL[Count]", "NAB"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "1"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0294", ""
+		}
+	}
+	CE_0295 {
+		Title		: "　　随行武将登録"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: BUSHOU
+		LoopVariable	: "LB"
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "ShiroA", "ShiroExile"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "BushouA", "LB"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "Retiree"
+			CONTITION_BUSHOU_AT_SHIRO, NONE, NONE, VARIABLE, VARIABLE, "", ""
+			CONTITION_BUSHOU_SHOZOKU, VARIABLE, NONE, NONE, VARIABLE, "", ""
+			CONTITION_BUSHOU_NOT_TOUSHU_SPECIFIC, VARIABLE, NONE, NONE, VARIABLE, "", ""
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "BColorL[Count]", "BLACK"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "BFollowL[Count]", "LB"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "Count", "1"
+		}
+	}
+	CE_0296 {
+		Title		: "　　非随行武将"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "UnFollowedColor", "WHITE"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "UnFollowedN", "BushouNPre-#大名家直属武将数(Retiree)"
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "UnFollowedN", "0"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "UnFollowedColor", "BLACK"
+		}
+	}
+	CE_0297 {
+		Title		: "■出奔"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Retiree", "Player"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroExile", "NA"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0300", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0302", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0301", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0298", ""
+		}
+	}
+	CE_0300 {
+		Title		: "　独立大名は不可"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: OR
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "DaimyouA", "Retiree"
+			CONDITION_DOKURITSU, VARIABLE, NONE, NONE, NONE, "", ""
+			CONDITION_SMALL_EQUAL, NONE, NONE, NONE, NONE, "DStatusList[Retiree]", "Rounin"
+		}
+		Message {
+			"%大名RetireePre%は独立大名家または牢人家のため、出奔できません。"
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "RetireePre", "Retiree"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Retiree", "NA"
+		}
+	}
+	CE_0302 {
+		Title		: "　出奔の影響"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Retiree", "NA"
+		}
+		Message {
+			"出奔による効果は以下の通りです。%武将RED%実施は慎重にご検討ください。%武将BLACK%"
+			""
+			"・現在の拠点すべてを失い、戦闘には関われなくなります。"
+			"・最大20名がすべての兵を失った後、隠遁先に移動します。"
+			"・独立大名家の了承を得られれば仕官（一般大名家への復帰）は可能です。"
+		}
+		Happening {
+		}
+	}
+	CE_0301 {
+		Title		: "　実施確認"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Retiree", "NA"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "RetireeKept", "Retiree"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Retiree", "NA"
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "本当に出奔しますか？"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Retiree", "RetireeKept"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0028", ""
+		}
+	}
+	CE_0298 {
+		Title		: "　出奔不可"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Retiree", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroExile", "NA"
+		}
+		Message {
+			"隠遁先がなかったため、%大名Retiree%は出奔に失敗しました。"
+		}
+		Happening {
+		}
+	}
 	CE_0207 {
 		Title		: "■牢人家雇用"
 		PeriodStart	: NONE
@@ -12158,10 +12637,11 @@ ConditionalEvent {
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Verbose", "TRUE"
 		}
 		Message {
-			"%大名Employer%が独立大名でない、または資金残高がマイナスのため、"
+			"%大名EmployerPre%が独立大名でない、または資金残高がマイナスのため、"
 			"牢人家の臣従家取り立てを実施できませんでした。"
 		}
 		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EmployerPre", "Employer"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Employer", "NA"
 		}
 	}
@@ -13669,26 +14149,22 @@ ConditionalEvent {
 			CONDITION_BUSHOU_DEAD, NONE, NONE, NONE, B_01673, "", ""
 			CONTITION_BUSHOU_TOUSHU_SPECIFIC, D_0203, NONE, NONE, B_01671, "", ""
 			CONDITION_BUSHOU_EXIST, NONE, NONE, NONE, B_01678, "", ""
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "Kurada", "#大名番号(D_0203)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Kurada", "#大名番号(D_0203)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Gotou", "#大名番号(D_0037)"
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "DStatusList[Gotou]", "Kuroda*Kashin"
 			CONDITION_NOT_PLAYER_DAIMYOU, D_0037, NONE, NONE, NONE, "", ""
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "#直轄城数(Gotou)", "1"
-			CONDITION_SHIRO_OWNER1, D_0037, NONE, S_MASUTOMI, NONE, "", ""
 			CONDITION_SHIRO_OWNER1, D_CHOTEI, NONE, S_0003, NONE, "", ""
 		}
 		Message {
 			"%武将GotouToshu%ら%大名Gotou%が、家臣として使えていた%大名Kuroda%から出奔しました。原因は不詳ですが、黒田 長政との不仲が原因であったとも噂されております。"
 			""
-			"・%大名Gotou%が益富城を失い、播磨-三草山に移動し、牢人化"
+			"・%大名Gotou%が別途ご報告の通り牢人化"
 			"・%大名Kuroda%及び%大名Gotou%が強制宿敵化"
 		}
 		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DStatusList[Gotou]", "Gotou*Rounin"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeList[Gotou]", "#大名番号(D_CHOTEI)"
-			HAPPENING_JUUZOKU, D_CHOTEI, D_0037, NONE, NONE, NONE, NONE, "", ""
-			HAPPENING_SHIRO_SHOZOKU_CHANGE, D_0037, NONE, S_0003, NONE, NONE, NONE, "", ""
-			HAPPENING_SHIRO_SHOZOKU_CHANGE, D_0203, NONE, S_MASUTOMI, NONE, NONE, NONE, "", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Retiree", "Gotou"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroExile", "#城番号(S_0003)"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0028", ""
 			HAPPENING_KYOUSEI_SHUKUTEKI, D_0203, D_0037, NONE, NONE, NONE, NONE, "", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "GotouToshu", "#当主(Gotou)"
 		}
@@ -13876,6 +14352,7 @@ ConditionalEvent {
 			"・$color=0x0000FF$牢人処遇：$color=0x000000$"
 			"　　・牢人家一覧：家を有する牢人の一覧"
 			"　　・臣従家として取り立て：牢人家を当家の臣従大名として取り立てる"
+			"　　・出奔：プレーヤー家が現在の拠点をすべて主家または盟主に返却し、牢人化する"
 			""
 			"・評定終了：次回評定を何ヶ月後に行うかを指定し、評定を終了する"
 		}
@@ -14408,11 +14885,13 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
-			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRouninSelected", "実施内容をご選択ください。/牢人家一覧/臣従家として取り立て"
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRouninSelected", "実施内容をご選択ください。/牢人家一覧/臣従家として取り立て/出奔"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRouninListup", "0"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRouninEmploy", "1"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGRouninRetire", "2"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0129", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0210", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0303", ""
 		}
 	}
 	CE_0129 {
@@ -14449,6 +14928,24 @@ ConditionalEvent {
 		}
 		Happening {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0208", ""
+		}
+	}
+	CE_0303 {
+		Title		: "　　出奔"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "MTGRouninSelected", "MTGRouninRetire"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0297", ""
 		}
 	}
 	CE_0087 {
