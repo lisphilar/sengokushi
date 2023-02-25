@@ -9475,7 +9475,7 @@ ConditionalEvent {
 			"・盟主が独立を行った場合、家臣はその外交方針に従って盟主に臣従する。"
 			"・盟主が鞍替えを行った場合、家臣は盟主の鞍替え先に従属する。"
 			"・家臣が独立・鞍替えを実施し、主家が盟主と異なる場合は家臣から外れる。"
-			"・盟主は家臣に対して増封など領地の変更を命ずることができる。"
+			"・盟主は家臣に対して加増など領地の変更を命ずることができる。"
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Meisyu", "DStatusList[Target]/Kashin"
@@ -11163,7 +11163,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0130 {
-		Title		: "■増封"
+		Title		: "■加増"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -11203,7 +11203,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0132 {
-		Title		: "　　増封対象の家"
+		Title		: "　　加増対象の家"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -11251,8 +11251,8 @@ ConditionalEvent {
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
 		}
 		Message {
-			"$color=0xFF0000$%大名DaimyouDetermined%$color=0x000000$に対して当家直轄の拠点を増封します。"
-			"以降の画面にて増封対象の拠点をご選択ください。"
+			"$color=0xFF0000$%大名DaimyouDetermined%$color=0x000000$に対して当家直轄の拠点を加増します。"
+			"以降の画面にて加増対象の拠点をご選択ください。"
 		}
 		Happening {
 		}
@@ -11303,7 +11303,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0181 {
-		Title		: "　　増封内容表示"
+		Title		: "　　加増内容表示"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -11355,7 +11355,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0182 {
-		Title		: "　　増封実施報告"
+		Title		: "　　加増実施報告"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -11366,10 +11366,10 @@ ConditionalEvent {
 		Condition {
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "ShiroDetermined", "NA"
-			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "増封を実施しますか？"
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "加増を実施しますか？"
 		}
 		Message {
-			"%城ShiroDetermined%（%a%万%b%%c%%d%%e%石）の増封が実行されました。"
+			"%城ShiroDetermined%（%a%万%b%%c%%d%%e%石）の加増が実行されました。"
 			""
 			""
 			"【直轄石高】"
@@ -11384,7 +11384,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0283 {
-		Title		: "　　　増封実施"
+		Title		: "　　　加増実施"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -11432,7 +11432,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0284 {
-		Title		: "　　増封実施報告"
+		Title		: "　　加増実施報告"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -11484,7 +11484,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0195 {
-		Title		: "　　増封対象の家"
+		Title		: "　　加増対象の家"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -11515,8 +11515,8 @@ ConditionalEvent {
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
 		}
 		Message {
-			"「%大名DaimyouDetermined%」に対して国単位で増封を実施致します。"
-			"以降の画面にて増封対象の国をご選択ください。"
+			"「%大名DaimyouDetermined%」に対して国単位で加増を実施致します。"
+			"以降の画面にて加増対象の国をご選択ください。"
 		}
 		Happening {
 		}
@@ -11555,10 +11555,10 @@ ConditionalEvent {
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
 		}
 		Message {
-			"%大名DaimyouDetermined%への増封先として$color=0xFF0000$%城CountrySelected%$color=0x000000$が選択されました。"
-			"増封可能な拠点数及び合計の石高・経済は以下の通りです。"
+			"%大名DaimyouDetermined%への加増先として$color=0xFF0000$%城CountrySelected%$color=0x000000$が選択されました。"
+			"加増可能な拠点数及び合計の石高・経済は以下の通りです。"
 			"$color=0x0000FF$"
-			"【現時点で増封可能】"
+			"【現時点で加増可能】"
 			"%大名SyukeDetermined%（当家）の直轄拠点"
 			"→拠点数%ShiroNL[0]%, 石高%aa%万%ab%%ac%%ad%%ae%石, 経済%EconomyL[0]%"
 			""
@@ -11566,11 +11566,11 @@ ConditionalEvent {
 			"　・%大名SyukeDetermined%：%SyukeOldMU%万石→%SyukeNewMU%万石"
 			"　・%大名DaimyouDetermined%：%DaimyouOldMU%万石→%DaimyouNewMU%万石"
 			"$color=0x000000$"
-			"【現時点では増封できないが約束は可能】"
+			"【現時点では加増できないが約束は可能】"
 			"%大名SyukeDetermined%以外の家が所有している拠点"
 			"→拠点数%ShiroNL[1]%, %ba%万%bb%%bc%%bd%%be%石, 経済%EconomyL[1]%"
 			""
-			"【増封不可】"
+			"【加増不可】"
 			"%大名SyukeDetermined%に従属・臣従中の家の拠点"
 			"→拠点数%ShiroNL[2]%, %ca%万%cb%%cc%%cd%%ce%石, 経済%EconomyL[2]%"
 		}
@@ -11713,7 +11713,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0152 {
-		Title		: "　　増封実施"
+		Title		: "　　加増実施"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -11724,10 +11724,10 @@ ConditionalEvent {
 		Condition {
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
 			CONDITION_LARGE, NONE, NONE, NONE, NONE, "ShiroNL[0]", "0"
-			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "国内すべての当家直轄拠点について増封を実施しますか？"
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "国内すべての当家直轄拠点について加増を実施しますか？"
 		}
 		Message {
-			"%城CountrySelected%国内のすべての当家直轄拠点（拠点数%ShiroNL[0]%, 石高%aa%万%ab%%ac%%ad%%ae%石）について%大名DaimyouDetermined%への増封が実行されました。"
+			"%城CountrySelected%国内のすべての当家直轄拠点（拠点数%ShiroNL[0]%, 石高%aa%万%ab%%ac%%ad%%ae%石）について%大名DaimyouDetermined%への加増が実行されました。"
 			""
 			""
 			"【直轄石高】"
@@ -11772,7 +11772,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0197 {
-		Title		: "　　増封の約束"
+		Title		: "　　加増の約束"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -11807,7 +11807,7 @@ ConditionalEvent {
 			"%城CountrySelected%$color=0x000000$国内の以下の拠点を今後当家が所有できる可能性がございます。"
 			"直轄拠点となった際に%大名DaimyouDetermined%が臣従中であればすぐに各拠点を与えるよう約束することはいかがでしょうか。士気も大いに上がるでしょう。"
 			""
-			"【現時点では増封できないが約束は可能】"
+			"【現時点では加増できないが約束は可能】"
 			"%大名SyukeDetermined%以外の家が所有している拠点"
 			"→拠点数%ShiroNL[1]%, %ba%万%bb%%bc%%bd%%be%石, 経済%EconomyL[1]%"
 		}
@@ -11906,7 +11906,7 @@ ConditionalEvent {
 			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroNL[0]", "0"
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroNL[1]", "0"
-			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "指定いただいた国に増封可能な拠点（予約を含む）がございませんでした。国を再度選択しますか？"
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "指定いただいた国に加増可能な拠点（予約を含む）がございませんでした。国を再度選択しますか？"
 		}
 		Message {
 		}
@@ -11955,7 +11955,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0205 {
-		Title		: "　　　増封の実施"
+		Title		: "　　　加増の実施"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -11983,7 +11983,7 @@ ConditionalEvent {
 			"・%大名DaimyouDetermined%：%DaimyouOldMU%万石→%DaimyouNewMU%万石"
 			""
 			"【副次効果】"
-			"%大名SyukeDetermined%および%大名DaimyouDetermined%のすべての拠点にて民衆支持が%Popularity%%増加します（約束通りのため通常増封の2倍）。"
+			"%大名SyukeDetermined%および%大名DaimyouDetermined%のすべての拠点にて民衆支持が%Popularity%%増加します（約束通りのため通常加増の2倍）。"
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "DaimyouDetermined"
@@ -12011,7 +12011,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0233 {
-		Title		: "　大坂城増封"
+		Title		: "　大坂城加増"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -12023,7 +12023,7 @@ ConditionalEvent {
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroDetermined", "#城番号(S_i)"
 		}
 		Message {
-			"%城ShiroDetermined%が増封の対象となったため、城下すべての直轄拠点が%大名SyukeDetermined%から%大名DaimyouDetermined%に引き渡されることとなりました。"
+			"%城ShiroDetermined%が加増の対象となったため、城下すべての直轄拠点が%大名SyukeDetermined%から%大名DaimyouDetermined%に引き渡されることとなりました。"
 			""
 			"※当該手続きによって%大名SyukeDetermined%の拠点数が0になってしまう場合、1箇所のみ引き渡しは行われません。"
 		}
@@ -12033,7 +12033,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0234 {
-		Title		: "　　町内すべて増封"
+		Title		: "　　町内すべて加増"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -13012,7 +13012,7 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 			""
 			"%大名Employee%が当家に臣従し「町経済合計×12ヶ月」が変動費$color=0x0000FF$%VariableCost%$color=0x000000$を超えない限りは、毎年1月に変動費の支払いが必要となります。支払い時にお知らせします。"
 			""
-			"取り立てを実施する場合は次の画面にてYesを選択し、%大名Employee%に与える拠点1つの決定をお願い致します。2箇所目以降については増封機能にて通常通り実施をお願い致します。"
+			"取り立てを実施する場合は次の画面にてYesを選択し、%大名Employee%に与える拠点1つの決定をお願い致します。2箇所目以降については加増機能にて通常通り実施をお願い致します。"
 		}
 		Happening {
 		}
@@ -13237,7 +13237,7 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 		}
 	}
 	CE_0280 {
-		Title		: "　　増封実施"
+		Title		: "　　加増実施"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -14804,8 +14804,8 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 			"　　・拠点情報：選択した国内の拠点情報を順に表示する"
 			""
 			"・$color=0x0000FF$論功行賞：従属・臣従大名・家臣の知行を変更する$color=0x000000$"
-			"　　・増封実施（城単位）：従属・臣従家・家臣に対して、城単位で増封を実施する"
-			"　　・増封実施（国単位・約束含む）：従属・臣従家・家臣に対して、国単位で増封を実施する、または将来の増封を約束する"
+			"　　・加増実施（城単位）：従属・臣従家・家臣に対して、城単位で加増を実施する"
+			"　　・加増実施（国単位・約束含む）：従属・臣従家・家臣に対して、国単位で加増を実施する、または将来の加増を約束する"
 			""
 			"・$color=0x0000FF$牢人処遇：$color=0x000000$"
 			"　　・牢人家一覧：家を有する牢人の一覧"
@@ -15180,7 +15180,7 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 		Message {
 		}
 		Happening {
-			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGAddSelected", "実施内容をご選択ください。/増封実施（城単位）/増封実施（国単位・約束含む）"
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGAddSelected", "実施内容をご選択ください。/加増実施（城単位）/加増実施（国単位・約束含む）"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGAddSyukeShiro", "0"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGAddSyukeCountry", "1"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0185", ""
@@ -15188,7 +15188,7 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 		}
 	}
 	CE_0185 {
-		Title		: "　　増封実施（城）"
+		Title		: "　　加増実施（城）"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -15281,7 +15281,7 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "EnabledF", "FALSE"
 		}
 		Message {
-			"下記いずれかの条件を満たさなかったため、増封を実施できませんでした。"
+			"下記いずれかの条件を満たさなかったため、加増を実施できませんでした。"
 			""
 			"・当家が独立大名（従属・臣従家を1家以上持つ）である、または家臣を有する。"
 			"・当家直轄の拠点が2箇所以上存在する。"
@@ -15290,7 +15290,7 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 		}
 	}
 	CE_0151 {
-		Title		: "　　増封実施（国）"
+		Title		: "　　加増実施（国）"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND

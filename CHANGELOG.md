@@ -3,7 +3,7 @@
 安定版及び開発版の最新Versionは以下のとおりです。
 
 - [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.2.0
-- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0.dev1９
+- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0.dev20
 
 ## Change log
 
@@ -11,7 +11,7 @@
 
 ### Un-released
 
-- [評定：増封時に臣従大名を選択できない問題の修正 #49](https://github.com/lisphilar/sengokushi/issues/49)
+- [評定：加増時に臣従大名を選択できない問題の修正 #49](https://github.com/lisphilar/sengokushi/issues/49)
 - [開発版をRepository top directoryに移動する #50](https://github.com/lisphilar/sengokushi/issues/50)
 - [シナリオファイルの名称を二重公儀の統合,snr から 豊徳二重公儀の統合.snr に変更する #51](https://github.com/lisphilar/sengokushi/issues/51)
 - [大名家選択時に空白地勢力などが表示される問題の修正 #52](https://github.com/lisphilar/sengokushi/issues/52)
@@ -25,7 +25,8 @@
 - [評定：牢人家一覧の見やすさ向上、当主の追記 #61](https://github.com/lisphilar/sengokushi/issues/61)
 - [評定：一般大名家（従属・臣従中）の出奔機能追加 #62](https://github.com/lisphilar/sengokushi/issues/62)
 - [評定：牢人家（プレーヤー）仕官機能の追加 #63](https://github.com/lisphilar/sengokushi/issues/63)
-- [評定：大項目名を「増封」から「論功行賞」に変更する #66](https://github.com/lisphilar/sengokushi/issues/66)
+- [評定：大項目名を「加増」から「論功行賞」に変更する #66](https://github.com/lisphilar/sengokushi/issues/66)
+- [用語：「増封」を「加増」に修正する #67](https://github.com/lisphilar/sengokushi/issues/67)
 
 ### Version 1.2.0 (2023/2/23)
 
@@ -43,14 +44,14 @@
 - [駿河-島田宿、遠江-金谷宿間の水路設置 #37](https://github.com/lisphilar/sengokushi/issues/37)
 - [城名から家名を削除する（二条城、伏見城、淀城） #38](https://github.com/lisphilar/sengokushi/issues/38)
 - ~~実装中止：[評定イベント終了時の次回月数選択から数字入力をなくす #39](https://github.com/lisphilar/sengokushi/issues/39)~~
-- [評定：城単位で増封する機能の追加 #40](https://github.com/lisphilar/sengokushi/issues/40)
-- [評定システムに国単位で増封する機能を追加 #41](https://github.com/lisphilar/sengokushi/issues/41)
-- [評定：増封を約束する機能の追加（国単位） #42](https://github.com/lisphilar/sengokushi/issues/42)
+- [評定：城単位で加増する機能の追加 #40](https://github.com/lisphilar/sengokushi/issues/40)
+- [評定システムに国単位で加増する機能を追加 #41](https://github.com/lisphilar/sengokushi/issues/41)
+- [評定：加増を約束する機能の追加（国単位） #42](https://github.com/lisphilar/sengokushi/issues/42)
 - [評定：城石高、城経済を表示する機能を追加 #43](https://github.com/lisphilar/sengokushi/issues/43)
 - [評定：地方名選択時の見切れを修正 #44](https://github.com/lisphilar/sengokushi/issues/44)
 - [Opening画像を輝度の低いものに修正する #45](https://github.com/lisphilar/sengokushi/issues/45)
 - [オープニングメッセージの簡略化 #46](https://github.com/lisphilar/sengokushi/issues/46)
-- [評定：大坂城を増封すると天守閣との城主不一致にて翌月に城主が戻る問題の修正 #47](https://github.com/lisphilar/sengokushi/issues/47)
+- [評定：大坂城を加増すると天守閣との城主不一致にて翌月に城主が戻る問題の修正 #47](https://github.com/lisphilar/sengokushi/issues/47)
 - [プレーヤーが大阪城城主のとき文字列処理用の武将が配下の武将として表示されることの修正 #48](https://github.com/lisphilar/sengokushi/issues/48)
 
 ### Version 1.1.0 (2023/2/10)
