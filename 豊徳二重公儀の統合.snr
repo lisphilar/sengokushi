@@ -14763,7 +14763,7 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 		Message {
 		}
 		Happening {
-			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGSelected", "評定実施月になりました。大項目をご選択ください。/各項目の説明/情報表示/増封/牢人処遇/終了"
+			HAPPENING_QUESTION_MULTI, NONE, NONE, NONE, NONE, NONE, NONE, "MTGSelected", "評定実施月になりました。大項目をご選択ください。/各項目の説明/情報表示/論功行賞/牢人処遇/終了"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGWhat", "0"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGInfo", "1"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "MTGAdd", "2"
@@ -14803,7 +14803,7 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 			"    ・家臣情報（地方>国名から選択）：家の外交方針に従う家臣の情報を順に表示する"
 			"　　・拠点情報：選択した国内の拠点情報を順に表示する"
 			""
-			"・$color=0x0000FF$増封：主家側の直轄拠点を従属家・臣従家（家臣以外）・家臣に与える$color=0x000000$"
+			"・$color=0x0000FF$論功行賞：従属・臣従大名・家臣の知行を変更する$color=0x000000$"
 			"　　・増封実施（城単位）：従属・臣従家・家臣に対して、城単位で増封を実施する"
 			"　　・増封実施（国単位・約束含む）：従属・臣従家・家臣に対して、国単位で増封を実施する、または将来の増封を約束する"
 			""
@@ -15166,7 +15166,7 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 		}
 	}
 	CE_0184 {
-		Title		: "　増封"
+		Title		: "　論功行賞"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
