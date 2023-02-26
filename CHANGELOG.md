@@ -3,7 +3,7 @@
 安定版及び開発版の最新Versionは以下のとおりです。
 
 - [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.2.0
-- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0.dev20
+- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0.dev21
 
 ## Change log
 
@@ -27,6 +27,8 @@
 - [評定：牢人家（プレーヤー）仕官機能の追加 #63](https://github.com/lisphilar/sengokushi/issues/63)
 - [評定：大項目名を「加増」から「論功行賞」に変更する #66](https://github.com/lisphilar/sengokushi/issues/66)
 - [用語：「増封」を「加増」に修正する #67](https://github.com/lisphilar/sengokushi/issues/67)
+- [評定：従属・臣従大名、家臣に対する改易機能の追加 #64](https://github.com/lisphilar/sengokushi/issues/64)
+
 
 ### Version 1.2.0 (2023/2/23)
 
