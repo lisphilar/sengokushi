@@ -8260,7 +8260,7 @@ ConditionalEvent {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0362", ""
 		}
 	}
-	CE_0110 {
+	CE_367 {
 		Title		: "　使用例"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
@@ -8300,7 +8300,7 @@ ConditionalEvent {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0358", ""
 		}
 	}
-	CE_0367 {
+	CE_0110 {
 		Title		: "■地方・国名一覧"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
