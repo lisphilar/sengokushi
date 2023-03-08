@@ -9982,12 +9982,14 @@ ConditionalEvent {
 			CONDITION_SHIRO_OWNER1, D_Country, NONE, VARIABLE, NONE, "", ""
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CKL[LS]", "0"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CNL[LS]", "0"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "TopColor", "BLACK"
 			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "CountrySelectable", "TRUE"
 		}
 		Message {
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SBoolL[LS]", "TRUE"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "TopColor", "BLUE"
 		}
 	}
 	CE_0141 {
@@ -10363,7 +10365,7 @@ N[RankL[78]]%%武将a[78]%%K[RankL[78]]%%武将b[78]%） %武将C[RankL[79]]%, <79>%城R
 			"選択可能な拠点(%武将RED%%大名Syuka%%武将GroupName%拠点%武将BLACK%)は以下の通りです。対象の拠点（または%武将BLUE%国全域%武将BLACK%）について、次の画面にて山括弧<>内の数字をご入力ください。"
 			""
 			"【候補拠点一覧（石高順）】%PageN%頁目/全%PageTotalN%頁"
-			"%武将BLUE%<%RankNL[1+k*Per]%>%城RankL[1+k*Per]%全域（%ka[RankL[1+k*Per]]%万%kb[RankL[1+k*Per]]%%kc[RankL[1+k*Per]]%%kd[RankL[1+k*Per]]%%ke[RankL[1+k*Per]]%石） %武将C[RankL[2+k*Per]]%, <%RankNL[2+k*Per]%>%城RankL[2+k*Per]%（%ka[RankL[2+k*Per]]%万%kb[RankL[2+k*Per]]%%kc[RankL[2+k*Per]]%%kd[RankL[2+k*Per]]%%ke[RankL[2&+
+			"%武将TopColor%<%RankNL[1+k*Per]%>%城RankL[1+k*Per]%（%ka[RankL[1+k*Per]]%万%kb[RankL[1+k*Per]]%%kc[RankL[1+k*Per]]%%kd[RankL[1+k*Per]]%%ke[RankL[1+k*Per]]%石） %武将C[RankL[2+k*Per]]%, <%RankNL[2+k*Per]%>%城RankL[2+k*Per]%（%ka[RankL[2+k*Per]]%万%kb[RankL[2+k*Per]]%%kc[RankL[2+k*Per]]%%kd[RankL[2+k*Per]]%%ke[RankL[2&+
 +k*Per]]%石） %武将C[RankL[3+k*Per]]%, <%RankNL[3+k*Per]%>%城RankL[3+k*Per]%（%ka[RankL[3+k*Per]]%万%kb[RankL[3+k*Per]]%%kc[RankL[3+k*Per]]%%kd[RankL[3+k*Per]]%%ke[RankL[3+k*Per]]%石） %武将C[RankL[4+k*Per]]%, <%RankNL[4+k*Per]%>%城RankL[4+k*Per]%（%ka[RankL[4+k*Per]]%万%kb[RankL[4+k*Per]]%%kc[RankL[4+k*Per]]%%kd[RankL[&+
 4+k*Per]]%%ke[RankL[4+k*Per]]%石） %武将C[RankL[5+k*Per]]%, <%RankNL[5+k*Per]%>%城RankL[5+k*Per]%（%ka[RankL[5+k*Per]]%万%kb[RankL[5+k*Per]]%%kc[RankL[5+k*Per]]%%kd[RankL[5+k*Per]]%%ke[RankL[5+k*Per]]%石） %武将C[RankL[6+k*Per]]%, <%RankNL[6+k*Per]%>%城RankL[6+k*Per]%（%ka[RankL[6+k*Per]]%万%kb[RankL[6+k*Per]]%%kc[RankL&+
 [6+k*Per]]%%kd[RankL[6+k*Per]]%%ke[RankL[6+k*Per]]%石） %武将C[RankL[7+k*Per]]%, <%RankNL[7+k*Per]%>%城RankL[7+k*Per]%（%ka[RankL[7+k*Per]]%万%kb[RankL[7+k*Per]]%%kc[RankL[7+k*Per]]%%kd[RankL[7+k*Per]]%%ke[RankL[7+k*Per]]%石） %武将C[RankL[8+k*Per]]%, <%RankNL[8+k*Per]%>%城RankL[8+k*Per]%（%ka[RankL[8+k*Per]]%万%kb[Rank&+
@@ -14762,12 +14764,32 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 		Message {
 		}
 		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeDetermined", "Employer"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DaimyouDetermined", "Employee"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroDetermined", "NA"
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0224", ""
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroToProvide", "ShiroDetermined"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Syuka", "Employer"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Filter", "1"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "CountrySelectable", "FALSE"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0135", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroToProvide", "NA"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0185", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0221", ""
+		}
+	}
+	CE_0185 {
+		Title		: "　　　拠点確認"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: SHIRO
+		LoopVariable	: "LS"
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroToProvide", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SSelectedL[LS]", "TRUE"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroToProvide", "LS"
 		}
 	}
 	CE_0221 {
@@ -14829,6 +14851,9 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 			HAPPENING_SHINJUU, VARIABLE, VARIABLE, NONE, NONE, NONE, NONE, "", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DStatusList[Employee]", "Employee*Ippan"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SyukeList[Employee]", "Employer"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Daimyou1", "Employee"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Shiro1", "ShiroToProvide"
+			HAPPENING_SHIRO_SHOZOKU_CHANGE, VARIABLE, NONE, VARIABLE, NONE, NONE, NONE, "", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SBefore", "EmployeeOldShiro"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SAfter", "ShiroToProvide"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0082", ""
