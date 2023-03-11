@@ -3,7 +3,7 @@
 安定版及び開発版の最新Versionは以下のとおりです。
 
 - [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.2.0
-- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0.dev27
+- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0.dev28
 
 ## Change log
 
@@ -29,6 +29,7 @@
 - [用語：「増封」を「加増」に修正する #67](https://github.com/lisphilar/sengokushi/issues/67)
 - [評定：従属・臣従大名、家臣に対する改易機能の追加 #64](https://github.com/lisphilar/sengokushi/issues/64)
 - [評定：配下の家を選択する際に選択肢を一覧表示するように変更 #70](https://github.com/lisphilar/sengokushi/issues/70)
+- [評定>拠点情報表示：選択方式を「地方名>国名」から「国名>拠点名」に変更 #71](https://github.com/lisphilar/sengokushi/issues/71)
 
 
 ### Version 1.2.0 (2023/2/23)

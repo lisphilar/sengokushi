@@ -4317,6 +4317,17 @@ Bushou {
 	B_Haika	:	"従属/臣従大名/家臣の",0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
 	B_Kyoten:	"拠点",				0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
 	B_Mangoku:	"万石",				0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
+	B_Comma	:	"Comma",			0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
+	B_Number0:	"0",				0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
+	B_Number1:	"1",				0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
+	B_Number2:	"2",				0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
+	B_Number3:	"3",				0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
+	B_Number4:	"4",				0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
+	B_Number5:	"5",				0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
+	B_Number6:	"6",				0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
+	B_Number7:	"7",				0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
+	B_Number8:	"8",				0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
+	B_Number9:	"9",				0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		0*,		9999,	BYOUSHI,	0,		D_String,			-1,		S_0418,				""
 	B_00000	:	"後陽成天皇",		5,	9,	6,	5,		5,		10,	5,	200,	2000,	100,	1543,	1616,	BYOUSHI,	0,		D_CHOTEI,			0,		S_0082,				""
 	B_2		:	"シャクシャイン",	5,	3,	5,	5,		3,		4,	4,	0,		400,	0,		1609?,	1669,	BYOUSHI,	1624,	D_0062,				1,		S_0108,				""
 	B_4		:	"オニビシ",			3,	4,	3,	3,		3,		4,	3,	0,		200,	0,		1590,	1668,	BYOUSHI,	0,		D_0062,				0,		S_0108,				""
@@ -7904,10 +7915,11 @@ ConditionalEvent {
 		LoopVariable	: "LD"
 		Condition {
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NA", "#大名番号(D_NA)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NAS", "#城番号(S_0418)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NAB", "#武将番号(B_01506)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Chotei", "#大名番号(D_CHOTEI)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Toyotomi", "#大名番号(D_Toyotomi)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Tokugawa", "#大名番号(D_Tokugawa)"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NAB", "#武将番号(B_01506)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "TRUE", "1"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "FALSE", "0"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "WHITE", "#武将番号(B_white)"
@@ -7917,10 +7929,22 @@ ConditionalEvent {
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "GREEN", "#武将番号(B_green)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "YELLOW", "#武将番号(B_yellow)"
 			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "BLACK", "#武将番号(B_black)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "COMMA", "#武将番号(B_Comma)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NList[0]", "#武将番号(B_Number0)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NList[1]", "#武将番号(B_Number1)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NList[2]", "#武将番号(B_Number2)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NList[3]", "#武将番号(B_Number3)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NList[4]", "#武将番号(B_Number4)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NList[5]", "#武将番号(B_Number5)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NList[6]", "#武将番号(B_Number6)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NList[7]", "#武将番号(B_Number7)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NList[8]", "#武将番号(B_Number8)"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "NList[9]", "#武将番号(B_Number9)"
 		}
 		Message {
 		}
 		Happening {
+			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_Comma, NONE, ",", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "StartYear", "#Year"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "StartMonth", "#Month"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Player", "#プレイヤー大名"
@@ -8003,14 +8027,42 @@ ConditionalEvent {
 		LoopType	: NONE
 		LoopVariable	: ""
 		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "a", "Value"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "b", "NAB"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "c", "NAB"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "d", "NAB"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "e", "NAB"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_01506, NONE, "", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0056", ""
+		}
+	}
+	CE_0056 {
+		Title		: "　1000以上の場合"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_LARGE_EQUAL, NONE, NONE, NONE, NONE, "Value", "1000"
 		}
 		Message {
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "a", "#Floor(Value/1000)"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "b", "#Floor((Value-a*1000)/100)"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "c", "#Floor((Value-a*1000-b*100)/10)"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "d", "Value-a*1000-b*100-c*10"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "b", "COMMA"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "c", "#Floor((Value-a*1000)/100)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "d", "#Floor((Value-a*1000-c*100)/10)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "e", "Value-a*1000-c*100-d*10"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "c", "NList[c]"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "d", "NList[d]"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "e", "NList[e]"
 		}
 	}
 	CE_0215 {
@@ -8070,6 +8122,7 @@ ConditionalEvent {
 		LoopVariable	: ""
 		Condition {
 			CONDITION_SMALL_EQUAL, NONE, NONE, NONE, NONE, "IndexCount", "Length"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "RankL[IndexCount]", "0"
 		}
 		Message {
 		}
@@ -8114,7 +8167,7 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "IgnoredL[IgnoredCount]", "IndexCount"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "IgnoredL[IgnoredCount]", "IndexForIgnored"
 			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "IgnoredCount", "1"
 		}
 	}
@@ -8241,7 +8294,7 @@ ConditionalEvent {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0362", ""
 		}
 	}
-	CE_367 {
+	CE_0147 {
 		Title		: "　使用例"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
@@ -8278,6 +8331,7 @@ ConditionalEvent {
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Length", "8"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "IndexForIgnored", "NA"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0358", ""
 		}
 	}
@@ -8314,7 +8368,7 @@ ConditionalEvent {
 			""
 			"【山陽道】播磨、美作、備前、備中、備後、安芸、周防、長門"
 			""
-			"【西海道北部】筑前。筑後、豊前、肥前、平戸・五島、天草、壱岐・対馬"
+			"【西海道北部】筑前、筑後、豊前、肥前、平戸・五島、天草、壱岐・対馬"
 			""
 			"【西海道南部】肥後、日向、大隅、薩摩、奄美"
 		}
@@ -8357,6 +8411,7 @@ ConditionalEvent {
 		Message {
 		}
 		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "CTotalN", "0"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0023", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0024", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SRegionList[ShiroA]", "CurrentRegion"
@@ -8397,30 +8452,12 @@ ConditionalEvent {
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "CurrentCountry", "ShiroA"
-		}
-	}
-	CE_0025 {
-		Title		: "  国表示例"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: OR
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-		}
-		Message {
-			"当家当主の所在地： %城ShiroA%（%城Region%-%城Country%）"
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroA", "#当主城(#プレイヤー大名)"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Region", "SRegionList[ShiroA]"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Country", "SCountryList[ShiroA]"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "CNameList[CTotalN]", "ShiroA"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "CTotalN", "1"
 		}
 	}
 	CE_0001 {
-		Title		: "■国特定"
+		Title		: "■国特定（非推奨）"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -8728,7 +8765,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0105 {
-		Title		: "■国内の家選択"
+		Title		: "■国内の家選択（非推奨）"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -8747,7 +8784,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0108 {
-		Title		: "　　確認済家初期化"
+		Title		: "　確認済家初期化"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: OR
@@ -8768,7 +8805,7 @@ ConditionalEvent {
 		}
 	}
 	CE_0107 {
-		Title		: "　　拠点数保存"
+		Title		: "　拠点数保存"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
 		Logic		: AND
@@ -10092,6 +10129,7 @@ ConditionalEvent {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "CountryN", "0"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0376", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Length", "STotalN"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "IndexForIgnored", "NAS"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0358", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0377", ""
 		}
@@ -10199,7 +10237,7 @@ ConditionalEvent {
 		Condition {
 		}
 		Message {
-			"選択可能な拠点(%武将RED%%大名Syuka%%武将GroupName%拠点%武将BLACK%)を有する国は以下の通りです。対象の拠点が含まれる国について、次の画面にて山括弧<>内の数字をご入力ください。"
+			"選択可能な拠点(%武将RED%%大名Syuka%%武将GroupName%拠点%武将BLACK%)を有する国は以下の通りです。対象の拠点が含まれる国または地域に対応する山括弧<>内の数字を次の画面にてご入力ください。"
 			""
 			"【候補国一覧】"
 			"%武将C[RankL[1]]%<1>%城RankL[1]%（%N[RankL[1]]%%武将a[1]%%K[RankL[1]]%%武将b[1]%） %武将C[RankL[2]]%, <2>%城RankL[2]%（%N[RankL[2]]%%武将a[2]%%K[RankL[2]]%%武将b[2]%） %武将C[RankL[3]]%, <3>%城RankL[3]%（%N[RankL[3]]%%武将a[3]%%K[RankL[3]]%%武将b[3]%） %武将C[RankL[4]]%, <4>%城RankL[4]%（%N[RankL[4]]%%武将a[4]%%K[Ra&+
@@ -10248,7 +10286,7 @@ N[RankL[78]]%%武将a[78]%%K[RankL[78]]%%武将b[78]%） %武将C[RankL[79]]%, <79>%城R
 		Message {
 		}
 		Happening {
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_8397", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0397", ""
 		}
 	}
 	CE_0390 {
@@ -10288,6 +10326,7 @@ N[RankL[78]]%%武将a[78]%%K[RankL[78]]%%武将b[78]%） %武将C[RankL[79]]%, <79>%城R
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroN", "0"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0393", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Length", "STotalN"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "IndexForIgnored", "NAS"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0358", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0377", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Per", "40"
@@ -10362,7 +10401,7 @@ N[RankL[78]]%%武将a[78]%%K[RankL[78]]%%武将b[78]%） %武将C[RankL[79]]%, <79>%城R
 		Condition {
 		}
 		Message {
-			"選択可能な拠点(%武将RED%%大名Syuka%%武将GroupName%拠点%武将BLACK%)は以下の通りです。対象の拠点（または%武将BLUE%国全域%武将BLACK%）について、次の画面にて山括弧<>内の数字をご入力ください。"
+			"選択可能な拠点(%武将RED%%大名Syuka%%武将GroupName%拠点%武将BLACK%)は以下の通りです。対象の拠点（または%武将BLUE%国全域%武将BLACK%）に対応する山括弧<>内の数字を次の画面にてご入力ください。"
 			""
 			"【候補拠点一覧（石高順）】%PageN%頁目/全%PageTotalN%頁"
 			"%武将TopColor%<%RankNL[1+k*Per]%>%城RankL[1+k*Per]%（%ka[RankL[1+k*Per]]%万%kb[RankL[1+k*Per]]%%kc[RankL[1+k*Per]]%%kd[RankL[1+k*Per]]%%ke[RankL[1+k*Per]]%石） %武将C[RankL[2+k*Per]]%, <%RankNL[2+k*Per]%>%城RankL[2+k*Per]%（%ka[RankL[2+k*Per]]%万%kb[RankL[2+k*Per]]%%kc[RankL[2+k*Per]]%%kd[RankL[2+k*Per]]%%ke[RankL[2&+
@@ -10530,6 +10569,437 @@ kL[40+k*Per]]%石）"
 		}
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SSelectedL[LS]", "TRUE"
+		}
+	}
+	CE_0183 {
+		Title		: "■石高・経済情報取得"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DJyoshu", "#城支配大名(Target)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DKPre", "#直轄石高(DJyoshu)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DEPre", "#直轄経済(DJyoshu)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Shiro1", "Target"
+			HAPPENING_SHIRO_KOKUDAKA_PLUS, NONE, NONE, VARIABLE, NONE, NONE, NONE, "-100000000", ""
+			HAPPENING_SHIRO_KEIZAI_PLUS, NONE, NONE, VARIABLE, NONE, NONE, NONE, "-100000000", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaCurrent", "DKPre-#直轄石高(DJyoshu)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EconomyCurrent", "DEPre-#直轄経済(DJyoshu)"
+			HAPPENING_SHIRO_KOKUDAKA_PLUS, NONE, NONE, VARIABLE, NONE, NONE, NONE, "100000000", ""
+			HAPPENING_SHIRO_KEIZAI_PLUS, NONE, NONE, VARIABLE, NONE, NONE, NONE, "100000000", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaMax", "#直轄石高(DJyoshu)-DKPre+KokudakaCurrent"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EconomyMax", "#直轄経済(DJyoshu)-DEPre+EconomyCurrent"
+			HAPPENING_SHIRO_KOKUDAKA_PLUS, NONE, NONE, VARIABLE, NONE, NONE, NONE, "KokudakaCurrent-KokudakaMax", ""
+			HAPPENING_SHIRO_KEIZAI_PLUS, NONE, NONE, VARIABLE, NONE, NONE, NONE, "EconomyCurrent-EconomyMax", ""
+		}
+	}
+	CE_0153 {
+		Title		: "■城情報表示"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SHIRO_KAIMEI, NONE, NONE, S_0418, NONE, NONE, NONE, "", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "IgnoredValue", "-1"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "IndexForIgnored", "NAS"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Length", "STotalN"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0025", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0132", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0149", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0163", ""
+		}
+	}
+	CE_0025 {
+		Title		: "　国の選択"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "CountrySelected", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroSelected", "NA"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "CountryN", "0"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0068", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0358", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0114", ""
+			HAPPENING_INPUT_NUMBER, NONE, NONE, NONE, NONE, NONE, NONE, "CNumber", "国の番号をご入力ください（0以下:キャンセル）。"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0130", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "CountrySelected", "RankL[CNumber]"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0131", ""
+		}
+	}
+	CE_0068 {
+		Title		: "　　国名取得"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: SHIRO
+		LoopVariable	: "LS"
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CL[LS]", "WHITE"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "TargetL[LS]", "IgnoredValue"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "RankNL[LS]", "LS"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SCountryList[LS]", "LS"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "LS", "#城番号(SK01)"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "SCountryList[LS+1]", "LS+1"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "SRegionList[LS+1]", "LS+1"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CL[LS]", "BLACK"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "TargetL[LS]", "STotalN-LS"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "CountryN", "1"
+		}
+	}
+	CE_0114 {
+		Title		: "　　国一覧の表示"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+			"情報を取得したい拠点が含まれる国または地域に対応する山括弧<>内の数字を次の画面にてご入力ください。"
+			""
+			"【国または地域の一覧】%CountryN%の国と地域"
+			"%武将CL[RankL[1]]%<1>%城RankL[1]%%武将CL[RankL[2]]%, <2>%城RankL[2]%%武将CL[RankL[3]]%, <3>%城RankL[3]%%武将CL[RankL[4]]%, <4>%城RankL[4]%%武将CL[RankL[5]]%, <5>%城RankL[5]%%武将CL[RankL[6]]%, <6>%城RankL[6]%%武将CL[RankL[7]]%, <7>%城RankL[7]%%武将CL[RankL[8]]%, <8>%城RankL[8]%%武将CL[RankL[9]]%, <9>%城RankL[9]%%武将&+
+CL[RankL[10]]%, <10>%城RankL[10]%%武将CL[RankL[11]]%, <11>%城RankL[11]%%武将CL[RankL[12]]%, <12>%城RankL[12]%%武将CL[RankL[13]]%, <13>%城RankL[13]%%武将CL[RankL[14]]%, <14>%城RankL[14]%%武将CL[RankL[15]]%, <15>%城RankL[15]%%武将CL[RankL[16]]%, <16>%城RankL[16]%%武将CL[RankL[17]]%, <17>%城RankL[17]%%武将CL[RankL[18]]%, <&+
+18>%城RankL[18]%%武将CL[RankL[19]]%, <19>%城RankL[19]%%武将CL[RankL[20]]%, <20>%城RankL[20]%%武将CL[RankL[21]]%, <21>%城RankL[21]%%武将CL[RankL[22]]%, <22>%城RankL[22]%%武将CL[RankL[23]]%, <23>%城RankL[23]%%武将CL[RankL[24]]%, <24>%城RankL[24]%%武将CL[RankL[25]]%, <25>%城RankL[25]%%武将CL[RankL[26]]%, <26>%城RankL[26]%%&+
+武将CL[RankL[27]]%, <27>%城RankL[27]%%武将CL[RankL[28]]%, <28>%城RankL[28]%%武将CL[RankL[29]]%, <29>%城RankL[29]%%武将CL[RankL[30]]%, <30>%城RankL[30]%%武将CL[RankL[31]]%, <31>%城RankL[31]%%武将CL[RankL[32]]%, <32>%城RankL[32]%%武将CL[RankL[33]]%, <33>%城RankL[33]%%武将CL[RankL[34]]%, <34>%城RankL[34]%%武将CL[RankL[35]]&+
+%, <35>%城RankL[35]%%武将CL[RankL[36]]%, <36>%城RankL[36]%%武将CL[RankL[37]]%, <37>%城RankL[37]%%武将CL[RankL[38]]%, <38>%城RankL[38]%%武将CL[RankL[39]]%, <39>%城RankL[39]%%武将CL[RankL[40]]%, <40>%城RankL[40]%%武将CL[RankL[41]]%, <41>%城RankL[41]%%武将CL[RankL[42]]%, <42>%城RankL[42]%%武将CL[RankL[43]]%, <43>%城RankL[4&+
+3]%%武将CL[RankL[44]]%, <44>%城RankL[44]%%武将CL[RankL[45]]%, <45>%城RankL[45]%%武将CL[RankL[46]]%, <46>%城RankL[46]%%武将CL[RankL[47]]%, <47>%城RankL[47]%%武将CL[RankL[48]]%, <48>%城RankL[48]%%武将CL[RankL[49]]%, <49>%城RankL[49]%%武将CL[RankL[50]]%, <50>%城RankL[50]%%武将CL[RankL[51]]%, <51>%城RankL[51]%%武将CL[RankL[&+
+52]]%, <52>%城RankL[52]%%武将CL[RankL[53]]%, <53>%城RankL[53]%%武将CL[RankL[54]]%, <54>%城RankL[54]%%武将CL[RankL[55]]%, <55>%城RankL[55]%%武将CL[RankL[56]]%, <56>%城RankL[56]%%武将CL[RankL[57]]%, <57>%城RankL[57]%%武将CL[RankL[58]]%, <58>%城RankL[58]%%武将CL[RankL[59]]%, <59>%城RankL[59]%%武将CL[RankL[60]]%, <60>%城Ran&+
+kL[60]%%武将CL[RankL[61]]%, <61>%城RankL[61]%%武将CL[RankL[62]]%, <62>%城RankL[62]%%武将CL[RankL[63]]%, <63>%城RankL[63]%%武将CL[RankL[64]]%, <64>%城RankL[64]%%武将CL[RankL[65]]%, <65>%城RankL[65]%%武将CL[RankL[66]]%, <66>%城RankL[66]%%武将CL[RankL[67]]%, <67>%城RankL[67]%%武将CL[RankL[68]]%, <68>%城RankL[68]%%武将CL[Ra&+
+nkL[69]]%, <69>%城RankL[69]%%武将CL[RankL[70]]%, <70>%城RankL[70]%%武将CL[RankL[71]]%, <71>%城RankL[71]%%武将CL[RankL[72]]%, <72>%城RankL[72]%%武将CL[RankL[73]]%, <73>%城RankL[73]%%武将CL[RankL[74]]%, <74>%城RankL[74]%%武将CL[RankL[75]]%, <75>%城RankL[75]%%武将CL[RankL[76]]%, <76>%城RankL[76]%%武将CL[RankL[77]]%, <77>%城&+
+RankL[77]%%武将CL[RankL[78]]%, <78>%城RankL[78]%%武将CL[RankL[79]]%, <79>%城RankL[79]%%武将CL[RankL[80]]%, <80>%城RankL[80]%%武将CL[RankL[81]]%, <81>%城RankL[81]%%武将CL[RankL[82]]%, <82>%城RankL[82]%%武将CL[RankL[83]]%, <83>%城RankL[83]%%武将CL[RankL[84]]%, <84>%城RankL[84]%%武将CL[RankL[85]]%, <85>%城RankL[85]%%武将CL&+
+[RankL[86]]%, <86>%城RankL[86]%%武将CL[RankL[87]]%, <87>%城RankL[87]%%武将CL[RankL[88]]%, <88>%城RankL[88]%%武将CL[RankL[89]]%, <89>%城RankL[89]%%武将CL[RankL[90]]%, <90>%城RankL[90]%%武将CL[RankL[91]]%, <91>%城RankL[91]%%武将CL[RankL[92]]%, <92>%城RankL[92]%%武将CL[RankL[93]]%, <93>%城RankL[93]%%武将CL[RankL[94]]%, <94&+
+>%城RankL[94]%%武将CL[RankL[95]]%, <95>%城RankL[95]%%武将CL[RankL[96]]%, <96>%城RankL[96]%%武将CL[RankL[97]]%, <97>%城RankL[97]%%武将CL[RankL[98]]%, <98>%城RankL[98]%%武将CL[RankL[99]]%, <99>%城RankL[99]%%武将CL[RankL[100]]%, <100>%城RankL[100]%"
+		}
+		Happening {
+		}
+	}
+	CE_0130 {
+		Title		: "　　再選択"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "CNumber", "CountryN"
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "範囲外の番号が入力されました。キャンセルせず再度検討しますか？"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0025", ""
+		}
+	}
+	CE_0131 {
+		Title		: "　　キャンセル"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_SMALL_EQUAL, NONE, NONE, NONE, NONE, "CNumber", "0"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "CountrySelected", "NA"
+		}
+	}
+	CE_0132 {
+		Title		: "　城選択"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "CountrySelected", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ShiroSelected", "NA"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroN", "1"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroK", "0"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0145", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "CL[CountrySelected]", "BLUE"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "TargetL[CountrySelected]", "ShiroK"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0358", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Per", "70"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "PageTotalN", "#Ceil(ShiroN/Per)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "k", "0"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0162", ""
+			HAPPENING_INPUT_NUMBER, NONE, NONE, NONE, NONE, NONE, NONE, "SNumber", "拠点の番号をご入力ください（0以下:キャンセル）。"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0148", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroSelected", "RankL[SNumber]"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0152", ""
+		}
+	}
+	CE_0145 {
+		Title		: "　　城名取得"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: SHIRO
+		LoopVariable	: "LS"
+		Condition {
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "CL[LS]", "WHITE"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "TargetL[LS]", "IgnoredValue"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SCountryList[LS]", "CountrySelected"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Status", "DStatusList[#城支配大名(LS)]"
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "Status", "Rounin"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Status", "0"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "CL[LS]", "BLACK"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Target", "LS"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0183", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "TargetL[LS]", "KokudakaCurrent"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroN", "1"
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroK", "KokudakaCurrent"
+		}
+	}
+	CE_0162 {
+		Title		: "　　頁制御"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_SMALL, NONE, NONE, NONE, NONE, "k", "PageTotalN"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "PageN", "k+1"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0144", ""
+			HAPPENING_ADD, NONE, NONE, NONE, NONE, NONE, NONE, "k", "1"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0162", ""
+		}
+	}
+	CE_0144 {
+		Title		: "　　　拠点一覧"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+			"%武将RED%%城CountrySelected%%武将BLACK%の拠点は以下の通りです。対象の拠点（または%武将BLUE%%城CountrySelected%の全拠点%武将BLACK%）に対応する山括弧<>内の数字を次の画面にてご入力ください。"
+			""
+			"【候補拠点一覧（石高順）】%PageN%頁目/全%PageTotalN%頁"
+			"%武将CL[RankL[1+k*Per]]%<%RankNL[1+k*Per]%>%城RankL[1+k*Per]%%武将CL[RankL[2+k*Per]]%, <%RankNL[2+k*Per]%>%城RankL[2+k*Per]%%武将CL[RankL[3+k*Per]]%, <%RankNL[3+k*Per]%>%城RankL[3+k*Per]%%武将CL[RankL[4+k*Per]]%, <%RankNL[4+k*Per]%>%城RankL[4+k*Per]%%武将CL[RankL[5+k*Per]]%, <%RankNL[5+k*Per]%>%城RankL[5+k*Per]%%武将&+
+CL[RankL[6+k*Per]]%, <%RankNL[6+k*Per]%>%城RankL[6+k*Per]%%武将CL[RankL[7+k*Per]]%, <%RankNL[7+k*Per]%>%城RankL[7+k*Per]%%武将CL[RankL[8+k*Per]]%, <%RankNL[8+k*Per]%>%城RankL[8+k*Per]%%武将CL[RankL[9+k*Per]]%, <%RankNL[9+k*Per]%>%城RankL[9+k*Per]%%武将CL[RankL[10+k*Per]]%, <%RankNL[10+k*Per]%>%城RankL[10+k*Per]%%武将CL[&+
+RankL[11+k*Per]]%, <%RankNL[11+k*Per]%>%城RankL[11+k*Per]%%武将CL[RankL[12+k*Per]]%, <%RankNL[12+k*Per]%>%城RankL[12+k*Per]%%武将CL[RankL[13+k*Per]]%, <%RankNL[13+k*Per]%>%城RankL[13+k*Per]%%武将CL[RankL[14+k*Per]]%, <%RankNL[14+k*Per]%>%城RankL[14+k*Per]%%武将CL[RankL[15+k*Per]]%, <%RankNL[15+k*Per]%>%城RankL[15+k*Per]&+
+%%武将CL[RankL[16+k*Per]]%, <%RankNL[16+k*Per]%>%城RankL[16+k*Per]%%武将CL[RankL[17+k*Per]]%, <%RankNL[17+k*Per]%>%城RankL[17+k*Per]%%武将CL[RankL[18+k*Per]]%, <%RankNL[18+k*Per]%>%城RankL[18+k*Per]%%武将CL[RankL[19+k*Per]]%, <%RankNL[19+k*Per]%>%城RankL[19+k*Per]%%武将CL[RankL[20+k*Per]]%, <%RankNL[20+k*Per]%>%城RankL[&+
+20+k*Per]%%武将CL[RankL[21+k*Per]]%, <%RankNL[21+k*Per]%>%城RankL[21+k*Per]%%武将CL[RankL[22+k*Per]]%, <%RankNL[22+k*Per]%>%城RankL[22+k*Per]%%武将CL[RankL[23+k*Per]]%, <%RankNL[23+k*Per]%>%城RankL[23+k*Per]%%武将CL[RankL[24+k*Per]]%, <%RankNL[24+k*Per]%>%城RankL[24+k*Per]%%武将CL[RankL[25+k*Per]]%, <%RankNL[25+k*Per]%>&+
+%城RankL[25+k*Per]%%武将CL[RankL[26+k*Per]]%, <%RankNL[26+k*Per]%>%城RankL[26+k*Per]%%武将CL[RankL[27+k*Per]]%, <%RankNL[27+k*Per]%>%城RankL[27+k*Per]%%武将CL[RankL[28+k*Per]]%, <%RankNL[28+k*Per]%>%城RankL[28+k*Per]%%武将CL[RankL[29+k*Per]]%, <%RankNL[29+k*Per]%>%城RankL[29+k*Per]%%武将CL[RankL[30+k*Per]]%, <%RankNL[30&+
++k*Per]%>%城RankL[30+k*Per]%%武将CL[RankL[31+k*Per]]%, <%RankNL[31+k*Per]%>%城RankL[31+k*Per]%%武将CL[RankL[32+k*Per]]%, <%RankNL[32+k*Per]%>%城RankL[32+k*Per]%%武将CL[RankL[33+k*Per]]%, <%RankNL[33+k*Per]%>%城RankL[33+k*Per]%%武将CL[RankL[34+k*Per]]%, <%RankNL[34+k*Per]%>%城RankL[34+k*Per]%%武将CL[RankL[35+k*Per]]%, <%&+
+RankNL[35+k*Per]%>%城RankL[35+k*Per]%%武将CL[RankL[36+k*Per]]%, <%RankNL[36+k*Per]%>%城RankL[36+k*Per]%%武将CL[RankL[37+k*Per]]%, <%RankNL[37+k*Per]%>%城RankL[37+k*Per]%%武将CL[RankL[38+k*Per]]%, <%RankNL[38+k*Per]%>%城RankL[38+k*Per]%%武将CL[RankL[39+k*Per]]%, <%RankNL[39+k*Per]%>%城RankL[39+k*Per]%%武将CL[RankL[40+k*P&+
+er]]%, <%RankNL[40+k*Per]%>%城RankL[40+k*Per]%%武将CL[RankL[41+k*Per]]%, <%RankNL[41+k*Per]%>%城RankL[41+k*Per]%%武将CL[RankL[42+k*Per]]%, <%RankNL[42+k*Per]%>%城RankL[42+k*Per]%%武将CL[RankL[43+k*Per]]%, <%RankNL[43+k*Per]%>%城RankL[43+k*Per]%%武将CL[RankL[44+k*Per]]%, <%RankNL[44+k*Per]%>%城RankL[44+k*Per]%%武将CL[Ran&+
+kL[45+k*Per]]%, <%RankNL[45+k*Per]%>%城RankL[45+k*Per]%%武将CL[RankL[46+k*Per]]%, <%RankNL[46+k*Per]%>%城RankL[46+k*Per]%%武将CL[RankL[47+k*Per]]%, <%RankNL[47+k*Per]%>%城RankL[47+k*Per]%%武将CL[RankL[48+k*Per]]%, <%RankNL[48+k*Per]%>%城RankL[48+k*Per]%%武将CL[RankL[49+k*Per]]%, <%RankNL[49+k*Per]%>%城RankL[49+k*Per]%%武&+
+将CL[RankL[50+k*Per]]%, <%RankNL[50+k*Per]%>%城RankL[50+k*Per]%%武将CL[RankL[51+k*Per]]%, <%RankNL[51+k*Per]%>%城RankL[51+k*Per]%%武将CL[RankL[52+k*Per]]%, <%RankNL[52+k*Per]%>%城RankL[52+k*Per]%%武将CL[RankL[53+k*Per]]%, <%RankNL[53+k*Per]%>%城RankL[53+k*Per]%%武将CL[RankL[54+k*Per]]%, <%RankNL[54+k*Per]%>%城RankL[54+k&+
+*Per]%%武将CL[RankL[55+k*Per]]%, <%RankNL[55+k*Per]%>%城RankL[55+k*Per]%%武将CL[RankL[56+k*Per]]%, <%RankNL[56+k*Per]%>%城RankL[56+k*Per]%%武将CL[RankL[57+k*Per]]%, <%RankNL[57+k*Per]%>%城RankL[57+k*Per]%%武将CL[RankL[58+k*Per]]%, <%RankNL[58+k*Per]%>%城RankL[58+k*Per]%%武将CL[RankL[59+k*Per]]%, <%RankNL[59+k*Per]%>%城R&+
+ankL[59+k*Per]%%武将CL[RankL[60+k*Per]]%, <%RankNL[60+k*Per]%>%城RankL[60+k*Per]%%武将CL[RankL[61+k*Per]]%, <%RankNL[61+k*Per]%>%城RankL[61+k*Per]%%武将CL[RankL[62+k*Per]]%, <%RankNL[62+k*Per]%>%城RankL[62+k*Per]%%武将CL[RankL[63+k*Per]]%, <%RankNL[63+k*Per]%>%城RankL[63+k*Per]%%武将CL[RankL[64+k*Per]]%, <%RankNL[64+k*P&+
+er]%>%城RankL[64+k*Per]%%武将CL[RankL[65+k*Per]]%, <%RankNL[65+k*Per]%>%城RankL[65+k*Per]%%武将CL[RankL[66+k*Per]]%, <%RankNL[66+k*Per]%>%城RankL[66+k*Per]%%武将CL[RankL[67+k*Per]]%, <%RankNL[67+k*Per]%>%城RankL[67+k*Per]%%武将CL[RankL[68+k*Per]]%, <%RankNL[68+k*Per]%>%城RankL[68+k*Per]%%武将CL[RankL[69+k*Per]]%, <%Rank&+
+NL[69+k*Per]%>%城RankL[69+k*Per]%%武将CL[RankL[70+k*Per]]%, <%RankNL[70+k*Per]%>%城RankL[70+k*Per]%"
+		}
+		Happening {
+		}
+	}
+	CE_0148 {
+		Title		: "　　再選択"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "SNumber", "ShiroN"
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "範囲外の番号が入力されました。キャンセルせず再度検討しますか？"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0132", ""
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0148", ""
+		}
+	}
+	CE_0152 {
+		Title		: "　　キャンセル"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_SMALL_EQUAL, NONE, NONE, NONE, NONE, "SNumber", "0"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroSelected", "NA"
+		}
+	}
+	CE_0149 {
+		Title		: "　拠点情報表示"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "ShiroSelected", "NA"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "SCountryList[ShiroSelected]", "ShiroSelected"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Target", "ShiroSelected"
+		}
+		Message {
+			"【%城Target%の情報】"
+			""
+			"・所在地：%城Region%-%城Country%"
+			""
+			"・領主：%武将Toushu%（%大名DJyoshu%）"
+			""
+			"・石高：%KCa%万%KCb%%KCc%%KCd%%KCe%石（%KokudakaPercent%%, 最大石高：%KMa%万%KMb%%KMc%%KMd%%KMe%石）"
+			""
+			"・経済：%ECa%%武将ECb%%武将ECc%%武将ECd%%武将ECe%（%EconomyPercent%%, 最大経済：%EMa%%武将EMb%%武将EMc%%武将EMd%%武将EMe%）"
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Toushu", "#当主(#城支配大名(Target))"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Region", "SRegionList[Target]"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Country", "SCountryList[Target]"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0183", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaPercent", "#Ceil((KokudakaCurrent/(KokudakaMax+1))*100)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EconomyPercent", "#Ceil((EconomyCurrent/(EconomyMax+1))*100)"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Value", "KokudakaCurrent"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0157", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KCa", "a"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KCb", "b"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KCc", "c"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KCd", "d"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KCe", "e"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Value", "KokudakaMax"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0157", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KMa", "a"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KMb", "b"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KMc", "c"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KMd", "d"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KMe", "e"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Value", "EconomyCurrent"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0158", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ECa", "a"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ECb", "b"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ECc", "c"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ECd", "d"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ECe", "e"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Value", "EconomyMax"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0158", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EMa", "a"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EMb", "b"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EMc", "c"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EMd", "d"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EMe", "e"
+		}
+	}
+	CE_0163 {
+		Title		: "　国全域の場合"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "ShiroSelected", "NA"
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SCountryList[ShiroSelected]", "ShiroSelected"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "CountryNumber", "ShiroSelected"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0164", ""
+		}
+	}
+	CE_0164 {
+		Title		: "　　ループ制御"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: REPEATABLE
+		SubRoutine	: YES
+		LoopType	: SHIRO
+		LoopVariable	: "LS"
+		Condition {
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SCountryList[LS]", "CountryNumber"
+			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Status", "DStatusList[#城支配大名(LS)]"
+			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Status", "0"
+			CONDITION_LARGE, NONE, NONE, NONE, NONE, "Status", "Rounin"
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroSelected", "LS"
+			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0149", ""
 		}
 	}
 	CE_0305 {
@@ -10717,6 +11187,7 @@ kL[40+k*Per]]%石）"
 		Happening {
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DaimyouDetermined", "NA"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "IgnoredValue", "-1"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "IndexForIgnored", "NA"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0354", ""
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0369", ""
 			HAPPENING_INPUT_NUMBER, NONE, NONE, NONE, NONE, NONE, NONE, "SelectedRank", "対象1家の番号をご入力ください（0: キャンセル）。"
@@ -10858,7 +11329,7 @@ kL[40+k*Per]]%石）"
 		}
 		Message {
 			"%武将RED%%大名SyukeDetermined%%武将BLACK%を主家とする一般大名家（%武将GREEN%従属大名家%武将BLACK%・%武将BLUE%臣従大名家%武将BLACK%）及び%武将BLACK%家臣%武将BLACK%は以下の通りです。"
-			"対象の1家について、次の画面にて山括弧<>内の数字をご入力ください。"
+			"対象の1家に対応する山括弧<>内の数字を次の画面にてご入力ください。"
 			""
 			"【候補一覧（石高順）】%Page%頁目/全%PageTotalN%頁"
 			"%武将DCL[RankL[1+40*Count]]%<%S[1]%>%大名RankL[1+40*Count]%（%TargetL[RankL[1+40*Count]]%万石） %武将DCL[RankL[2+40*Count]]%, <%S[2]%>%大名RankL[2+40*Count]%（%TargetL[RankL[2+40*Count]]%万石） %武将DCL[RankL[3+40*Count]]%, <%S[3]%>%大名RankL[3+40*Count]%（%TargetL[RankL[3+40*Count]]%万石） %武将DCL[RankL[4+40*Count&+
@@ -11545,419 +12016,6 @@ ankL[39+40*Count]]%, <%S[39]%>%大名RankL[39+40*Count]%（%TargetL[RankL[39+40*Cou
 			HAPPENING_CHANGE_TITLE, NONE, NONE, NONE, NONE, NONE, NONE, "豊徳二重公儀の統合（四公儀時代）", ""
 		}
 	}
-	CE_0149 {
-		Title		: "■城情報"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: ONCE
-		SubRoutine	: NO
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-		}
-		Message {
-		}
-		Happening {
-		}
-	}
-	CE_0153 {
-		Title		: "　城情報表示"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Toushu", "#当主(#城支配大名(Target))"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Region", "SRegionList[Target]"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Country", "SCountryList[Target]"
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0183", ""
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaPercent", "#Ceil((KokudakaCurrent/(KokudakaMax+1))*100)"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EconomyPercent", "#Ceil((EconomyCurrent/(EconomyMax+1))*100)"
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0163", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0164", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0165", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0166", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0167", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0168", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0169", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0170", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0171", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0172", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0173", ""
-		}
-	}
-	CE_0163 {
-		Title		: "　　表示用処理"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Value", "KokudakaCurrent"
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0157", ""
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KCa", "a"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KCb", "b"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KCc", "c"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KCd", "d"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KCe", "e"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Value", "KokudakaMax"
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0157", ""
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KMa", "a"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KMb", "b"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KMc", "c"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KMd", "d"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KMe", "e"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Value", "EconomyCurrent"
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0158", ""
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ECa", "a"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ECb", "b"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ECc", "c"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ECd", "d"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Value", "EconomyMax"
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0158", ""
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EMa", "a"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EMb", "b"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EMc", "c"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EMd", "d"
-		}
-	}
-	CE_0164 {
-		Title		: "　　城情報表示"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_LARGE, NONE, NONE, NONE, NONE, "ECa", "0"
-		}
-		Message {
-			"【%城Target%の情報】"
-			""
-			"・所在地：%城Region%-%城Country%"
-			""
-			"・領主：%武将Toushu%（%大名DJyoshu%）"
-			""
-			"・石高：%KCa%万%KCb%%KCc%%KCd%%KCe%石（%KokudakaPercent%%, 最大石高：%KMa%万%KMb%%KMc%%KMd%%KMe%石）"
-			""
-			"・経済：%ECa%,%ECb%%ECc%%ECd%（%EconomyPercent%%, 最大経済：%EMa%,%EMb%%EMc%%EMd%）"
-		}
-		Happening {
-		}
-	}
-	CE_0165 {
-		Title		: "　　城情報表示"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECa", "0"
-			CONDITION_LARGE, NONE, NONE, NONE, NONE, "ECb", "0"
-			CONDITION_LARGE, NONE, NONE, NONE, NONE, "EMa", "0"
-		}
-		Message {
-			"【%城Target%の情報】"
-			""
-			"・所在地：%城Region%-%城Country%"
-			""
-			"・領主：%武将Toushu%（%大名DJyoshu%）"
-			""
-			"・石高：%KCa%万%KCb%%KCc%%KCd%%KCe%石（%KokudakaPercent%%, 最大石高：%KMa%万%KMb%%KMc%%KMd%%KMe%石）"
-			""
-			"・経済：%ECb%%ECc%%ECd%（%EconomyPercent%%, 最大経済：%EMa%,%EMb%%EMc%%EMd%）"
-		}
-		Happening {
-		}
-	}
-	CE_0166 {
-		Title		: "　　城情報表示"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECa", "0"
-			CONDITION_LARGE, NONE, NONE, NONE, NONE, "ECb", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "EMa", "0"
-		}
-		Message {
-			"【%城Target%の情報】"
-			""
-			"・所在地：%城Region%-%城Country%"
-			""
-			"・領主：%武将Toushu%（%大名DJyoshu%）"
-			""
-			"・石高：%KCa%万%KCb%%KCc%%KCd%%KCe%石（%KokudakaPercent%%, 最大石高：%KMa%万%KMb%%KMc%%KMd%%KMe%石）"
-			""
-			"・経済：%ECb%%ECc%%ECd%（%EconomyPercent%%, 最大経済：%EMb%%EMc%%EMd%）"
-		}
-		Happening {
-		}
-	}
-	CE_0167 {
-		Title		: "　　城情報表示"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECa", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECb", "0"
-			CONDITION_LARGE, NONE, NONE, NONE, NONE, "ECc", "0"
-			CONDITION_LARGE, NONE, NONE, NONE, NONE, "EMa", "0"
-		}
-		Message {
-			"【%城Target%の情報】"
-			""
-			"・所在地：%城Region%-%城Country%"
-			""
-			"・領主：%武将Toushu%（%大名DJyoshu%）"
-			""
-			"・石高：%KCa%万%KCb%%KCc%%KCd%%KCe%石（%KokudakaPercent%%, 最大石高：%KMa%万%KMb%%KMc%%KMd%%KMe%石）"
-			""
-			"・経済：%ECc%%ECd%（%EconomyPercent%%, 最大経済：%EMa%,%EMb%%EMc%%EMd%）"
-		}
-		Happening {
-		}
-	}
-	CE_0168 {
-		Title		: "　　城情報表示"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECa", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECb", "0"
-			CONDITION_LARGE, NONE, NONE, NONE, NONE, "ECc", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "EMa", "0"
-			CONDITION_LARGE, NONE, NONE, NONE, NONE, "EMb", "0"
-		}
-		Message {
-			"【%城Target%の情報】"
-			""
-			"・所在地：%城Region%-%城Country%"
-			""
-			"・領主：%武将Toushu%（%大名DJyoshu%）"
-			""
-			"・石高：%KCa%万%KCb%%KCc%%KCd%%KCe%石（%KokudakaPercent%%, 最大石高：%KMa%万%KMb%%KMc%%KMd%%KMe%石）"
-			""
-			"・経済：%ECc%%ECd%（%EconomyPercent%%, 最大経済：%EMb%%EMc%%EMd%）"
-		}
-		Happening {
-		}
-	}
-	CE_0169 {
-		Title		: "　　城情報表示"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECa", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECb", "0"
-			CONDITION_LARGE, NONE, NONE, NONE, NONE, "ECc", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "EMa", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "EMb", "0"
-		}
-		Message {
-			"【%城Target%の情報】"
-			""
-			"・所在地：%城Region%-%城Country%"
-			""
-			"・領主：%武将Toushu%（%大名DJyoshu%）"
-			""
-			"・石高：%KCa%万%KCb%%KCc%%KCd%%KCe%石（%KokudakaPercent%%, 最大石高：%KMa%万%KMb%%KMc%%KMd%%KMe%石）"
-			""
-			"・経済：%ECc%%ECd%（%EconomyPercent%%, 最大経済：%EMc%%EMd%）"
-		}
-		Happening {
-		}
-	}
-	CE_0170 {
-		Title		: "　　城情報表示"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECa", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECb", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECc", "0"
-			CONDITION_LARGE, NONE, NONE, NONE, NONE, "EMa", "0"
-		}
-		Message {
-			"【%城Target%の情報】"
-			""
-			"・所在地：%城Region%-%城Country%"
-			""
-			"・領主：%武将Toushu%（%大名DJyoshu%）"
-			""
-			"・石高：%KCa%万%KCb%%KCc%%KCd%%KCe%石（%KokudakaPercent%%, 最大石高：%KMa%万%KMb%%KMc%%KMd%%KMe%石）"
-			""
-			"・経済：%ECd%（%EconomyPercent%%, 最大経済：%EMa%,%EMb%%EMc%%EMd%）"
-		}
-		Happening {
-		}
-	}
-	CE_0171 {
-		Title		: "　　城情報表示"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECa", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECb", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECc", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "EMa", "0"
-			CONDITION_LARGE, NONE, NONE, NONE, NONE, "EMb", "0"
-		}
-		Message {
-			"【%城Target%の情報】"
-			""
-			"・所在地：%城Region%-%城Country%"
-			""
-			"・領主：%武将Toushu%（%大名DJyoshu%）"
-			""
-			"・石高：%KCa%万%KCb%%KCc%%KCd%%KCe%石（%KokudakaPercent%%, 最大石高：%KMa%万%KMb%%KMc%%KMd%%KMe%石）"
-			""
-			"・経済：%ECd%（%EconomyPercent%%, 最大経済：%EMb%%EMc%%EMd%）"
-		}
-		Happening {
-		}
-	}
-	CE_0172 {
-		Title		: "　　城情報表示"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECa", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECb", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECc", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "EMa", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "EMb", "0"
-			CONDITION_LARGE, NONE, NONE, NONE, NONE, "EMc", "0"
-		}
-		Message {
-			"【%城Target%の情報】"
-			""
-			"・所在地：%城Region%-%城Country%"
-			""
-			"・領主：%武将Toushu%（%大名DJyoshu%）"
-			""
-			"・石高：%KCa%万%KCb%%KCc%%KCd%%KCe%石（%KokudakaPercent%%, 最大石高：%KMa%万%KMb%%KMc%%KMd%%KMe%石）"
-			""
-			"・経済：%ECd%（%EconomyPercent%%, 最大経済：%EMc%%EMd%）"
-		}
-		Happening {
-		}
-	}
-	CE_0173 {
-		Title		: "　　城情報表示"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECa", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECb", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "ECc", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "EMa", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "EMb", "0"
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "EMc", "0"
-		}
-		Message {
-			"【%城Target%の情報】"
-			""
-			"・所在地：%城Region%-%城Country%"
-			""
-			"・領主：%武将Toushu%（%大名DJyoshu%）"
-			""
-			"・石高：%KCa%万%KCb%%KCc%%KCd%%KCe%石（%KokudakaPercent%%, 最大石高：%KMa%万%KMb%%KMc%%KMd%%KMe%石）"
-			""
-			"・経済：%ECd%（%EconomyPercent%%, 最大経済：%EMd%）"
-		}
-		Happening {
-		}
-	}
-	CE_0183 {
-		Title		: "　石高・経済情報取得"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: NONE
-		LoopVariable	: ""
-		Condition {
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DJyoshu", "#城支配大名(Target)"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DKPre", "#直轄石高(DJyoshu)"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "DEPre", "#直轄経済(DJyoshu)"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Shiro1", "Target"
-			HAPPENING_SHIRO_KOKUDAKA_PLUS, NONE, NONE, VARIABLE, NONE, NONE, NONE, "-100000000", ""
-			HAPPENING_SHIRO_KEIZAI_PLUS, NONE, NONE, VARIABLE, NONE, NONE, NONE, "-100000000", ""
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaCurrent", "DKPre-#直轄石高(DJyoshu)"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EconomyCurrent", "DEPre-#直轄経済(DJyoshu)"
-			HAPPENING_SHIRO_KOKUDAKA_PLUS, NONE, NONE, VARIABLE, NONE, NONE, NONE, "100000000", ""
-			HAPPENING_SHIRO_KEIZAI_PLUS, NONE, NONE, VARIABLE, NONE, NONE, NONE, "100000000", ""
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "KokudakaMax", "#直轄石高(DJyoshu)-DKPre+KokudakaCurrent"
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "EconomyMax", "#直轄経済(DJyoshu)-DEPre+EconomyCurrent"
-			HAPPENING_SHIRO_KOKUDAKA_PLUS, NONE, NONE, VARIABLE, NONE, NONE, NONE, "KokudakaCurrent-KokudakaMax", ""
-			HAPPENING_SHIRO_KEIZAI_PLUS, NONE, NONE, VARIABLE, NONE, NONE, NONE, "EconomyCurrent-EconomyMax", ""
-		}
-	}
 	CE_0142 {
 		Title		: "■加増"
 		PeriodStart	: NONE
@@ -12050,6 +12108,7 @@ ankL[39+40*Count]]%, <%S[39]%>%大名RankL[39+40*Count]%（%TargetL[RankL[39+40*Cou
 		Happening {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0313", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "IgnoredValue", "-1"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "IndexForIgnored", "NAS"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SToProvideN", "0"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SToProvideK", "0"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0352", ""
@@ -12387,6 +12446,7 @@ ist[RankL[28+k*Per]]%）%武将C[RankL[29+k*Per]]%, %城RankL[29+k*Per]%（%城SCountr
 		Happening {
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0382", ""
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "IgnoredValue", "-1"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "IndexForIgnored", "NAS"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SToProvideN", "0"
 			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "SToProvideK", "0"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0399", ""
@@ -16194,11 +16254,11 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 			"    ・地方・国名一覧：地方ごとの国名一覧"
 			"    ・家臣情報（当家）：当家の外交方針に従う家臣の情報を順に表示する"
 			"    ・家臣情報（地方>国名から選択）：家の外交方針に従う家臣の情報を順に表示する"
-			"　　・拠点情報：選択した国内の拠点情報を順に表示する"
+			"　　・拠点情報：選択した拠点の情報を表示する"
 			""
 			"・$color=0x0000FF$論功行賞：従属・臣従大名・家臣の知行を変更する$color=0x000000$"
 			"　　・加増実施：従属・臣従大名・家臣に対して、加増を実施する"
-			"　　・加増実施（国単位・約束含む）：従属・臣従大名・家臣に対して、国単位で加増を実施する、または将来の加増を約束する"
+			"　　・加増の約束：従属・臣従大名・家臣に対して、将来の加増を約束する"
 			"　　・改易：従属・臣従大名を牢人化、または・家臣家を併合する"
 			""
 			"・$color=0x0000FF$牢人処遇：$color=0x000000$"
@@ -16533,29 +16593,8 @@ orL[8]%、%武将BFollowL[8]%%武将BColorL[9]%、%武将BFollowL[9]%%武将BColorL[10]%、
 		Message {
 		}
 		Happening {
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0001", ""
-			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0162", ""
-		}
-	}
-	CE_0162 {
-		Title		: "　　　順に表示"
-		PeriodStart	: NONE
-		PeriodEnd	: NONE
-		Logic		: AND
-		RepeatType	: REPEATABLE
-		SubRoutine	: YES
-		LoopType	: SHIRO
-		LoopVariable	: "LS"
-		Condition {
-			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "SCountryList[LS]", "CountrySelected"
-			CONDITION_DAINYUU, NONE, NONE, NONE, NONE, "Status", "DStatusList[#城支配大名(LS)]"
-			CONDITION_NOT_EQUAL, NONE, NONE, NONE, NONE, "Status", "0"
-			CONDITION_LARGE, NONE, NONE, NONE, NONE, "Status", "Rounin"
-		}
-		Message {
-		}
-		Happening {
-			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "Target", "LS"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "CountrySelected", "NA"
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ShiroSelected", "NA"
 			HAPPENING_SUBROUTINE_CALL, NONE, NONE, NONE, NONE, NONE, NONE, "CE_0153", ""
 		}
 	}
