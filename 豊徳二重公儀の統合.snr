@@ -900,7 +900,6 @@ Doumei {
 	D_Tokugawa,				SHINJUU,	D_0110
 	D_Tokugawa,				SHINJUU,	D_0134
 	D_Tokugawa,				SHINJUU,	D_0136
-	D_Tokugawa,				SHINJUU,	D_0064
 	D_Tokugawa,				SHINJUU,	D_0066
 	D_Tokugawa,				SHINJUU,	D_Okudaira
 	D_Tokugawa,				SHINJUU,	D_Takeya
@@ -11600,11 +11599,11 @@ ankL[39+40*Count]]%, <%S[39]%>%ëÂñºRankL[39+40*Count]%Åi%TargetL[RankL[39+40*Cou
 		}
 		Happening {
 			HAPPENING_JUUZOKU, D_Toyotomi, D_Fukushima, NONE, NONE, NONE, NONE, "", ""
-			HAPPENING_JUUZOKU, D_Toyotomi, D_Maedayagami, NONE, NONE, NONE, NONE, "", ""
-			HAPPENING_JUUZOKU, D_Toyotomi, D_Tani, NONE, NONE, NONE, NONE, "", ""
 			HAPPENING_JUUZOKU, D_Toyotomi, D_0000, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_Maedayagami, NONE, NONE, NONE, NONE, "", ""
 			HAPPENING_JUUZOKU, D_Toyotomi, D_0013, NONE, NONE, NONE, NONE, "", ""
 			HAPPENING_JUUZOKU, D_Toyotomi, D_0179, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_Tani, NONE, NONE, NONE, NONE, "", ""
 			HAPPENING_JUUZOKU, D_Toyotomi, D_0177, NONE, NONE, NONE, NONE, "", ""
 			HAPPENING_JUUZOKU, D_Toyotomi, D_0167, NONE, NONE, NONE, NONE, "", ""
 			HAPPENING_JUUZOKU, D_Toyotomi, D_0165, NONE, NONE, NONE, NONE, "", ""
@@ -11638,9 +11637,43 @@ ankL[39+40*Count]]%, <%S[39]%>%ëÂñºRankL[39+40*Count]%Åi%TargetL[RankL[39+40*Cou
 			HAPPENING_JUUZOKU, D_Toyotomi, D_0090, NONE, NONE, NONE, NONE, "", ""
 			HAPPENING_JUUZOKU, D_Toyotomi, D_0132, NONE, NONE, NONE, NONE, "", ""
 			HAPPENING_JUUZOKU, D_Toyotomi, D_0234, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_0035, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_0032, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_0021, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_0039, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_0099, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_0100, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_0152, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_Furuta, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_0175, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_Mouri, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_0200, NONE, NONE, NONE, NONE, "", ""
 		}
 	}
 	CE_0064 {
+		Title		: "Å@Å@ñLêbêwâc2"
+		PeriodStart	: NONE
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: ONCE
+		SubRoutine	: NO
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+		}
+		Message {
+		}
+		Happening {
+			HAPPENING_JUUZOKU, D_Toyotomi, D_0040, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_0202, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_0218, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_0219, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_0222, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_0217, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Toyotomi, D_0221, NONE, NONE, NONE, NONE, "", ""
+		}
+	}
+	CE_0195 {
 		Title		: "Å@Å@ìøêÏêwâc"
 		PeriodStart	: NONE
 		PeriodEnd	: NONE
@@ -11673,8 +11706,29 @@ ankL[39+40*Count]]%, <%S[39]%>%ëÂñºRankL[39+40*Count]%Åi%TargetL[RankL[39+40*Cou
 			HAPPENING_JUUZOKU, D_Tokugawa, D_0135, NONE, NONE, NONE, NONE, "", ""
 			HAPPENING_JUUZOKU, D_Tokugawa, D_0128, NONE, NONE, NONE, NONE, "", ""
 			HAPPENING_JUUZOKU, D_Tokugawa, D_0020, NONE, NONE, NONE, NONE, "", ""
-			HAPPENING_JUUZOKU, D_Tokugawa, D_DATE, NONE, NONE, NONE, NONE, "", ""
 			HAPPENING_JUUZOKU, D_Tokugawa, D_0169, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_DATE, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0064, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0041, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0042, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0232, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0233, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0068, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0071, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0176, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0078, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0162, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0159, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0185, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0210, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0197, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0206, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0209, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0208, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0205, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0014, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0091, NONE, NONE, NONE, NONE, "", ""
+			HAPPENING_JUUZOKU, D_Tokugawa, D_0180, NONE, NONE, NONE, NONE, "", ""
 		}
 	}
 	CE_0000 {
