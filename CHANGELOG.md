@@ -3,7 +3,7 @@
 安定版及び開発版の最新Versionは以下のとおりです。
 
 - [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.2.0
-- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0.dev31
+- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0.dev32
 
 ## Change log
 
@@ -33,6 +33,7 @@
 - [評定>拠点情報表示：選択方式を「地方名>国名」から「国名>拠点名」に変更 #71](https://github.com/lisphilar/sengokushi/issues/71)
 - [初期従属先の変更：旧族大名を豊臣・徳川陣営に分配 #72](https://github.com/lisphilar/sengokushi/issues/72)
 - [大坂東部：所属地域名（国名）の修正 #73](https://github.com/lisphilar/sengokushi/issues/73)
+- [評定：情報一覧の集約 #74](https://github.com/lisphilar/sengokushi/issues/74)
 
 
 ### Version 1.2.0 (2023/2/23)
