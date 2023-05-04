@@ -3,7 +3,7 @@
 安定版及び開発版の最新Versionは以下のとおりです。
 
 - [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.2.0
-- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0.dev32
+- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0.dev33
 
 ## Change log
 
@@ -15,6 +15,7 @@
 - [開発版をRepository top directoryに移動する #50](https://github.com/lisphilar/sengokushi/issues/50)
 - [シナリオファイルの名称を二重公儀の統合,snr から 豊徳二重公儀の統合.snr に変更する #51](https://github.com/lisphilar/sengokushi/issues/51)
 - [大名家選択時に空白地勢力などが表示される問題の修正 #52](https://github.com/lisphilar/sengokushi/issues/52)
+- [README: あらすじの追記 #53](https://github.com/lisphilar/sengokushi/issues/53)
 - [史実：牢人の豊臣氏宗家への再仕官 #54](https://github.com/lisphilar/sengokushi/issues/54)
 - [シナリオ開始時の表示を抑制する #55](https://github.com/lisphilar/sengokushi/issues/55)
 - [全国マップ：「大坂」ラベルを大坂マップの上へ #56](https://github.com/lisphilar/sengokushi/issues/56)
