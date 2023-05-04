@@ -2,14 +2,18 @@
 
 安定版及び開発版の最新Versionは以下のとおりです。
 
-- [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.2.0
-- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0.dev33
+- [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.3.0
+- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0
 
 ## Change log
 
 戦国史シナリオ「豊徳二重公儀の統合」の変更履歴をまとめた資料です。GitHub IssueのタイトルとリンクをVersionごとに一覧化しておりますので、詳細はそれぞれリンクよりご確認ください。
 
 ### Un-released
+
+NA
+
+### Version 1.3.0 (2023/5/5)
 
 - [評定：加増時に臣従大名を選択できない問題の修正 #49](https://github.com/lisphilar/sengokushi/issues/49)
 - [開発版をRepository top directoryに移動する #50](https://github.com/lisphilar/sengokushi/issues/50)
@@ -35,7 +39,6 @@
 - [初期従属先の変更：旧族大名を豊臣・徳川陣営に分配 #72](https://github.com/lisphilar/sengokushi/issues/72)
 - [大坂東部：所属地域名（国名）の修正 #73](https://github.com/lisphilar/sengokushi/issues/73)
 - [評定：情報一覧の集約 #74](https://github.com/lisphilar/sengokushi/issues/74)
-
 
 ### Version 1.2.0 (2023/2/23)
 
