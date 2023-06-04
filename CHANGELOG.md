@@ -3,7 +3,7 @@
 安定版及び開発版の最新Versionは以下のとおりです。
 
 - [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.3.0
-- [開発版](https://github.com/lisphilar/sengokushi)：1.3.0
+- [開発版](https://github.com/lisphilar/sengokushi)：1.3.1.dev0
 
 ## Change log
 
@@ -11,7 +11,7 @@
 
 ### Un-released
 
-NA
+- [README: 参考文献の追記 #75](https://github.com/lisphilar/sengokushi/issues/75)
 
 ### Version 1.3.0 (2023/5/5)
 

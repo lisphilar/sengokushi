@@ -233,14 +233,29 @@
 
 todo: 発生頻度の調整
 
-## Related URLs
+## 関連資料
 
-### Lisphilar（「隅立庄屋」）作成資料
+### 参考文献
+
+- 笠谷 和比古, 関ヶ原合戦と大坂の陣, 戦争の日本史17, 吉川弘文館, 2007.
+- 笠谷 和比古, 徳川家康, ミネルヴァ日本評伝選, ミネルヴァ書房, 2016.
+- 工藤 寛正 編, 国別 藩と城下町の事典, 東京堂出版, 2004.
+- 柏木 輝久, 大坂の陣 豊臣方人物事典, 宮帯出版社, 2016.
+- ◆玉王◆, [慶長戦史-落日の日輪-](https://wiki.sengokushi.net/%E6%85%B6%E9%95%B7%E6%88%A6%E5%8F%B2), 2010.
+- Wikipedia (大名, 武将情報など)
+
+### Acknowledgement
+
+作成者である◆玉王◆氏の了解を得て、[慶長戦史 ‐落日の日輪‐](https://wiki.sengokushi.net/%E6%85%B6%E9%95%B7%E6%88%A6%E5%8F%B2)のデータをそのまま使用、または改変して使用している。
+
+### シナリオ作成に当たって作成した資料など
+
+#### Lisphilar（「隅立庄屋」）作成資料
 
 - （現在はアクセス不可）http://ookiwa.web.fc2.com/: シナリオ「豊徳二重公儀の統合」の旧公開ページ
 - [生命科学と歴史Wiki](https://w.atwiki.jp/asscicule/): 関連する歴史について2010-2013年にまとめたWiki
 
-### Lisphilar以外の方に作成いただいた資料
+#### Lisphilar以外の方に作成いただいた資料
 
 - [戦国史Wiki > 豊徳二重公儀の統合](https://wiki.sengokushi.net/%E4%BA%8C%E9%87%8D%E5%85%AC%E5%84%80%E3%81%AE%E7%B5%B1%E5%90%88_%E8%B1%8A%E5%BE%B3%E4%BD%93%E5%88%B6%E3%81%AE%E5%B4%A9%E5%A3%8A)
 - [戦国史旧作シナリオ復興委員会 > 日本史シナリオ(戦国時代：本能寺の変以降)](http://awak-labo.com/old_scenario/list-1-3.html)
@@ -250,8 +265,3 @@ todo: 発生頻度の調整
 
 Citation:
 > Lisphilar (2010-2023), Repository regarding Sengokushi, https://github.com/lisphilar/sengokushi
-
-#### マップファイル、一般の大名・武将情報
-
-作成者である◆玉王◆氏の了解を得て、[慶長戦史 ‐落日の日輪‐](https://wiki.sengokushi.net/%E6%85%B6%E9%95%B7%E6%88%A6%E5%8F%B2)のデータをそのまま使用、または改変して使用している。
-
