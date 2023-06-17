@@ -3,7 +3,7 @@
 安定版及び開発版の最新Versionは以下のとおりです。
 
 - [安定版](https://github.com/lisphilar/sengokushi/tree/main/scenario_archive)：1.3.0
-- [開発版](https://github.com/lisphilar/sengokushi)：1.3.1.dev0
+- [開発版](https://github.com/lisphilar/sengokushi)：1.3.1.dev1
 
 ## Change log
 
@@ -12,6 +12,7 @@
 ### Un-released
 
 - [README: 参考文献の追記 #75](https://github.com/lisphilar/sengokushi/issues/75)
+- [武将「山岡道阿弥」の所属を豊臣氏宗家-堺から幕府勘定所-（近江）水口城に修正 #76](https://github.com/lisphilar/sengokushi/issues/76)
 
 ### Version 1.3.0 (2023/5/5)
 
