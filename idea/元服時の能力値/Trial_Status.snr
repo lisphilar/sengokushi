@@ -1,0 +1,327 @@
+ScenarioVer : 11	// シナリオVersion
+
+MapFile : "default_q.smp"
+Title : ""
+MainMapKakudai : 0, 0, 1650, 1400
+StartYear	: 1559
+StartMonth	: 12
+HeiUnit		: 10
+ShiroDotSize	: 2
+ShiroHyourouMax	: 2000
+UchijiniKakuritsu	: 5
+SeppukuKakuritsu	: 5
+BushouHojuu	: NO
+JuuzokuJoukenHosei	: 5
+ShinjuuJoukenHosei	: 5
+DokuritsuJoukenHosei	: 5
+Kishuu	: YES
+Keiryaku	: YES
+DistanceLimit	: 5
+StandardAge	: 60
+MapMinWidth	: 600
+RoadCostBroad		: 2.0
+RoadCostNarrow		: 3.0
+RoadCostMountain	: 5.0
+RoadCostSea			: 1.0
+KouzanPicture			: NORMAL
+KouekisenPicture		: NORMAL
+KouekisenReturnPicture	: NORMAL
+GunsenPicture			: NORMAL
+GunsenCompletePicture	: NORMAL
+GunsenLargePicture		: NORMAL
+TeppouPicture			: NORMAL
+GunsenUnitPictureR		: NORMAL
+GunsenUnitPictureL		: NORMAL
+BGM	: "", ""
+Opening {
+}
+OpeningImg	: ""
+Ending {
+}
+EndingImg	: ""
+WordAssign {
+	DAIMYOUKE			:	"大名家"
+	ASHIGARUHEI			:	"足軽兵"
+	KIBAHEI				:	"騎馬兵"
+	TEPPOU				:	"鉄砲"
+	SHIRO				:	"城"
+	JOUSHU				:	"城主"
+	RAKUJOU				:	"落城"
+	KAIJOU				:	"開城"
+	SHIROFUSHIN			:	"城普請"
+	BUSHOU				:	"武将"
+	KOKUDAKA			:	"石高"
+	KOKU				:	"石"
+	KOUEKISEN			:	"交易船"
+	GUNSEN				:	"軍船"
+	TEPPOU_KOUNYUU		:	"鉄砲購入"
+	TEPPOU_SEISAN		:	"鉄砲生産"
+	TEPPOU_HAIBI		:	"鉄砲配備"
+	TEPPOU_SHAGEKI		:	"鉄砲射撃"
+	BC					:	"B.C."
+	ZENKOKU				:	"全国"
+	SHIRO_LEVEL1		:	"本丸"
+	SHIRO_LEVEL2		:	"二の丸"
+	SHIRO_LEVEL3		:	"三の丸"
+	SHIRO_LEVEL4		:	"西の丸"
+	SHIRO_LEVEL5		:	"北の丸"
+	SHIRO_LEVEL6		:	"東の丸"
+	SHIRO_LEVEL7		:	"南の丸"
+	SHIRO_LEVEL8		:	"外堀"
+	SHIRO_LEVEL9		:	"西出丸"
+	SHIRO_LEVEL10		:	"東出丸"
+	HYOUROU				:	"兵糧"
+	ROUTOU				:	"郎党"
+	SEISHI				:	"世嗣"
+	TAISAN				:	"は蝦夷地の奥深くに退散しました"
+	CHOU				:	"挺"
+	SEPPUKU				:	"切腹"
+	HOUROKUHIYA			:	"焙烙火矢攻撃"
+	GENPUKU				:	"元服"
+	SHOKEI				:	"処刑"
+	SHUKAIDOU			:	"主街道"
+	SHOUKAIDOU			:	"小街道"
+	SANRO				:	"山路"
+	SUIRO				:	"水路"
+	RIKURO				:	"陸路"
+	KAIKON				:	"新田開墾"
+	RAKUICHI			:	"楽市楽座"
+	KOUZAN				:	"鉱山"
+	KOUZAN_KAIHATSU		:	"鉱山開発"
+	KEIZAI				:	"経済"
+	NOUHANKI			:	"農繁期"
+}
+KuniArea {
+	K_EZO				:	3,			0,		0,		100,	100
+	K_MUTSU				:	3,			0,		0,		100,	100
+	K_RIKUCHU			:	3,			0,		0,		100,	100
+	K_RIKUZEN			:	3,			0,		0,		100,	100
+	K_IWAKI				:	3,			0,		0,		100,	100
+	K_IWASHIRO			:	3,			0,		0,		100,	100
+	K_UGO				:	3,			0,		0,		100,	100
+	K_UZEN				:	3,			0,		0,		100,	100
+	K_ECHIGO_KAETSU		:	3,			0,		0,		100,	100
+	K_ECHIGO_JOUCHU		:	3,			0,		0,		100,	100
+	K_SADO				:	3,			0,		0,		100,	100
+	K_ECCHU				:	3,			0,		0,		100,	100
+	K_NOTO				:	3,			0,		0,		100,	100
+	K_KAGA				:	3,			0,		0,		100,	100
+	K_ECHIZEN			:	3,			0,		0,		100,	100
+	K_KOUZUKE			:	3,			0,		0,		100,	100
+	K_SHIMOTSUKE		:	3,			0,		0,		100,	100
+	K_HITACHI			:	3,			0,		0,		100,	100
+	K_SHIMOUSA			:	3,			0,		0,		100,	100
+	K_KAZUSA			:	3,			0,		0,		100,	100
+	K_KANTOU_AWA		:	3,			0,		0,		100,	100
+	K_MUSASHI			:	3,			0,		0,		100,	100
+	K_SAGAMI			:	3,			0,		0,		100,	100
+	K_KAI				:	3,			0,		0,		100,	100
+	K_KITASHINANO		:	3,			0,		0,		100,	100
+	K_SHINANO			:	10,			1118,	691,	1159,	730
+	K_MINAMISHINANO		:	3,			0,		0,		100,	100
+	K_HIDA				:	3,			0,		0,		100,	100
+	K_MINO				:	3,			0,		0,		100,	100
+	K_IZU				:	3,			0,		0,		100,	100
+	K_SURUGA			:	3,			0,		0,		100,	100
+	K_TOOTOUMI			:	3,			0,		0,		100,	100
+	K_MIKAWA			:	3,			0,		0,		100,	100
+	K_OWARI				:	3,			0,		0,		100,	100
+	K_ISE				:	3,			0,		0,		100,	100
+	K_SHIMA				:	3,			0,		0,		100,	100
+	K_WAKASA			:	3,			0,		0,		100,	100
+	K_KITAOUMI			:	3,			0,		0,		100,	100
+	K_OUMI				:	3,			0,		0,		100,	100
+	K_IGA				:	3,			0,		0,		100,	100
+	K_YAMASHIRO			:	3,			0,		0,		100,	100
+	K_YAMATO			:	3,			0,		0,		100,	100
+	K_TANBA				:	3,			0,		0,		100,	100
+	K_SETTSU			:	3,			0,		0,		100,	100
+	K_KAWACHI			:	3,			0,		0,		100,	100
+	K_IZUMI				:	3,			0,		0,		100,	100
+	K_KII				:	3,			0,		0,		100,	100
+	K_HIGASHI_KII		:	3,			0,		0,		100,	100
+	K_TANGO				:	3,			0,		0,		100,	100
+	K_TAJIMA			:	3,			0,		0,		100,	100
+	K_INABA				:	3,			0,		0,		100,	100
+	K_HOUKI				:	3,			0,		0,		100,	100
+	K_IZUMO				:	3,			0,		0,		100,	100
+	K_OKI				:	3,			0,		0,		100,	100
+	K_IWAMI				:	3,			0,		0,		100,	100
+	K_HARIMA			:	3,			0,		0,		100,	100
+	K_MIMASAKA			:	3,			0,		0,		100,	100
+	K_BIZEN				:	3,			0,		0,		100,	100
+	K_BICCHU			:	3,			0,		0,		100,	100
+	K_BINGO				:	3,			0,		0,		100,	100
+	K_AKI				:	3,			0,		0,		100,	100
+	K_SUOU				:	3,			0,		0,		100,	100
+	K_NAGATO			:	3,			0,		0,		100,	100
+	K_AWAJI				:	3,			0,		0,		100,	100
+	K_SANUKI			:	3,			0,		0,		100,	100
+	K_SHIKOKU_AWA		:	3,			0,		0,		100,	100
+	K_IYO				:	3,			0,		0,		100,	100
+	K_IYO_NANYO			:	3,			0,		0,		100,	100
+	K_TOSA				:	3,			0,		0,		100,	100
+	K_BUZEN				:	3,			0,		0,		100,	100
+	K_BUNGO				:	3,			0,		0,		100,	100
+	K_CHIKUZEN			:	3,			0,		0,		100,	100
+	K_CHIKUGO			:	3,			0,		0,		100,	100
+	K_TSUSHIMA			:	3,			0,		0,		100,	100
+	K_HIZEN				:	3,			0,		0,		100,	100
+	K_HIGO				:	3,			0,		0,		100,	100
+	K_HYUGA				:	3,			0,		0,		100,	100
+	K_OOSUMI			:	3,			0,		0,		100,	100
+	K_SATSUMA			:	3,			0,		0,		100,	100
+	K_OOSUMI_SHOTO		:	3,			0,		0,		100,	100
+	K_GOTOU				:	3,			0,		0,		100,	100
+	K_RYUKYU			:	3,			0,		0,		100,	100
+	K_EVENT				:	3,			0,		0,		100,	100
+}
+TeppouSoubiRitsu	:	0.00,			0.00,			0.00
+TeppouKouka	:	10,				10,				10,				10
+TeppouCost	:	100,		0.20,			10
+TeppouSeisan {
+}
+TeppouKounyuu {
+}
+TeppouKounyuuMonth {
+}
+Event {
+}
+EventDetail {
+}
+Daimyou {
+	D_Zero				:	"府中小笠原家Zero",NORMAL,		0,			50,				1000000,				10,					3,				YES,	NORMAL,		""
+	D_Minus2			:	"府中小笠原家Minus2",NORMAL,		0,			50,				1000000,				10,					3,				YES,	NORMAL,		""
+	D_TAKEDA			:	"甲斐武田家",	NORMAL,		0,			250,			1000000,				10,					3,				YES,	NORMAL,		""
+}
+Doumei {
+	D_TAKEDA,				SHUKUTEKI,	D_Zero
+	D_TAKEDA,				SHUKUTEKI,	D_Minus2
+}
+ShiroType {
+	ST_NORMAL		:	NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	-10,-10,10,	10,	0,	0,	&+
+20,30
+	ST_RYUUKYUU		:	CHINA,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	-10,-10,10,	10,	0,	0,	&+
+20,30
+	ST_CHINA		:	CHINA,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	-10,-10,10,	10,	0,	0,	&+
+20,30
+	ST_EUROPE		:	EUROPE,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	-10,-10,10,	10,	0,	0,	&+
+20,30
+	ST_GENDAI		:	GENDAI,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			NORMAL,			0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	-10,-10,10,	10,	0,	0,	&+
+20,30
+}
+Shiro {
+	S_0000					:	"平瀬城Zero",	K_SHINANO,		5,		4,		144115,	89663,	40000,	25000,	350,	250,	0,		0,		NO,		0,		0,		NO,		20,		ST_NORMAL,	D_Zero,					""
+	S_0001					:	"林城Zero",		K_SHINANO,		6,		6,		144948,	91252,	60000,	45000,	400,	350,	0,		0,		NO,		0,		0,		NO,		30,		ST_NORMAL,	D_Zero,					""
+	S_0002					:	"平瀬城Minus2",	K_SHINANO,		5,		4,		147519,	89702,	40000,	25000,	350,	250,	0,		0,		NO,		0,		0,		NO,		20,		ST_NORMAL,	D_Minus2,				""
+	S_0003					:	"林城Minus2",	K_SHINANO,		6,		6,		146559,	91237,	60000,	45000,	400,	350,	0,		0,		NO,		0,		0,		NO,		30,		ST_NORMAL,	D_Minus2,				""
+	S_0004					:	"塩尻峠",		K_SHINANO,		3,		3,		145676,	92480,	3000,	0,		100,	100,	0,		0,		NO,		0,		0,		NO,		20,		ST_NORMAL,	D_TAKEDA,				""
+}
+ShiroConnect {
+	S_0001,			S_0000,			BROAD,			LINE
+	S_0001,			S_0004,			BROAD,			LINE
+	S_0002,			S_0003,			BROAD,			LINE
+	S_0003,			S_0004,			BROAD,			LINE
+}
+TradingPartner {
+}
+TradingKuni {
+}
+TradingPort {
+}
+Bushou {
+	B_01005	:	"小笠原 貞慶",		3,	4,	3,	3,		1,		9,	9,	100,	500,	0,		1546,	1595,	BYOUSHI,	9999,	D_Zero,				-1,		S_0001,				"登場年を1560から9999に変更済"
+	B_01005_Zero:	"小僧丸Zero",		0,	0,	0,	0,		0,		10,	0,	0,		0,		0,		1546,	1595,	BYOUSHI,	0,		D_Zero,				0,		S_0000,				"能力値を0として新規に作成した武将、貞義の幼名。\n\nシナリオ開始年を1559年12月としているため登場年を0としているが、\n実装時は1551（5歳）とす&+
+る。\n\n継承順位を0としているが、サンプルシナリオの貞慶と同様、実装時は3とする。\n\n従属・臣従時に独立させないため、忠誠心は10、野心は0とした。\n\n武将解説は、実装時は貞慶と同一とする。"
+	B_01005_Minus2:	"小僧丸Minus2",		1,	2,	1,	1,		0,		7,	7,	0,		0,		0,		1546,	1595,	BYOUSHI,	0,		D_Minus2,			0,		S_0002,				"能力値を元服後-2として新規に作成した武将、貞義の幼名。\n\nシナリオ開始年を1559年12月としているため登場年を0としているが、\n実装時は1551（&+
+5歳）とする。\n\n継承順位を0としているが、サンプルシナリオの貞慶と同様、実装時は3とする。\n\n従属・臣従時に独立させないため、忠誠心は10、野心は0とした。\n\n武将解説は、実装時は貞慶と同一とする。"
+	B_00920	:	"武田 晴信",		6,	9,	9,	9,		1,		6,	7,	2000,	5000,	0,		1521,	1573,	BYOUSHI,	0,		D_TAKEDA,			0,		S_0004,				"府中小笠原家を攻撃させるため兵数を300, 1000から2000, 5000に変更済"
+}
+ConditionalEvent {
+	CE_0000 {
+		Title		: "小僧丸Zeroの元服"
+		PeriodStart	: 1560, 1
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: ONCE
+		SubRoutine	: NO
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_BUSHOU_EXIST, NONE, NONE, NONE, B_01005_Zero, "", ""
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "0", "#捕虜大名(B_01005_Zero)+#人質大名(B_01005_Zero)"
+			CONTITION_BUSHOU_SHOZOKU, D_Zero, NONE, NONE, B_01005_Zero, "", ""
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "小僧丸Zeroを元服させますか？"
+		}
+		Message {
+			"【小僧丸$color=0xFF0000$Zero$color=0x000000$】"
+			""
+			"・「小笠原 貞慶」に改名"
+			"・元服時に予定された足軽兵数・騎馬兵数・鉄砲数よりも現在の兵数が少ない場合は、予定された兵数に変更"
+			"・$color=0xFF0000$すべて0であった能力値$color=0x000000$を元服時に予定された値に変更"
+		}
+		Happening {
+			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_01005_Zero, NONE, "小笠原 貞慶", ""
+			HAPPENING_BUSHOU_PARAM_COPY, NONE, NONE, NONE, NONE, B_01005_Zero, B_01005, "", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ExpectedKiba", "100"
+			HAPPENING_BUSHOU_KIBA_PLUS, NONE, NONE, NONE, NONE, B_01005_Zero, NONE, "0-ExpectedKiba", ""
+			HAPPENING_BUSHOU_KIBA_PLUS, NONE, NONE, NONE, NONE, B_01005_Zero, NONE, "ExpectedKiba", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ExpectedAshigaru", "500"
+			HAPPENING_BUSHOU_ASHIGARU_PLUS, NONE, NONE, NONE, NONE, B_01005_Zero, NONE, "0-ExpectedAshigaru", ""
+			HAPPENING_BUSHOU_ASHIGARU_PLUS, NONE, NONE, NONE, NONE, B_01005_Zero, NONE, "ExpectedAshigaru", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ExpectedGun", "0"
+			HAPPENING_BUSHOU_TEPPOU_PLUS, NONE, NONE, NONE, NONE, B_01005_Zero, NONE, "0-ExpectedGun", ""
+			HAPPENING_BUSHOU_TEPPOU_PLUS, NONE, NONE, NONE, NONE, B_01005_Zero, NONE, "ExpectedGun", ""
+		}
+	}
+	CE_0001 {
+		Title		: "小僧丸Minus2の元服"
+		PeriodStart	: 1560, 1
+		PeriodEnd	: NONE
+		Logic		: AND
+		RepeatType	: ONCE
+		SubRoutine	: NO
+		LoopType	: NONE
+		LoopVariable	: ""
+		Condition {
+			CONDITION_BUSHOU_EXIST, NONE, NONE, NONE, B_01005_Minus2, "", ""
+			CONDITION_EQUAL, NONE, NONE, NONE, NONE, "0", "#捕虜大名(B_01005_Minus2)+#人質大名(B_01005_Minus2)"
+			CONTITION_BUSHOU_SHOZOKU, D_Minus2, NONE, NONE, B_01005_Minus2, "", ""
+			CONDITION_QUESTION_YES, NONE, NONE, NONE, NONE, "", "小僧丸Minus2を元服させますか？"
+		}
+		Message {
+			"【小僧丸$color=0x0000FF$Minus2$color=0x000000$】"
+			""
+			"・「小笠原 貞慶」に改名"
+			"・元服時に予定された足軽兵数・騎馬兵数・鉄砲数よりも現在の兵数が少ない場合は、予定された兵数に変更"
+			"・$color=0x0000FF$元服後-2であった能力値$color=0x000000$を元服時に予定された値に変更"
+		}
+		Happening {
+			HAPPENING_BUSHOU_KAIMEI, NONE, NONE, NONE, NONE, B_01005_Minus2, NONE, "小笠原 貞慶", ""
+			HAPPENING_BUSHOU_PARAM_COPY, NONE, NONE, NONE, NONE, B_01005_Minus2, B_01005, "", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ExpectedKiba", "100"
+			HAPPENING_BUSHOU_KIBA_PLUS, NONE, NONE, NONE, NONE, B_01005_Minus2, NONE, "0-ExpectedKiba", ""
+			HAPPENING_BUSHOU_KIBA_PLUS, NONE, NONE, NONE, NONE, B_01005_Minus2, NONE, "ExpectedKiba", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ExpectedAshigaru", "500"
+			HAPPENING_BUSHOU_ASHIGARU_PLUS, NONE, NONE, NONE, NONE, B_01005_Minus2, NONE, "0-ExpectedAshigaru", ""
+			HAPPENING_BUSHOU_ASHIGARU_PLUS, NONE, NONE, NONE, NONE, B_01005_Minus2, NONE, "ExpectedAshigaru", ""
+			HAPPENING_DAINYUU, NONE, NONE, NONE, NONE, NONE, NONE, "ExpectedGun", "0"
+			HAPPENING_BUSHOU_TEPPOU_PLUS, NONE, NONE, NONE, NONE, B_01005_Minus2, NONE, "0-ExpectedGun", ""
+			HAPPENING_BUSHOU_TEPPOU_PLUS, NONE, NONE, NONE, NONE, B_01005_Minus2, NONE, "ExpectedGun", ""
+		}
+	}
+}
+ColorPallet {
+	255,255,255,	""
+	255,255,255,	""
+	255,255,255,	""
+	255,255,255,	""
+	255,255,255,	""
+	255,255,255,	""
+	255,255,255,	""
+	255,255,255,	""
+	255,255,255,	""
+	255,255,255,	""
+}
+Label {
+}
